@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
+import Services from "../Services/Services";
 import styles from "./Page.module.css";
 import { info } from "../assets/info";
-import { ReactComponent as ReactLogo } from "../assets/graphicdashboard.svg";
+import image from "../assets/graphicdashboard.svg";
 
 export default function Page() {
   return (
@@ -22,9 +23,10 @@ export default function Page() {
           ))}
         </div>
       </div>
-      {/* <div className={styles.background}>
+      <div className={styles.background}>
         <div className={styles.container2}>
-          <ReactLogo className={}/>
+            <img src={ image} alt ='imagen'className={styles.svg}/>
+          
           <div className={styles.content}>
             <p className={styles.contentTitle}>
               Optimizamos empresas con nuestros servicios profesionales a medida
@@ -32,7 +34,8 @@ export default function Page() {
             <button className={styles.btn}>Agendar reunión</button>
           </div>
         </div>
-      </div> */}
+      </div>
+      <Services></Services>
     </>
   );
 }

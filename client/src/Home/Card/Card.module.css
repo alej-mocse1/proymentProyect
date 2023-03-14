@@ -12,10 +12,11 @@
 }
 .title {
     margin: auto;
-  font-size: 18px;
+  font-size: 1.25rem;
   color: #000538;
 }
 .text {
+  font-size: 1rem;
   color: #6e7191;
   text-align:left;
   margin: 10px 23px;

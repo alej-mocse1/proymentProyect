@@ -14,12 +14,7 @@
     width: 40%; 
     font-size: 100%;
   }
- .divLink2{
-  display: none;
- }
-.divBtn{
-  display: none;
-}
+
 
   h4{
     width: 80%;
@@ -29,8 +24,6 @@
   }
 
   .btn{
-    /* width: 155px; */
-    /* width: 13%; */
     padding: 15px 24px;
     height: 47px;
     border-radius: 4px;
@@ -50,6 +43,21 @@
   .Hamburguesa{
     display: none;
   }
+  .divLink2{
+    display: none !important;
+  
+   }
+   .DIVservices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;   
+    gap: 16px;
+   }
+   .h4servicer{
+    color: #000538;
+   }
 
 
 
@@ -71,7 +79,6 @@
       margin-left: 10px;
   }
 
-
   .btn{
     display: none;
    }
@@ -80,29 +87,21 @@
     display: none;
   }
 
-  .btn2{
-    padding: 15px 24px;
-    min-height: 47px !important;
-    margin-left:0%; 
-    position: relative;
-    transition: 0.1s;
-    border-radius: 4px;
-    background-color:#6F4EF5;
-    color: white;
-    border: none;
-    margin-top: 20px;
-   }
 
   .divLink2{
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    text-align: left;
     align-items: center;
-    width: 40%; 
+    width: 100%; 
     font-size: 100%;
     flex-direction: column;
     height: 30px;
-    position: relative;
-    top: 30px;
+    position: absolute;
+    height: 150vh;
+    top: 100px;
+    z-index: 200;
+    background-color: white;
+
   }
 
   .Hamburguesa {

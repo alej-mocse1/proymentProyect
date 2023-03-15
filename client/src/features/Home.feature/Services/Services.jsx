@@ -1,6 +1,6 @@
 import styles from "./Services.module.css";
-import Card from "./Card/Card";
-import { infoServicesCards } from "../../assets/info";
+import Card from "../../../core/components/Card/Card";
+import { infoServicesCards } from "../assets/info";
 export default function Services() {
   return (
     <>

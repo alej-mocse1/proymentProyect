@@ -16,6 +16,7 @@ export const infoADNCards = [
     description:
       "Impulsamos la disrupción para lograr mejoras sustanciales en el rendimiento, acelerando el cambio empresarial.",
     img: img2,
+    ADN:true,
   },
   {
     id: 2,
@@ -23,6 +24,8 @@ export const infoADNCards = [
     description:
       "Rediseñamos procesos a través de la mejora continua para resolver desafíos complejos, presentes y futuros en la estructura empresarial.",
     img: img3,
+    ADN:true,
+
   },
   {
     id: 3,
@@ -30,6 +33,8 @@ export const infoADNCards = [
     description:
       "Implementamos software para la realización de tareas repetitivas para reemplazo del trabajo manual en un entorno operativo estándar.",
     img: img4,
+    ADN:true,
+
   },
   {
     id: 4,
@@ -37,6 +42,8 @@ export const infoADNCards = [
     description:
       "Alcanzamos los objetivos que son trazados como si fuesen nuestras propias metas empresariales.",
     img: img5,
+    ADN:true,
+
   },
 ];
 

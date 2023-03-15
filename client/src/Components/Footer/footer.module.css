@@ -1,29 +1,22 @@
-.footer {
+.container {
     background-color: #fff;
-    /* border: 3px solid red; */
-    margin: 88px 72px;
+    margin: 88px 70px;
 }
 
-.container {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
-.containerLogo{
-    /* border: 3px solid red; */
+.containerLogo {
     display: flex;
     flex-direction: column;
 }
-.containerLogo h3 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #001A66;
-    margin: 10px 0 20px 0;
+
+.containerLogo img {
+    width: 220px;
+
 }
 
 .containerLogo span {
@@ -35,7 +28,7 @@
     color: #000538;
 }
 
-.containerService h3 {
+.tittle {
     font-size: 20px;
     font-weight: 600;
     line-height: 22px;
@@ -66,14 +59,6 @@
     width: 150px;
 }
 
-.contactInfo h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 .contactInfo span {
     font-size: 16px;
     font-weight: 400;
@@ -83,7 +68,7 @@
 }
 
 .containerContact button {
-    
+
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -101,22 +86,37 @@
     border-radius: 4px;
 }
 
-.containerSocial{
-    /* border: 3px solid red; */
-}
-.containerSocial h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 .socialInfo {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    gap: 30px;
 }
 
-.infoFacebook span {
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social span {
+    height: 36px;
+    width: 36px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+    background: #6F4EF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    color: #fff;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.social h4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -125,40 +125,13 @@
     margin-left: 8px;
 }
 
-.infoInstagram span {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-left: 8px;
-}
 
-.infoLinkedin span {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-left: 8px;
-}
+/* RESPONSIVE */
 
-
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .footer {
         display: flex;
         flex-direction: column;
     }
-    .containerLogo{
-        margin-left: 25px;
-    }
-    .containerService{
-        margin-left: 25px;
-    }
-    .containerContact{
-        margin-left: 25px;
-    }
-    .containerSocial{
-        margin-left: 25;
-    }
+
 }

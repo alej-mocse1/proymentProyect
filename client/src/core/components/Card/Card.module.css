@@ -5,23 +5,65 @@
   margin: 8px 8px;
   border-radius: 4px 4px 4px 4px;
 }
-.img {
-  width: 263px;
+.card img {
+  width: 100%;
   min-width: 230px;
   height: 200px;
 }
-.title {
+.card .text h6{
   margin: auto;
   font-size: 1.25rem;
   color: #000538;
 }
-.text {
+.card .text {
   font-size: 1rem;
   color: #6e7191;
   text-align: left;
   margin: 10px 23px;
 }
 
-.background2 {
-  background-color: red;
+
+
+.card1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 263px;
+  min-width: 230px;
+  /* height: 369px;  */
+  margin: 8px 8px;
+  border-radius: 4px 4px 4px 4px;
+  position: relative;
 }
+.card1 img {
+  margin-bottom: 45%;
+  width: 100%;
+  min-width: 230px;
+  height: 200px;
+  min-height: 164px;
+}
+.card1 .text {
+  position: absolute;
+  bottom: 0%;
+  width: 85%;
+  border-radius: 16px;
+  text-align: center;
+  margin: 24px;
+  background-color: #FFFF;
+}
+.card1 .text h6 {
+  font-size: 1.25rem;
+  color: #000538;
+  font-weight: 500;
+  margin: 12px 0px 0px;
+  padding: 0 35px;
+}
+.card1 .text p {
+  font-size: 1rem;
+  color: #6e7191;
+}
+
+.card1 .text a {
+  color: #6f4ef5;
+  font-size: 1rem;
+} 

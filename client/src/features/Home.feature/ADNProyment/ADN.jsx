@@ -1,20 +1,20 @@
-import styles from "./ADN.module.css";
-import  {infoADNCards}  from "../../assets/info";
-import Card from "../../Card/Card";
+import {infoADNCards} from "../assets/info";
+import Card from "../../../core/components/Card/Card";
+import style from "./ADN.module.css";
 
 export default function ADN() {
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.container1}>
-          <h4 className={styles.h4}>ADN Proyment</h4>
-          <p className={styles.text}>
+      <div className={style.container}>
+        <div className={style.container1}>
+          <h4 className={style.h4}>ADN Proyment</h4>
+          <p className={style.text}>
             Alcanzamos de forma correcta la transformación empresarial en base a
             la<br></br>
             innovación y el potenciamiento a escala
           </p>
         </div>
-        <div className={styles.cards}>
+        <div className={style.cards}>
           {infoADNCards.map((info) => (
             <Card key={info.id} info={info} />
           ))}

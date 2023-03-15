@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./ladinPage1.module.css";
-import img02 from './img02.png';
-import img03 from './img03.png';
-import img04 from './img04.png';
-import img05 from './img05.png';
-import graphicfloat_hero01 from "./graphicfloat-hero01.svg"
-import graphicfloat_hero02 from "./graphicfloat-hero02.svg"
-import graphicfloat_hero03 from "./graphicfloat-hero03.svg"
-import background from "./background.png"
+import img02 from './assets/img02.png';
+import img03 from './assets/img03.png';
+import img04 from './assets/img04.png';
+import img05 from './assets/img05.png';
+import graphicfloat_hero01 from "./assets/graphicfloat-hero01.svg"
+import graphicfloat_hero02 from "./assets/graphicfloat-hero02.svg"
+import graphicfloat_hero03 from "./assets/graphicfloat-hero03.svg"
+import background from "./assets/background.png"
 
 
 function LandinPage(props) {
@@ -54,8 +54,8 @@ function LandinPage(props) {
           </div> 
 
        </div>
-{/* 
-       <button className={style.AgendarReunionBTN}>Agendar reunion</button> */}
+
+       <button className={style.AgendarReunionBTN}>Agendar reunion</button>
      </div>
 
 
@@ -68,7 +68,7 @@ function LandinPage(props) {
               <img src={graphicfloat_hero03} alt="graphicfloat_hero03"  className={style.float3}/> 
             </div>
 
-            {/* <button className={style.btnWSP}></button> */}
+            <button className={style.btnWSP}></button>
          </div>
 
 

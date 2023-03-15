@@ -7,7 +7,7 @@ function Navbar() {
 
     const [isOpen, SetOpen] = useState(false);
     const [isOpen2, SetOpen2] = useState(false);
-
+   
     let responsive = isOpen ? {
          transform: "translateX(-800px)",
          transition: "1.6s ease all",
@@ -18,6 +18,27 @@ function Navbar() {
         transition: "1.6s ease all"
      }
 
+     let responsiveNone = isOpen ? {
+        border: "0px solid black"
+      } : {
+        display: "none"
+      }
+
+   
+     let  responsiveNone1 = isOpen ? {
+      border: "0px solid black"
+     } : {
+      transform: "rotate(45deg) translate(0px, 0px)" 
+     }
+
+ 
+      let responsiveNone2 = isOpen ? {
+        border: "0px solid black"
+      } : {
+        transform: "rotate(-47deg) translate(-2.9px, -0px)"
+      }
+
+
      let responsiveServicios = isOpen2 ? {
           display: 'flex',
           flexDirection: 'column',
@@ -26,7 +47,6 @@ function Navbar() {
           textAlign: "left",
           width:"70%",
           marginLeft: '10px' ,
-        
          } : {
          display: "none",
        }
@@ -37,11 +57,12 @@ function Navbar() {
   return (
     <div className={style.div}>
 
-        <div className={style.Hamburguesa} onClick={() => SetOpen(!isOpen)}>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
+       <div className={style.Hamburguesa} onClick={() => SetOpen(!isOpen)}>
+          <span className="span" style={responsiveNone1}></span>
+          <span className="span" style={responsiveNone}></span>
+          <span className="span" style={responsiveNone2}></span>
         </div>
+
 
        <img src={logo} alt="img-logo"  className={style.img}/> 
 
@@ -58,8 +79,14 @@ function Navbar() {
 
 
 
-     <div className={style.divLink2 } style={responsive} > 
-     <h4  className={style.Servicios} onClick={() => SetOpen2(!isOpen2)}>Servicios</h4>
+    <div className={style.divLink2 } style={responsive} > 
+
+    <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}>{`servicios ${isOpen2? '∧' : '∨' }`}</h4>  
+
+     {/* <div className={style.h4Desplegable }>
+       <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}>Servicios</h4>  
+       <h4  className={style.ServiciosH4} onClick={() => SetOpen2(!isOpen2)}>{`${isOpen2? '∧' : '∨' }`}</h4>
+     </div> */}
 
         <div  className={style.DIVservices} style={responsiveServicios}>
             <h4  className={style.h4servicer}>Servicios integrales</h4>  
@@ -71,10 +98,10 @@ function Navbar() {
             <h4  className={style.h4servicer}>Servicios a tu medida</h4> 
         </div>
 
-        <h4  className={style.industrias}>Industrias</h4>     
-        <h4  className={style.industrias}>Clientes</h4>  
-        <h4  className={style.industrias}>Metodologia</h4>  
-     </div>
+        <h4>Industrias</h4>     
+        <h4>Clientes</h4>  
+        <h4>Metodologia</h4>  
+    </div>
 
    
 

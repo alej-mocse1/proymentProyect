@@ -7,6 +7,8 @@ export default function Card({ info }) {
       <div className={styles.text}>
         <h6 className={styles.title}>{info.title}</h6>
         <p>{info.description}</p>
+       {/*  <a href="#Ver">Ver más</a> 
+       decidir mostrar o no*/}
       </div>
     </div>
   );

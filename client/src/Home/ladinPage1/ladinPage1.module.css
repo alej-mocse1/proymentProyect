@@ -1,0 +1,426 @@
+.div{
+
+width: 100%;
+height: 666px;
+left: 0px;
+top: 127px;
+background-color: #000538;
+display: flex;
+flex-direction: row;
+}
+
+.div1{
+ width: 687px;
+ height: 451.88px;
+ margin-left: 50px;
+ margin-top: 65px;
+}
+
+.frase{
+    height: 202px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 67px;
+}
+
+.frase .h2Dest{
+    font-size: 50px;
+    line-height: 22px;
+    text-align: left;
+    position: relative;
+    top: -22px;
+}
+
+.frase .h2Mobile{
+   font-size: 0px;
+   transform: translatey(1000px);
+}
+
+.frase2 h2{
+    font-size: 50px;
+    line-height: 22px;
+    text-align: left;
+    position: relative;
+    top: -22px;
+}
+
+
+
+.frase2{
+    height: 48px;
+    text-align: left;
+}
+
+.frase2 p{
+    color: #DCDDEB;
+    text-align: left;
+    position: relative;
+    font-size: 15.5px;
+    top: -33px;
+}
+.divbtn{
+    width: 100%;
+    text-align: left;
+}
+.btn{
+    background: #6F4EF5;
+    border-radius: 4px;
+    padding: 20px 38px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn2{
+    background: #000538;
+    border: 2px solid  #6F4EF5;
+    border-radius: 4px;
+    padding: 20px 38px;
+    color:  #6F4EF5;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.divImgs{
+    /* border: 1px solid white; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top:33px;
+}
+.divImgs img{
+    width: 48.88px;
+    height: 48.88px;
+    border: 1.62927px solid #FFFFFF;
+    border-radius: 61.53px;
+    margin: 0px -9.77561px;
+    position: relative;
+    left: 10px;
+}
+
+.divImgsParrafo{
+    /* border: 1px solid white; */
+    width: 193px;
+    height: 48.88px;
+    color: #DCDDEB;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.divImgsParrafo p{
+    position: relative;
+    top: -11px;
+}
+
+.AgendarReunionBTN{
+    background: #00AEFF;
+    padding: 16px;
+    gap: 9px;
+    color: #FFFFFF;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    left: 23px;
+    top: 583px;
+   
+}
+
+
+.div2{ 
+    height: 666px;
+    width: 50%;
+}
+
+
+
+ .ContenedorDiv2{
+position: absolute;
+width: 40%;
+height: 500px;
+right: 91px;
+top: 0px;
+margin-top: 165px;
+}
+
+.background{
+    width: 100%;
+    height: 500px;
+}
+
+.float1{
+    position: absolute;
+    width: 40%;
+    height: 179px;
+    left: -50.92px;
+    top: 373.68px;
+    margin-top:-80px ;
+    margin-left: 132px;
+}
+.float2{
+    position: absolute;
+    width: 20%;
+    height: 110px;
+    left: 50.92px;
+    top: -10.68px;
+    margin-top:224px ;
+    margin-left: 360px;
+}
+.float3{
+    position: absolute;
+    width: 20%;
+    height: 110px;
+    left: 145.92px;
+    top: 65.68px;
+}
+
+.btnWSP{
+    width: 72px;
+    height: 72px;
+    background-image: url('./wsp.png');
+    background-size: cover;
+    border-radius: 86px;
+    position: absolute;
+    top: 575px;
+    right: 30px;
+}
+
+ @media screen and (max-width:1200px) {
+
+       .ContenedorDiv2{
+        height: 451px;
+        margin-top: 244px;
+        }
+        .background{
+            width: 100%;
+            height: 421px;
+        }
+        .float1{  
+            width: 35%;
+            top: 303.68px;
+        }
+        .float2{
+            left: -20.92px;
+            top: -40.68px;
+        }
+        .float3{
+            width: 20%;
+            height: 110px;
+            left: 125.92px;
+            top: 65.68px;
+        }
+}   
+
+
+@media screen and (max-width:1000px) {
+    .ContenedorDiv2{
+        height: 390px;
+        margin-top: 274px;
+        }
+        .background{
+            width: 100%;
+            height: 390px;
+        }
+        .float2{
+            left: -60.92px;
+            top: -74.68px;
+
+        }
+}  
+
+
+@media screen and (max-width:940px) {
+
+    .div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        }
+
+    .div1{
+           
+            margin: 0 auto;
+            margin-top: 65px;
+            width: 65%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+
+    .frase{
+            height: 176px;
+        }
+
+    .frase h2{
+            font-size: 40px;
+        }
+    .btn{
+            background: #6F4EF5;
+            border-radius: 4px;
+            padding: 20px 38px;
+            color: #FFFFFF;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-top: 24px;
+            width: 100%;
+        }
+
+    .btn2{
+          display: none;
+        }
+
+    .AgendarReunionBTN{
+            display: none;       
+         }
+
+
+         .div2{ 
+            height: 666px;
+            width: 65%;
+            margin: 0 auto;
+        }
+           
+        .ContenedorDiv2{
+         
+            position: absolute;
+            width: 50%;
+            height: 300px;
+            top: 529px;
+            left: 50px;
+            margin: 0 auto;
+        }
+
+        .background{
+            position: absolute;
+            width: 290px;
+            height: 270px;
+            left: 40px;
+        }
+        .float1{  
+            position: absolute;
+            width: 130px;
+            top: 163.68px;
+            left: -100px;
+        }
+        .float2{
+            position: absolute;
+            width: 70px;
+            left: -80.92px;
+            top: -140.68px;
+        }
+        .float3{
+            position: absolute;
+            width: 70px;
+            height: 110px;
+            left: 85.92px;
+            top: 15.68px;
+        }
+
+        .btnWSP{
+            display: none;
+        }
+}  
+
+@media screen and (max-width:700px) {
+
+     
+.frase{
+    height: 202px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 67px;
+}
+
+.frase .h2Dest{
+  display: none;
+ }
+
+.frase .h2Mobile{
+    font-size: 45px;
+    line-height:14px;
+    text-align: left;
+    position: relative;
+    top: -30px;
+    color: #FFFFFF;
+    transform: translatey(0px);
+
+}
+  
+}  
+@media screen and (max-width:710px) {
+
+    .div{
+        height: 830px;
+        }
+    .ContenedorDiv2{
+        position: absolute;
+        width: 50%;
+        height: 300px;
+        top: 529px;
+        left: -50px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .divImgsParrafo{
+        margin-left: 30px;
+    } 
+
+}  
+
+
+@media screen and (max-width:540px) {
+
+    .ContenedorDiv2{
+        top: 559px;
+        left: 30px;
+    }
+
+    .background{
+        position: absolute;
+        width: 250px;
+        height: 240px;
+        left: -0px;
+    }
+
+    .float1{  
+        position: absolute;
+        width: 130px;
+        top: 163.68px;
+        left: -140px;
+    }
+    .float2{
+        position: absolute;
+        width: 70px;
+        left: -160.92px;
+        top: -120.68px;
+    }
+    .float3{
+        position: absolute;
+        width: 70px;
+        height: 110px;
+        left: 50.92px;
+        top: 15.68px;
+    }
+}  
+
+
+@media screen and (max-width:420px) {
+    .background{
+
+        left: -30px;
+    }
+    .float1{  
+        left: -170px;
+    }
+    .float2{
+        left: -190.92px;
+    }
+    .float3{
+        left: 20.92px;
+    }
+}  

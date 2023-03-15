@@ -11,8 +11,8 @@ export default function Footer() {
                         <h3>proyMent</h3>
                         <span>
                             © Proyment
-                            Todos los derechos reservados.
                         </span>
+                        <span>Todos los derechos reservados.</span>
                     </div>
                     <div className={style.containerService}>
                         <h3>Servicios</h3>
@@ -32,7 +32,7 @@ export default function Footer() {
                                 equipo@proyment.com
                             </span>
                         </div>
-                        <Link to="#"><button>Agendar reunión</button></Link>
+                        <button>Agendar reunión</button>
                     </div>
                     <div className={style.containerSocial}>
                         <h3>Redes Sociales</h3>

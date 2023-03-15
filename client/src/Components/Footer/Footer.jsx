@@ -1,6 +1,5 @@
 import React from "react"
 import style from "./footer.module.css"
-import { Link } from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -17,12 +16,12 @@ export default function Footer() {
                     <div className={style.containerService}>
                         <h3>Servicios</h3>
                         <div className={style.serviceInfo}>
-                            <a href="#">Servicio de Marketing</a>
+                          {/*   <a href="#">Servicio de Marketing</a>
                             <a href="#">Servicio de potenciamiento de ventas</a>
                             <a href="#">servicios integrales</a>
                             <a href="#">Servicios de análisis de datos</a>
                             <a href="#">Servicios de diseño web UI/UX</a>
-                            <a href="#">Servicios en tendencia</a>
+                            <a href="#">Servicios en tendencia</a> */}
                         </div>
                     </div>
                     <div className={style.containerContact}>

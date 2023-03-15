@@ -1,5 +1,6 @@
 import styles from "./Services.module.css";
-
+import Card from "./Card/Card";
+import { infoServicesCards } from "../../assets/info";
 export default function Services() {
   return (
     <>
@@ -10,16 +11,17 @@ export default function Services() {
             Potenciamos y protegemos el valor de sus negocios a través de la
             experiencia e innovación<br></br> tecnológica para alcanzar
             resultados sostenibles.
-          <div className={styles.buttons}>
-          <button>⬅</button>
-          <button>➡</button>
-          </div>
           </p>
+          <div className={styles.buttons}>
+            <button>⬅</button>
+            <button>➡</button>
+          </div>
         </div>
-          something
-
-
-
+        <div className={styles.containerCards}>
+          {infoServicesCards.map((info) => (
+            <Card key={info.id} info={info}></Card>
+          ))}
+        </div>
       </div>
     </>
   );

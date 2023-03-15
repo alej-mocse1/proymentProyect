@@ -1,5 +1,5 @@
 import styles from "./ADN.module.css";
-import { info } from "../../assets/info";
+import  {infoADNCards}  from "../../assets/info";
 import Card from "../../Card/Card";
 
 export default function ADN() {
@@ -15,7 +15,7 @@ export default function ADN() {
           </p>
         </div>
         <div className={styles.cards}>
-          {info.map((info) => (
+          {infoADNCards.map((info) => (
             <Card key={info.id} info={info} />
           ))}
         </div>

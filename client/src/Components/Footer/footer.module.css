@@ -1,0 +1,164 @@
+.footer {
+    background-color: #fff;
+    /* border: 3px solid red; */
+    margin: 88px 72px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerLogo{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.containerLogo h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #001A66;
+    margin: 10px 0 20px 0;
+}
+
+.containerLogo span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000538;
+}
+
+.containerService h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.serviceInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.serviceInfo a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    color: #000538;
+}
+
+.contactInfo {
+    text-align: start;
+    width: 150px;
+}
+
+.contactInfo h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contactInfo span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: start;
+}
+
+.containerContact button {
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    height: 55px;
+    width: 173px;
+    padding: 0px 0px 1px 0px;
+    margin-top: 15px;
+
+    color: #FFFFFF;
+    background: #6F4EF5;
+    border: 0;
+    border-radius: 4px;
+}
+
+.containerSocial{
+    /* border: 3px solid red; */
+}
+.containerSocial h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.socialInfo {
+    text-align: left;
+}
+
+.infoFacebook span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.infoInstagram span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.infoLinkedin span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 8px;
+}
+
+
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerLogo{
+        margin-left: 25px;
+    }
+    .containerService{
+        margin-left: 25px;
+    }
+    .containerContact{
+        margin-left: 25px;
+    }
+    .containerSocial{
+        margin-left: 25;
+    }
+}

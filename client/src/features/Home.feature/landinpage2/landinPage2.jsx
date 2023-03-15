@@ -1,7 +1,6 @@
-import react from 'react';
 import style from './landinpage2.module.css';
-import assests1 from './assests1.svg'
-import assests2 from './assests2.svg'
+import assests1 from './assets/assests1.svg'
+import assests2 from './assets/assests2.svg'
 
 const LandinPage2 = () => {
 

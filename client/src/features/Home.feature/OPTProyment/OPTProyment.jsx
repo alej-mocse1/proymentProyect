@@ -1,5 +1,5 @@
-import styles from "./OPT.module.css";
-import image from "../../assets/graphicdashboard.svg";
+import styles from "./OPT.module.scss";
+import image from "../../../features/Home.feature/assets/graphicdashboard.svg";
 
 export default function OPT() {
   return (

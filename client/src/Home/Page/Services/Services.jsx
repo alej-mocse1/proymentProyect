@@ -1,4 +1,4 @@
-import styles from './Services.module.css'
+import styles from "./Services.module.css";
 
 export default function Services() {
   return (
@@ -10,8 +10,16 @@ export default function Services() {
             Potenciamos y protegemos el valor de sus negocios a través de la
             experiencia e innovación<br></br> tecnológica para alcanzar
             resultados sostenibles.
+          <div className={styles.buttons}>
+          <button>⬅</button>
+          <button>➡</button>
+          </div>
           </p>
         </div>
+          something
+
+
+
       </div>
     </>
   );

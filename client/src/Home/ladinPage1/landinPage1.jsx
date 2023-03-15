@@ -54,8 +54,8 @@ function LandinPage(props) {
           </div> 
 
        </div>
-{/* 
-       <button className={style.AgendarReunionBTN}>Agendar reunion</button> */}
+
+       <button className={style.AgendarReunionBTN}>Agendar reunion</button>
      </div>
 
 
@@ -68,7 +68,7 @@ function LandinPage(props) {
               <img src={graphicfloat_hero03} alt="graphicfloat_hero03"  className={style.float3}/> 
             </div>
 
-            {/* <button className={style.btnWSP}></button> */}
+            <button className={style.btnWSP}></button>
          </div>
 
 

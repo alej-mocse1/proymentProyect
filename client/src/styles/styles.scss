@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap");
+
+$white: #ffffff;
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-row-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin flex-row-around {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin flex-100 {
+  display: flex;
+  width: 100%;
+}
+@mixin transition {
+  transition: all ease 0.5s;
+}
+@mixin card {
+  border: none;
+  padding: 20px;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+
+@mixin shadow {
+  box-shadow: 1px 1px 8px #000;
+}
+
+@mixin responsive($device) {
+  @if $device == phone {
+    @media screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $device == tab-port {
+    @media screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $device == tab-land {
+    @media screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $device == mid-desktop {
+    @media screen and (max-width: 93.75em) {
+      @content;
+    }
+  }
+  @if $device == big-desktop {
+    @media screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -10,12 +10,12 @@ function Navbar() {
    
     let responsive = isOpen ? {
          transform: "translateX(-800px)",
-         transition: "1.6s ease all",
+         transition: "0s ease all",
          display: 'flex',
          textAlign: "left",
       } : {
         transform: "translateX(0%)",
-        transition: "1.6s ease all"
+        transition: "0s ease all"
      }
 
      let responsiveNone = isOpen ? {

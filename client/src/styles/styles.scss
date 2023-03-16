@@ -14,6 +14,12 @@ $white: #ffffff;
   align-items: center;
   justify-content: flex-start;
 }
+@mixin flex-column-start2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
 @mixin flex-row-center {
   display: flex;
   flex-direction: row;
@@ -24,7 +30,7 @@ $white: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @mixin flex-row-start {
   display: flex;
@@ -33,6 +39,7 @@ $white: #ffffff;
   justify-content: flex-start;
 }
 @mixin flex-row-around {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;

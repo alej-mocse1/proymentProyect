@@ -1,4 +1,4 @@
-.div {
+ .div {
   width: 100%;
   height: 666px;
   left: 0px;
@@ -79,11 +79,11 @@
 }
 
 .divImgs {
-  /* border: 1px solid white; */
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 33px;
+  text-align: left;
 }
 .divImgs img {
   width: 48.88px;
@@ -96,7 +96,7 @@
 }
 
 .divImgsParrafo {
-  /* border: 1px solid white; */
+
   width: 193px;
   height: 48.88px;
   color: #dcddeb;
@@ -110,6 +110,7 @@
 .divImgsParrafo p {
   position: relative;
   top: -11px;
+
 }
 
 .AgendarReunionBTN {
@@ -123,8 +124,9 @@
   font-size: 18px;
   position: fixed;
   left: 23px;
-  top: 523px;
+  top: 490px;
   z-index: 800;
+  cursor: pointer;
 }
 
 .div2 {
@@ -139,6 +141,16 @@
   right: 91px;
   top: 0px;
   margin-top: 245px;
+  
+}
+
+.ContenedorDiv2 img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ 
+  top: 0px;
+
 }
 
 .background {
@@ -179,16 +191,17 @@
   background-size: cover;
   border-radius: 86px;
   position: fixed;
-  top: 520px;
+  top: 480px;
   right: 30px;
   border: 2px solid #29cc39;
   z-index: 800;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
   .ContenedorDiv2 {
     height: 451px;
-    margin-top: 325px;
+    margin-top: 293px;
   }
   .background {
     width: 100%;
@@ -230,7 +243,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 830px;
+    height: 860px;
   }
 
   .div1 {
@@ -266,15 +279,22 @@
 
   .div2 {
     height: 666px;
-    width: 65%;
+    width: 400px;
     margin: 0 auto;
   }
+
+  .div2 img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
 
   .ContenedorDiv2 {
     position: absolute;
     width: 50%;
     height: 300px;
-    top: 640px;
+    top: 639px;
     left: 50px;
     margin: 0 auto;
   }
@@ -331,14 +351,14 @@
 
 @media screen and (max-width: 800px) {
   .div {
-    height: 870px;
+    height: 900px;
   }
   .ContenedorDiv2 {
     position: absolute;
     width: 50%;
     height: 300px;
-    top: 639px;
-    left: -50px;
+    top: 679px;
+    left: -0px;
     margin: 0 auto;
     margin-top: 30px;
   }
@@ -370,10 +390,22 @@
 }
 
 @media screen and (max-width: 540px) {
+  .divImgs{
+    display: flex;
+    flex-direction: column;
+  }
   .ContenedorDiv2 {
-    top: 669px;
+    width: 65%;
     left: 30px;
   }
+  .ContenedorDiv2 {
+    left: 30px;
+  }
+  .divImgsParrafo {
+    margin-left: 0px;
+    width: 100%;
+  }
+  
 
   .background {
     position: absolute;
@@ -382,25 +414,7 @@
     left: -0px;
   }
 
-  .float1 {
-    position: absolute;
-    width: 130px;
-    top: 163.68px;
-    left: -140px;
-  }
-  .float2 {
-    position: absolute;
-    width: 70px;
-    left: -160.92px;
-    top: -120.68px;
-  }
-  .float3 {
-    position: absolute;
-    width: 70px;
-    height: 110px;
-    left: 50.92px;
-    top: 15.68px;
-  }
+
   .frase .h2Mobile {
     font-size: 35px;
     line-height: 14px;
@@ -439,17 +453,14 @@
   }
 }
 
-@media screen and (max-width: 420px) {
-  .background {
-    left: -30px;
+@media screen and (max-width: 540px) {
+
+  .ContenedorDiv2 {
+    width: 80%;
+    left: 0px;
   }
-  .float1 {
-    left: -170px;
-  }
-  .float2 {
-    left: -190.92px;
-  }
-  .float3 {
-    left: 20.92px;
-  }
+
 }
+
+
+

@@ -1,0 +1,152 @@
+.div{
+    width: 100%;
+    height: 336px;
+    background-color: #000538;
+    display: flex;
+    margin-top: 72px;
+    position: relative;
+    top: 142px;
+}
+
+.divIMG{
+    width:40%;
+    height: 440px;
+    margin-left: 90px;
+    position: relative;
+    bottom: 107px;
+}
+.divIMG img{
+height: 440px;
+width:504px;;
+}
+
+.divText{
+    width: 445px;
+    height: 205px;
+    margin-top: 53px;
+    margin-left: 123px;
+    text-align: left;
+}
+
+.divText h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+}
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+}
+
+.divText button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 38px;
+    gap: 10px;
+    width: 201px;
+    height: 64px;
+    background: #6F4EF5;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width: 980px){
+    .divIMG{
+        margin-left: 30px;
+        bottom: 65px;
+    }
+    .divIMG img{
+        height: 400px;
+        width:404px;;
+        }
+    .divText{
+            margin-left: 83px;
+        }
+        
+.divText h2{
+    font-size: 28px;
+}
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+}
+
+}
+
+@media (max-width: 800px){
+    .div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 721px;
+        text-align: center;
+        justify-content: center;
+    }
+    .divIMG{
+        bottom: -37px;
+        width:480px;
+        height: 440px;
+        margin-left: 0px;
+        position: relative;
+        bottom: -77px;
+        margin: 0 auto;
+    }
+
+    .divText{
+        width: 445px;
+        height: 205px;
+        margin-top: 53px;
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+    .divText button{
+        width: 100%;
+    }
+    .divText h2{
+        font-size: 32px;
+    }
+    
+    .divIMG img{
+      width: 100%;
+      height: 91%;
+    }
+    
+}
+
+@media (max-width: 550px){
+    .divIMG{
+        bottom: -120px;
+        width: 100%;
+    }
+
+    .divIMG img{
+      width: 90% ;
+      height: 81%;
+    }
+    .divText{
+        width: 90%;
+    }    
+}
+
+@media (max-width: 382px){
+    .divText p{
+        font-size: 14px;
+        width: 100%;
+    }
+}

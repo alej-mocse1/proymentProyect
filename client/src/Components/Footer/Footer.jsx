@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={style.container}>
             <footer className={style.footer}>
                 <div className={style.containerLogo}>
-                    <img src={logo} alt="proyMent" />
+                   <img src={logo} alt="proyMent" /> 
                     <span>
                         © Proyment
                     </span>

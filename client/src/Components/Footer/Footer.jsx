@@ -1,13 +1,14 @@
 import React from "react"
 import style from "./footer.module.css"
-
+import logo from "../NavBar/logoPrueba.png"
+import 'remixicon/fonts/remixicon.css'
 
 export default function Footer() {
     return (
         <div className={style.container}>
             <footer className={style.footer}>
                 <div className={style.containerLogo}>
-                    {/* <img src={logo} alt="proyMent" /> */}
+                   <img src={logo} alt="proyMent" /> 
                     <span>
                         © Proyment
                     </span>

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ladinPage1.module.css";
 
-// import Heroimage from './assets/HeroImage.png'
+ import Heroimage from './assets/Heroimage.png'
 import img02 from './assets/img02.png';
 import img03 from './assets/img03.png';
 import img04 from './assets/img04.png';
@@ -59,7 +59,7 @@ function LandinPage(props) {
          <div className={style.div2}>
             <div className={style.ContenedorDiv2}>
     
-             {/* <img src={Heroimage} alt="Heroimage.png" /> */}
+             <img src={Heroimage} alt="Heroimage.png" />
           
             </div>
 

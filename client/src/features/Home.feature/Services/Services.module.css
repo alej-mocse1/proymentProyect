@@ -1,6 +1,5 @@
 .container {
-  margin: 72px 64px 72px;
-  border: solid rgb(231, 150, 27) 1px;
+  margin: 72px 70px 72px;
   display: flex;
   flex-direction: column;
 }
@@ -11,6 +10,7 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 36px;
 }
 .h4 {
   color: #000538;
@@ -33,7 +33,13 @@
 .buttons button {
   width: 48px;
   height: 48px;
-  border: 1px solid #6F4EF5;
+  border: 1px solid #6f4ef5;
   border-radius: 4px;
   margin-left: 16px;
+}
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

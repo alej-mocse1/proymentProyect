@@ -4,10 +4,8 @@ import img02 from './img02.png';
 import img03 from './img03.png';
 import img04 from './img04.png';
 import img05 from './img05.png';
-import graphicfloat_hero01 from "./graphicfloat-hero01.svg"
-import graphicfloat_hero02 from "./graphicfloat-hero02.svg"
-import graphicfloat_hero03 from "./graphicfloat-hero03.svg"
-import background from "./background.png"
+import Heroimage from './Heroimage.png'
+
 
 
 function LandinPage(props) {
@@ -44,11 +42,12 @@ function LandinPage(props) {
            </div>
 
            <div className={style.divImgs}>
-            <img src={img02} alt="img02.png"  />
-            <img src={img03} alt="img03.png" />
-            <img src={img04} alt="img04.png" />
-            <img src={img05} alt="img05.png" />
- 
+           <div>
+              <img src={img02} alt="img02.png"  />
+              <img src={img03} alt="img03.png" />
+              <img src={img04} alt="img04.png" />
+              <img src={img05} alt="img05.png" />
+           </div>
            <div className={style.divImgsParrafo}>
             <p>Cada vez mas empresas confian en nosotros.</p>
           </div> 
@@ -61,11 +60,9 @@ function LandinPage(props) {
 
          <div className={style.div2}>
             <div className={style.ContenedorDiv2}>
-              <img src={background} alt="background" className={style.background} />
-
-              <img src={graphicfloat_hero01} alt="graphicfloat_hero01"  className={style.float1} />
-              <img src={graphicfloat_hero02} alt="graphicfloat_hero02"  className={style.float2}/>
-              <img src={graphicfloat_hero03} alt="graphicfloat_hero03"  className={style.float3}/> 
+    
+             <img src={Heroimage} alt="Heroimage.png" />
+          
             </div>
 
             <button className={style.btnWSP}></button>

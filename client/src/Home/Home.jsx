@@ -2,7 +2,8 @@ import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/NavBar/NavBar";
 import LandinPage from './ladinPage1/landinPage1'
 import Page from "./Page/Page";
-import LandinPage2 from "./landinpage2/landinPage2";
+import ServiciosAtuMedida from "./ServiciosAtuMedida/landinPage2";
+import PorqueProyment from "./PorqueProyment/PorqueProyment"
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <Navbar></Navbar>
       <LandinPage></LandinPage>
       <Page></Page>
-      <LandinPage2></LandinPage2>
-      <Footer></Footer>
+      <ServiciosAtuMedida></ServiciosAtuMedida>
+      <PorqueProyment></PorqueProyment>
+      {/* <Footer></Footer> */}
     </>
   );
 }

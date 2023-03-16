@@ -1,7 +1,35 @@
-import styles from "./Services.module.css";
+import styles from "./Services.module.scss";
 import Card from "../../../core/components/Card/Card";
 import { infoServicesCards } from "../assets/info";
+import { useState } from "react";
+import "remixicon/fonts/remixicon.css";
+//import Slider from "react-slick";
+/* import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; */
+
 export default function Services() {
+  //const cards = infoServicesCards;
+  const [cards, setCards] = useState(infoServicesCards.slice(0, 4));
+  const previous = () => {
+    setCards(infoServicesCards.slice(0, 4));
+  };
+
+  const next = () => {
+    setCards(infoServicesCards.slice(2));
+  };
+  /* 
+
+  useEffect(() => {
+    console.log(cards);
+  }, [cards]); */
+  /* const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }; */
+
   return (
     <>
       <div className={styles.container}>
@@ -13,14 +41,18 @@ export default function Services() {
             resultados sostenibles.
           </p>
           <div className={styles.buttons}>
-            <button>⬅</button>
-            <button>➡</button>
+            <button onClick={() => previous()}>
+              <i className="ri-arrow-left-line"></i>
+            </button>
+            <button onClick={() => next()}>
+              <i className="ri-arrow-right-line"></i>
+            </button>
           </div>
         </div>
         <div className={styles.containerCards}>
-          {infoServicesCards.map((info) => (
-            <Card key={info.id} info={info}></Card>
-          ))}
+          {cards.map((info) => {
+            return <Card key={info.id} info={info}></Card>;
+          })}
         </div>
       </div>
     </>

@@ -32,7 +32,7 @@ return(
          </div>
 
          <div className={styles.div_DIVColumns_divTOP_Left}>
-           <img src={img1} alt="img1" />
+           <img src={img1} alt="img1" className={styles.IMG1} />
          </div>
        </div>
 

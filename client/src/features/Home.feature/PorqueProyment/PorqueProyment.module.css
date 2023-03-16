@@ -36,15 +36,14 @@
 }
 
 .div_DIVColumns_divTOP_Rigth {  
-  
     height:100%;
     width: 50%;
 }
 
 .div_DIVColumns_divTOP_Left{
-   
     height:100%;
     width: 50%;
+    
 }
 
 .div_DIVColumns_divTOP_Rigth div{
@@ -97,25 +96,16 @@
    
 }
 
-.IMG2{
-    margin-left: 120PX ;
-}
-
 .div_DIVbutton{
    margin-left: -40px; 
 }
+
+
 @media (max-width: 1100px){
     .IMG2{
         margin-left: 80PX ;
     }
 }
-
-
-
-
-
-
-
 
 
 
@@ -135,6 +125,8 @@
     .IMG2{
         margin-left: 80PX ;
     }
+
+
 }
 
 
@@ -177,6 +169,18 @@
         text-align: left;
        
     }
+    
+    .div_divsColumns_divBUTTON div{
+        position: relative;
+        top: -70px;
+      
+    }
+
+    .IMG2{
+        position: relative;
+        top: -90px
+    }
+    
     .div_DIVColumns_divTOP_Rigth {  
   
         width: 90%;
@@ -215,15 +219,17 @@
     .div_DIVColumns_divTOP_Left{
         height:100%;
         width: 100%;
-        align-items: center;
+        display: flex;
+        align-items: center ;
     }
     
     .div_DIVColumns_divTOP_Left img {  
         height:330px;
-        width:70%;
+        width:330px;
         margin-top: 32px;
+        margin: 0 auto;
         position: relative;
-        margin-right: 20px;
+        left: 0px;
     }
 
     .div_divsColumns_divBUTTON{
@@ -239,28 +245,54 @@
         margin-left: 0px;    
      }
 
-     .IMG2{
-        margin-left: -100PX ;
-    }
+
+    
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 @media (max-width: 500px){
 
-
-    
     .div_DIVbutton{
         position: relative;
         top: -100px;    
      }
+
+     .div_divsColumns_divBUTTON div{
+        position: relative;
+        top: -100px;
+     
+    }
+    .IMG2{
+        position: relative;
+        top: -130px;
+    }
 
     .div_DIVColumns_divTOP_Left img {  
         height:230px;
     }
 
      .IMG2{
-        
         position: relative;
         top: -100px;
         left: 130px;

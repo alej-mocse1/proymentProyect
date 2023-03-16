@@ -279,9 +279,16 @@
 
   .div2 {
     height: 666px;
-    width: 65%;
+    width: 400px;
     margin: 0 auto;
   }
+
+  .div2 img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
 
   .ContenedorDiv2 {
     position: absolute;
@@ -344,14 +351,14 @@
 
 @media screen and (max-width: 800px) {
   .div {
-    height: 870px;
+    height: 900px;
   }
   .ContenedorDiv2 {
     position: absolute;
     width: 50%;
     height: 300px;
-    top: 649px;
-    left: -50px;
+    top: 679px;
+    left: -0px;
     margin: 0 auto;
     margin-top: 30px;
   }
@@ -388,7 +395,10 @@
     flex-direction: column;
   }
   .ContenedorDiv2 {
-    top: 649px;
+    width: 65%;
+    left: 30px;
+  }
+  .ContenedorDiv2 {
     left: 30px;
   }
   .divImgsParrafo {
@@ -404,25 +414,7 @@
     left: -0px;
   }
 
-  .float1 {
-    position: absolute;
-    width: 130px;
-    top: 163.68px;
-    left: -140px;
-  }
-  .float2 {
-    position: absolute;
-    width: 70px;
-    left: -160.92px;
-    top: -120.68px;
-  }
-  .float3 {
-    position: absolute;
-    width: 70px;
-    height: 110px;
-    left: 50.92px;
-    top: 15.68px;
-  }
+
   .frase .h2Mobile {
     font-size: 35px;
     line-height: 14px;
@@ -461,10 +453,14 @@
   }
 }
 
+@media screen and (max-width: 540px) {
 
+  .ContenedorDiv2 {
+    width: 80%;
+    left: 0px;
+  }
 
-
-
+}
 
 
 

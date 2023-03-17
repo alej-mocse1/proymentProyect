@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousel from 'react-elastic-carousel';
 import style from "./Transformation.module.css"
 
 
@@ -11,7 +10,7 @@ export default function Carrusel() {
   ]
   return (
     <div className="styling-example">
-      <Carousel breakPoints={breakPoints}>
+      {/* <Carousel breakPoints={breakPoints}> */}
         <div className={style.div}><p>Rubro Industrial</p></div>
         <div className={style.div}><p>Rubro Petrolero</p></div>
         <div className={style.div}><p>Rubro Restaurantes</p></div>
@@ -20,7 +19,7 @@ export default function Carrusel() {
         <div className={style.div}><p>Rubro Textil</p></div>
         <div className={style.div}><p>Rubro Inmobiliaria</p></div>
         <div className={style.div}><p>Rubro Educacion</p></div>
-      </Carousel>
+      {/* </Carousel> */}
     </div>
   )
 }

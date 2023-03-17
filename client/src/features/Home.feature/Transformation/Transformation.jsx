@@ -26,7 +26,7 @@ export default function Transformation() {
                         </div>
                     </div>
                     <div className={style.carrusel}>
-                        <Carrusel />
+                        {/* <Carrusel /> */}
                     </div>
                     <div className={style.infoBox}>
 

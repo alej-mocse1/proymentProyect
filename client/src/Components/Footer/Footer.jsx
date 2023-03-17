@@ -19,7 +19,7 @@ export default function Footer() {
                     <div className={style.serviceInfo}>
                         <a href="/">Servicio de Marketing</a>
                         <a href="/">Servicio de potenciamiento de ventas</a>
-                        <a href="/">servicios integrales</a>
+                        <a href="/">Servicios integrales</a>
                         <a href="/">Servicios de análisis de datos</a>
                         <a href="/">Servicios de diseño web UI/UX</a>
                         <a href="/">Servicios en tendencia</a>

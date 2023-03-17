@@ -6,6 +6,7 @@ import ServiciosAtuMedida from "../../features/Home.feature/ServiciosAtuMedida/l
 import PorqueProyment from "../../features/Home.feature/PorqueProyment/PorqueProyment";
 import Transformation from "../../features/Home.feature/Transformation/Transformation";
 import LideresEnLatinoamerica from "../../features/Home.feature/lideresEnLatinoamerica/LideresEnLatinoamerica";
+import DesafíosDeTodoNivel from "../../features/Home.feature/DesafíosDeTodoNivel/DesafíosDeTodoNivel";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <PorqueProyment></PorqueProyment>
       <Transformation />
       <LideresEnLatinoamerica></LideresEnLatinoamerica>
+      <DesafíosDeTodoNivel></DesafíosDeTodoNivel>
       <Footer></Footer>
     </>
   );

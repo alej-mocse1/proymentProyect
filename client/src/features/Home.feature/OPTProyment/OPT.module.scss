@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   @include responsive('phone'){
-    height: 670px;
+    height: 630px;
   }
 }
 
@@ -16,11 +16,10 @@
   display: flex;
   flex-wrap: wrap; 
   flex-direction: row;
-  /* justify-content: center; */
   margin: 72px 65px 72px 65px ; 
   position: relative;
   @include responsive('phone'){
-    margin: 56px 21px ; 
+    margin: 56px 21px 0px ; 
     position: relative;
   }
 }
@@ -34,11 +33,12 @@
   min-width: 100px;
   position: relative;
   margin-left: 20px;
+  
   @include responsive('phone'){
     width: 100%;
     margin-left: 0px;
     position: relative;
-    top:80px;
+    top:130px;
   }
 }
 .dashboardfloat1{
@@ -48,25 +48,52 @@
   width: 14%;
   position:absolute;
   margin-bottom:14px;
-  /* Animation */
-  @include floating;
+  @include box-shadow-float;
+  @include responsive('tab-port'){
+    top:215px;
+    left:50px;
+    width:20%;
+  }
   @include responsive('phone'){
-    top:225px;
+    top:230px;
     left:20px;
-    width: 20%;}
+    width: 24%;}
+    /* Animation */
+    @include floating;
+    
 }
 
 .content {
   @include flex-column-start-align;
   width: 24%;
-  margin-left: 48px;
-/*   margin-bottom: 100px; */
+  margin-left: 48px; 
+  @include responsive('mid-desktop'){
+    width: 24%;
+  }
+  @include responsive('tab-port'){
+    width: 100%;
+  }
+  @include responsive('phone'){
+    width: 100%;
+    margin-left: 0px;}
 }
 .contentTitle {
   text-align: left;
   font-size: 1.75rem;
   font-weight: 500;
   color: $white;
+  @include responsive('mid-desktop'){
+    font-size: 2.75rem;
+  }
+  @include responsive('tab-land'){
+    font-size: 1.75rem;
+  }
+  @include responsive('phone'){
+    position:relative;
+    top:-270px;
+    text-align: left;
+    font-size: 1.75rem;
+  }
 }
 .btn {
   padding: 15px 24px;
@@ -77,6 +104,9 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
+  @include responsive('phone'){
+    width: 100%;
+  }
 }
 
 .imgbkgr2 {
@@ -84,7 +114,10 @@
   position:absolute;
   bottom:0;
   right:0;
-  transform: rotateX(180deg); 
+  transform: rotateX(180deg);  
+  @include responsive('phone'){
+    display: none;
+  }
 }
 
 

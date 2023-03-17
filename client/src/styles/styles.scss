@@ -100,3 +100,12 @@ $white: #ffffff;
     }
   }
 }
+
+@mixin box-shadow-general{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+}
+
+@mixin box-shadow-float{
+  filter: drop-shadow(0px 48px 58px rgba(0, 0, 0, 0.18)) drop-shadow(0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333)) drop-shadow(0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667));
+}

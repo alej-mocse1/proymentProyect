@@ -43,9 +43,6 @@
   .Hamburguesa{
     display: none;
   }
-  .divX{
-    display: none;
-  }
   .divLink2{
     display: none !important;
   
@@ -70,16 +67,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 90px;
-      margin-top: -20px;
+      height: 100px;
+      margin-top: 10px;
     }
 
   .img{
       width: 200px;
-  
+      margin-right: 0%;
       position: relative;
       right: 26%;
-
+      margin-left: 10px;
   }
 
   .btn{
@@ -93,7 +90,7 @@
 
   .divLink2{
     display: flex !important;
-    text-align: left  !important;;
+    text-align: left;
     align-items: center;
     width: 100%; 
     font-size: 100%;
@@ -101,21 +98,19 @@
     height: 30px;
     position: absolute;
     height: 150vh;
-    top: 70px;
+    top: 100px;
     z-index: 200;
     background-color: white;
 
   }
 
-
-
   .Hamburguesa {
     display: flex !important;
     flex-direction: column;
     margin: 5px;
-    position: relative;
-    left: 44%;
-    top: 42px;
+    position: absolute;
+    left: 90%;
+    top: 45px;
     cursor: pointer;
     width: 30px;
   }
@@ -130,4 +125,7 @@
     transition: all 0.2s linear;
   }
 
+.arrowUp{
+  margin-left: 4px;
+}
 }  

@@ -5,6 +5,7 @@ import Page from "../../features/Home.feature/Page";
 import ServiciosAtuMedida from "../../features/Home.feature/ServiciosAtuMedida/landinPage2";
 import PorqueProyment from "../../features/Home.feature/PorqueProyment/PorqueProyment";
 import Transformation from "../../features/Home.feature/Transformation/Transformation"
+import NosAdaptamos from "../../features/Home.feature/NosAdaptamos/NosAdaptamos";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ServiciosAtuMedida></ServiciosAtuMedida>
       <PorqueProyment></PorqueProyment>
       <Transformation/>
+      <NosAdaptamos/>
       <Footer></Footer>
     </>
   );

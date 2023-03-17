@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap");
 
 $white: #ffffff;
+$background-gray: #f7f7fc;
+$background-blue: #090e28;
+$background-purple: #000538;
+$button-purple: #6f4ef5;
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
 @mixin flex-column-center {
   display: flex;
   flex-direction: column;
@@ -61,6 +69,33 @@ $white: #ffffff;
   box-shadow: 1px 1px 8px #000;
 }
 
+@mixin responsive($device) {
+  @if $device == phone {
+    @media screen and (max-width: 23.5em /*  375px */) {
+      @content;
+    }
+  }
+  @if $device == tablet {
+    @media screen and (max-width: 45.063em /* 720px */) {
+      @content;
+    }
+  }
+  @if $device == mid-desktop {
+    @media screen and (max-width: 90.063em /* 1440px */) {
+      @content;
+    }
+  }
+}
+
+@mixin box-shadow-general {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin box-shadow-float {
+  filter: drop-shadow(0px 48px 58px rgba(0, 0, 0, 0.18))
+    drop-shadow(0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333))
+    drop-shadow(0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667));
+}
 @mixin floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -77,42 +112,4 @@ $white: #ffffff;
       transform: translate(0, -0px);
     }
   }
-}
-
-@mixin responsive($device) {
-  @if $device == phone {
-    @media screen and (max-width: 37.5em) {
-      @content;
-    }
-  }
-  @if $device == tab-port {
-    @media screen and (max-width: 56.25em) {
-      @content;
-    }
-  }
-  @if $device == tab-land {
-    @media screen and (max-width: 75em) {
-      @content;
-    }
-  }
-  @if $device == mid-desktop {
-    @media screen and (max-width: 93.75em) {
-      @content;
-    }
-  }
-  @if $device == big-desktop {
-    @media screen and (min-width: 112.5em) {
-      @content;
-    }
-  }
-}
-
-@mixin box-shadow-general {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-@mixin box-shadow-float {
-  filter: drop-shadow(0px 48px 58px rgba(0, 0, 0, 0.18))
-    drop-shadow(0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333))
-    drop-shadow(0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667));
 }

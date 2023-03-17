@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   @include responsive("phone") {
-    height: 630px;
+    height: 600px;
   }
 }
 
@@ -18,8 +18,15 @@
   flex-direction: row;
   margin: 72px 65px 72px 65px;
   position: relative;
+  @include responsive("mid-desktop") {
+    justify-content: center;
+  }
+  @include responsive('tablet'){
+    flex-direction: column;
+    
+  }
   @include responsive("phone") {
-    margin: 56px 21px 0px;
+    margin: 46px 21px 0px;
     position: relative;
   }
 }
@@ -30,7 +37,6 @@
   width: 600px;
   min-width: 100px;
   position: relative;
-  margin-left: 20px;
 
   @include responsive("phone") {
     width: 100%;
@@ -47,7 +53,11 @@
   position: absolute;
   margin-bottom: 14px;
   @include box-shadow-float;
-  @include responsive("tab-port") {
+  
+  @include responsive("mid-desktop") {
+    left: 160px;
+  }
+  @include responsive("tablet") {
     top: 215px;
     left: 50px;
     width: 20%;
@@ -82,12 +92,10 @@
   font-weight: 500;
   color: $white;
   @include responsive("mid-desktop") {
-    font-size: 2.75rem;
-  }
-  @include responsive("tab-land") {
-    font-size: 1.75rem;
+    font-size: 2.15rem;
   }
   @include responsive("phone") {
+    padding: 0;
     position: relative;
     top: -270px;
     text-align: left;
@@ -107,6 +115,16 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 .imgbkgr2 {
   width: 63px;

@@ -1,14 +1,14 @@
 import Home from "./pages/Home/Home";
-// import {Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
+import Form from "./Components/Form/Form";
 
 function App() {
   return (
     <>
-        {/* <Routes>
-          <Route exact path={"/form"} element={<h1>Form</h1>}></Route> */}
-          {/* <Route exact path={"/"} element={<Home></Home>}></Route> */}
-        {/* </Routes> */}
-        <Home></Home>
+        <Routes>
+          <Route path={"/form"} element={<Form></Form>}></Route>
+          <Route exact path={"/"} element={<Home></Home>}></Route>
+        </Routes>
     </>
   );
 }

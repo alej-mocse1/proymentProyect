@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  @include responsive('phone'){
+  @include responsive("phone") {
     height: 630px;
   }
 }
@@ -14,17 +14,15 @@
 .container2 {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   flex-direction: row;
-  margin: 72px 65px 72px 65px ; 
+  margin: 72px 65px 72px 65px;
   position: relative;
-  @include responsive('phone'){
-    margin: 56px 21px 0px ; 
+  @include responsive("phone") {
+    margin: 56px 21px 0px;
     position: relative;
   }
 }
-
-
 
 .dashboard1 {
   max-height: 400px;
@@ -33,64 +31,65 @@
   min-width: 100px;
   position: relative;
   margin-left: 20px;
-  
-  @include responsive('phone'){
+
+  @include responsive("phone") {
     width: 100%;
     margin-left: 0px;
     position: relative;
-    top:130px;
+    top: 130px;
   }
 }
-.dashboardfloat1{
+.dashboardfloat1 {
   left: 0;
-  bottom:0;
-  z-index:auto;
+  bottom: 0;
+  z-index: auto;
   width: 14%;
-  position:absolute;
-  margin-bottom:14px;
+  position: absolute;
+  margin-bottom: 14px;
   @include box-shadow-float;
-  @include responsive('tab-port'){
-    top:215px;
-    left:50px;
-    width:20%;
+  @include responsive("tab-port") {
+    top: 215px;
+    left: 50px;
+    width: 20%;
   }
-  @include responsive('phone'){
-    top:230px;
-    left:20px;
-    width: 24%;}
-    /* Animation */
-    @include floating;
-    
+  @include responsive("phone") {
+    top: 230px;
+    left: 20px;
+    width: 24%;
+  }
+  /* Animation */
+  @include floating;
 }
 
 .content {
   @include flex-column-start-align;
   width: 24%;
-  margin-left: 48px; 
-  @include responsive('mid-desktop'){
+  margin-left: 48px;
+  @include responsive("mid-desktop") {
     width: 24%;
   }
-  @include responsive('tab-port'){
+  @include responsive("tab-port") {
     width: 100%;
   }
-  @include responsive('phone'){
+  @include responsive("phone") {
     width: 100%;
-    margin-left: 0px;}
+    margin-left: 0px;
+  }
 }
 .contentTitle {
   text-align: left;
   font-size: 1.75rem;
   font-weight: 500;
   color: $white;
-  @include responsive('mid-desktop'){
+  @include responsive("mid-desktop") {
     font-size: 2.75rem;
   }
-  @include responsive('tab-land'){
+  @include responsive("tab-land") {
     font-size: 1.75rem;
   }
-  @include responsive('phone'){
-    position:relative;
-    top:-270px;
+  @include responsive("phone") {
+    position: relative;
+    top: -270px;
     text-align: left;
     font-size: 1.75rem;
   }
@@ -104,67 +103,18 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
-  @include responsive('phone'){
+  @include responsive("phone") {
     width: 100%;
   }
 }
 
 .imgbkgr2 {
   width: 63px;
-  position:absolute;
-  bottom:0;
-  right:0;
-  transform: rotateX(180deg);  
-  @include responsive('phone'){
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(180deg);
+  @include responsive("phone") {
     display: none;
   }
 }
-
-
-/* @media (max-width: 800px){
-  .background{
-    height: 670px;
-  }
-  .container2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap; 
-    flex-direction: row;
-  
-    margin: 56px 21px ; 
-    position: relative;
-  }
-  .dashboard1 {
-    position:relative;
-    top:80px;
-    width: 100%;
-    position: relative;
-    margin-left: 0px;
-  }
-  .dashboardfloat1{
-    top:225px;
-    left:20px;
-    width: 20%;
-  }
-  .contentTitle {
-    position:relative;
-    top:-300px;
-    text-align: left;
-    font-size: 1.75rem;
-    font-weight: 500;
-    color: $white;
-  }
-  .content {
-    @include flex-column-start-align;
-    width: 100%;
-    margin-left: 0px;
-   
-  }
-  .btn {
-    width: 100%;
-  }
-  .imgbkgr2 {
-    display: none;
-  }
-} */

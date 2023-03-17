@@ -155,7 +155,7 @@
 
 
 
-.div{
+.div {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -167,8 +167,9 @@
     background-color: #6F4EF5;
     margin: 0 10px;
 }
-.div p{
-    
+
+.div p {
+
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -176,7 +177,8 @@
     text-align: left;
     color: #fff;
 }
-.carrusel{
+
+.carrusel {
     display: none;
 }
 
@@ -197,6 +199,14 @@
         width: 100%;
     }
 
+    .tittle h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
     .info {
         flex-direction: column;
     }
@@ -215,14 +225,16 @@
         line-height: 27px;
     }
 
-    .box p {  
+    .box p {
         font-size: 14px;
         line-height: 21px;
     }
-    .infoText{
+
+    .infoText {
         display: none;
     }
-    .carrusel{
+
+    .carrusel {
         display: flex !important;
         flex-direction: column;
         margin-bottom: 30px;

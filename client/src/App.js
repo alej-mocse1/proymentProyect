@@ -5,10 +5,11 @@ import Form from "./Components/Form/Form";
 function App() {
   return (
     <>
-        <Routes>
+        {/* <Routes>
           <Route path={"/form"} element={<Form></Form>}></Route>
           <Route exact path={"/"} element={<Home></Home>}></Route>
-        </Routes>
+        </Routes> */}
+        <Home></Home>
     </>
   );
 }

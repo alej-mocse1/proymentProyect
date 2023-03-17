@@ -1,4 +1,3 @@
-import react from 'react';
 import style from './ServiciosAtuMedida.module.css';
 import assests1 from './IMG.png'
 

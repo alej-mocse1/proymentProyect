@@ -11,7 +11,7 @@ import LideresEnLatinoamerica from "../../features/Home.feature/lideresEnLatinoa
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+     <Navbar></Navbar>
       <LandinPage></LandinPage>
       <Page></Page>
       <ServiciosAtuMedida></ServiciosAtuMedida>

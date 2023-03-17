@@ -14,6 +14,12 @@ $white: #ffffff;
   align-items: center;
   justify-content: flex-start;
 }
+@mixin flex-column-start-align{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 @mixin flex-row-center {
   display: flex;
   flex-direction: row;
@@ -53,6 +59,18 @@ $white: #ffffff;
 
 @mixin shadow {
   box-shadow: 1px 1px 8px #000;
+}
+
+@mixin floating{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+  }
 }
 
 @mixin responsive($device) {

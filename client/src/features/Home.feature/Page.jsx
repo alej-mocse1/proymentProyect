@@ -6,9 +6,9 @@ import OPT from "./OPTProyment/OPTProyment";
 export default function Page() {
   return (
     <>
-      <ADN></ADN>
+      {/* <ADN></ADN> */}
       <OPT></OPT>
-      <Services></Services>
+      {/* <Services></Services> */}
     </>
   );
 }

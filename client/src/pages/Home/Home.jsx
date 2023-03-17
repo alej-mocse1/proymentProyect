@@ -8,11 +8,11 @@ import PorqueProyment from "../../features/Home.feature/PorqueProyment/PorquePro
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
-      <LandinPage></LandinPage>
+      {/* <Navbar></Navbar>
+      <LandinPage></LandinPage> */}
       <Page></Page>
-      <ServiciosAtuMedida></ServiciosAtuMedida>
-      <PorqueProyment></PorqueProyment>
+      {/* <ServiciosAtuMedida></ServiciosAtuMedida>
+      <PorqueProyment></PorqueProyment> */}
       <Footer></Footer>
     </>
   );

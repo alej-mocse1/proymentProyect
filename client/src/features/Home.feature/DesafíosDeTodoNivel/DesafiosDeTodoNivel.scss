@@ -71,8 +71,8 @@
     @include responsive("tab-land") {
       width: 500px;
       height: 470px;
-      left: 480px;
-      top: 350px;
+      left: 0px;
+      top: 140px;
     }
     @include responsive("tab-port") {
       display: none;

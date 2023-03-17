@@ -25,6 +25,9 @@ export default function Transformation() {
                             <div><i class="ri-checkbox-blank-circle-line"></i><p>Rubro Educacion</p></div>
                         </div>
                     </div>
+                    <div className={style.carrusel}>
+                        <Carrusel />
+                    </div>
                     <div className={style.infoBox}>
 
                         <div className={style.img1}><img src={pattern1} alt="not" /></div>
@@ -38,9 +41,7 @@ export default function Transformation() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <Carrusel/>
-                </div>
+
             </div>
         </div >
     )

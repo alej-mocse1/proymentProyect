@@ -4,6 +4,9 @@
   margin: 72px 65px 72px;
   display: flex;
   flex-direction: column;
+  @include responsive("phone") {
+    margin: 72px 20px 72px;
+  }
 }
 .content {
   width: 100%;
@@ -12,13 +15,15 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  margin-bottom: 36px;
+  margin: 0 20px 36px 20px;
+  @include responsive("phone") {
+    margin: 0 3% 60px 3%;
+  }
 }
 .h4 {
   color: #000538;
   font-weight: 600;
   font-size: 2rem;
-  margin: 10px;
 }
 .p {
   font-size: 1rem;
@@ -29,7 +34,18 @@
 .buttons {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 100px;
+  @include responsive("tab-port") {
+    bottom: -20px
+  }
+  @include responsive("phone") {
+    bottom: -60px
+  }
+}
+
+.buttons i {
+  @include flex-column-center;
+  color: #6f4ef5;
 }
 
 .buttons i{
@@ -48,5 +64,10 @@
 .containerCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 0 20px 20px 20px;
+  @include responsive("phone") {
+    justify-content: center;
+    margin: 0;
+  }
 }

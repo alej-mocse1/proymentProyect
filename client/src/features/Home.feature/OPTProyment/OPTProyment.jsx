@@ -1,6 +1,6 @@
 import styles from "./OPT.module.scss";
 import dashboard from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/graphicdashboard.svg";
-import image2bkgr from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/Patterngraphic.svg";
+import image2bkgr from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/Patterngraphic-.svg";
 import dashboardfloat from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/graphicflotantedashboard.svg";
 
 export default function OPT() {

@@ -30,7 +30,10 @@
   width: 600px;
   min-width: 100px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 100px;
+  @include responsive("tab-land") {
+    margin-left: 20px;
+  }
 
   @include responsive("phone") {
     width: 100%;
@@ -40,15 +43,21 @@
   }
 }
 .dashboardfloat1 {
-  left: 0;
+  left: 60px;
   bottom: 0;
   z-index: auto;
   width: 14%;
+  top: 200px;
   position: absolute;
   margin-bottom: 14px;
   @include box-shadow-float;
+  @include responsive("tab-land") {
+    top: 180px;
+    left: 50px;
+    width: 13%;
+  }
   @include responsive("tab-port") {
-    top: 215px;
+    top: 190px;
     left: 50px;
     width: 20%;
   }

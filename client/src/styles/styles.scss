@@ -8,6 +8,12 @@ $white: #ffffff;
   align-items: center;
   justify-content: space-between;
 }
+@mixin flex-column-around {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 @mixin flex-column-start {
   display: flex;
   flex-direction: column;
@@ -19,6 +25,12 @@ $white: #ffffff;
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
+}
+@mixin flex-column-start-align {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 @mixin flex-row-center {
   display: flex;
@@ -88,4 +100,28 @@ $white: #ffffff;
       @content;
     }
   }
+}
+
+@mixin floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+}
+
+@mixin box-shadow-float {
+  filter: drop-shadow(0px 48px 58px rgba(0, 0, 0, 0.18))
+    drop-shadow(0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333))
+    drop-shadow(0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667));
 }

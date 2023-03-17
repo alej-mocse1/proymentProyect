@@ -8,10 +8,7 @@ function Navbar() {
 
   return (
     <div className="Navbar">
-      
-      <div className="logoAndName">
-        <img src={logo} alt="proyment-logo" className="logo" />
-      </div>
+      <img src={logo} alt="proyment-logo" className="logo" />
 
       <div className={`nav-items ${open && "open"}`}>
         <a href="/" className="color-specified">

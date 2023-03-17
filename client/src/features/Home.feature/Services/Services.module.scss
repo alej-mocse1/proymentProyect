@@ -1,0 +1,68 @@
+@import "../../../styles/styles.scss";
+
+.container {
+  margin: 72px 70px 72px;
+  display: flex;
+  flex-direction: column;
+  @include responsive("phone") {
+    margin: 72px 20px 72px;
+  }
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 20px 36px 20px;
+  @include responsive("phone") {
+    margin: 0 3% 60px 3%;
+  }
+}
+.h4 {
+  color: #000538;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.p {
+  font-size: 1rem;
+  color: #6e7191;
+  text-align: left;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  @include responsive("tab-port") {
+    bottom: -20px
+  }
+  @include responsive("phone") {
+    bottom: -60px
+  }
+}
+
+.buttons i {
+  @include flex-column-center;
+  color: #6f4ef5;
+}
+
+.buttons button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #6f4ef5;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 20px 20px 20px;
+  @include responsive("phone") {
+    justify-content: center;
+    margin: 0;
+  }
+}

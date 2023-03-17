@@ -2,33 +2,106 @@
 
 .background {
   width: 100%;
-  height: 551px;
   background-color: #090e28;
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  @include responsive("phone") {
+    height: 630px;
+  }
 }
 
 .container2 {
-  @include flex-row-center;
-  align-items: center;
-  margin: 72px 100px 72px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 72px 65px 72px 65px;
+  position: relative;
+  @include responsive("phone") {
+    margin: 56px 21px 0px;
+    position: relative;
+  }
 }
-.svg {
+
+.dashboard1 {
   max-height: 400px;
   max-width: 600px;
+  width: 600px;
+  min-width: 100px;
+  position: relative;
+  margin-left: 100px;
+  @include responsive("tab-land") {
+    margin-left: 20px;
+  }
+
+  @include responsive("phone") {
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+    top: 130px;
+  }
 }
+.dashboardfloat1 {
+  left: 60px;
+  bottom: 0;
+  z-index: auto;
+  width: 14%;
+  top: 200px;
+  position: absolute;
+  margin-bottom: 14px;
+  @include box-shadow-float;
+  @include responsive("tab-land") {
+    top: 180px;
+    left: 50px;
+    width: 13%;
+  }
+  @include responsive("tab-port") {
+    top: 190px;
+    left: 50px;
+    width: 20%;
+  }
+  @include responsive("phone") {
+    top: 230px;
+    left: 20px;
+    width: 24%;
+  }
+  /* Animation */
+  @include floating;
+}
+
 .content {
-  @include flex-column-start;
-  width: 260px;
-  margin-left: 68px;
+  @include flex-column-start-align;
+  width: 24%;
+  margin-left: 48px;
+  @include responsive("mid-desktop") {
+    width: 24%;
+  }
+  @include responsive("tab-port") {
+    width: 100%;
+  }
+  @include responsive("phone") {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 .contentTitle {
-  margin: 0px 0px 24px;
   text-align: left;
   font-size: 1.75rem;
   font-weight: 500;
   color: $white;
+  @include responsive("mid-desktop") {
+    font-size: 2.75rem;
+  }
+  @include responsive("tab-land") {
+    font-size: 1.75rem;
+  }
+  @include responsive("phone") {
+    position: relative;
+    top: -270px;
+    text-align: left;
+    font-size: 1.75rem;
+  }
 }
 .btn {
   padding: 15px 24px;
@@ -39,4 +112,18 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
+  @include responsive("phone") {
+    width: 100%;
+  }
+}
+
+.imgbkgr2 {
+  width: 63px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(180deg);
+  @include responsive("phone") {
+    display: none;
+  }
 }

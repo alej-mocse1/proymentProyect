@@ -1,0 +1,9 @@
+@import "../../styles/styles.scss";
+
+.container button {
+  width: 87px;
+  @include flex-row-center
+}
+.container img {
+  width: 30%;
+}

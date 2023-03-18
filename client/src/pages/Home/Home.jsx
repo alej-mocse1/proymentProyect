@@ -18,7 +18,7 @@ export default function Home() {
       <PorqueProyment></PorqueProyment>
       <Transformation />
       <LideresEnLatinoamerica></LideresEnLatinoamerica>
-      <DesafíosDeTodoNivel></DesafíosDeTodoNivel>
+      {/* <DesafíosDeTodoNivel></DesafíosDeTodoNivel> */}
       <Footer></Footer>
     </>
   );

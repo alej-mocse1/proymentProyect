@@ -80,7 +80,7 @@ const LideresEnLatinoamerica = () => {
 
     return(
         <div className={styles.div}>
-            <h2>líderes  en latinoamerica nos recomiendan</h2>
+            <h2 className={styles.H2}>líderes  en latinoamerica nos recomiendan</h2>
 
             <div className={styles.divCards}>
 

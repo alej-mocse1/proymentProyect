@@ -5,9 +5,9 @@ import style from "./Transformation.module.css"
 export default function Carrusel() {
   
 
-  const breakPoints = [
+  /* const breakPoints = [
     { width: 768, itemsToShow: 3 }
-  ]
+  ] */
   return (
     <div className="styling-example">
       {/* <Carousel breakPoints={breakPoints}> */}

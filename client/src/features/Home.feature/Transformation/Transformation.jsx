@@ -1,7 +1,7 @@
-import style from "./Transformation.module.css"
+import style from "./Transformation.module.scss"
 import pattern1 from "./assets/Pattern graphic.svg"
 import pattern2 from "./assets/Pattern graphic -.svg"
-import Carrusel from "./Carrusel"
+//import Carrusel from "./Carrusel"
 
 export default function Transformation() {
     return (

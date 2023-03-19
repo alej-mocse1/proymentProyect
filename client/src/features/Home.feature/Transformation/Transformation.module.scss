@@ -1,15 +1,18 @@
+@import "../../../styles/styles.scss";
+
 .container {
     display: flex;
-    justify-content: center;
     padding: 70px 103px;
     background: #F7F7FC;
     border-radius: 56px 56px 0px 0px;
+    @include responsive("laptop"){
+        padding: 70px 60px;
+    }
 }
 
 .containerInfo {
     display: flex;
     flex-direction: column;
-    gap: 73px;
 }
 
 
@@ -17,6 +20,7 @@
     display: flex;
     width: 70%;
     margin: auto;
+    margin-bottom: 72px;
 }
 
 .tittle h3 {
@@ -39,31 +43,28 @@
 .infoText {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
     padding: 0px;
     width: 42%;
-    height: 284px;
+    gap: 20px;
+    @include responsive("laptop"){
+        width: 46%;
+    }
 }
 
 
 .containerText {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content:space-between;
     padding: 0px;
-    gap: 16px;
     width: 47%;
-    height: 284px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
 }
 
 .containerText div {
-    display: flex;
-    justify-content: center;
+    display: flex; 
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     width: 100%;
@@ -77,13 +78,13 @@
 }
 
 .containerText div p {
-    font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+    margin: 0;
 }
 
 .containerText div {
@@ -93,7 +94,6 @@
 
 .infoBox {
     width: 53%;
-    height: 285px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,12 +101,13 @@
     border-radius: 16px;
     color: #fff;
     position: relative;
+    @include responsive("laptop"){
+        width: 50%;
+    }
 }
 
 .img1 {
-    width: 75px;
-    height: 85px;
-    /* background-color: #F7F7FC; */
+    width: 12%;
     position: absolute;
     left: 0;
     top: 0;
@@ -119,8 +120,7 @@
 }
 
 .img2 {
-    width: 75px;
-    height: 85px;
+    width: 12%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -133,7 +133,10 @@
 
 .box {
     width: 69%;
-    height: 58%;
+    margin: 60px 100px;
+    @include responsive("laptop"){
+        margin: 40px 40px;
+    }
 }
 
 .box h3 {
@@ -143,6 +146,9 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
+    @include responsive("laptop"){
+        font-size: 22px;
+    }
 }
 
 .box p {
@@ -184,7 +190,7 @@
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         border-radius: 0;
         padding: 50px 20px;
@@ -239,4 +245,4 @@
         flex-direction: column;
         margin-bottom: 30px;
     }
-}
+} */

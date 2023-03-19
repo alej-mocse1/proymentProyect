@@ -92,8 +92,8 @@ $button-purple: #6f4ef5;
       @content;
     }
   }
-  @if $device == mid-desktop {
-    @media screen and (max-width: 90.063em /* 1440px */) {
+  @if $device == laptop {
+    @media screen and (max-width: 64.063em /* 1024px */) {
       @content;
     }
   }

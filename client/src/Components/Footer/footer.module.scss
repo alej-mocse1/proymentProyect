@@ -1,12 +1,24 @@
+@import "../../styles/styles.scss";
+
 .container {
     background-color: #fff;
-    margin: 88px 70px;
+    padding: 88px 70px;
+    @include responsive("laptop"){
+        padding: 88px 40px; 
+    }
+    @include responsive("phone"){
+        padding: 72px 45px;
+    }
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include responsive("phone"){
+        flex-direction: column;
+        gap: 50px;
+    }
 }
 
 .containerLogo {
@@ -16,6 +28,9 @@
 
 .containerLogo img {
     width: 220px;
+    @include responsive("phone"){
+        margin-bottom: 10px;
+    }
 }
 
 .containerLogo span {
@@ -121,27 +136,7 @@
     letter-spacing: 0em;
     text-align: center;
     margin-left: 8px;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-    .container{
-        margin: 0;
-        padding: 72px 36px;
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .serviceInfo a{
+    @include responsive("phone"){
         text-align: left;
     }
-    
-    .social h4 {
-        text-align: left;
-    }
-
 }

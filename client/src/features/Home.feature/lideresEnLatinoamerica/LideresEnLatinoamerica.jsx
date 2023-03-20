@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import styles from './LideresEnLatinoamerica.module.css';
+import styles from './LideresEnLatinoamerica.module.scss';
 
-import img1 from './assets/AvatarCircle01.png'
-import img2 from './assets/AvatarCircle02.png'
-import img3 from './assets/AvatarCircle03.png'
+import img1 from './assets/AvatarCircle01.png';
+import img2 from './assets/AvatarCircle02.png';
+import img3 from './assets/AvatarCircle03.png';
+import grafico from './assets/grafico.svg'
+
 
 import LideresHIJO from "./lideresHijo";
 
@@ -81,7 +83,12 @@ const LideresEnLatinoamerica = () => {
         <div className={styles.div}>
             <h2 className={styles.H2}>líderes  en latinoamerica nos recomiendan</h2>
 
+           
+           
             <div className={styles.divCards}>
+            <img src={grafico} alt="grafico1"  className={styles.grafico}/>
+            <img src={grafico} alt="grafico2" className={styles.grafico2}/>
+           
 
 
                 <div className={styles.divChildren1}>

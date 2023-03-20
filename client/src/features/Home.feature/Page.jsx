@@ -11,14 +11,14 @@ import LideresEnLatinoamerica from "./lideresEnLatinoamerica/LideresEnLatinoamer
 export default function Page() {
   return (
     <>
-      {/* <LandinPage></LandinPage>
+      <LandinPage></LandinPage>
       <ADN></ADN>
       <OPT></OPT>
       <Services></Services>
       <ServiciosAtuMedida></ServiciosAtuMedida>
-      <PorqueProyment></PorqueProyment> */}
+      <PorqueProyment></PorqueProyment>
       <Transformation></Transformation>
-      {/* <LideresEnLatinoamerica></LideresEnLatinoamerica> */}
+      <LideresEnLatinoamerica></LideresEnLatinoamerica>
     </>
   );
 }

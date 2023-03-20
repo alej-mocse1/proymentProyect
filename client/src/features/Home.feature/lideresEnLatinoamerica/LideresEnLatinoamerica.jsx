@@ -43,7 +43,6 @@ const LideresEnLatinoamerica = () => {
     
          const FirstIndex = correnPage + 1;
     
-        //pregunto si FirstIndex es mayor que el total de videojuego corto con el return
          if(FirstIndex >  2) {
             seTitems(state[0])
             setCurrentPage(0)
@@ -53,7 +52,7 @@ const LideresEnLatinoamerica = () => {
         //cambio mi estado local item(que es el que se renderiza)
         seTitems(state[FirstIndex])
     
-        //cambio mi estado loca correnPage 
+        //cambio mi estado local correnPage 
         setCurrentPage(FirstIndex)
     
       }

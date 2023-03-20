@@ -22,14 +22,7 @@ function LandinPage(props) {
          <div className={style.div1}>
 
             <div className={style.frase}>
-                <h2 className={style.h2Dest}>Transformando</h2>
-                <h2 className={style.h2Dest}>desafios en nuevas </h2>
-                <h2 className={style.h2Dest}>oportunindades</h2>
-
-                <h2 className={style.h2Mobile}>Transformando</h2>
-                <h2 className={style.h2Mobile}>desafios</h2>
-                <h2 className={style.h2Mobile}>en nuevas</h2>
-                <h2 className={style.h2Mobile}>oportunindades</h2> 
+               <h2 className={style.h2Dest}>Transformando desafios en nuevas oportunidades </h2>
            </div>
 
            

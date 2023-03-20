@@ -26,12 +26,14 @@
     line-height: 67px;
   }
   
-  .frase .h2Dest {
-    font-size: 50px;
-    line-height: 22px;
+   .h2Dest {
+
     text-align: left;
     position: relative;
     top: -22px;
+    height: 140px;
+    font-size: 51px;
+    line-height: 57px;
   }
   
   .frase .h2Mobile {
@@ -412,6 +414,11 @@
       z-index: 800;
       cursor: pointer;
     }
+    
+    .h2Dest{
+      font-size: 40px;
+      line-height: 44px;
+    } 
   }
 
 
@@ -457,10 +464,7 @@
       line-height: 67px;
     }
   
-    .frase .h2Dest {
-      display: none;
-    }
-  
+
     .frase .h2Mobile {
       font-size: 45px;
       line-height: 14px;
@@ -472,11 +476,6 @@
     }
   }
   
-
-
-
-
-
 
 
 

@@ -1,5 +1,6 @@
 import style from './ServiciosAtuMedida.module.css';
-import assests1 from './IMG.png'
+import assests1 from './assets/IMG.png';
+import grafico from '././assets/imgFlotant.png';
 
 
 const ServiciosAtuMedida = () => {
@@ -7,6 +8,10 @@ const ServiciosAtuMedida = () => {
 
     return(
         <div className={style.div}>
+
+          <div className={style.grafico}>
+             <img src={grafico} alt="grafico"  className={style.imgGrafico}/>
+          </div>
 
          <div className={style.divIMG}>
            <img src={assests1} alt="assests1" />

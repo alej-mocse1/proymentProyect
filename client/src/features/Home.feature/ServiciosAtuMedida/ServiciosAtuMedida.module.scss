@@ -38,7 +38,7 @@
     position: absolute;
     width: 75px;
     height: 83.41px;
-    left: 390px;
+    left: 340px;
     top: 140px;
     @include floating;
 }
@@ -257,9 +257,28 @@
         top: -70px;
     }    
 
+    .divText h2{
+        width: 100%;
+        position: relative;
+        top: 10px;
+    }   
+
+
+
     .divText p{
         width: 100%;
+        position: relative;
+        top: 4px;
       }
+
+      .divText button{
+        width: 100%;
+        position: relative;
+        top: 29px;
+      }
+
+
+
       .imgFlotante1{
         width: 147.74px;
         height: 106.15px;

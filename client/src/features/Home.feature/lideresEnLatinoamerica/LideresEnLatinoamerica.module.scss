@@ -30,7 +30,7 @@
 
 .grafico{
     position: absolute;
-    margin-top: -30px;
+    top:280px;
     left: -50px;
     @include floating;
     
@@ -39,7 +39,7 @@
 .grafico2{
     position: absolute;
     @include floating;
-    top:300px;
+    top: -40px;
     left: 95%;
 }
 
@@ -61,9 +61,7 @@
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
-   z-index: 100;
-    padding: 10px;
-  
+    z-index: 100;
 }
 
 
@@ -73,15 +71,19 @@
     font-size: 14px;
     line-height: 24px;
     color: #6E7191;
-    margin-top: 30px;
-    margin-left: 6px;
+    position: relative;
+    top: 46px;
+    margin: 0 auto;
+    width: 80%;
     text-align: left;
 }
 
+
 .infoPersona{
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
     height: 60PX;
-    margin-top: 80px;
+    margin-top: 114px;
     display: flex;
 }
 
@@ -124,7 +126,6 @@
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
-    padding: 10px;
 }
 
 .divChildren2 h2{
@@ -133,14 +134,15 @@
     line-height: 24px;
     color: #6E7191;
     position: relative;
-    top: -25px;
+    top: -5px;
     text-align: left;
     margin-left: 6px;
+    width: 80%;
 }
 
 .divChildren2 .infoPersona{
     position: relative;
-    top: -76px;
+    top: -100px;
 }
 
 

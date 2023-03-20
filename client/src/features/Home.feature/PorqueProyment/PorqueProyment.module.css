@@ -43,6 +43,7 @@
 .div_DIVColumns_divTOP_Rigth {  
     height:100%;
     width: 50%;
+   
 }
 
 .div_DIVColumns_divTOP_Left{
@@ -53,13 +54,13 @@
 
 .div_DIVColumns_divTOP_Rigth div{
     width: 75%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     text-align: left; 
     position: relative;
     margin-top: 137px;
     left: 100px;
-  
 }
 
 .div_DIVColumns_divTOP_Rigth h4{
@@ -73,12 +74,14 @@
     font-size: 32px;
     line-height: 35px;
     width: 100%;
+    margin-top: -4px;
 }
 .div_DIVColumns_divTOP_Rigth p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+    margin-top: -7px;
 }
 
 

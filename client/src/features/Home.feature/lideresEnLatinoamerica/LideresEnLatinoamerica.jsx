@@ -94,7 +94,7 @@ const LideresEnLatinoamerica = () => {
                 <div className={styles.divChildren1}>
 
                     <h2>
-                        Proyment fue ágil desde el primer contacto, valoro la simplicidad y la rapides
+                        Proyment fue ágil desde el primer contacto, valoro la simplicidad y la rapidez
                         para solucionar problemas especificos
                     </h2>
 

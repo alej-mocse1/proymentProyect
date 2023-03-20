@@ -9,7 +9,7 @@
 }
 
 .divIMG{
-    width:40%;
+    width: 524px;
     height: 440px;
     margin-left: 90px;
     position: relative;
@@ -20,10 +20,21 @@ height: 440px;
 width:504px;;
 }
 
+.grafico{
+    width: 10%;
+    height: 40%;
+    position: absolute;
+    left: 90%;
+}
+.grafico img{
+    width: 100%;
+    height: 100%;
+}
+
 .divText{
     width: 445px;
     height: 205px;
-    margin-top: 53px;
+    margin-top: 29px;
     margin-left: 123px;
     text-align: left;
 }
@@ -62,6 +73,39 @@ width:504px;;
 }
 
 
+@media (max-width: 1200px){
+    .grafico{
+        width: 7%;
+        height: 30%;
+        position: absolute;
+        left: 93%;
+    }
+
+    .divIMG{
+        margin-left: 30px;
+        bottom: 103px;
+    }
+
+    .divText{
+            margin-left: 83px;
+        }
+    .divText {
+            margin-right: 130px;
+        }
+        
+    .divText h2{
+            font-size: 28px;
+       }
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+}
+
+}
 
 @media (max-width: 980px){
     .divIMG{
@@ -86,9 +130,30 @@ width:504px;;
     line-height: 24px;
     color: #DCDDEB;
     width: 363px;
+  }
+
+ .divText{
+    margin-left: 30px;
+}
 }
 
+
+@media (max-width: 880px){
+    .grafico{
+        display: none;
+    }
+    .divIMG{
+        bottom: 24px;
+    }
+
+    .divIMG img{
+        height: 360px;
+        width: 390px;;
+        }
+
 }
+
+
 
 @media (max-width: 800px){
     .div{
@@ -112,7 +177,7 @@ width:504px;;
         width: 445px;
         height: 205px;
         margin-top: 53px;
-        margin-left: 0px;
+        margin-left: 50px;
         margin: 0 auto;
     }
     .divText button{

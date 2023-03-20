@@ -30,8 +30,8 @@ const LideresHIJO = (props) => {
 
 
         <div  className={styles.DivBTNS}>
-           <button className={styles.btnIZQ} onClick={() => props.prevPage()}>izquierda </button>
-           <button className={styles.btnDER}  onClick={() => props.nextPage()}>derecha</button>
+           <button className={styles.btnIZQ} onClick={() => props.prevPage()}> <i className="ri-arrow-left-line"></i> </button>
+           <button className={styles.btnDER}  onClick={() => props.nextPage()}>  <i className="ri-arrow-right-line"></i> </button>
         </div>
     </div>
     )

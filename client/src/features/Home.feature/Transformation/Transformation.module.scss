@@ -5,8 +5,14 @@
     padding: 70px 103px;
     background: #F7F7FC;
     border-radius: 56px 56px 0px 0px;
-    @include responsive("laptop"){
+
+    @include responsive("laptop") {
         padding: 70px 60px;
+    }
+
+    @include responsive("phone") {
+        padding: 56px 20px;
+        border-radius: 0;
     }
 }
 
@@ -21,6 +27,10 @@
     width: 70%;
     margin: auto;
     margin-bottom: 72px;
+
+    @include responsive("phone") {
+        width: 100%;
+    }
 }
 
 .tittle h3 {
@@ -30,6 +40,10 @@
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
+
+    @include responsive("phone") {
+        text-align: left;
+    }
 }
 
 
@@ -38,6 +52,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
+    @include responsive("phone") {
+        flex-direction: column;
+    }
 }
 
 .infoText {
@@ -47,8 +65,13 @@
     padding: 0px;
     width: 42%;
     gap: 20px;
-    @include responsive("laptop"){
+
+    @include responsive("laptop") {
         width: 46%;
+    }
+
+    @include responsive("phone") {
+        display: none;
     }
 }
 
@@ -56,13 +79,26 @@
 .containerText {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 0px;
     width: 47%;
 }
 
 .containerText div {
-    display: flex; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 59px;
+    border-radius: 14px;
+    background-color: #6F4EF5;
+}
+
+/*prueva*/
+.div{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -101,8 +137,13 @@
     border-radius: 16px;
     color: #fff;
     position: relative;
-    @include responsive("laptop"){
+
+    @include responsive("laptop") {
         width: 50%;
+    }
+
+    @include responsive("phone") {
+        width: 100%
     }
 }
 
@@ -111,6 +152,10 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    @include responsive("phone") {
+        width: 88px
+    }
 }
 
 .img1 img {
@@ -124,6 +169,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    @include responsive("phone") {
+        width: 88px
+    }
 }
 
 .img2 img {
@@ -134,8 +182,15 @@
 .box {
     width: 69%;
     margin: 60px 100px;
-    @include responsive("laptop"){
+
+    @include responsive("laptop") {
         margin: 40px 40px;
+    }
+
+    @include responsive("phone") {
+        width: 100%;
+        margin: 85px 40px;
+
     }
 }
 
@@ -146,8 +201,16 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
-    @include responsive("laptop"){
+
+    @include responsive("laptop") {
         font-size: 22px;
+    }
+
+    @include responsive("phone") {
+        font-size: 18px;
+        line-height: 27px;
+
+
     }
 }
 
@@ -157,6 +220,11 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+
+    @include responsive("phone") {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 
@@ -187,62 +255,3 @@
 .carrusel {
     display: none;
 }
-
-
-
-/* @media (max-width: 768px) {
-    .container {
-        border-radius: 0;
-        padding: 50px 20px;
-    }
-
-    .containerInfo {
-        gap: 50px;
-    }
-
-    .tittle {
-        margin: 0;
-        width: 100%;
-    }
-
-    .tittle h3 {
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .info {
-        flex-direction: column;
-    }
-
-    .infoBox {
-        width: 100%;
-        height: 365px;
-    }
-
-    .box {
-        width: 75%;
-    }
-
-    .box h3 {
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    .box p {
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .infoText {
-        display: none;
-    }
-
-    .carrusel {
-        display: flex !important;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-} */

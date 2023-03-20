@@ -14,10 +14,14 @@
 }
 
 .div_divLine_efecto{
+    position: sticky;
+    top: 0;
     width: 9px;
     height: 146.12px;
     background: #8ADBFD;
-    margin-top: 240px;
+    margin-top: 0px;
+    border-radius: 100px;
+    margin-top: 0px;
 }
 
 
@@ -26,6 +30,7 @@
    height: 1150px;
    display: flex;
    flex-direction: column;
+
 }
 
 

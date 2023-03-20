@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./PorqueProyment.module.css";
-import img1 from './img1.png'
-import img2 from './img2.png'
+import img1 from './img1.png';
+import img2 from './img2.png';
+
 
 
 
@@ -17,7 +18,7 @@ return(
        <div className={styles.div_DIVColumns_divTOP}>
 
        <div className={styles.div_divLine}>
-        <div className={styles.div_divLine_efecto}></div>
+           <div className={styles.div_divLine_efecto}></div>
        </div>
 
 

@@ -1,3 +1,5 @@
+@import "../../../styles/styles.scss";
+
 .div{
     width: 100%;
     height: 336px;
@@ -13,12 +15,37 @@
     height: 440px;
     margin-left: 90px;
     position: relative;
-    bottom: 107px;
+    bottom: 104px;
 }
-.divIMG img{
-height: 440px;
-width:504px;;
+
+
+.divIMG .imgPrincipal{
+    height: 440px;
+    width:504px;;
 }
+ 
+
+.imgFlotante1{
+    position: absolute;
+    width: 230.61px;
+    height: 159.86px;
+    left: 10px;
+    top: 200px;
+    @include floating;
+}
+
+.imgFlotante2{
+    position: absolute;
+    width: 75px;
+    height: 83.41px;
+    left: 390px;
+    top: 140px;
+    @include floating;
+}
+
+
+
+
 
 .grafico{
     width: 10%;
@@ -107,15 +134,27 @@ width:504px;;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 980px){
     .divIMG{
-        margin-left: 30px;
-        bottom: 65px;
+        margin-left: 30px;  
     }
-    .divIMG img{
-        height: 400px;
-        width:404px;;
-        }
+
     .divText{
             margin-left: 83px;
         }
@@ -138,24 +177,11 @@ width:504px;;
 }
 
 
-@media (max-width: 880px){
-    .grafico{
-        display: none;
-    }
-    .divIMG{
-        bottom: 24px;
-    }
-
-    .divIMG img{
-        height: 360px;
-        width: 390px;;
-        }
-
-}
 
 
+@media (max-width: 950px){
 
-@media (max-width: 800px){
+
     .div{
         display: flex;
         flex-direction: column-reverse;
@@ -163,14 +189,10 @@ width:504px;;
         text-align: center;
         justify-content: center;
     }
-    .divIMG{
-        bottom: -37px;
-        width:480px;
-        height: 440px;
-        margin-left: 0px;
-        position: relative;
-        bottom: -77px;
-        margin: 0 auto;
+ 
+
+    .grafico{
+        display: none;
     }
 
     .divText{
@@ -186,32 +208,68 @@ width:504px;;
     .divText h2{
         font-size: 32px;
     }
-    
-    .divIMG img{
-      width: 100%;
-      height: 91%;
+
+    .divIMG{
+        position: relative;
+        top: 40px;
+        margin: 0 auto;
     }
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 550px){
-    .divIMG{
-        bottom: -120px;
-        width: 100%;
+    .div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 652px;
+        text-align: center;
+        justify-content: center;
     }
 
-    .divIMG img{
-      width: 90% ;
-      height: 81%;
+    .divIMG{
+        width: 298.96px;
+        height: 261px;
+        top: 90px;
+    }
+
+    .divIMG .imgPrincipal{
+        width: 298.96px;
+        height: 261px;
     }
     .divText{
         width: 90%;
+        position: relative;
+        top: -70px;
     }    
+
+    .divText p{
+        width: 100%;
+      }
+      .imgFlotante1{
+        width: 147.74px;
+        height: 106.15px;
+        top: 130px;
+      }
+      .imgFlotante2{
+        width: 44.49px;
+        height: 50.02px;
+        left: 200px;
+        top: 100px;
+      }
 }
 
-@media (max-width: 382px){
-    .divText p{
-        font-size: 14px;
-        width: 100%;
-    }
-}

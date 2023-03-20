@@ -92,6 +92,12 @@ $button-purple: #6f4ef5;
       @content;
     }
   }
+  @if $device == carrousel {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+
   @if $device == laptop {
     @media screen and (max-width: 64.063em /* 1024px */) {
       @content;

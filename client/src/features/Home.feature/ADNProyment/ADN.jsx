@@ -2,7 +2,10 @@ import { infoADNCards } from "../assets/info";
 import Card from "../../../core/components/Card/Card";
 import styles from "./ADN.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {Pagination} from "swiper";
+import "swiper/scss";
+import "swiper/scss/pagination";
 
 export default function ADN() {
   return (
@@ -23,22 +26,18 @@ export default function ADN() {
             ))}
           </div>
           <div className={styles.carrousel}>
-            <Carousel
-              centerSlidePercentage={100}
-              centerMode={true}
-              width={270}
-              showStatus={false}
-              showArrows={false}
-              infiniteLoop={true}
-              renderIndicator={false}
-              showThumbs={false}
-              autoPlay={true}
-              /* dynamicHeight={true} */
+            <Swiper
+              modules={[Pagination]}
+              slidesPerView={1}
+              pagination={{clickable:true}}
+              className={styles.data}
             >
               {infoADNCards.map((info) => (
+                <SwiperSlide key={info.id}>
                 <Card key={info.id} info={info} />
+              </SwiperSlide>
               ))}
-            </Carousel>
+            </Swiper>
           </div>
         </div>
       </div>

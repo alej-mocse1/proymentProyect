@@ -195,12 +195,12 @@
     height: 72px;
     background-image: url("./assets/wsp.png");
     background-size: cover;
-    border-radius: 86px;
+    border-radius: 90px;
     position: fixed;
-    top: 400px;
+    top: 480px;
     right: 30px;
-    border: 2px solid #29cc39;
     z-index: 800;
+    border: none;
     cursor: pointer;
   }
   
@@ -222,7 +222,7 @@
     .ContenedorDiv2 {
       height: 451px;
       width: 470px;
-      margin-top: 313px;
+      margin-top: 315px;
     }
     .background {
       width: 100%;
@@ -304,7 +304,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 868px;
+      height: 866px;
     }
   
     .div1 {
@@ -444,7 +444,7 @@
   
   @media screen and (max-width: 800px) {
     .div {
-      height: 908px;
+      height: 906px;
     }
     .div1{
       margin-top: 65px;
@@ -493,7 +493,7 @@
   @media screen and (max-width: 640px) {
 
     .div {
-        height: 948px;
+        height: 947px;
       }
 
       .div1{

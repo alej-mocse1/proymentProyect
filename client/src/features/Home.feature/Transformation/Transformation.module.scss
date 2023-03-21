@@ -20,6 +20,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    @include responsive("carrousel"){
+        gap: 30px;
+    }
 }
 
 
@@ -28,6 +31,11 @@
     width: 70%;
     margin: auto;
     margin-bottom: 72px;
+
+    @include responsive("carrousel"){
+        margin: 0;
+        width: 100%;
+    }
 
     @include responsive("phone") {
         width: 100%;
@@ -43,6 +51,10 @@
     text-align: center;
     margin: 0;
 
+    @include responsive("carrousel"){
+        text-align: left;
+    }
+
     @include responsive("phone") {
         text-align: left;
     }
@@ -54,6 +66,11 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
+    @include responsive("carrousel"){
+        flex-direction: column;
+        gap: 30px;
+    }
 
     @include responsive("phone") {
         display: flex;
@@ -71,6 +88,9 @@
 
     @include responsive("laptop") {
         width: 46%;
+    }
+    @include responsive("carrousel"){
+        display: none;
     }
 
     @include responsive("phone") {
@@ -129,6 +149,9 @@
 
     @include responsive("laptop") {
         width: 50%;
+    }
+    @include responsive("carrousel"){
+        width: 100%;
     }
 
     @include responsive("phone") {

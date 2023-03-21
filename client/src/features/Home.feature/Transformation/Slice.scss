@@ -4,6 +4,9 @@
     display: flex;
     background: #F7F7FC;
     padding: 70px 103px;
+    @include responsive("carrousel"){
+        padding: 70px 40px;
+    }
 
     @include responsive("phone") {
         padding: 0;
@@ -13,6 +16,13 @@
 
     .container {
         display: none;
+
+        @include responsive("carrousel"){
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+        }
 
         @include responsive("phone") {
             height: fit-content;

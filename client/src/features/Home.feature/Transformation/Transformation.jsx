@@ -44,20 +44,20 @@ function Transformation() {
                                     clickable: true,
                                 }}
                                 breakpoints={{
-                                    "@0.00": {
+                                    /* "@0.00": {
                                         slidesPerView: 1,
                                         spaceBetween: 25,
-                                    },
-                                    "@0.50": {
+                                    }, */
+                                    375: {
                                         slidesPerView: 2.95,
                                         spaceBetween: 25,
                                     },
-                                    "@1.00": {
-                                        slidesPerView: 2,
+                                    412: {
+                                        slidesPerView: 3,
                                         spaceBetween: 25,
                                     },
                                     "@1.25": {
-                                        slidesPerView: 2.5,
+                                        slidesPerView: 4.5,
                                         spaceBetween: 20,
                                     },
                                     "@1.50": {

@@ -26,8 +26,8 @@ return(
            <div>
             <h4>¿POR QUÉ PROYMENT?</h4>
              <h2>Tranformamos un cambio positivo y duradero.</h2>
-             <p>nuestro enfoque empresarial es desarrollar estrategias de innovación desde una perpectiva global y alineadas especificamente a la 
-                industria a tocar, para hacer que el cambio sea una realidad sostenible en el tiempo.
+             <p>
+             Nuestro enfoque empresarial es desarrollar estrategias de innovación desde una perspectiva global y alineadas especificamente a la industria a tocar, para hacer que el cambio sea una realidad sostenible en el tiempo.
              </p>
            </div>
          </div>
@@ -49,8 +49,7 @@ return(
          <div className={styles.div_DIVbutton}>
            <h4>¿POR QUÉ PROYMENT?</h4>
            <h2>El cambio comienza con la estrategia 360.</h2>
-           <p>Reimagina y restablece las nuevas prioridades estratégicas del negocio que permitirán contruir modelos y culturas
-            operativas resilientes.
+           <p>Reimagina y restablece las nuevas prioridades estratégicas del negocio que permitirán construir modelos y culturas operativas resilientes.
            </p>
          </div>
         </div>

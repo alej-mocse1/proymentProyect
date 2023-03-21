@@ -38,7 +38,7 @@
     position: absolute;
     width: 75px;
     height: 83.41px;
-    left: 390px;
+    left: 340px;
     top: 140px;
     @include floating;
 }
@@ -185,7 +185,7 @@
     .div{
         display: flex;
         flex-direction: column-reverse;
-        height: 721px;
+        height: 723.5px;
         text-align: center;
         justify-content: center;
     }
@@ -257,9 +257,29 @@
         top: -70px;
     }    
 
+    .divText h2{
+        width: 68%;
+        position: relative;
+        top: 10px;
+
+    }   
+
+
+
     .divText p{
         width: 100%;
+        position: relative;
+        top: 4px;
       }
+
+      .divText button{
+        width: 100%;
+        position: relative;
+        top: 29px;
+      }
+
+
+
       .imgFlotante1{
         width: 147.74px;
         height: 106.15px;

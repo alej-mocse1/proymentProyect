@@ -30,7 +30,7 @@
 
 .grafico{
     position: absolute;
-    margin-top: -30px;
+    top:280px;
     left: -50px;
     @include floating;
     
@@ -39,7 +39,7 @@
 .grafico2{
     position: absolute;
     @include floating;
-    top:300px;
+    top: -40px;
     left: 95%;
 }
 
@@ -61,27 +61,29 @@
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
-   z-index: 100;
-    padding: 10px;
-  
+    z-index: 100;
 }
 
 
 
 .divChildren1 h2{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #6E7191;
-    margin-top: 30px;
-    margin-left: 6px;
+    position: relative;
+    top: 46px;
+    margin: 0 auto;
+    width: 80%;
     text-align: left;
 }
 
+
 .infoPersona{
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
     height: 60PX;
-    margin-top: 80px;
+    margin-top: 114px;
     display: flex;
 }
 
@@ -124,7 +126,6 @@
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
-    padding: 10px;
 }
 
 .divChildren2 h2{
@@ -133,14 +134,15 @@
     line-height: 24px;
     color: #6E7191;
     position: relative;
-    top: -25px;
+    top: -5px;
     text-align: left;
     margin-left: 6px;
+    width: 80%;
 }
 
 .divChildren2 .infoPersona{
     position: relative;
-    top: -76px;
+    top: -100px;
 }
 
 
@@ -160,15 +162,26 @@
 
 
 @media (max-width: 800px){
+    .div{
+        height: 724px;
+    }
 
     .divCards{
         display: none;
     }
 
     .div h2{
-
-        margin-top: 32px;
+        width: 80%;
+        margin: 0 auto;
+       text-align: left;
+       position: relative;
+       top: 60px;
     }
+    .data {
+        width: 95%;
+        height: 576px;
+      }
+
 
     .DivRESPONSIVE{
         display: flex;
@@ -183,16 +196,18 @@
         flex-direction: column;
         align-items: center;
         border-radius: 16px;
-        margin-top: 0px;
+        position: relative;
+        top: 100px;
     }
 
     .divResponsiveFrase p{
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 24px;
         text-align: center;
         position: relative;
         top: 20px;
+
     }
 
 
@@ -201,6 +216,8 @@
        height: 120px;
        margin: 0 auto;
     }
+
+
 
 
     .DivInfoResponsive{
@@ -221,12 +238,15 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
+        margin-top: -3px ;
     }
 
     .infoContactoResponsive p{
         color: #6F4EF5;
         font-size: 14px;
         line-height: 21px;
+        width: 145px;
+        margin-top: -20px;
     }
 
 
@@ -272,7 +292,7 @@
     .DivRESPONSIVE{
         display: flex;
         height: 424px;
-        width: 70%;
+        width: 85%;
         border: 1px solid black;
         margin: 0 auto;
         box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
@@ -320,7 +340,7 @@
     }
 
     .div h2{
-        font-size: 25px;
+        font-size: 32px
     }
     
 
@@ -339,7 +359,7 @@
 @media (max-width: 435px){
 
     .div h2{
-        font-size: 25px;
+        font-size: 32px;
     }
     
 }
@@ -347,7 +367,7 @@
 @media (max-width: 370px){
 
     .div h2{
-        font-size: 25px;
+        font-size: 32px;
     }
     
 

@@ -19,6 +19,7 @@
 .containerInfo {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -30,6 +31,7 @@
 
     @include responsive("phone") {
         width: 100%;
+        margin-bottom: 32px;
     }
 }
 
@@ -54,6 +56,7 @@
     width: 100%;
 
     @include responsive("phone") {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -75,7 +78,6 @@
     }
 }
 
-
 .containerText {
     display: flex;
     flex-direction: column;
@@ -85,19 +87,6 @@
 }
 
 .containerText div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    height: 59px;
-    border-radius: 14px;
-    background-color: #6F4EF5;
-}
-
-/*prueva*/
-.div{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,7 +132,7 @@
     }
 
     @include responsive("phone") {
-        width: 100%
+        width: 95%;
     }
 }
 
@@ -226,32 +215,3 @@
         line-height: 21px;
     }
 }
-
-
-
-/* .div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    height: 75px;
-    border-radius: 14px;
-    background-color: #6F4EF5;
-    margin: 0 10px;
-}
-
-.div p {
-
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fff;
-}
- */
-/* .carrusel {
-    display: none;
-} */

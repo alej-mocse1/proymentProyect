@@ -507,14 +507,18 @@
       
     .divImgs{
       display: flex;
-
     }
 
+    .divImgs div{
+      border: 1px solid white;
+    }
 
     .divImgsParrafo {
       margin-left: 0px;
-      width: 40%;
+      width: 85%;
       margin-left: 20px;
+      border: 1px solid white;
+      text-align: left;
     }
     
   

@@ -1,4 +1,4 @@
- .div{
+.div{
     height: 1050px;
     width: 100%;
     margin-top: 140px;
@@ -114,7 +114,8 @@
 }
 
 .IMG2{
-    width: 497.58px;
+    width: 457.58px !important;
+    height: 390px !important;
     margin-left: 80px ;
     position: relative;
     top: -70px;
@@ -270,7 +271,7 @@
     }
     
     .div_DIVColumns_divTOP_Left img {  
-        width: 318.61px;
+        width: 328.61px;
         height: 297px;
         margin: 0 auto;
         position: relative;
@@ -301,7 +302,7 @@
 
      .div_DIVbutton h2 {
         position: relative;
-        top:153px
+        top:156px
       }
 
       .div_DIVbutton p {
@@ -311,7 +312,7 @@
 
 
      .IMG2{
-        width: 318.35px !important;
+        width: 348.35px !important;
         height: 270.21px !important;
         margin-top: 30px;
         position: relative !important;
@@ -358,4 +359,3 @@
     }
 } 
  */
-

@@ -35,8 +35,14 @@
   color: #6e7191;
   text-align: left;
   margin-bottom: 0;
+  width: 54%;
+  @include responsive("carrousel") {
+    margin: 0;
+    width: 100%;
+  }
   @include responsive("phone") {
     margin: 0;
+    width: auto;
   }
 }
 

@@ -18,7 +18,7 @@ export default function Services() {
           <div className={styles.textButtons}>
             <p className={styles.p}>
               Potenciamos y protegemos el valor de sus negocios a través de la
-              experiencia e innovación<br></br> tecnológica para alcanzar
+              experiencia e innovación tecnológica para alcanzar
               resultados sostenibles.
             </p>
             <div className={styles.buttons}>

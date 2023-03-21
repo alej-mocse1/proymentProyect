@@ -1,11 +1,18 @@
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+/* import Card from "./components/Card"; */
 import style from "./Transformation.module.scss"
+import "./Slice.scss";
+import "swiper/css";
+
 import pattern1 from "./assets/Pattern graphic.svg"
 import pattern2 from "./assets/Pattern graphic -.svg"
-//import Carrusel from "./Carrusel"
 
-export default function Transformation() {
+function Transformation() {
+
     return (
-        <div className={style.container}>
+        <div className="slice">
             <div className={style.containerInfo}>
                 <div className={style.tittle}>
                     <h3>Nuestras principales industrias con las que trabajamos en la actualidad</h3>
@@ -13,23 +20,71 @@ export default function Transformation() {
                 <div className={style.info}>
                     <div className={style.infoText}>
                         <div className={style.containerText}>
-                            <div><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Industrial</p></div>
-                            <div id={style.color}><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Petrolero</p></div>
-                            <div><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Restaurantes</p></div>
-                            <div id={style.color}><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Transportes</p></div>
+                            <div><p>Rubro Industrial</p></div>
+                            <div id={style.color}><p>Rubro Petrolero</p></div>
+                            <div><p>Rubro Restaurantes</p></div>
+                            <div id={style.color}><p>Rubro Transportes</p></div>
                         </div>
                         <div className={style.containerText}>
-                            <div id={style.color}><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Salud</p></div>
-                            <div><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Textil</p></div>
-                            <div id={style.color}><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Inmobiliaria</p></div>
-                            <div><i className="ri-checkbox-blank-circle-line"></i><p>Rubro Educacion</p></div>
+                            <div id={style.color}><p>Rubro Salud</p></div>
+                            <div><p>Rubro Textil</p></div>
+                            <div id={style.color}><p>Rubro Inmobiliaria</p></div>
+                            <div><p>Rubro Educacion</p></div>
                         </div>
                     </div>
-                    <div className={style.carrusel}>
-                        {/* <Carrusel /> */}
-                    </div>
-                    <div className={style.infoBox}>
 
+                    {/*---------Carousel--------*/}
+                    <div className="container">
+                        <div className="swiperContainer">
+                            <Swiper
+                                modules={[Pagination]}
+
+                                pagination={{
+                                    el: ".pagination",
+                                    clickable: true,
+                                }}
+                                breakpoints={{
+                                    "@0.00": {
+                                        slidesPerView: 1,
+                                        spaceBetween: 25,
+                                    },
+                                    "@0.50": {
+                                        slidesPerView: 2.95,
+                                        spaceBetween: 25,
+                                    },
+                                    "@1.00": {
+                                        slidesPerView: 2,
+                                        spaceBetween: 25,
+                                    },
+                                    "@1.25": {
+                                        slidesPerView: 2.5,
+                                        spaceBetween: 20,
+                                    },
+                                    "@1.50": {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                    "@1.75": {
+                                        slidesPerView: 4,
+                                        spaceBetween: 20,
+                                    },
+                                }}
+                            >
+                                <SwiperSlide><div className="span">Rubro Industrial</div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}>Rubro Petrolero</div></SwiperSlide>
+                                <SwiperSlide><div className="span">Rubro Restaurantes</div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}>Rubro Transportes</div></SwiperSlide>
+                                <SwiperSlide><div className="span">Rubro Salud</div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}>Rubro Textil</div></SwiperSlide>
+                                <SwiperSlide><div className="span">Rubro Inmobiliaria</div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}>Rubro Educacion</div></SwiperSlide>
+                            </Swiper>
+                        </div>
+                        <div className="pagination" />
+                    </div>
+
+
+                    <div className={style.infoBox}>
                         <div className={style.img1}><img src={pattern1} alt="not" /></div>
                         <div className={style.img2}><img src={pattern2} alt="not" /></div>
 
@@ -42,6 +97,8 @@ export default function Transformation() {
                     </div>
                 </div>
             </div>
-        </div >
-    )
+        </div>
+    );
 }
+
+export default Transformation;

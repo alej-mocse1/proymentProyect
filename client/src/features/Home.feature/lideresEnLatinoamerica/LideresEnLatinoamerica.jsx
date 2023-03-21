@@ -7,6 +7,13 @@ import img2 from './assets/AvatarCircle02.png';
 import img3 from './assets/AvatarCircle03.png';
 import grafico from './assets/grafico.svg'
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {Pagination} from "swiper";
+import "swiper/scss";
+import "swiper/scss/pagination";
+
+
 
 import LideresHIJO from "./lideresHijo";
 
@@ -17,19 +24,23 @@ const LideresEnLatinoamerica = () => {
 
 
     const [state, setState] = useState([
-        {
+        { 
+             id: 1,
            img:img1,
            name:"Leandro rocha",
            titulo:"Project Manager en SP",
            frase:" Proyment fue ágil desde el primer contacto, valoro la simplicidad y la rapides para solucionar problemas especificos"
+       
         },
         {
+            id: 2,
             img:img2,
             name:"Jonh Montoro",
             titulo:"Gerente de Operaciones en Tom Gutie Company ",
             frase:" Nuestra experiencia con Proyment fue excelente, pudieron brindranos un conjunto de planes orientado a nuestras necesidades. luego de dos meses de arduo trabajo, pudimos cumplir con los objetivos empresariales . "
         },
         {
+            id: 3,
             img:img3,
             name:"Matt Cannon",
             titulo:"Marketing director at ABN8 Trading ",
@@ -37,52 +48,16 @@ const LideresEnLatinoamerica = () => {
 
         }
     ])
-    const [item , seTitems] = useState(state[0]);
-    const [correnPage , setCurrentPage] = useState(0);
-
-    
-    const nextPage = () => {
-    
-         const FirstIndex = correnPage + 1;
-    
-         if(FirstIndex >  2) {
-            seTitems(state[0])
-            setCurrentPage(0)
-            return
-         }
-    
-        //cambio mi estado local item(que es el que se renderiza)
-        seTitems(state[FirstIndex])
-    
-        //cambio mi estado local correnPage 
-        setCurrentPage(FirstIndex)
-    
-      }
-
-
-      const prevPage = () => {
-
-        const prevPage = correnPage - 1;
-
-     
-        if(prevPage < 0) {
-            seTitems(state[2])
-            setCurrentPage(2)
-            return
-        }
-     
-        seTitems(state[prevPage])
-     
-        setCurrentPage(prevPage)
-      }
 
 
 
 
     return(
         <div className={styles.div}>
-            <h2 className={styles.H2}>líderes  en latinoamerica nos recomiendan</h2>
 
+            <div>
+               <h2 className={styles.H2}>líderes  en latinoamerica nos recomiendan</h2>
+            </div>
            
            
             <div className={styles.divCards}>
@@ -168,14 +143,20 @@ const LideresEnLatinoamerica = () => {
 
        
 
-              <LideresHIJO 
-                frase={item.frase}
-                name={item.name}
-                img={item.img}
-                titulo={item.titulo}
-                nextPage = {nextPage}
-                prevPage ={prevPage}
-              ></LideresHIJO>
+            <Swiper
+              modules={[Pagination]}
+              slidesPerView={1}
+              pagination={{clickable:true}}
+              className={styles.data}
+            >
+              {state.map((info) => (
+                <SwiperSlide key={info.id}>
+                <LideresHIJO key={info.id} info={info} />
+              </SwiperSlide>
+              ))}
+            </Swiper>
+        
+        
 
 
         </div>

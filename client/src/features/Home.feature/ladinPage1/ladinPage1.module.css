@@ -160,11 +160,6 @@
   left: 90px;
 }
 
-.background {
-  width: 100%;
-  height: 500px;
-}
-
 
 
 .btnWSP {
@@ -174,7 +169,7 @@
   background-size: cover;
   border-radius: 86px;
   position: fixed;
-  top: 480px;
+  top:580px;
   right: 30px;
   border: 2px solid #29cc39;
   z-index: 800;
@@ -189,25 +184,19 @@
     width: 470px;
     margin-top: 313px;
   }
-  .background {
-    width: 100%;
-    height: 421px;
-  }
-  .float1 {
-    width: 35%;
-    top: 303.68px;
-  }
-  .float2 {
-    left: -20.92px;
-    top: -40.68px;
-  }
-  .float3 {
-    width: 20%;
-    height: 110px;
-    left: 125.92px;
-    top: 65.68px;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
   .ContenedorDiv2 {
@@ -216,32 +205,35 @@
     margin-top: 435px;
   }
 
-  
-/* .ContenedorDiv2 {
-  position: absolute;
-  width: 550px;
-  height: 521px;
-  right: 91px;
-  top: -20px;
-  margin-top: 245px;
-  
-} */
-  .background {
-    width: 100%;
-    height: 390px;
-  }
-  .float2 {
-    left: -60.92px;
-    top: -74.68px;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 940px) {
   .div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 860px;
+    height: 855px;
   }
 
   .div1 {
@@ -297,31 +289,6 @@
     margin: 0 auto;
   }
 
-  .background {
-    position: absolute;
-    width: 290px;
-    height: 270px;
-    left: 40px;
-  }
-  .float1 {
-    position: absolute;
-    width: 130px;
-    top: 163.68px;
-    left: -100px;
-  }
-  .float2 {
-    position: absolute;
-    width: 70px;
-    left: -80.92px;
-    top: -140.68px;
-  }
-  .float3 {
-    position: absolute;
-    width: 70px;
-    height: 110px;
-    left: 85.92px;
-    top: 15.68px;
-  }
 
   .btnWSP {
     position: fixed;
@@ -346,6 +313,26 @@
     cursor: pointer;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .div {
@@ -372,20 +359,29 @@
     line-height: 67px;
   }
 
-  .frase .h2Dest {
-    display: none;
-  }
 
-  .frase .h2Mobile {
-    font-size: 45px;
-    line-height: 14px;
-    text-align: left;
-    position: relative;
-    top: -30px;
-    color: #ffffff;
-    transform: translatey(0px);
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 540px) {
   .divImgs{
@@ -405,23 +401,6 @@
   }
   
 
-  .background {
-    position: absolute;
-    width: 250px;
-    height: 240px;
-    left: -0px;
-  }
-
-
-  .frase .h2Mobile {
-    font-size: 35px;
-    line-height: 14px;
-    text-align: left;
-    position: relative;
-    top: -0px;
-    color: #ffffff;
-    transform: translatey(0px);
-  }
 
   .btnWSP {
     position: fixed;
@@ -450,6 +429,21 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 540px) {
 

@@ -43,6 +43,7 @@
 .div_DIVColumns_divTOP_Rigth {  
     height:100%;
     width: 50%;
+   
 }
 
 .div_DIVColumns_divTOP_Left{
@@ -53,13 +54,13 @@
 
 .div_DIVColumns_divTOP_Rigth div{
     width: 75%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     text-align: left; 
     position: relative;
     margin-top: 137px;
     left: 100px;
-  
 }
 
 .div_DIVColumns_divTOP_Rigth h4{
@@ -73,12 +74,14 @@
     font-size: 32px;
     line-height: 35px;
     width: 100%;
+    margin-top: -4px;
 }
 .div_DIVColumns_divTOP_Rigth p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+    margin-top: -7px;
 }
 
 
@@ -200,7 +203,7 @@
 @media (max-width: 800px){
 
     .div{
-        height: 1100px;
+        height: 1375.21px;
         width: 100%;
         margin-top: 140px;
     }
@@ -218,9 +221,8 @@
     .div_DIVColumns_divTOP{
         display: flex;
         flex-direction: column;
-        margin-top: -100px;
+        margin-top: -64px;
         text-align: left;
-       
     }
     
     .div_divsColumns_divBUTTON div{
@@ -247,7 +249,7 @@
         width: 100%;
         font-size: 28px;
         position: relative;
-        top: -23px;
+        top: 3px;
     }
 
     .div_DIVColumns_divTOP_Rigth p{
@@ -256,7 +258,7 @@
         line-height: 24px;
         width: 100%;
         position: relative;
-        top: -23px;
+        top: 2px;
     }
 
 
@@ -268,11 +270,11 @@
     }
     
     .div_DIVColumns_divTOP_Left img {  
-        width: 283.08px;
-        height: 274.83px;
-        margin-top: 32px;
+        width: 318.61px;
+        height: 297px;
         margin: 0 auto;
         position: relative;
+        top: 60px;
         left: 0px;
     }
 
@@ -282,17 +284,38 @@
         display: flex;
         text-align: center;
         flex-direction: column-reverse;
-        margin-top:235px;
+        margin-top:135px;
+     
     }
 
     .div_DIVbutton{
-        margin-left: 0px;    
+        margin-left: 0px;  
+        position: relative;
+        top: 0px;  
      }
+
+     .div_DIVbutton h4 {
+       position: relative;
+       top:152px
+     }
+
+     .div_DIVbutton h2 {
+        position: relative;
+        top:153px
+      }
+
+      .div_DIVbutton p {
+        position: relative;
+        top:156px;
+      }
 
 
      .IMG2{
-        position: relative;
-        top: -40px
+        width: 318.35px !important;
+        height: 270.21px !important;
+        margin-top: 30px;
+        position: relative !important;
+        top: 259px !important;
     }
  
 }
@@ -319,7 +342,7 @@
 
 
     
-@media (max-width: 380px){
+/* @media (max-width: 380px){
 
 
 
@@ -334,5 +357,5 @@
         top: -0px
     }
 } 
-
+ */
 

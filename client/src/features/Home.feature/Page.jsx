@@ -12,8 +12,8 @@ export default function Page() {
   return (
     <>
       <LandinPage></LandinPage>
-      <ADN></ADN>
-      <OPT></OPT>
+      {/* <ADN></ADN>
+      <OPT></OPT> */}
       <Services></Services>
       <ServiciosAtuMedida></ServiciosAtuMedida>
       <PorqueProyment></PorqueProyment>

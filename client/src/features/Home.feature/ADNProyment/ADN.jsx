@@ -33,7 +33,7 @@ export default function ADN() {
                 //si no gusta slides = 1
                 slidesPerView={1.25}
                 spaceBetween={30}
-                pagination={{ el: ".pagination", clickable: true }}
+                pagination={{ el: ".ADN-pagination", clickable: true }}
                 className={styles.data}
               >
                 {infoADNCards.map((info) => (
@@ -43,7 +43,7 @@ export default function ADN() {
                 ))}
               </Swiper>
             </div>
-            <div className="pagination" />
+            <div className="ADN-pagination" />
           </div>
         </div>
       </div>

@@ -44,20 +44,20 @@ function Transformation() {
                                     clickable: true,
                                 }}
                                 breakpoints={{
-                                    /* "@0.00": {
+                                     300: {
                                         slidesPerView: 1,
-                                        spaceBetween: 25,
-                                    }, */
-                                    375: {
-                                        slidesPerView: 2.95,
+                                        spaceBetween: 15,
+                                    }, 
+                                    450: {
+                                        slidesPerView: 2,
                                         spaceBetween: 25,
                                     },
-                                    412: {
+                                    650: {
                                         slidesPerView: 3,
                                         spaceBetween: 25,
                                     },
-                                    "@1.25": {
-                                        slidesPerView: 4.5,
+                                    900: {
+                                        slidesPerView: 4,
                                         spaceBetween: 20,
                                     },
                                     "@1.50": {
@@ -70,14 +70,14 @@ function Transformation() {
                                     },
                                 }}
                             >
-                                <SwiperSlide><div className="span">Rubro Industrial</div></SwiperSlide>
-                                <SwiperSlide><div className="span" id={style.color}>Rubro Petrolero</div></SwiperSlide>
-                                <SwiperSlide><div className="span">Rubro Restaurantes</div></SwiperSlide>
-                                <SwiperSlide><div className="span" id={style.color}>Rubro Transportes</div></SwiperSlide>
-                                <SwiperSlide><div className="span">Rubro Salud</div></SwiperSlide>
-                                <SwiperSlide><div className="span" id={style.color}>Rubro Textil</div></SwiperSlide>
-                                <SwiperSlide><div className="span">Rubro Inmobiliaria</div></SwiperSlide>
-                                <SwiperSlide><div className="span" id={style.color}>Rubro Educacion</div></SwiperSlide>
+                                <SwiperSlide><div className="span"><p>Rubro Industrial </p></div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}><p>Rubro Petrolero</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span"><p>Rubro Restaurantes</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}><p>Rubro Transportes</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span"><p>Rubro Salud</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}><p>Rubro Textil</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span"><p>Rubro Inmobiliaria</p></div></SwiperSlide>
+                                <SwiperSlide><div className="span" id={style.color}><p>Rubro Educacion</p></div></SwiperSlide>
                             </Swiper>
                         </div>
                         <div className=" transformation-pagination" />

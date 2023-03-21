@@ -1,0 +1,558 @@
+@import "../../../styles/styles.scss";
+
+
+.div {
+    width: 100%;
+    height: 666px;
+    left: 0px;
+    top: 127px;
+    background-color: #000538;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .div1 {
+    width: 600px;
+    height: 451.88px;
+    margin-left: 50px;
+    margin-top: 65px;
+  }
+  
+  .frase {
+    height: 202px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    line-height: 67px;
+  }
+  
+   .h2Dest {
+
+    text-align: left;
+    position: relative;
+    top: -22px;
+    height: 140px;
+    font-size: 51px;
+    line-height: 57px;
+  }
+  
+  .frase .h2Mobile {
+    font-size: 0px;
+    transform: translatey(1000px);
+  }
+  
+  .frase2 h2 {
+    font-size: 50px;
+    line-height: 22px;
+    text-align: left;
+    position: relative;
+    top: -22px;
+  }
+  
+  .frase2 {
+    height: 48px;
+    text-align: left;
+  }
+  
+  .frase2 p {
+    color: #dcddeb;
+    text-align: left;
+    position: relative;
+    font-size: 15.5px;
+    top: -33px;
+  }
+  .divbtn {
+    width: 100%;
+    text-align: left;
+  }
+  .btn {
+    background: #6f4ef5;
+    border-radius: 4px;
+    padding: 20px 38px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .btn2 {
+    background: #000538;
+    border: 2px solid #6f4ef5;
+    border-radius: 4px;
+    padding: 20px 38px;
+    color: #6f4ef5;
+    font-size: 16px;
+    margin-left: 50px;
+  }
+  
+  .divImgs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    text-align: left;
+  }
+  .divImgs img {
+    width: 48.88px;
+    height: 48.88px;
+    border: 1.62927px solid #ffffff;
+    border-radius: 61.53px;
+    margin: 0px -9.77561px;
+    position: relative;
+    left: 10px;
+  }
+  
+  .divImgsParrafo {
+  
+    width: 193px;
+    height: 48.88px;
+    color: #dcddeb;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  
+  .divImgsParrafo p {
+    position: relative;
+    top: -11px;
+  
+  }
+  
+  .AgendarReunionBTN {
+    background: #00aeff;
+    border: 2px solid #00aeff;
+    padding: 16px;
+    gap: 9px;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 18px;
+    position: fixed;
+    left: 23px;
+    top: 490px;
+    z-index: 800;
+    cursor: pointer;
+  }
+  
+  .div2 {
+    height: 666px;
+    width: 50%;
+  }
+  
+  .ContenedorDiv2 {
+    position: absolute;
+    width: 550px;
+    height: 521px;
+    right: 91px;
+    top: -20px;
+    margin-top: 245px;
+  }
+  
+  .ContenedorDiv2 .imgPrincipal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+  
+  }
+  
+  .imgFloat{
+    width: 189.22px;
+    height: 156.75px;
+    position: absolute;
+    top: 263.68px;
+    left: 90px;
+    @include floating;
+  }
+
+  .imgFloat2{
+    top:80.68px;
+    left: 160px;
+    position: absolute;
+    width: 112.64px;
+    height: 110.82px;
+    @include floating;
+  }
+
+  .imgFloat3{
+    position: absolute;
+    top:210.68px;
+    left: 400px;
+    width: 136.19px;
+    height: 125.19px;
+    @include floating;
+  }
+  
+  .background {
+    width: 100%;
+    height: 500px;
+  }
+  
+  
+  
+  .btnWSP {
+    width: 72px;
+    height: 72px;
+    background-image: url("./assets/wsp.png");
+    background-size: cover;
+    border-radius: 86px;
+    position: fixed;
+    top: 480px;
+    right: 30px;
+    border: 2px solid #29cc39;
+    z-index: 800;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 1200px) {
+  
+  
+    .ContenedorDiv2 {
+      height: 451px;
+      width: 470px;
+      margin-top: 313px;
+    }
+    .background {
+      width: 100%;
+      height: 421px;
+    }
+    .imgFloat3{
+        left: 330px;
+      }
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1000px) {
+    .ContenedorDiv2 {
+      height: 330px;
+      width: 350px;
+      margin-top: 435px;
+    }
+  
+    .background {
+      width: 100%;
+      height: 390px;
+    }
+  
+    .imgFloat{
+        width: 109.22px;
+        height: 106.75px;
+        position: absolute;
+        top: 163.68px;
+      }
+    
+      .imgFloat2{
+        left: 130px;
+        position: absolute;
+        width: 62.64px;
+        height: 60.82px;
+      }
+    
+      .imgFloat3{
+        position: absolute;
+        top:130.68px;
+        left: 270px;
+        width: 66.19px;
+        height: 65.19px;
+        @include floating;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 940px) {
+    .div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 868px;
+    }
+  
+    .div1 {
+      margin: 0 auto;
+      margin-top: 65px;
+      width: 65%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .frase {
+      height: 176px;
+    }
+  
+    .frase h2 {
+      font-size: 40px;
+    }
+    .btn {
+      background: #6f4ef5;
+      border-radius: 4px;
+      padding: 20px 38px;
+      color: #ffffff;
+      font-size: 16px;
+      margin: 0 auto;
+      margin-top: 24px;
+      width: 100%;
+    }
+  
+    .btn2 {
+      display: none;
+    }
+  
+    .div2 {
+        width: 331.07px;
+        height: 306.77px;
+        margin: 0 auto;
+    }
+  
+    .div2 img{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  
+  
+    .ContenedorDiv2 {
+      position: absolute;
+      width: 331.07px;
+      height: 306.77px;
+      top: 639px;
+      left: 50px;
+      margin: 0 auto;
+    }
+  
+    .background {
+      position: absolute;
+      width: 290px;
+      height: 270px;
+      left: 40px;
+    }
+  
+    .imgFloat{
+        width: 109.22px !important;
+        height: 106.75px !important;
+        position: absolute;
+        top: 163.68px;
+
+      }
+    
+      .imgFloat2{
+        left: 130px;
+        position: absolute;
+        width: 78.22px !important;
+        height: 80.75px !important;
+        top:60.68px;
+      }
+    
+      .imgFloat3{
+        position: absolute;
+        top:130.68px;
+        left: 270px;
+        width: 78.22px !important;
+        height: 80.75px !important;
+      }
+
+
+    .btnWSP {
+      position: fixed;
+      top: 505px;
+      right: 30px;
+      z-index: 800;
+      cursor: pointer;
+    }
+  
+    .AgendarReunionBTN {
+      background: #00aeff;
+      padding: 16px;
+      gap: 9px;
+      color: #ffffff;
+      font-weight: 400;
+      border-radius: 5px;
+      font-size: 18px;
+      position: fixed;
+      left: 23px;
+      top: 510px;
+      z-index: 800;
+      cursor: pointer;
+    }
+    
+    .h2Dest{
+      font-size: 40px;
+      line-height: 44px;
+    } 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 800px) {
+    .div {
+      height: 908px;
+    }
+    .ContenedorDiv2 {
+      position: absolute;
+      top: 679px;
+      left: -0px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    .divImgsParrafo {
+      margin-left: 30px;
+    }
+  
+    .frase {
+      height: 202px;
+      width: 100%;
+      color: #ffffff;
+      text-align: left;
+      line-height: 67px;
+    }
+  
+
+    .frase .h2Mobile {
+      font-size: 45px;
+      line-height: 14px;
+      text-align: left;
+      position: relative;
+      top: -30px;
+      color: #ffffff;
+      transform: translatey(0px);
+    }
+  }
+  
+
+
+
+  @media screen and (max-width: 540px) {
+    .div {
+        height: 948px;
+      }
+
+      .ContenedorDiv2 {
+        margin-top: 70px;
+      }
+    .divImgs{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .divImgsParrafo {
+      margin-left: 0px;
+      width: 100%;
+    }
+    
+  
+    .background {
+      position: absolute;
+      width: 250px;
+      height: 240px;
+      left: -0px;
+    }
+  
+  
+    .frase .h2Mobile {
+      font-size: 35px;
+      line-height: 14px;
+      text-align: left;
+      position: relative;
+      top: -0px;
+      color: #ffffff;
+      transform: translatey(0px);
+    }
+  
+    .btnWSP {
+      position: fixed;
+      top: 465px;
+      right: 30px;
+      z-index: 800;
+      cursor: pointer;
+      width: 55px;
+      height: 55px;
+      border-radius: 70px;
+    }
+  
+    .AgendarReunionBTN {
+      background: #00aeff;
+      padding: 16px;
+      gap: 9px;
+      color: #ffffff;
+      font-weight: 400;
+      border-radius: 0px;
+      font-size: 18px;
+      position: fixed;
+      left: 0px;
+      top: 529px;
+      z-index: 800;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+  
+  
+  
+  

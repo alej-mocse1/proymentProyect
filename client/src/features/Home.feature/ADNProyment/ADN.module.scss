@@ -11,9 +11,10 @@
   align-items: center;
   @include responsive("phone") {
     width: 90%;
+    margin: 0;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 29px;
+    margin-left: 21.5px;
     align-items: flex-start;
   }
 }
@@ -52,12 +53,15 @@
     text-align: left;
   }
 }
+.data {
+  width: 310px;
+  height: 470px;
+}
 
 .carrousel {
   display: none;
   @include responsive("carrousel") {
     display: flex;
-    flex-direction: row;
   }
 }
 .cards {

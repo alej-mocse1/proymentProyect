@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './LideresEnLatinoamerica.module.css';
+import styles from './LideresEnLatinoamerica.module.scss';
 
 const LideresHIJO = (props) => {
 

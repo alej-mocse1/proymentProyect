@@ -1,11 +1,15 @@
 import React from "react";
-import style from "./ladinPage1.module.css";
+// import style from "./ladinPage1.module.css";
+import style from "./ladinPage1.module.scss";
 
-import Heroimage from './assets/Heroimage.png'
+import Heroimage from './assets/HeroimageSinNada.png';
 import img02 from './assets/img02.png';
 import img03 from './assets/img03.png';
 import img04 from './assets/img04.png';
 import img05 from './assets/img05.png';
+import imgFloat from './assets/imgFloat.svg';
+import imgFloat2 from './assets/imgFloat2.svg';
+import imgFloat3 from './assets/imgFloat3.svg';
 
 
 
@@ -18,14 +22,7 @@ function LandinPage(props) {
          <div className={style.div1}>
 
             <div className={style.frase}>
-                <h2 className={style.h2Dest}>Transformando</h2>
-                <h2 className={style.h2Dest}>desafios en nuevas </h2>
-                <h2 className={style.h2Dest}>oportunindades</h2>
-
-                <h2 className={style.h2Mobile}>Transformando</h2>
-                <h2 className={style.h2Mobile}>desafios</h2>
-                <h2 className={style.h2Mobile}>en nuevas</h2>
-                <h2 className={style.h2Mobile}>oportunindades</h2> 
+               <h2 className={style.h2Dest}>Transformando desafios en nuevas oportunidades </h2>
            </div>
 
            
@@ -58,11 +55,16 @@ function LandinPage(props) {
 
          <div className={style.div2}>
             <div className={style.ContenedorDiv2}>
-    
-             <img src={Heroimage} alt="Heroimage.png" />
+   
+             <img src={Heroimage} alt="Heroimage.png"  className={style.imgPrincipal}/>
           
+
+             <img src={imgFloat} alt="imgFloat-from" className={style.imgFloat} />
+             <img src={imgFloat2} alt="imgFloat-from2" className={style.imgFloat2} />
+             <img src={imgFloat3} alt="imgFloat-from3" className={style.imgFloat3} />
             </div>
 
+         
             {/* <button className={style.btnWSP}></button> */}
          </div>
 

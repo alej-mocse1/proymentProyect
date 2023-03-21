@@ -83,12 +83,12 @@ $button-purple: #6f4ef5;
 
 @mixin responsive($device) {
   @if $device == phone {
-    @media screen and (max-width: 23.5em /*  375px */) {
+    @media screen and (max-width: 375px /*  375px */) {
       @content;
     }
   }
   @if $device == tablet {
-    @media screen and (max-width: 45.063em /* 720px */) {
+    @media screen and (max-width: 720px /* 720px */) {
       @content;
     }
   }
@@ -99,7 +99,7 @@ $button-purple: #6f4ef5;
   }
 
   @if $device == laptop {
-    @media screen and (max-width: 64.063em /* 1024px */) {
+    @media screen and (max-width: 1024px /* 1024px */) {
       @content;
     }
   }

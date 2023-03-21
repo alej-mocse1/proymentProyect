@@ -3,9 +3,10 @@ import Card from "../../../core/components/Card/Card";
 import styles from "./ADN.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Pagination} from "swiper";
+import { Pagination } from "swiper";
 import "swiper/scss";
 import "swiper/scss/pagination";
+import './Carrousel.scss'
 
 export default function ADN() {
   return (
@@ -26,18 +27,23 @@ export default function ADN() {
             ))}
           </div>
           <div className={styles.carrousel}>
-            <Swiper
-              modules={[Pagination]}
-              slidesPerView={1}
-              pagination={{clickable:true}}
-              className={styles.data}
-            >
-              {infoADNCards.map((info) => (
-                <SwiperSlide key={info.id}>
-                <Card key={info.id} info={info} />
-              </SwiperSlide>
-              ))}
-            </Swiper>
+            <div className="swiperContainer">
+              <Swiper
+                modules={[Pagination]}
+                //si no gusta slides = 1
+                slidesPerView={1.25}
+                spaceBetween={30}
+                pagination={{ el: ".pagination", clickable: true }}
+                className={styles.data}
+              >
+                {infoADNCards.map((info) => (
+                  <SwiperSlide key={info.id}>
+                    <Card key={info.id} info={info} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <div className="pagination" />
           </div>
         </div>
       </div>

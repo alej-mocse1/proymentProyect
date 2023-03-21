@@ -56,7 +56,7 @@ const LideresEnLatinoamerica = () => {
         <div className={styles.div}>
 
             <div>
-               <h2 className={styles.H2}>líderes  en latinoamerica nos recomiendan</h2>
+               <h2 className={styles.H2}>Líderes  en Latinoamerica nos recomiendan</h2>
             </div>
            
            

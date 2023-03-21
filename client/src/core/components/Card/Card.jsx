@@ -1,4 +1,5 @@
 import styles from "./Card.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Card({ info }) {
   return (
@@ -8,7 +9,7 @@ export default function Card({ info }) {
         <h6>{info.title}</h6>
         <p>{info.description}</p>
         {/*  decidir mostrar o no */}
-        {!info.ADN ? <a href="#Ver">Ver más</a> : <></>}
+        {!info.ADN ? <Link to={'/'} className={styles.anchor}>Ver más</Link> : <></>}
       </div>
     </div>
   );

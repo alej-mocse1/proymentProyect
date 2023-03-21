@@ -54,14 +54,22 @@
   }
 }
 .data {
-  width: 310px;
+  //si no le gusta 270px
+  width: 330px;
   height: 470px;
+}
+.pagination {
+  display: flex;
 }
 
 .carrousel {
   display: none;
   @include responsive("carrousel") {
     display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center;
+    align-items: center; */
   }
 }
 .cards {

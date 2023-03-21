@@ -24,7 +24,9 @@ export default function OPT() {
             <p className={styles.contentTitle}>
               Optimizamos empresas con nuestros servicios profesionales a medida
             </p>
-            <FormButton></FormButton>
+            <div className={styles.btn}>
+              <FormButton></FormButton>
+            </div>
           </div>
         </div>
         <img src={image2bkgr} alt="imagen" className={styles.imgbkgr2}></img>

@@ -16,6 +16,11 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
+  @include responsive('carrousel'){
+    max-width: 386px;
+    max-height: 104px;
+    padding: 16px 30px;
+  }
   @include responsive("phone") {
     max-width: 336px;
     max-height: 54px;

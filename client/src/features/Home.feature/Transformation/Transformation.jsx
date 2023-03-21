@@ -40,7 +40,7 @@ function Transformation() {
                                 modules={[Pagination]}
 
                                 pagination={{
-                                    el: ".pagination",
+                                    el: ".transformation-pagination",
                                     clickable: true,
                                 }}
                                 breakpoints={{
@@ -80,7 +80,7 @@ function Transformation() {
                                 <SwiperSlide><div className="span" id={style.color}>Rubro Educacion</div></SwiperSlide>
                             </Swiper>
                         </div>
-                        <div className="pagination" />
+                        <div className=" transformation-pagination" />
                     </div>
 
 

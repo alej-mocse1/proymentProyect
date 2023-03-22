@@ -1,6 +1,6 @@
 import styles from "./OPT.module.scss";
 import FormButton from "../../../core/components/Button/Button";
-import dashboard from "../../Home.feature/assets/imgOptimizandoEmpresas/graphicdashboard.png";
+import dashboard from "../../Home.feature/assets/imgOptimizandoEmpresas/graphic.png";
 //import dashboard from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/graphicdashboard.svg";
 import image2bkgr from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/Patterngraphic.svg";
 import dashboardfloat from "../../../features/Home.feature/assets/imgOptimizandoEmpresas/graphicflotantedashboard.svg";

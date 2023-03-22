@@ -27,15 +27,58 @@ export default function ADN() {
             ))}
           </div>
           <div className={styles.carrousel}>
-            <div className="swiperContainer">
+            {/* <div className="swiperContainer"> */}
               <Swiper
                 modules={[Pagination]}
                 //si no gusta slides = 1
-                loop={true}
-                slidesPerView={1.25}
+               /*  loop={true} */
+                /* slidesPerView={1.25} */
                 spaceBetween={30}
                 pagination={{ el: ".ADN-pagination", clickable: true }}
                 className={styles.data}
+
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 30,
+                  },
+                  380: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  420: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 10,
+                  },
+                  460: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                  },
+                  560: {
+                    slidesPerView: 1.65,
+                    spaceBetween: 10,
+                  },
+                  660: {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                  },
+                  760: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 5,
+                  },
+                  800: {
+                    slidesPerView: 2.15,
+                    spaceBetween: 20,
+                  },
+                  920: {
+                    slidesPerView: 2.55,
+                    spaceBetween: 10,
+                  },
+                  1024: {
+                    slidesPerView: 2.65,
+                    spaceBetween: 30,
+                  },
+                }}
               >
                 {infoADNCards.map((info) => (
                   <SwiperSlide key={info.id}>
@@ -43,7 +86,7 @@ export default function ADN() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </div>
+            {/* </div> */}
             <div className="ADN-pagination" />
           </div>
         </div>

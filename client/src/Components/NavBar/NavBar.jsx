@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Navbar.module.css';
 import logo from './logoPrueba.png';
 import { useState } from 'react';
+import 'remixicon/fonts/remixicon.css'
 
 function Navbar() {
 
@@ -88,9 +89,9 @@ function Navbar() {
 
     <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (
-        <span className={style.arrowUp}>▲</span>
+        <span className={style.arrowUp}><i class="ri-arrow-up-s-line"></i></span>
           ) : (
-        <span className={style.arrowUp}>▼</span>
+        <span className={style.arrowUp}><i class="ri-arrow-down-s-line"></i></span>
     )}</h4>  
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Navbar.module.css';
 import logo from './logoPrueba.png';
 import { useState } from 'react';
+import 'remixicon/fonts/remixicon.css'
 
 function Navbar() {
 
@@ -43,7 +44,7 @@ function Navbar() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          gap: '16px',
+          //gap: '16px',
           textAlign: "left",
           width:"300px",
           height: "386px",
@@ -55,6 +56,13 @@ function Navbar() {
          } : {
          display: "none",
        }
+       let responsiveServicios2 = isOpen2 ? {
+        height: "130vh",
+
+       } : {
+        height: "42vh",
+     }
+     let  estilos = { ...responsive, ...responsiveServicios2 };
 
 
 
@@ -84,13 +92,13 @@ function Navbar() {
 
 
 
-    <div className={style.divLink2 } style={responsive} > 
+    <div className={style.divLink2 } style={estilos} > 
 
     <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (
-        <span className={style.arrowUp}>▲</span>
+        <span className={style.arrowUp}><i class="ri-arrow-up-s-line"></i></span>
           ) : (
-        <span className={style.arrowUp}>▼</span>
+        <span className={style.arrowUp}><i class="ri-arrow-down-s-line"></i></span>
     )}</h4>  
 
 

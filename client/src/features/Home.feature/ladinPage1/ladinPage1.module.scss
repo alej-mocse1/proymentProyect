@@ -396,30 +396,6 @@
         height: 80.75px !important;
       }
 
-
-    .btnWSP {
-      position: fixed;
-      top: 505px;
-      right: 30px;
-      z-index: 800;
-      cursor: pointer;
-    }
-  
-    .AgendarReunionBTN {
-      background: #00aeff;
-      padding: 16px;
-      gap: 9px;
-      color: #ffffff;
-      font-weight: 400;
-      border-radius: 5px;
-      font-size: 18px;
-      position: fixed;
-      left: 23px;
-      top: 510px;
-      z-index: 800;
-      cursor: pointer;
-    }
-    
     .h2Dest{
       font-size: 40px;
       line-height: 44px;
@@ -543,29 +519,25 @@
   
     .btnWSP {
       position: fixed;
-      top: 465px;
       right: 30px;
       z-index: 800;
-      cursor: pointer;
+      bottom: 0;
+      margin-bottom: 70px;
       width: 55px;
       height: 55px;
-      border-radius: 70px;
     }
   
     .AgendarReunionBTN {
       background: #00aeff;
       padding: 16px;
       gap: 9px;
-      color: #ffffff;
-      font-weight: 400;
-      border-radius: 0px;
-      font-size: 18px;
-      position: fixed;
+      margin-bottom: 0px;
       left: 0px;
-      top: 529px;
       z-index: 800;
       cursor: pointer;
+
       width: 100%;
+      border-radius: 0px ;
     }
 
     .btn{

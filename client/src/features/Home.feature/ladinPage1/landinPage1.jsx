@@ -1,6 +1,7 @@
 import React from "react";
 // import style from "./ladinPage1.module.css";
 import style from "./ladinPage1.module.scss";
+import FormButton from '../../.././core/components/Button/Button'
 
 import Heroimage from './assets/Heroimage2.png';
 import img02 from './assets/img02.png';
@@ -32,12 +33,13 @@ function LandinPage(props) {
            </div>
 
            <div className={style.divbtn}>
-            <button className={style.btn}>Agendar reunión</button>
+            {/* <button className={style.btn}>Agendar reunión</button> */}
+            <FormButton></FormButton>
             <button className={style.btn2}>Conocer mas</button>
            </div>
 
            <div className={style.divImgs}>
-           <div>
+           <div  className={style.divImgs2}>
               <img src={img02} alt="img02.png"  />
               <img src={img03} alt="img03.png" />
               <img src={img04} alt="img04.png" />

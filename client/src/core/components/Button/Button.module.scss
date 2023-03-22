@@ -5,10 +5,8 @@
 }
 
 .btn {
-  width: 100%;
-  max-width: 201px;
-  min-width: 201px;
-  min-height: 64px;
+  width: 201px;
+  height: 64px;
   padding: 20px 38px;
   border-radius: 4px;
   background-color: $button-purple;
@@ -17,13 +15,17 @@
   cursor: pointer;
   font-stretch: 100%;
   @include responsive('carrousel'){
-    max-width: 386px;
+    width: 85%;
     max-height: 104px;
     padding: 16px 30px;
   }
   @include responsive("phone") {
-    max-width: 336px;
-    max-height: 54px;
+   
+    width: 100%;
+    max-width: 326px;
+   
+    height: 54px;
+   
     padding: 15px 24px;
   }
 }

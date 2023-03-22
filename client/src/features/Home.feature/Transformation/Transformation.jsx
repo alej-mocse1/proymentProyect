@@ -44,30 +44,38 @@ function Transformation() {
                                     clickable: true,
                                 }}
                                 breakpoints={{
-                                     300: {
-                                        slidesPerView: 1,
+                                    320: {
+                                        slidesPerView: 1.5,
                                         spaceBetween: 15,
                                     }, 
-                                    450: {
-                                        slidesPerView: 2,
+                                    375: {
+                                        slidesPerView: 1.75,
                                         spaceBetween: 25,
                                     },
-                                    650: {
-                                        slidesPerView: 3,
+                                    425: {
+                                        slidesPerView: 2.25,
                                         spaceBetween: 25,
                                     },
-                                    900: {
-                                        slidesPerView: 4,
+                                    768: {
+                                        slidesPerView: 3.25,
+                                        spaceBetween: 25,
+                                    },
+                                    1024: {
+                                        slidesPerView: 4.25,
                                         spaceBetween: 20,
                                     },
-                                    "@1.50": {
+                                    1440: {
+                                        slidesPerView: 5.25,
+                                        spaceBetween: 20,
+                                    },
+                                    /* "@1.50": {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
                                     "@1.75": {
                                         slidesPerView: 4,
                                         spaceBetween: 20,
-                                    },
+                                    }, */
                                 }}
                             >
                                 <SwiperSlide><div className="span"><p>Rubro Industrial </p></div></SwiperSlide>

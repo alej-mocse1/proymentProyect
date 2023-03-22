@@ -2,92 +2,115 @@
 
 .div2 {
   width: 100%;
-  height: 666px;
-  padding: 90px 50px 200px;
+  height: 400px;
+  padding: 20px 0px 180px 0px;
   background-color: #000538;
   @include flex-row-around;
   color: white;
-  @include responsive("tab-land") {
-    padding: 0px 10px 0 10px;
-    height: 750px;
+  @media (max-width: 1030px) {
+    padding: 20px 0 130px 0;
   }
-  @include responsive("phone") {
-    padding: 30px 10px 0 10px;
-     @include flex-column-around;
-    height: 1000px;
+  @media (max-width: 770px) {
+    padding: 20px 0 470px 0;
   }
-  @media (max-width: 320px) {
-    padding: 20px 5px 0 5px;
-    height: 1070px;
+  @include responsive("tablet") {
+    padding: 10px 0 10px 0;
+    @include flex-column-around;
+    height: 720px;
   }
 }
 
 .div--row2 {
+  margin-left: 50px;
+  width: 550px;
   @include flex-column-start2;
-  @include responsive("phone") {
+  @media (max-width: 1030px) {
+    width: 450px;
+  }
+  @media (max-width: 770px) {
     width: 100%;
   }
 
   h1 {
     font-weight: 700;
-    font-size: 67px;
-    @include responsive("phone") {
+    font-size: 48px;
+    @media (max-width: 1030px) {
       font-size: 40px;
+    }
+    @include responsive("tablet") {
+      width: 326px;
+      height: 71px;
+      font-size: 32px;
     }
   }
 
   span {
+    height: 72px;
     color: #dcddeb;
     font-weight: 400;
     font-size: 18px;
-  }
-
-  .button-container2 {
-    button {
-      margin: 20px 100px 20px 0;
-      padding: 28px 38px;
+    padding-bottom: 40px;
+    @include responsive("tablet") {
       font-size: 16px;
-      font-weight: 400;
-      border-radius: 4px;
-      border: 1px solid #6f4ef5;
-      @include responsive("phone") {
-        margin: 20px 0;
-        padding: 28px 5.4rem;
-      }
-    }
-
-    .button-container--reunion2 {
-      background: #6f4ef5;
-      color: #ffffff;
+      width: 100%;
+      width: 329px;
+      height: 96px;
+      padding-top: 50px;
     }
   }
 
   .div--row--hero2 {
-    width: 580px;
-    height: 551px;
-    left: 0;
+    width: 610px;
+    height: 581px;
+    left: 600px;
     position: relative;
-    top: 100px;
-    @include responsive("tab-land") {
-      width: 500px;
-      height: 470px;
-      left: 0px;
-      top: 140px;
+    top: -360px;
+    @media (max-width: 1030px) {
+      width: 510px;
+      height: 480px;
+      top: -280px;
+      left: 450px;
     }
-    @include responsive("tab-port") {
-      display: none;
+    @media (max-width: 770px) {
+      left: 80px;
+      top: 50px;
+    }
+    @include responsive("tablet") {
+      width: 370px;
+      height: 340px;
+      left: 0px;
+      top: 10px;
     }
     @include responsive("phone") {
       display: flex;
-      width: 370px;
-      height: 340px;
+      width: 327px;
+      height: 284.25px;
       left: 0;
-      top: 50px;
+      top: 30px;
     }
     @media (max-width: 320px) {
       width: 300px;
       height: 280px;
-      top: 90px;
+      top: 30px;
     }
   }
+}
+
+.grafico2 {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  left: 90%;
+
+  @media (max-width: 1200px) {
+    width: 7%;
+    height: 30%;
+    position: absolute;
+    left: 93%;
+  }
+}
+.grafico2 img {
+  position: relative;
+  top: -20px;
+  width: 100%;
 }

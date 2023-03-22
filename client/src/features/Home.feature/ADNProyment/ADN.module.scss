@@ -57,9 +57,14 @@
   }
 }
 .data {
-  //si no le gusta 270px
   width: 330px;
-  height: 470px;
+    height: 470px;
+  //si no le gusta 270px
+  @include responsive('phone'){
+    
+    width: 330px;
+    height: 470px;
+  }
 }
 .pagination {
   display: flex;

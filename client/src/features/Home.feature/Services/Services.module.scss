@@ -4,8 +4,11 @@
   margin: 72px 65px 72px;
   display: flex;
   flex-direction: column;
+  @include responsive("carrousel") {
+    margin: 66px 0px 66px 21.5px;
+  }
   @include responsive("phone") {
-    margin: 56px 0px 56px 20px;
+    margin: 56px 0px 56px 21.5px;
   }
 }
 .content {
@@ -17,7 +20,7 @@
   position: relative;
   margin-bottom: 36px;
   @include responsive("phone") {
-    gap:16px;
+    gap: 16px;
   }
 }
 .h4 {
@@ -69,23 +72,39 @@
 .buttons button {
   width: 48px;
   height: 48px;
-  border: 1px solid #6f4ef5;
-  background-color: #ffff;
+  
   border-radius: 4px;
   margin-left: 16px;
   transition-duration: 0.4s;
 }
-
-.buttons button:hover {
+.none{
+  border: 1px solid #6f4ef5;
+  background-color: #ffff;
+}
+.active {border: 1px solid #6f4ef5;
   background-color: #6f4ef5;
   i {
     color: #ffff;
   }
 }
-.container{
-  display:flex;
+/* .buttons button:hover {
+  background-color: #6f4ef5;
+  i {
+    color: #ffff;
+  }
+} */
+.container {
+  display: flex;
   flex-direction: column;
 }
 .carrousel {
   width: 100%;
+}
+
+.containerCarrousel {
+  width: 100%;
+  @include responsive("phone") {
+    width: 330px;
+    height: 470px;
+  }
 }

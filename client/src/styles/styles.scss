@@ -83,7 +83,7 @@ $button-purple: #6f4ef5;
 
 @mixin responsive($device) {
   @if $device == phone {
-    @media screen and (max-width: 375px /*  375px */) {
+    @media screen and (max-width: 376px /*  375px */) {
       @content;
     }
   }

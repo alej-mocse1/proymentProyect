@@ -65,13 +65,13 @@
     width: 100%;
     text-align: left;
   }
-  .btn {
-    background: #6f4ef5;
-    border-radius: 4px;
-    padding: 20px 38px;
-    color: #ffffff;
-    font-size: 16px;
-  }
+  // .btn {
+  //   background: #6f4ef5;
+  //   border-radius: 4px;
+  //   padding: 20px 38px;
+  //   color: #ffffff;
+  //   font-size: 16px;
+  // }
   
   .btn2 {
     background: #000538;
@@ -93,7 +93,6 @@
   .divImgs img {
     width: 48.88px;
     height: 48.88px;
-    border: 1.62927px solid #ffffff;
     border-radius: 61.53px;
     margin: 0px -9.77561px;
     position: relative;
@@ -509,15 +508,12 @@
       display: flex;
     }
 
-    .divImgs div{
-      border: 1px solid white;
-    }
 
     .divImgsParrafo {
       margin-left: 0px;
       width: 85%;
       margin-left: 20px;
-      border: 1px solid white;
+
       text-align: left;
     }
     
@@ -573,6 +569,15 @@
 
     .divImgs{
       margin-top: 57px;
+    }
+
+    .divImgs2 img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .divImgsParrafo{
+      width: 52%;
     }
   }
 

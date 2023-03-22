@@ -83,12 +83,12 @@ $button-purple: #6f4ef5;
 
 @mixin responsive($device) {
   @if $device == phone {
-    @media screen and (max-width: 375px /*  375px */) {
+    @media screen and (max-width: 375px ) {
       @content;
     }
   }
   @if $device == tablet {
-    @media screen and (max-width: 720px /* 720px */) {
+    @media screen and (max-width: 720px ) {
       @content;
     }
   }
@@ -104,10 +104,46 @@ $button-purple: #6f4ef5;
   }
 
   @if $device == laptop {
-    @media screen and (max-width: 1024px /* 1024px */) {
+    @media screen and (max-width: 1024px ) {
       @content;
     }
   }
+
+  /* MEDIA QUERIES NUEVAS*/
+
+  /* @if $device == phone-S {
+    @media screen and (max-width: 374px) {
+      @content;
+    }
+  }
+  @if $device == phone-M {
+    @media screen and (max-width: 424px) {
+      @content;
+    }
+  }
+  @if $device == phone-L {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $device == tablet {
+    @media screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @if $device == laptop {
+    @media screen and (max-width: 1439px) {
+      @content;
+    }
+  }
+  @if $device == desktop {
+    @media screen and (max-width: 2560px) {
+      @content;
+    }
+  } */
+
+  
+  
 }
 
 @mixin box-shadow-general {

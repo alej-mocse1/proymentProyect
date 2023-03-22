@@ -4,11 +4,13 @@
     display: flex;
     background: #F7F7FC;
     padding: 70px 103px;
-    @include responsive("carrousel"){
-        padding: 70px 40px;
+    /* @include responsive("tablet"){ */
+    @media screen and (max-width: 1023px){
+        padding: 72px 40px;
     }
 
-    @include responsive("phone") {
+    /* @include responsive("phone-L") {*/
+    @media screen and (max-width: 767px) {
         padding: 0;
         padding: 56px 0 56px 20px;
     }
@@ -17,23 +19,21 @@
     .container {
         display: none;
 
-        @include responsive("carrousel2"){
+        /* @include responsive("tablet") {*/
+        @media screen and (max-width: 1023px){
             display: flex;
-            justify-content: center;
-            width: 100%;
             flex-direction: column;
+            width: 100%;
             gap: 20px;
         }
-
-        @include responsive("phone") {
+        /* @include responsive("phone") {
             height: fit-content;
             display: flex;
             flex-direction: column;
             gap: 25px;
             width: 100%;
             margin-bottom: 48px;
-        }
-
+        } */
 
         .swiperContainer {
             overflow-x: hidden;
@@ -50,7 +50,6 @@
 
             width: 170px;
             height: 35px;
-            // padding-left: 8px;
             background-color: #6F4EF5;
             color: #fff;
 
@@ -58,8 +57,7 @@
             font-weight: 400;
             line-height: 27px;
             letter-spacing: 0em;
-            text-align: center;
-            
+            text-align: center;     
         }
 
         .span p{

@@ -47,6 +47,7 @@
     text-align: left;
     position: relative;
     top: -22px;
+    border: 1px solid white;
   }
   
   .frase2 {
@@ -65,13 +66,13 @@
     width: 100%;
     text-align: left;
   }
-  // .btn {
-  //   background: #6f4ef5;
-  //   border-radius: 4px;
-  //   padding: 20px 38px;
-  //   color: #ffffff;
-  //   font-size: 16px;
-  // }
+  .btn {
+    background: #6f4ef5;
+    border-radius: 4px;
+    padding: 20px 38px;
+    color: #ffffff;
+    font-size: 16px;
+  }
   
   .btn2 {
     background: #000538;
@@ -108,7 +109,7 @@
     font-size: 14px;
     line-height: 21px;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 20px;
   }
   
   .divImgsParrafo p {
@@ -128,7 +129,9 @@
     font-size: 18px;
     position: fixed;
     left: 23px;
-    top: 490px;
+    // top: 490px;
+    bottom: 0;
+    margin-bottom: 10px;
     z-index: 800;
     cursor: pointer;
   }
@@ -196,11 +199,13 @@
     background-size: cover;
     border-radius: 90px;
     position: fixed;
-    top: 480px;
+    // top: 480px;
     right: 30px;
     z-index: 800;
     border: none;
     cursor: pointer;
+    bottom: 0;
+    margin-bottom: 10px;
   }
   
 
@@ -391,30 +396,6 @@
         height: 80.75px !important;
       }
 
-
-    .btnWSP {
-      position: fixed;
-      top: 505px;
-      right: 30px;
-      z-index: 800;
-      cursor: pointer;
-    }
-  
-    .AgendarReunionBTN {
-      background: #00aeff;
-      padding: 16px;
-      gap: 9px;
-      color: #ffffff;
-      font-weight: 400;
-      border-radius: 5px;
-      font-size: 18px;
-      position: fixed;
-      left: 23px;
-      top: 510px;
-      z-index: 800;
-      cursor: pointer;
-    }
-    
     .h2Dest{
       font-size: 40px;
       line-height: 44px;
@@ -496,7 +477,7 @@
       }
 
       .div1{
-        margin-top: -140px;
+        margin-top: -90px;
       }
       
       .ContenedorDiv2 {
@@ -538,33 +519,29 @@
   
     .btnWSP {
       position: fixed;
-      top: 465px;
       right: 30px;
       z-index: 800;
-      cursor: pointer;
+      bottom: 0;
+      margin-bottom: 70px;
       width: 55px;
       height: 55px;
-      border-radius: 70px;
     }
   
     .AgendarReunionBTN {
       background: #00aeff;
       padding: 16px;
       gap: 9px;
-      color: #ffffff;
-      font-weight: 400;
-      border-radius: 0px;
-      font-size: 18px;
-      position: fixed;
+      margin-bottom: 0px;
       left: 0px;
-      top: 529px;
       z-index: 800;
       cursor: pointer;
+
       width: 100%;
+      border-radius: 0px ;
     }
 
     .btn{
-      margin-top: 48px;
+      margin-top: 12px;
     }
 
     .divImgs{
@@ -606,7 +583,7 @@
     .ContenedorDiv2 {
       position: relative;
       margin-top: 0px;
-      top: 165px;
+      top: 139.5px;
       left: 1px;
     }
 

@@ -33,8 +33,8 @@ function LandinPage(props) {
            </div>
 
            <div className={style.divbtn}>
-            {/* <button className={style.btn}>Agendar reunión</button> */}
-            <FormButton></FormButton>
+            <button className={style.btn}>Agendar reunión</button>
+            {/* <FormButton></FormButton> */}
             <button className={style.btn2}>Conocer mas</button>
            </div>
 

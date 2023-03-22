@@ -18,20 +18,20 @@
 
 .divCards{
     height: 352px;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
 .grafico{
     position: absolute;
     top:280px;
-    left: -50px;
+    left: -30px;
     @include floating;
     
 }
@@ -40,7 +40,7 @@
     position: absolute;
     @include floating;
     top: -40px;
-    left: 95%;
+    left: 92%;
 }
 
 

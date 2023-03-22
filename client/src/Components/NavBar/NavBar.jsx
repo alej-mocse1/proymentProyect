@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function Navbar() {
 
-    const [isOpen, SetOpen] = useState(false);
+    const [isOpen, SetOpen] = useState(true);
     const [isOpen2, SetOpen2] = useState(false);
    
     let responsive = isOpen ? {
@@ -45,8 +45,13 @@ function Navbar() {
           justifyContent: 'center',
           gap: '16px',
           textAlign: "left",
-          width:"70%",
-          marginLeft: '10px' ,
+          width:"300px",
+          height: "386px",
+          padding: "16px 13px",
+          gap: "10px",
+          backgroundColor: "#F7F7FC" ,
+          marginLeft: "19px",      
+          
          } : {
          display: "none",
        }
@@ -81,7 +86,7 @@ function Navbar() {
 
     <div className={style.divLink2 } style={responsive} > 
 
-    <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`servicios `}
+    <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (
         <span className={style.arrowUp}>▲</span>
           ) : (
@@ -96,7 +101,7 @@ function Navbar() {
             <h4  className={style.h4servicer}>Marketing digital</h4>   
             <h4  className={style.h4servicer}>Analisis de datos</h4> 
             <h4  className={style.h4servicer}>Servicios en tendencia</h4> 
-            <h4  className={style.h4servicer}>diseño web UX/UI</h4> 
+            <h4  className={style.h4servicer}>Diseño web UX/UI</h4> 
             <h4  className={style.h4servicer}>Servicios a tu medida</h4> 
         </div>
 

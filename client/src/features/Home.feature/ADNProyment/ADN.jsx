@@ -31,6 +31,7 @@ export default function ADN() {
               <Swiper
                 modules={[Pagination]}
                 //si no gusta slides = 1
+                loop={true}
                 slidesPerView={1.25}
                 spaceBetween={30}
                 pagination={{ el: ".ADN-pagination", clickable: true }}

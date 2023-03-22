@@ -18,8 +18,8 @@ function DesafíosDeTodoNivel() {
           tecnólogica, siendo un impulsor para optimizar las companías con
           visión global.
         </span>
-
-        <Button className="button-container2" />
+        <div className="button-container2"> <Button  /></div>
+        
       </div>
 
       <div className="div--row2 container2">

@@ -109,6 +109,14 @@ $button-purple: #6f4ef5;
     }
   }
 
+  @if $device == carrouselADN {
+    @media screen and (max-width: 1301px ) {
+      @content;
+    }
+  }
+
+
+
   /* MEDIA QUERIES NUEVAS*/
 
   /* @if $device == phone-S {

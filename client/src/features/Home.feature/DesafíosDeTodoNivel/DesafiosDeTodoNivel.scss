@@ -29,6 +29,7 @@
   }
   @media (max-width: 770px) {
     width: 100%;
+    margin-left: 0;
   }
 
   h1 {
@@ -41,6 +42,7 @@
       width: 326px;
       height: 71px;
       font-size: 32px;
+      margin-left: 20px;
     }
   }
 
@@ -55,7 +57,9 @@
       width: 100%;
       width: 329px;
       height: 96px;
-      padding-top: 50px;
+      padding-top: 40px;
+      margin-left: 20px;
+      
     }
   }
 
@@ -76,8 +80,8 @@
       top: 50px;
     }
     @include responsive("tablet") {
-      width: 370px;
-      height: 340px;
+      width: 330px;
+      height: 300px;
       left: 0px;
       top: 10px;
     }
@@ -108,9 +112,21 @@
     position: absolute;
     left: 93%;
   }
+  @include responsive ("tablet"){
+    display: none;
+  }
 }
 .grafico2 img {
   position: relative;
   top: -20px;
   width: 100%;
+}
+
+.button-container2{
+  width: 90%;
+  
+  @include responsive ("tablet"){
+    margin-left: 20px;
+
+  }
 }

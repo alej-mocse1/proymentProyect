@@ -56,6 +56,13 @@ function Navbar() {
          } : {
          display: "none",
        }
+       let responsiveServicios2 = isOpen2 ? {
+        height: "130vh",
+
+       } : {
+        height: "42vh",
+     }
+     let  estilos = { ...responsive, ...responsiveServicios2 };
 
 
 
@@ -85,7 +92,7 @@ function Navbar() {
 
 
 
-    <div className={style.divLink2 } style={responsive} > 
+    <div className={style.divLink2 } style={estilos} > 
 
     <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (

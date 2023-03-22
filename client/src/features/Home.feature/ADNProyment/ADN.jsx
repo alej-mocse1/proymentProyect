@@ -43,15 +43,15 @@ export default function ADN() {
                     spaceBetween: 30,
                   },
                   380: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.2,
                     spaceBetween: 10,
                   },
                   420: {
-                    slidesPerView: 1.1,
+                    slidesPerView: 1.3,
                     spaceBetween: 10,
                   },
                   460: {
-                    slidesPerView: 1.2,
+                    slidesPerView: 1.4,
                     spaceBetween: 10,
                   },
                   560: {
@@ -63,7 +63,7 @@ export default function ADN() {
                     spaceBetween: 5,
                   },
                   760: {
-                    slidesPerView: 2.1,
+                    slidesPerView: 2.5,
                     spaceBetween: 5,
                   },
                   800: {
@@ -77,6 +77,14 @@ export default function ADN() {
                   1024: {
                     slidesPerView: 2.65,
                     spaceBetween: 30,
+                  },
+                  1100: {
+                    slidesPerView: 2.90,
+                    spaceBetween: 10,
+                  },
+                  1200: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 20,
                   },
                 }}
               >

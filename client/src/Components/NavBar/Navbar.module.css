@@ -101,12 +101,13 @@
     flex-direction: column;
     height: 30px;
     position: absolute;
-    height: 150vh;
+    height: 42vh;
     top: 100px;
     z-index: 200;
     background-color: white;
-
+    
   }
+
 
   .Hamburguesa {
     display: flex !important;

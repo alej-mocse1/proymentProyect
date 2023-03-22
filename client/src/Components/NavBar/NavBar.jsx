@@ -44,7 +44,7 @@ function Navbar() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          gap: '16px',
+          //gap: '16px',
           textAlign: "left",
           width:"300px",
           height: "386px",

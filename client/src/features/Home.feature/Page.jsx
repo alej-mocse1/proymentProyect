@@ -7,6 +7,7 @@ import ServiciosAtuMedida from "./ServiciosAtuMedida/landinPage2";
 import PorqueProyment from "./PorqueProyment/PorqueProyment";
 import Transformation from "./Transformation/Transformation";
 import LideresEnLatinoamerica from "./lideresEnLatinoamerica/LideresEnLatinoamerica";
+import DesafíosDeTodoNivel from "./DesafíosDeTodoNivel/DesafíosDeTodoNivel";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <PorqueProyment></PorqueProyment>
       <Transformation></Transformation>
       <LideresEnLatinoamerica></LideresEnLatinoamerica>
+      <DesafíosDeTodoNivel></DesafíosDeTodoNivel>
     </>
   );
 }

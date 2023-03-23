@@ -10,6 +10,7 @@ import LideresEnLatinoamerica from "./lideresEnLatinoamerica/LideresEnLatinoamer
 import DesafíosDeTodoNivel from "./DesafíosDeTodoNivel/DesafíosDeTodoNivel";
 import CompaniesFriendly from "./CompaniesFriendly/CompaniesFriendly";
 
+
 export default function Page() {
   return (
     <>

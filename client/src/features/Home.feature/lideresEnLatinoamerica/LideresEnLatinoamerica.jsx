@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styles from './LideresEnLatinoamerica.module.scss';
+import "./Lideres.scss"
 
 import img1 from './assets/AvatarCircle01.png';
 import img2 from './assets/AvatarCircle02.png';
@@ -9,7 +10,7 @@ import grafico from './assets/grafico.svg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Pagination} from "swiper";
+import {Autoplay, Pagination} from "swiper";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
@@ -144,9 +145,19 @@ const LideresEnLatinoamerica = () => {
        
 
             <Swiper
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               slidesPerView={1}
-              pagination={{clickable:true}}
+              pagination={{
+                el: ".lideres-pagination",
+                clickable:true,
+                }}
+                loop={true}
+                autoplay={{ delay:2000, 
+                    pauseOnMouseEnter: false,
+                    disableOnInteraction: false
+                    /* waitForTransition:true,  */
+                    /* pauseOnMouseEnter:true */ 
+                }}
               className={styles.data}
             >
               {state.map((info) => (
@@ -155,6 +166,7 @@ const LideresEnLatinoamerica = () => {
               </SwiperSlide>
               ))}
             </Swiper>
+            <div className=" lideres-pagination" />
         
         
 

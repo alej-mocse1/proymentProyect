@@ -9,19 +9,19 @@
     }
     /* @include responsive("tablet")  {*/
     @media screen and (max-width: 1023px){
-        padding: 72px 65px;
+        padding: 72px 65px 82px 65px;
     }
     /* @include responsive("phone-L") {*/
      @media screen and (max-width: 767px){
-        padding: 72px 65px;
+        padding: 56px 65px 86px 65px;
     }
     /* @include responsive("phone-M") {*/
      @media screen and (max-width: 424px){
-        padding: 72px 45px;
+        padding: 56px 45px 86px 45px;
     }
     /* @include responsive("phone-S") {*/ 
     @media screen and (max-width: 374px){
-        padding: 72px 45px;
+        padding: 56px 45px 86px 45px;
     }
 }
 
@@ -173,6 +173,11 @@
     background: #6F4EF5;
     border: 0;
     border-radius: 4px;
+    cursor: pointer;
+}
+.containerContact button:hover{
+    background: #A493FF;
+    transition: 1s;
 }
 
 .containerSocial{

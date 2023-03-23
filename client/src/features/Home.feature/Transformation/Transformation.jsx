@@ -1,4 +1,4 @@
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 /* import Card from "./components/Card"; */
@@ -37,8 +37,14 @@ function Transformation() {
                     <div className="container">
                         <div className="swiperContainer">
                             <Swiper
-                                modules={[Pagination]}
-
+                                modules={[Pagination, Autoplay]}
+                                loop={true}
+                                autoplay={{ delay:2000, 
+                                    pauseOnMouseEnter: false,
+                                    disableOnInteraction: false
+                                    /* waitForTransition:true,  */
+                                    /* pauseOnMouseEnter:true */ 
+                                }}
                                 pagination={{
                                     el: ".transformation-pagination",
                                     clickable: true,
@@ -46,19 +52,19 @@ function Transformation() {
                                 breakpoints={{
                                     320: {
                                         slidesPerView: 1.5,
-                                        spaceBetween: 15,
+                                        spaceBetween: -15,
                                     }, 
                                     375: {
                                         slidesPerView: 1.75,
-                                        spaceBetween: 25,
+                                        spaceBetween: -15,
                                     },
                                     425: {
                                         slidesPerView: 2.25,
-                                        spaceBetween: 25,
+                                        spaceBetween: 5,
                                     },
                                     768: {
-                                        slidesPerView: 3.25,
-                                        spaceBetween: 25,
+                                        slidesPerView: 3.75,
+                                        spaceBetween: 0,
                                     },
                                     1024: {
                                         slidesPerView: 4.25,
@@ -68,14 +74,6 @@ function Transformation() {
                                         slidesPerView: 5.25,
                                         spaceBetween: 20,
                                     },
-                                    /* "@1.50": {
-                                        slidesPerView: 3,
-                                        spaceBetween: 30,
-                                    },
-                                    "@1.75": {
-                                        slidesPerView: 4,
-                                        spaceBetween: 20,
-                                    }, */
                                 }}
                             >
                                 <SwiperSlide><div className="span"><p>Rubro Industrial </p></div></SwiperSlide>

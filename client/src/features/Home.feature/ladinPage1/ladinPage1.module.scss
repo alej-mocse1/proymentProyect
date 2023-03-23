@@ -73,6 +73,7 @@
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
+    border: none;
   }
   .btn:hover{
     background: #A493FF;
@@ -485,7 +486,7 @@
   @media screen and (max-width: 640px) {
 
     .div {
-        height: 947px;
+        height: 888px;
       }
 
       .div1{
@@ -493,12 +494,13 @@
       }
       
       .ContenedorDiv2 {
-        margin-top: 70px;
-      }
+        margin-top: 0px;       
+        }
 
       
     .divImgs{
       display: flex;
+  
     }
 
 
@@ -506,8 +508,9 @@
       margin-left: 0px;
       width: 85%;
       margin-left: 20px;
-
       text-align: left;
+      position: relative;
+      bottom: 5px;
     }
     
   
@@ -595,7 +598,7 @@
     .ContenedorDiv2 {
       position: relative;
       margin-top: 0px;
-      top: 139.5px;
+      top: 109.5px;
       left: 1px;
     }
 

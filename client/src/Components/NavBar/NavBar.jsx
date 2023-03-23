@@ -12,12 +12,12 @@ function Navbar() {
    
     let responsive = isOpen ? {
          transform: "translateX(-800px)",
-         transition: "0s ease all",
+         transition: "1s ease all",
          display: 'flex',
          textAlign: "left",
       } : {
-        transform: "translateX(0%)",
-        transition: "0s ease all"
+        transform: "translateX(-13.3%)",
+        transition: "1s ease all"
      }
 
      let responsiveNone = isOpen ? {
@@ -77,18 +77,32 @@ function Navbar() {
           <span className="span" style={responsiveNone2}></span>
         </div>
 
-
-       <img src={logo} alt="img-logo"  className={style.img}/> 
-  
+        <Link to="/"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+         <a>
+           <img src={logo} alt="img-logo"  className={style.img}/> 
+        </a>
+       </Link>
 
      <div className={style.divLink }> 
-     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 0, color: 'inherit'}}>
+     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
         <h4  className={style.Servicios}>Servicios</h4>
-      </Link>
-        <h4  className={style.industrias}>Industrias</h4>     
+     </Link>
+
+     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+        <h4  className={style.industrias}>Industrias</h4>    
+     </Link>
+
+          <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}> 
         <h4  className={style.industrias}>Clientes</h4>  
+        </Link>
+
+        <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
         <h4  className={style.industrias}>Metodologia</h4>  
+        </Link>
+
+        <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
         <h4  className={style.industrias}>Blog</h4>  
+        </Link>
      </div>
      <button  className={style.btn } >Agendar reunion</button>
 

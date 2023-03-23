@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 
     /* @include responsive("tablet") {*/
     @media screen and (max-width: 1023px){
@@ -115,6 +117,7 @@
 
 
 .infoBox {
+   
     width: 53%;
     display: flex;
     align-items: center;
@@ -177,6 +180,10 @@
 .box {
     width: 69%;
     margin: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
 
     /* @include responsive("laptop") { */
     @media screen and (max-width: 1439px){
@@ -215,6 +222,7 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0;
 
    /* { @include responsive("phone-L")} */
     @media screen and (max-width: 767px) {

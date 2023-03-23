@@ -24,6 +24,7 @@ function DesafíosDeTodoNivel() {
             <button className="btn2">Agendar reunión</button>
           </Link>
         </div>
+
       </div>
 
       <div className="div--row2 container2">

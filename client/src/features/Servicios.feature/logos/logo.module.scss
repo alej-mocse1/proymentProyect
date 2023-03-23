@@ -1,0 +1,76 @@
+@import "../../../styles/styles.scss";
+
+.div{
+    height: 241px;
+    width: 100%;
+    background-color: #F7F7FC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include responsive("carrousel") {
+        height: 336px;
+        flex-direction: column;
+      }
+}
+
+
+
+.divh2{
+    width: 37%;
+    height: 53px;
+
+    @include responsive("carrousel") {
+       position: relative;
+       top: -4px;
+       width: 90%;
+       text-align: center;
+      }
+
+}
+
+.divh2 h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    position: relative;
+    bottom: 20px;
+
+    @include responsive("carrousel") {
+        font-size: 18px;
+        line-height: 27px;
+       }
+}
+
+
+
+.divLogos{
+    width: 45%;
+    height: 53px;
+    display: flex;
+    position: relative;
+    left: 10px;
+    justify-content: space-evenly;
+
+    @include responsive("carrousel") {
+        left: 0px;
+        top: -13px;
+        width: 100%; 
+       }
+}
+
+.divLogos img{
+    width: 76.48px;
+    height: 76.48px;
+    position: relative;
+    top: -15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 122.108px;
+
+    @include responsive("carrousel") {
+        width: 60.69px;
+        height: 60.69px;
+       }
+}
+

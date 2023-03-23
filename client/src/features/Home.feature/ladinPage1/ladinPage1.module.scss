@@ -72,16 +72,29 @@
     padding: 20px 38px;
     color: #ffffff;
     font-size: 16px;
+    cursor: pointer;
+    border: none;
   }
-  
+  .btn:hover{
+    background: #A493FF;
+    transition: 1s;
+  }
+
   .btn2 {
     background: #000538;
-    border: 2px solid #6f4ef5;
+    border: 1px solid #6f4ef5;
     border-radius: 4px;
     padding: 20px 38px;
     color: #6f4ef5;
     font-size: 16px;
     margin-left: 50px;
+    cursor: pointer;
+  }
+  .btn2:hover{
+    color: #4E37AC;
+    border: 1px solid #4E37AC;
+    transition: .8s ease-in-out;
+    
   }
   
   .divImgs {
@@ -131,7 +144,7 @@
     left: 23px;
     // top: 490px;
     bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     z-index: 800;
     cursor: pointer;
   }
@@ -168,11 +181,11 @@
   }
 
   .imgFloat2{
-    top:80.68px;
+    top:40.68px;
     left: 160px;
     position: absolute;
-    width: 112.64px;
-    height: 110.82px;
+    width: 100.64px;
+    height: 90.82px;
     @include floating;
   }
 
@@ -205,7 +218,7 @@
     border: none;
     cursor: pointer;
     bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   
 
@@ -473,7 +486,7 @@
   @media screen and (max-width: 640px) {
 
     .div {
-        height: 947px;
+        height: 888px;
       }
 
       .div1{
@@ -481,12 +494,13 @@
       }
       
       .ContenedorDiv2 {
-        margin-top: 70px;
-      }
+        margin-top: 0px;       
+        }
 
       
     .divImgs{
       display: flex;
+  
     }
 
 
@@ -494,8 +508,9 @@
       margin-left: 0px;
       width: 85%;
       margin-left: 20px;
-
       text-align: left;
+      position: relative;
+      bottom: 5px;
     }
     
   
@@ -583,7 +598,7 @@
     .ContenedorDiv2 {
       position: relative;
       margin-top: 0px;
-      top: 139.5px;
+      top: 109.5px;
       left: 1px;
     }
 

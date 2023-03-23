@@ -70,7 +70,7 @@ const LideresEnLatinoamerica = () => {
 
                     <h2>
                         Proyment fue ágil desde el primer contacto, valoro la simplicidad y la rapidez
-                        para solucionar problemas especificos
+                        para solucionar problemas especificos.
                     </h2>
 
                     <div className={styles.infoPersona}>
@@ -118,7 +118,7 @@ const LideresEnLatinoamerica = () => {
 
                     <h2>
                          Tivemos que realizar un importante lançamento de marca no Brasil e a Proyment 
-                         contribuiu em grande parte para os ótimos que tivemos  
+                         contribuiu em grande parte para os ótimos que tivemos.
                     </h2>
 
                  

@@ -1,9 +1,10 @@
 .div{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 79px;
+    padding: 0 50px;
     
   }
   .divLink{
@@ -33,7 +34,7 @@
     margin-left:12%; 
     cursor: pointer;
     font-stretch: 100%;
-    
+    font-size: 16px;
   }
   .img{
       width: 15%;
@@ -63,12 +64,18 @@
    }
 
 
+   
+@media screen and (max-width:1000px) {
+ 
+ 
+}  
+
 
   @media screen and (max-width:800px) {
   .div{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       height: 100px;
       margin-top: 10px;
@@ -78,8 +85,8 @@
       width: 200px;
       margin-right: 0%;
       position: relative;
-      right: 26%;
-      margin-left: 10px;
+      margin-right: 0px;
+      margin-left: 0px;
   } 
 
   .btn{
@@ -100,12 +107,13 @@
     flex-direction: column;
     height: 30px;
     position: absolute;
-    height: 150vh;
+    height: 42vh;
     top: 100px;
     z-index: 200;
     background-color: white;
-
+    
   }
+
 
   .Hamburguesa {
     display: flex !important;
@@ -130,6 +138,16 @@
 
 .arrowUp{
   margin-left: 4px;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+.arrowUp i{
+  position: absolute;
+  top: -1px;
+  font-size: 25px;
 }
 }  
 
@@ -142,6 +160,6 @@
     width: 200px;
     margin-right: 0%;
     position: relative;
-    right: 19%;
+    right: 20%;
 }
 }  

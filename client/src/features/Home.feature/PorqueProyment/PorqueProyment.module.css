@@ -9,7 +9,7 @@
     width: 9px;
     height: 1047px;
     margin-left: 40px;
-    background: #e5e5e9;
+    background: #F7F7FC;
     margin-top: 2px;
 }
 
@@ -88,7 +88,7 @@
 
 .div_DIVColumns_divTOP_Left img {  
     width: 457.58px;
-    height: 412px;
+    height: 395px;
     margin-top: 142px;
     position: relative;
     left: 50px;
@@ -204,9 +204,9 @@
 @media (max-width: 800px){
 
     .div{
-        height: 1375.21px;
+        height: 1335.21px;
         width: 100%;
-        margin-top: 140px;
+        margin-top: -24px;
     }
 
     .div_divLine{
@@ -237,6 +237,8 @@
   
         width: 90%;
         margin-left: -80px;
+        position: relative;
+        
     }
     
     .div_DIVColumns_divTOP_Rigth div {  
@@ -272,7 +274,7 @@
     
     .div_DIVColumns_divTOP_Left img {  
         width: 328.61px;
-        height: 297px;
+        height: 285px;
         margin: 0 auto;
         position: relative;
         top: 60px;
@@ -312,11 +314,11 @@
 
 
      .IMG2{
-        width: 348.35px !important;
+        width: 340.35px !important;
         height: 270.21px !important;
         margin-top: 30px;
         position: relative !important;
-        top: 259px !important;
+        top: 229px !important;
     }
  
 }

@@ -24,6 +24,7 @@
   margin-top: 50px;
   margin-left: 100px;
   width: 550px;
+  
   @include flex-column-start2;
   @media (max-width: 1350px) {
     margin-left: 80px;
@@ -167,6 +168,7 @@
 .container2 {
   width: 100%;
 }
+
 
 .btn2 {
   font-size: 16px;

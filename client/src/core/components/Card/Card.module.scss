@@ -44,7 +44,7 @@
   @include responsive("carrousel") {
     margin: 0px;
     width: 260px;
-    height: 431px;
+    height: 371px;
   }
 }
 .card1 img {
@@ -67,7 +67,12 @@
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
   height: 50.298%;
   @include responsive('carrousel'){
-    height: 44%;
+    justify-content: space-between;
+    width: 90%;
+    height: 42%;
+    margin: 24px 10px;
+    top: 130px;
+    gap: 16px;
   }
 }
 .card1 .text h6 {
@@ -76,15 +81,27 @@
   font-weight: 500;
   margin: 24px 24px 0px;
   padding: 0 28px;
+  @include responsive('carrousel'){
+    padding: 0 15px;
+    margin-top: 24px;
+    
+  }
 }
 .card1 .text p {
   font-size: 16px;
   color: #6e7191;
   width: 100%;
   /* margin-top: 16px 0px; */
+  @include responsive('carrousel'){
+    width: 98%;
+    margin: 0 auto;
+  }
 }
 
 .card1 .text a {
   color: #6f4ef5;
   font-size: 1rem;
+  @include responsive('carrousel'){
+    margin-bottom: 24px;
+  }
 }

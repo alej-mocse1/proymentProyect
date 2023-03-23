@@ -87,6 +87,13 @@ $button-purple: #6f4ef5;
       @content;
     }
   }
+
+  @if $device == tabletM {
+    @media screen and (max-width: 650px ) {
+      @content;
+    }
+  }
+  
   @if $device == tablet {
     @media screen and (max-width: 720px ) {
       @content;
@@ -108,6 +115,14 @@ $button-purple: #6f4ef5;
       @content;
     }
   }
+
+  @if $device == carrouselADN {
+    @media screen and (max-width: 1301px ) {
+      @content;
+    }
+  }
+
+
 
   /* MEDIA QUERIES NUEVAS*/
 

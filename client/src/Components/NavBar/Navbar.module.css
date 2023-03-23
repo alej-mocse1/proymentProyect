@@ -64,12 +64,18 @@
    }
 
 
+   
+@media screen and (max-width:1000px) {
+ 
+ 
+}  
+
 
   @media screen and (max-width:800px) {
   .div{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       height: 100px;
       margin-top: 10px;
@@ -79,8 +85,8 @@
       width: 200px;
       margin-right: 0%;
       position: relative;
-      right: 26%;
-      margin-left: 10px;
+      margin-right: 0px;
+      margin-left: 0px;
   } 
 
   .btn{
@@ -154,6 +160,6 @@
     width: 200px;
     margin-right: 0%;
     position: relative;
-    right: 19%;
+    right: 20%;
 }
 }  

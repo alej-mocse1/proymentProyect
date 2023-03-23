@@ -2,7 +2,7 @@
 
 .div{
     width: 100%;
-    height: 336px;
+    height: 306px;
     background-color: #000538;
     display: flex;
     margin-top: 72px;
@@ -11,17 +11,21 @@
 }
 
 .divIMG{
-    width: 524px;
+    width: 424px;
     height: 440px;
     margin-left: 90px;
     position: relative;
     bottom: 104px;
+    
 }
 
 
 .divIMG .imgPrincipal{
-    height: 440px;
-    width:504px;;
+    height: 380px;
+    width:444px;
+    
+    position: relative;
+    top: 27px;
 }
  
 
@@ -51,11 +55,13 @@
     width: 10%;
     height: 40%;
     position: absolute;
-    left: 90%;
+    right: 0;
 }
 .grafico img{
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
 }
 
 .divText{
@@ -64,6 +70,11 @@
     margin-top: 29px;
     margin-left: 123px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    top: 10px;
 }
 
 .divText h2{
@@ -72,6 +83,7 @@
     line-height: 35px;
     font-family: 'Inter';
     color: #FFFFFF;
+    margin: 0;
 }
 
 .divText p{
@@ -80,6 +92,8 @@
     line-height: 24px;
     color: #DCDDEB;
     width: 363px;
+    position: relative;
+    margin: 16px 0 32px 0;
 }
 
 .divText button{
@@ -92,12 +106,14 @@
     width: 201px;
     height: 64px;
     background: #6F4EF5;
-    border: 1px solid #6F4EF5 ;
+    border: 2px solid #6F4EF5 ;
     border-radius: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    position: relative;
+
 }
 
 
@@ -213,7 +229,7 @@
 
     .divIMG{
         position: relative;
-        top: 40px;
+        top: 65px;
         margin: 0 auto;
     }
     
@@ -242,13 +258,13 @@
         text-align: center;
         justify-content: center;
         position: relative;
-        top: 70px;
+        top: -10px;
     }
 
     .divIMG{
         width: 298.96px;
         height: 261px;
-        top: 77px;
+        top: 50px;
     }
 
     .divIMG .imgPrincipal{
@@ -258,7 +274,7 @@
     .divText{
         width: 90%;
         position: relative;
-        top: -70px;
+        top: -24px;
     }    
 
     .divText h2{
@@ -279,7 +295,7 @@
       .divText button{
         width: 100%;
         position: relative;
-        top: 29px;
+        top: 3px;
       }
 
 

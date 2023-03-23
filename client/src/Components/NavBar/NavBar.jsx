@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Navbar.module.css';
-import logo from './logoPrueba.png';
+import logo from './logoPrueba.svg';
 import { useState } from 'react';
 import 'remixicon/fonts/remixicon.css';
 import { Link } from 'react-router-dom';
@@ -11,33 +11,39 @@ function Navbar() {
     const [isOpen2, SetOpen2] = useState(false);
    
     let responsive = isOpen ? {
-         transform: "translateX(-800px)",
+         transform: "translateX(-120%)",
          transition: "1s ease all",
          display: 'flex',
          textAlign: "left",
       } : {
-        transform: "translateX(-13.3%)",
+        transform: "translateX(0%)",
         transition: "1s ease all"
      }
 
      let responsiveNone = isOpen ? {
-        border: "0px solid black"
+        border: "0px solid black",
+        transition: "1s ease all"
       } : {
-        display: "none"
+        display: "none",
+        transition: "1s ease all"
       }
 
    
      let  responsiveNone1 = isOpen ? {
-      border: "0px solid black"
+      border: "0px solid black",
+  
      } : {
-      transform: "rotate(45deg) translate(0px, 0px)" 
+      transform: "rotate(45deg) translate(0px, 0px)" ,
+    
      }
 
  
       let responsiveNone2 = isOpen ? {
-        border: "0px solid black"
+        border: "0px solid black",
+       
       } : {
-        transform: "rotate(-46deg) translate(-2px, 0px)"
+        transform: "rotate(-46deg) translate(-2px, 0px)",
+
       }
 
 
@@ -50,17 +56,20 @@ function Navbar() {
           height: "386px",
           padding: "16px 13px",
           gap: "10px",
-          backgroundColor: "#F7F7FC" ,
-          marginLeft: "19px",      
+          backgroundColor: "#F7F7FC" ,     
+          transition: "1s ease all"
           
          } : {
          display: "none",
+         transition: "1s ease all"
        }
        let responsiveServicios2 = isOpen2 ? {
         height: "130vh",
+       
 
        } : {
         height: "42vh",
+  
      }
      let  estilos = { ...responsive, ...responsiveServicios2 };
 
@@ -78,30 +87,35 @@ function Navbar() {
         </div>
 
         <Link to="/"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-         <a>
            <img src={logo} alt="img-logo"  className={style.img}/> 
-        </a>
        </Link>
 
      <div className={style.divLink }> 
      <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.Servicios}>Servicios</h4>
+     <h4  className={style.h4Nav} >Servicios</h4>
+        {/* <div className={style.h2SERVICEdesplegable}> 
+       
+         <h4  className={style.h4Nav3} >Servicios</h4> 
+         <h4 className={style.prueba}>probando</h4>
+         <h4 className={style.prueba}>probando</h4>
+         <h4 className={style.prueba}>probando</h4>
+       </div>  */}
      </Link>
 
      <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Industrias</h4>    
+        <h4  className={style.h4Nav}>Industrias</h4>    
      </Link>
 
           <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}> 
-        <h4  className={style.industrias}>Clientes</h4>  
+        <h4  className={style.h4Nav}>Clientes</h4>  
         </Link>
 
         <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Metodologia</h4>  
+        <h4  className={style.h4Nav}>Metodologia</h4>  
         </Link>
 
         <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Blog</h4>  
+        <h4  className={style.h4Nav}>Blog</h4>  
         </Link>
      </div>
      <button  className={style.btn } >Agendar reunion</button>
@@ -111,7 +125,7 @@ function Navbar() {
 
     <div className={style.divLink2 } style={estilos} > 
 
-    <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
+    <h4  className={style.h4servicer2} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (
         <span className={style.arrowUp}><i class="ri-arrow-up-s-line"></i></span>
           ) : (

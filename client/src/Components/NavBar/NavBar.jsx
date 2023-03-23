@@ -2,7 +2,8 @@ import React from 'react';
 import style from './Navbar.module.css';
 import logo from './logoPrueba.png';
 import { useState } from 'react';
-import 'remixicon/fonts/remixicon.css'
+import 'remixicon/fonts/remixicon.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -44,7 +45,6 @@ function Navbar() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          //gap: '16px',
           textAlign: "left",
           width:"300px",
           height: "386px",
@@ -67,6 +67,7 @@ function Navbar() {
 
 
 
+
   return (
     <div className={style.div}>
 
@@ -81,7 +82,9 @@ function Navbar() {
   
 
      <div className={style.divLink }> 
+     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 0, color: 'inherit'}}>
         <h4  className={style.Servicios}>Servicios</h4>
+      </Link>
         <h4  className={style.industrias}>Industrias</h4>     
         <h4  className={style.industrias}>Clientes</h4>  
         <h4  className={style.industrias}>Metodologia</h4>  

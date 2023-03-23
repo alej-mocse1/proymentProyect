@@ -1,0 +1,178 @@
+@import "../../../styles/styles.scss";
+
+
+
+.div{
+    height: 561.56px;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+
+
+    @include responsive("carrousel") {
+        height: 679.56px;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+}
+
+
+
+
+.div1{
+  width: 50%;
+  height: 561.56px;
+  display: flex;
+  text-align: center;
+
+  @include responsive("carrousel") {
+    width: 343.1px ;
+  }
+  
+
+}
+
+.divImg{
+    width: 100%;
+    height: 433.06px;
+    left: 60.6px;
+    position: relative;
+    top: 72px;
+     
+  @include responsive("carrousel") {
+  width: 343.1px !important;
+  left:0px !important;
+  display: flex !important;
+  align-items: center !important;
+  top: 30px !important;
+
+}
+
+
+// @include responsive("tabletM") {
+//     border: 1px solid black;
+// }
+}
+
+
+
+.divImg img{
+  width: 649.16px;
+  height: 100%;
+
+  
+  @include responsive("carrousel") {
+    
+    width: 363.1px !important;
+    height: 242.23px !important;
+}
+
+
+@include responsive("tabletM") {
+    width: 343.1px !important;
+}
+} 
+
+
+
+
+
+
+
+
+.div2{
+    width: 50%;
+    height: 561.56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive("carrousel") {
+           width: 80%;
+           position: relative;
+           top: 56px;
+          
+      }
+
+      
+    @include responsive("tabletM") {
+        width: 100%;
+   }
+  }
+
+  .divTexto{
+    width: 60%;
+    height: 270px;
+    
+    @include responsive("tabletM") {
+        width: 327px;
+        
+   }
+  }
+
+  .divTexto h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+
+    @include responsive("tabletM") {
+        width: 277px;
+     
+        align-items: center;
+   }
+  }
+
+
+  .divTexto p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    @include responsive("tabletM") {
+        width: 327px;
+      
+        align-items: center;
+   }
+  }
+
+  .divTexto button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 38px;
+    gap: 10px;
+    background: #6F4EF5;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+    @include responsive("carrousel") {
+        width: 327px;
+        height: 54px;
+   }
+  }
+
+  
+  .divTexto button:hover{
+    background: #A493FF;
+    transition: 1s;
+  }
+  
+
+  
+
+
+  @media screen and (max-width: 1150px) {
+    .divImg{
+        left: -50px;
+        top: 142px;
+    }
+    .divImg img{
+        width: 549.16px;
+        height: 80%;
+      } 
+  }

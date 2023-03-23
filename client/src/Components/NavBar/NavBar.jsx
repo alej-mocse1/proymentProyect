@@ -21,23 +21,29 @@ function Navbar() {
      }
 
      let responsiveNone = isOpen ? {
-        border: "0px solid black"
+        border: "0px solid black",
+        transition: "1s ease all"
       } : {
-        display: "none"
+        display: "none",
+        transition: "1s ease all"
       }
 
    
      let  responsiveNone1 = isOpen ? {
-      border: "0px solid black"
+      border: "0px solid black",
+  
      } : {
-      transform: "rotate(45deg) translate(0px, 0px)" 
+      transform: "rotate(45deg) translate(0px, 0px)" ,
+    
      }
 
  
       let responsiveNone2 = isOpen ? {
-        border: "0px solid black"
+        border: "0px solid black",
+       
       } : {
-        transform: "rotate(-46deg) translate(-2px, 0px)"
+        transform: "rotate(-46deg) translate(-2px, 0px)",
+
       }
 
 
@@ -51,15 +57,19 @@ function Navbar() {
           padding: "16px 13px",
           gap: "10px",
           backgroundColor: "#F7F7FC" ,     
+          transition: "1s ease all"
           
          } : {
          display: "none",
+         transition: "1s ease all"
        }
        let responsiveServicios2 = isOpen2 ? {
         height: "130vh",
+       
 
        } : {
         height: "42vh",
+  
      }
      let  estilos = { ...responsive, ...responsiveServicios2 };
 
@@ -115,7 +125,7 @@ function Navbar() {
 
     <div className={style.divLink2 } style={estilos} > 
 
-    <h4  className={style.h4servicer} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
+    <h4  className={style.h4servicer2} onClick={() => SetOpen2(!isOpen2)}> {`Servicios `}
   {    isOpen2 ? (
         <span className={style.arrowUp}><i class="ri-arrow-up-s-line"></i></span>
           ) : (

@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./footer.module.scss"
-import logo from "../NavBar/logoPrueba.png"
+import logo from "../NavBar/logoPrueba.svg"
 import 'remixicon/fonts/remixicon.css'
 
 export default function Footer() {

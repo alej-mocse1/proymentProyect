@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Navbar.module.css';
-import logo from './logoPrueba.png';
+import logo from './logoPrueba.svg';
 import { useState } from 'react';
 import 'remixicon/fonts/remixicon.css';
 import { Link } from 'react-router-dom';
@@ -11,12 +11,12 @@ function Navbar() {
     const [isOpen2, SetOpen2] = useState(false);
    
     let responsive = isOpen ? {
-         transform: "translateX(-800px)",
+         transform: "translateX(-120%)",
          transition: "1s ease all",
          display: 'flex',
          textAlign: "left",
       } : {
-        transform: "translateX(-13.3%)",
+        transform: "translateX(0%)",
         transition: "1s ease all"
      }
 
@@ -50,8 +50,7 @@ function Navbar() {
           height: "386px",
           padding: "16px 13px",
           gap: "10px",
-          backgroundColor: "#F7F7FC" ,
-          marginLeft: "19px",      
+          backgroundColor: "#F7F7FC" ,     
           
          } : {
          display: "none",
@@ -78,30 +77,35 @@ function Navbar() {
         </div>
 
         <Link to="/"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-         <a>
            <img src={logo} alt="img-logo"  className={style.img}/> 
-        </a>
        </Link>
 
      <div className={style.divLink }> 
      <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.Servicios}>Servicios</h4>
+     <h4  className={style.h4Nav} >Servicios</h4>
+        {/* <div className={style.h2SERVICEdesplegable}> 
+       
+         <h4  className={style.h4Nav3} >Servicios</h4> 
+         <h4 className={style.prueba}>probando</h4>
+         <h4 className={style.prueba}>probando</h4>
+         <h4 className={style.prueba}>probando</h4>
+       </div>  */}
      </Link>
 
      <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Industrias</h4>    
+        <h4  className={style.h4Nav}>Industrias</h4>    
      </Link>
 
           <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}> 
-        <h4  className={style.industrias}>Clientes</h4>  
+        <h4  className={style.h4Nav}>Clientes</h4>  
         </Link>
 
         <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Metodologia</h4>  
+        <h4  className={style.h4Nav}>Metodologia</h4>  
         </Link>
 
         <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.industrias}>Blog</h4>  
+        <h4  className={style.h4Nav}>Blog</h4>  
         </Link>
      </div>
      <button  className={style.btn } >Agendar reunion</button>

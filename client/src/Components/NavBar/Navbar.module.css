@@ -14,31 +14,61 @@
     align-items: center;
     width: 40%; 
     font-size: 100%;
+ 
   }
 
+  /* .h2SERVICEdesplegable{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    
+    position: relative;
+    width: 281px;
+    height: 432px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 48px 58px rgba(0, 0, 0, 0.18), 0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333), 0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667);    
+  }
+
+  .prueba{
+
+  } */
 
   h4{
     width: 80%;
     font-weight:500;
     margin:3%;
     cursor: pointer;
+
   }
 
   .btn{
-    padding: 15px 24px;
-    height: 47px;
+
+    background: #6F4EF5;
     border-radius: 4px;
-    background-color:#6F4EF5;
-    color: white;
+    width: 200px;
+    height: 54px;
     border: none;
-    margin-left:12%; 
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
     cursor: pointer;
-    font-stretch: 100%;
-    font-size: 16px;
   }
+
+  .btn:hover{
+    background: #A493FF;
+    transition: 1s;
+  }
+  
+  
+  
   .img{
-      width: 15%;
+      width: 50%;
       margin-right: 115px;
+
   }
 
   .Hamburguesa{
@@ -57,16 +87,30 @@
     align-items: flex-start;
     padding: 0px;   
     gap: 16px;
+
    }
+
    .h4servicer{
     color: #000538;
     padding: 4px;
+
    }
 
+   .h4Nav{
+    position: relative;
+    right: 100px;
+
+   }
 
    
 @media screen and (max-width:1000px) {
  
+  .h4Nav{
+    position: relative;
+    right: 140px;
+    margin: 0%;
+    font-size: 13px;
+   }
  
 }  
 
@@ -101,17 +145,15 @@
   .divLink2{
     display: flex !important;
     text-align: left;
-    align-items: center;
     width: 100%; 
     font-size: 100%;
     flex-direction: column;
-    height: 30px;
     position: absolute;
     height: 42vh;
     top: 100px;
     z-index: 200;
     background-color: white;
-    
+    left: 0;
   }
 
 
@@ -139,11 +181,8 @@
 .arrowUp{
   margin-left: 4px;
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
 }
+
 .arrowUp i{
   position: absolute;
   top: -1px;

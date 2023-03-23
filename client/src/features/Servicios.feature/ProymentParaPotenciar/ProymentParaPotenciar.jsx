@@ -1,6 +1,6 @@
-/* import React from "react";
+import React from "react";
 import style from "./ProymentParaPotenciar.module.scss"
-import img from "./assets/img 05.png"
+import img from "./assets/img chica.png"
 
 
 
@@ -14,8 +14,8 @@ export default function ProymentParaPotenciar () {
                 <div className={style.containerBtn}></div>
             </div>
             <div className={style.containerImg}>
-                <img src={img} al="not"/>
+                {/* <img src={img} al="not"/> */}
             </div>
         </div>
     )
-} */
+}

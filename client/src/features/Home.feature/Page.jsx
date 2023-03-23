@@ -24,7 +24,6 @@ export default function Page() {
       <CompaniesFriendly></CompaniesFriendly>
       <LideresEnLatinoamerica></LideresEnLatinoamerica>
       <DesafíosDeTodoNivel></DesafíosDeTodoNivel>
-      
     </>
   );
 }

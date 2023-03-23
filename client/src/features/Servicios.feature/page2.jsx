@@ -1,6 +1,6 @@
 import Logos from "./logos/logos";
 import PlanUnico from "./planUnico/PlanUnico";
-
+import ProymentParaPotenciar from "./ProymentParaPotenciar/ProymentParaPotenciar";
 
 export default function Page2() {
 
@@ -9,6 +9,7 @@ export default function Page2() {
       <>
          <Logos></Logos>
          <PlanUnico></PlanUnico>
+         <ProymentParaPotenciar/>
       </>
     );
   }

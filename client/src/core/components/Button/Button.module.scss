@@ -5,6 +5,7 @@
 }
 
 .btn {
+  font-size: 16px;
   width: 201px;
   height: 64px;
   padding: 20px 38px;
@@ -21,7 +22,7 @@
   }
   @include responsive("phone") {
    
-    width: 100%;
+    width: 90%;
     max-width: 326px;
    
     height: 54px;

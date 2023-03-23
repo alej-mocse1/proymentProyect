@@ -18,6 +18,7 @@
   width: 100%;
   margin: 72px 115px;
   position: relative;
+  left: -30px;
   @include responsive("carrousel") {
     margin: 72px 30px;
     width: 90%;
@@ -27,6 +28,7 @@
     flex-direction: column-reverse;
     justify-content: flex-end;
     gap: 42px;
+    left: 5px;
   }
   @include responsive("phone") {
     gap: 0px;
@@ -77,6 +79,8 @@
   text-align: left;
   font-size: 40px;
   font-weight: 500;
+  gap: 40px;
+  width: 400px;
   line-height: 44px;
   color: $white;
   margin: 0;
@@ -85,6 +89,7 @@
     width: 100%;
     font-size: 6vw;
     line-height: 40px;
+
     /*   min-height: 120px;
     max-height: 120px; */
   }

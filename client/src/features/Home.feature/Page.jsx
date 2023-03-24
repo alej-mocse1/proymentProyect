@@ -16,7 +16,7 @@ export default function Page() {
     <>
       <LandinPage></LandinPage>
       <ADN></ADN>
-      <OPT></OPT>
+      {/* <OPT></OPT> */}
       <Services></Services>
       <ServiciosAtuMedida></ServiciosAtuMedida>
       <PorqueProyment></PorqueProyment>

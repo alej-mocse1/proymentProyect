@@ -1,3 +1,5 @@
+import Register from "../../Components/Register/Register";
+import LandingPage from "./LandingPage/LandingPage";
 import Logos from "./logos/logos";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import PlanesAccecibles from "./PlanesAccesibles/PlanesAccecibles";
@@ -20,4 +22,5 @@ export default function Page2() {
     );
   }
   
+
 

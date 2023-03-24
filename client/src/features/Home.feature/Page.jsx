@@ -7,8 +7,8 @@ import ServiciosAtuMedida from "./ServiciosAtuMedida/landinPage2";
 import PorqueProyment from "./PorqueProyment/PorqueProyment";
 import Transformation from "./Transformation/Transformation";
 import LideresEnLatinoamerica from "./lideresEnLatinoamerica/LideresEnLatinoamerica";
-import DesafíosDeTodoNivel from "./DesafíosDeTodoNivel/DesafíosDeTodoNivel";
 import CompaniesFriendly from "./CompaniesFriendly/CompaniesFriendly";
+import DesafíosDeTodoNivel from "./DesafíosDeTodoNivel/DesafíosDeTodoNivel";
 
 export default function Page() {
   return (

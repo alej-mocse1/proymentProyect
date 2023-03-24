@@ -23,7 +23,7 @@ export default function Page() {
       <Transformation></Transformation>
       <CompaniesFriendly></CompaniesFriendly>
       <LideresEnLatinoamerica></LideresEnLatinoamerica>
-      {/* <DesafíosDeTodoNivel></DesafíosDeTodoNivel> */}
+      <DesafíosDeTodoNivel></DesafíosDeTodoNivel>
     </>
   );
 }

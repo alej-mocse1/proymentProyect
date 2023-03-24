@@ -11,7 +11,7 @@
     padding: 20px 0 130px 0;
   }
   @media (max-width: 770px) {
-    padding: 20px 0 470px 0;
+    padding: 20px 0 370px 0;
   }
   @include responsive("tablet") {
     padding: 10px 0 10px 0;
@@ -24,7 +24,7 @@
   margin-top: 50px;
   margin-left: 100px;
   width: 550px;
-  
+
   @include flex-column-start2;
   @media (max-width: 1350px) {
     margin-left: 80px;
@@ -44,12 +44,12 @@
     font-weight: 700;
     font-size: 48px;
     @media (max-width: 1030px) {
-      margin-left: 20px;
+      margin-left: 30px;
       width: 90%;
       font-size: 40px;
     }
     @include responsive("tablet") {
-      width: 326px;
+      width: 300px;
       height: 71px;
       font-size: 32px;
       margin-left: 20px;
@@ -73,8 +73,12 @@
       padding-top: 40px;
       margin-left: 20px;
     }
-    @media (max-width:350px) {
-      width: 80%;
+    @media (max-width: 770px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 350px) {
+      width: 300px;
+      margin-left: 20px;
     }
   }
 
@@ -132,9 +136,8 @@
     height: 30%;
     position: absolute;
     left: 91.5%;
-
   }
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -148,18 +151,7 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.button-container2{
+.button-container2 {
   width: 100%;
   @media (max-width: 1030px) {
     margin-left: 20px;
@@ -168,7 +160,7 @@
     width: 80%;
     margin-left: 20px;
   }
-  @include responsive ("tablet"){
+  @include responsive("tablet") {
     width: 90%;
     margin-left: 20px;
   }
@@ -177,7 +169,6 @@
 .container2 {
   width: 100%;
 }
-
 
 .btn2 {
   font-size: 16px;
@@ -190,7 +181,7 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
-  @include responsive('carrousel'){
+  @include responsive("carrousel") {
     width: 90%;
     max-height: 104px;
     padding: 16px 30px;
@@ -202,6 +193,7 @@
     padding: 15px 24px;
   }
 }
+
 
 
 

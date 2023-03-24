@@ -8,6 +8,7 @@
     background: #000538;
     position: relative;
 
+
     .degrade {
         /* border: 1px solid red; */
         height: 666px;
@@ -27,6 +28,10 @@
         position: absolute;
         left: 71px;
         z-index: 2;
+
+        @include responsive("Laptop"){
+            left: 51px;
+        }
         h4 {
             font-size: 24px;
             font-weight: 500;
@@ -97,5 +102,9 @@
         position: absolute;
         z-index: 3;
         right: 130px;
+
+        @include responsive("Laptop"){
+            right: 71px;
+        }
     }
 }

@@ -26,12 +26,18 @@
 }
 
 strong {
-  color: #6F4EF5;
+  color: #6f4ef5;
 }
 
 .logo-container {
   width: 100%;
-  background: linear-gradient(359.31deg, #FFFFFF 0.7%, rgba(255, 255, 255, 0.275035) 33.62%, rgba(255, 255, 255, 0.111513) 41.86%, rgba(255, 255, 255, 0) 130.33%) !important;
+  background: linear-gradient(
+    359.31deg,
+    #ffffff 0.7%,
+    rgba(255, 255, 255, 0.275035) 33.62%,
+    rgba(255, 255, 255, 0.111513) 41.86%,
+    rgba(255, 255, 255, 0) 130.33%
+  ) !important;
   z-index: 10000000;
 }
 
@@ -90,15 +96,14 @@ strong {
   }
 }
 
-
 @keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-150px * 5));
-    transform: translateX(calc(-150px * 5));
+    -webkit-transform: translateX(calc(-150px * 4));
+    transform: translateX(calc(-150px * 4));
   }
 }
 
@@ -117,8 +122,8 @@ strong {
   width: 100%;
   @include responsive("tablet") {
     width: calc(200px * 8);
-    animation: scroll 30s linear infinite;
-    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll2 30s linear infinite;
+    -webkit-animation: scroll2 30s linear infinite;
   }
 }
 
@@ -154,65 +159,12 @@ strong {
 
 @keyframes scroll2 {
   0% {
+    -webkit-transform: translateX(calc(-150px * 5));
+    transform: translateX(calc(-150px * 5));
+  }
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-  100% {
-    -webkit-transform: translateX(calc(-150px * 4));
-    transform: translateX(calc(-150px * 4));
-  }
 }
 
-
-.prueba {
-  width: 100%;
-  padding-bottom: 10px;
-  z-index: 1;
-  @include responsive("tablet") {
-    position: relative;
-    top: 0px;
-  }
-  @media (max-width: 320px) {
-    top: 0px;
-  }
-}
-
-.companiesFriendly__container--imgs {
-  @include flex-row-around;
-  width: 100%;
-  position: relative;
-}
-
-strong {
-  color: #6f4ef5;
-}
-
-.imgCompanies {
-  width: 130px;
-  margin: 10px 50px;
-  height: 130px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  border-radius: 100px;
-  z-index: 10;
-  transition: .3s;
-  @media (max-width: 1210px) {
-    width: 100px;
-    height: 100px;
-  }
-  @media (max-width: 1025px) {
-    width: 10%;
-    height: 10%;
-    margin: 8px 30px
-  }
-  @include responsive("tablet") {
-    width: 14%;
-    height: 14%;
-    margin: 8px 5px;
-  }
-}
-
-.imgCompanies:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  transition: .2s;
-}

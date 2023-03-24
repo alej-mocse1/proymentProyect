@@ -205,6 +205,7 @@
         height: 723.5px;
         text-align: center;
         justify-content: center;
+        margin-top: -100px;
     }
  
 
@@ -241,16 +242,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 550px){
+@media (max-width: 800px){
     .div{
         display: flex;
         flex-direction: column-reverse;

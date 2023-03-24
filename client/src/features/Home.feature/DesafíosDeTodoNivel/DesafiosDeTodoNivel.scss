@@ -15,7 +15,7 @@
   }
   @media (max-width: 430px) {
     padding: 10px 0 10px 0;
-    @include flex-column-around;
+    @include flex-column-around; 
     height: 800px;
   }
   @media (max-width: 320px) {
@@ -127,6 +127,7 @@
 }
 
 .div--row2 {
+  
   margin-top: 50px;
   margin-left: 100px;
   width: 550px;

@@ -28,12 +28,13 @@ function DesafíosDeTodoNivel() {
         </div>
       </div>
 
-      <img src={background} alt="" className="div--row--hero2" />
-      <img src={estadistica} alt="" className="div-row-hero3" />
-      <img src={graphicFloat} alt="" className="div-row-hero4" />
-    </div>
+      
+        <img src={background} alt="img" className="div--row--hero2" />
+        <img src={estadistica} alt="estadistica" className="div-row-hero3" />
+        <img src={graphicFloat} alt="graphic" className="div-row-hero4"/>
+    
+      </div>
   );
 }
 
 export default DesafíosDeTodoNivel;
-

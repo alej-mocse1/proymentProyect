@@ -80,10 +80,11 @@
   font-size: 40px;
   font-weight: 500;
   gap: 40px;
-  width: 400px;
+  width: 100%;
   line-height: 44px;
   color: $white;
   margin: 0;
+ 
   /* position:static; */
   @include responsive("carrousel") {
     width: 100%;

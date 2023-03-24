@@ -1,0 +1,134 @@
+@import "../../../styles/styles.scss";
+
+.background {
+  width: 100%;
+  background-color: $background-purple;
+  position: relative;
+  z-index: 1;
+}
+.rectangle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  /* background-color: #a286fa; */
+  background: linear-gradient(
+    180deg,
+    rgba(162, 134, 250, 0.21) 0%,
+    rgba(36, 14, 129, 0) 100%
+  );
+  -webkit-clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
+  clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
+}
+
+.container {
+  position: inherit;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 171px 86px 141px;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 71%;
+  h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35.2px;
+    text-align: center;
+    color: $white;
+    margin: 0px 0px 16px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #eae6ff;
+    margin: 0;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  width: 100%;
+  padding: 56px 17px 32px;
+  gap: 32px;
+
+  .row1 {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+  }
+  .row2 {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding: 0px 10%;
+  }
+
+  .card {
+    border-radius: 8px;
+    background-color: #0f1344;
+    display: flex;
+    flex-direction: row;
+    /* max-width: 318px; */
+    width: 100%;
+    height: 152px;
+    align-items: center;
+    justify-content: center;
+    img {
+      fill: #a286fa;
+      width: 38px;
+      height: 38px;
+      margin: 0px 28px 0px 23px;
+    }
+    .card-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 0;
+      margin-right: 16px;
+      h6 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: left;
+        color: $white;
+        margin: 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        color: #eae6ff;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  color: #ffff;
+  background-color: $button-purple;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  max-width: 174px;
+  width: 100%;
+  max-height: 64px;
+  height: 64px;
+}
+.button:hover {
+  background: #a493ff;
+  transition: 1s;
+}

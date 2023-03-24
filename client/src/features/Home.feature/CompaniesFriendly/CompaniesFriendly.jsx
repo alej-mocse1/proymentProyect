@@ -26,34 +26,34 @@ function CompaniesFriendly() {
           <div className="slider">
             <div className="slide-track">
               <div className="slide">
-                <img src={img03} alt="logo" />
+                <img src={img03} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img02} alt="logo" />
+                <img src={img02} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img05} alt="logo" />
+                <img src={img05} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img06} alt="logo" />
+                <img src={img06} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img07} alt="logo" />
+                <img src={img07} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img03} alt="logo" />
+                <img src={img03} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img02} alt="logo" />
+                <img src={img02} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img05} alt="logo" />
+                <img src={img05} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img06} alt="logo" />
+                <img src={img06} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img07} alt="logo" />
+                <img src={img07} alt="logo" className="imgCompanies"/>
               </div>
             </div>
           </div>
@@ -61,28 +61,28 @@ function CompaniesFriendly() {
           <div className="slider2">
             <div className="slide-track2">
               <div className="slide2">
-                <img src={img08} alt="logo" />
+                <img src={img08} alt="logo" className="imgCompanies" />
               </div>
               <div className="slide2">
-                <img src={img010} alt="logo" />
+                <img src={img010} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide2">
-                <img src={img011} alt="logo" />
+                <img src={img011} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide2">
-                <img src={img012} alt="logo" />
+                <img src={img012} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img08} alt="logo" />
+                <img src={img08} alt="logo" className="imgCompanies" />
               </div>
               <div className="slide23">
-                <img src={img010} alt="logo" />
+                <img src={img010} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img011} alt="logo" />
+                <img src={img011} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img012} alt="logo" />
+                <img src={img012} alt="logo" className="imgCompanies"/>
               </div>
             </div>
           </div>
@@ -90,34 +90,34 @@ function CompaniesFriendly() {
           <div className="slider">
             <div className="slide-track">
               <div className="slide">
-                <img src={img09} alt="logo" />
+                <img src={img09} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img015} alt="logo" />
+                <img src={img015} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img04} alt="logo" />
+                <img src={img04} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img013} alt="logo" />
+                <img src={img013} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide">
-                <img src={img014} alt="logo" />
+                <img src={img014} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img09} alt="logo" />
+                <img src={img09} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img015} alt="logo" />
+                <img src={img015} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img04} alt="logo" />
+                <img src={img04} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img013} alt="logo" />
+                <img src={img013} alt="logo" className="imgCompanies"/>
               </div>
               <div className="slide23">
-                <img src={img014} alt="logo" />
+                <img src={img014} alt="logo" className="imgCompanies"/>
               </div>
             </div>
           </div>

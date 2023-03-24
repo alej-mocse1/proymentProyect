@@ -24,11 +24,16 @@ const Register = () => {
             <div>
                 <label>Nombre de empresa:</label>
                 <input 
-                    type="text" {...register('empresa', {
+                    type="text" 
+                    placeholder="Ingrese su nombre de empresa aquí" 
+                    {...register('empresa', {
                     required: true,
                     pattern: /^[A-Za-z]+$/i,
                     maxLength: 10
-                })} />
+                })} 
+                
+                
+                />
                 {errors.empresa?.type === 'required' && <p>El campo nombre es requerido</p>}
                 {errors.empresa?.type === 'pattern' && <p>El formato de nombre es incorrecto</p>}
                 {errors.empresa?.type === 'maxLength' && <p>El campo nombre debe tener menos de 10 caracteres</p>}
@@ -36,7 +41,9 @@ const Register = () => {
 
             <div>
                 <label>Correo electrónico:</label>
-                <input type="text" {...register('email', {
+                <input type="text" 
+                placeholder="ejemplo@email.com"
+                {...register('email', {
                     required: true,
                     pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
                 })} />
@@ -46,7 +53,9 @@ const Register = () => {
 
             <div>
                 <label>Número de contacto:</label>
-                <input type="text" {...register('telefono')} />
+                <input type="text" 
+                placeholder="Ingrese su número de contacto aquí"
+                {...register('telefono')} />
             </div>
 
             <div>

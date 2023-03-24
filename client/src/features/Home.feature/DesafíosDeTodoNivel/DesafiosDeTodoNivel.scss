@@ -34,7 +34,7 @@
   }
   @media (max-width: 770px) {
     width: 100%;
-    margin-left: 30px;
+    margin: 0px;
   }
   @media (max-width: 430px) {
     margin-left: 0px;
@@ -44,6 +44,8 @@
     font-weight: 700;
     font-size: 48px;
     @media (max-width: 1030px) {
+      margin-left: 20px;
+      width: 90%;
       font-size: 40px;
     }
     @include responsive("tablet") {
@@ -60,6 +62,10 @@
     font-weight: 400;
     font-size: 18px;
     padding-bottom: 40px;
+    @media (max-width: 1030px) {
+      width: 90%;
+      margin-left: 20px;
+    }
     @include responsive("tablet") {
       font-size: 16px;
       width: 329px;
@@ -75,13 +81,13 @@
   .div--row--hero2 {
     width: 560px;
     height: 530px;
-    left: 650px;
+    left: 600px;
     position: relative;
     top: -430px;
     @media (max-width: 1030px) {
       width: 450px;
       height: 420px;
-      top: -320px;
+      top: -370px;
       left: 450px;
     }
     @media (max-width: 770px) {
@@ -99,7 +105,7 @@
       width: 327px;
       height: 284.25px;
       left: 24px;
-      top: 0px;
+      top: 28px;
     }
     @media (max-width: 320px) {
       width: 300px;
@@ -136,7 +142,7 @@
   position: relative;
   top: -10px;
   width: 80%;
-  left: 28px;
+  left: 20px;
   @media (max-width: 1100px) {
     top: -20px;
   }
@@ -155,6 +161,9 @@
 
 .button-container2{
   width: 100%;
+  @media (max-width: 1030px) {
+    margin-left: 20px;
+  }
   @media (max-width: 780px) {
     width: 80%;
     margin-left: 20px;
@@ -193,4 +202,6 @@
     padding: 15px 24px;
   }
 }
+
+
 

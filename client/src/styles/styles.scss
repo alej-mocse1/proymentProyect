@@ -126,7 +126,7 @@ $button-purple: #6f4ef5;
 
   /* MEDIA QUERIES NUEVAS*/
 
-  /* @if $device == phone-S {
+  @if $device == phone-S {
     @media screen and (max-width: 374px) {
       @content;
     }
@@ -141,21 +141,21 @@ $button-purple: #6f4ef5;
       @content;
     }
   }
-  @if $device == tablet {
+  @if $device == Tablet {
     @media screen and (max-width: 1023px) {
       @content;
     }
   }
-  @if $device == laptop {
+  @if $device == Laptop {
     @media screen and (max-width: 1439px) {
       @content;
     }
   }
-  @if $device == desktop {
+  @if $device == Desktop {
     @media screen and (max-width: 2560px) {
       @content;
     }
-  } */
+  }
 
   
   

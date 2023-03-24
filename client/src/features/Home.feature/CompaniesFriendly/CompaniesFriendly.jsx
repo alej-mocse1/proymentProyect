@@ -22,30 +22,106 @@ function CompaniesFriendly() {
         <h2 className="companiesFriendly__container--title">
           <strong>+100 companías </strong>se potenciaron con nuestros servicios
         </h2>
+        <div className="logo-container">
+          <div className="slider">
+            <div className="slide-track">
+              <div className="slide">
+                <img src={img03} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img02} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img05} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img06} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img07} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img03} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img02} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img05} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img06} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img07} alt="logo" className="imgCompanies"/>
+              </div>
+            </div>
+          </div>
 
-        <div className="prueba">
-          <div className="companiesFriendly__container--imgs">
-            <img src={img03} alt="" className="imgCompanies" />
-            <img src={img02} alt="" className="imgCompanies" />
-            <img src={img05} alt="" className="imgCompanies" />
-            <img src={img06} alt="" className="imgCompanies" />
-            <img src={img07} alt="" className="imgCompanies" />
+          <div className="slider2">
+            <div className="slide-track2">
+              <div className="slide2">
+                <img src={img08} alt="logo" className="imgCompanies" />
+              </div>
+              <div className="slide2">
+                <img src={img010} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide2">
+                <img src={img011} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide2">
+                <img src={img012} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img08} alt="logo" className="imgCompanies" />
+              </div>
+              <div className="slide23">
+                <img src={img010} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img011} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img012} alt="logo" className="imgCompanies"/>
+              </div>
+            </div>
           </div>
-          <div className="companiesFriendly__container--imgs">
-            <img src={img08} alt="" className="imgCompanies" />
-            <img src={img010} alt="" className="imgCompanies" />
-            <img src={img011} alt="" className="imgCompanies" />
-            <img src={img012} alt="" className="imgCompanies" />
-          </div>
-          <div className="companiesFriendly__container--imgs">
-            <img src={img09} alt="" className="imgCompanies" />
-            <img src={img015} alt="" className="imgCompanies" />
-            <img src={img04} alt="" className="imgCompanies" />
-            <img src={img013} alt="" className="imgCompanies" />
-            <img src={img014} alt="" className="imgCompanies" />
+
+          <div className="slider">
+            <div className="slide-track">
+              <div className="slide">
+                <img src={img09} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img015} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img04} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img013} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide">
+                <img src={img014} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img09} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img015} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img04} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img013} alt="logo" className="imgCompanies"/>
+              </div>
+              <div className="slide23">
+                <img src={img014} alt="logo" className="imgCompanies"/>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="bgito"></div>
       </div>
     </>
   );

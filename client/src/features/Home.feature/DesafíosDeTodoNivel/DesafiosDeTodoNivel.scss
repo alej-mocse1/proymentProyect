@@ -3,7 +3,7 @@
 .div2 {
   width: 100%;
   height: 400px;
-  padding: 20px 0px 180px 0px;
+  padding: 10px 0px 160px 0px;
   background-color: #000538;
   @include flex-row-around;
   color: white;
@@ -11,36 +11,153 @@
     padding: 20px 0 130px 0;
   }
   @media (max-width: 770px) {
-    padding: 20px 0 470px 0;
+    padding: 20px 0 370px 0;
   }
-  @include responsive("tablet") {
+  @media (max-width: 430px) {
     padding: 10px 0 10px 0;
-    @include flex-column-around;
+    @include flex-column-around; 
+    height: 800px;
+  }
+  @media (max-width: 320px) {
     height: 720px;
   }
 }
 
+.div--row--hero2 {
+  width: 560px;
+  height: 530px;
+  left: 700px;
+  position: relative;
+  top: -380px;
+  @media (max-width: 1030px) {
+    width: 450px;
+    height: 420px;
+    top: -300px;
+    left: 530px;
+  }
+  @media (max-width: 770px) {
+    left: 110px;
+    top: 40px;
+  }
+  @include responsive("tablet") {
+    width: 330px;
+    height: 300px;
+    left: 20px;
+    top: -10px;
+  }
+  @media (max-width: 430px) {
+    width: 400px;
+    height: 370px;
+    left: 0px;
+    top: 110px;
+  }
+  @media (max-width: 380px) {
+    width: 340px;
+    height: 310px;
+    top: 140px;
+  }
+  @media (max-width: 320px) {
+    width: 310px;
+    height: 290px;
+    top: 110px;
+    left: 0px;
+  }
+}
+
+.div-row-hero3 {
+  width: 90px;
+  left: 170px;
+  position: relative;
+  top: -740px;
+  @include floating;
+  @media (max-width: 1030px) {
+    width: 80px;
+    top: -600px;
+    left: 100px;
+  }
+  @media (max-width: 770px) {
+    top: -240px;
+    left: -320px;
+  }
+  @media (max-width: 430px) {
+    width: 70px;
+    top: -225px;
+    left: -150px;
+  }
+  @media (max-width: 380px) {
+    top: -150px;
+    left: -130px;
+  }
+  @media (max-width: 320px) {
+    width: 60px;
+    top: -140px;
+    left: -110px;
+  }
+}
+
+.div-row-hero4 {
+  width: 100px;
+  left: 450px;
+  position: relative;
+  top: -780px;
+  @include floating;
+  @media (max-width: 1030px) {
+    width: 100px;
+    top: -650px;
+    left: 300px;
+  }
+  @media (max-width: 770px) {
+    width: 90px;
+    top: -290px;
+    left: -80px;
+  }
+  @media (max-width: 430px) {
+    width: 80px;
+    top: -335px;
+    left: 120px;
+  }
+  @media (max-width: 380px) {
+    top: -270px;
+    left: 100px;
+  }
+  @media (max-width: 320px) {
+    width: 70px;
+    left: 90px;
+  }
+}
+
 .div--row2 {
-  margin-left: 50px;
-  width: 550px;
   
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 550px;
   @include flex-column-start2;
+  @media (max-width: 1350px) {
+    margin-left: 80px;
+  }
   @media (max-width: 1030px) {
     width: 450px;
   }
   @media (max-width: 770px) {
     width: 100%;
-    margin-left: 0;
+    margin: 0px;
+  }
+  @media (max-width: 430px) {
+    margin-top: 30px;
+    margin-left: 0px;
   }
 
   h1 {
     font-weight: 700;
     font-size: 48px;
     @media (max-width: 1030px) {
+      margin-left: 30px;
+      margin-bottom: 10px;
+      width: 90%;
       font-size: 40px;
     }
     @include responsive("tablet") {
-      width: 326px;
+      width: 300px;
       height: 71px;
       font-size: 32px;
       margin-left: 20px;
@@ -53,57 +170,32 @@
     font-weight: 400;
     font-size: 18px;
     padding-bottom: 40px;
+    @media (max-width: 1030px) {
+      width: 90%;
+      margin-left: 20px;
+    }
     @include responsive("tablet") {
       font-size: 16px;
-      width: 100%;
       width: 329px;
       height: 96px;
       padding-top: 40px;
       margin-left: 20px;
-      
-    }
-  }
-
-  .div--row--hero2 {
-    width: 610px;
-    height: 581px;
-    left: 600px;
-    position: relative;
-    top: -360px;
-    @media (max-width: 1030px) {
-      width: 510px;
-      height: 480px;
-      top: -280px;
-      left: 450px;
     }
     @media (max-width: 770px) {
-      left: 80px;
-      top: 50px;
+      margin-left: 30px;
     }
-    @include responsive("tablet") {
-      width: 330px;
-      height: 300px;
-      left: 0px;
-      top: 10px;
+    @media (max-width: 430px) {
+      margin-left: 20px;
     }
-    @include responsive("phone") {
-      display: flex;
-      width: 327px;
-      height: 284.25px;
-      left: 0;
-      top: 30px;
-    }
-    @media (max-width: 320px) {
+    @media (max-width: 350px) {
       width: 300px;
-      height: 280px;
-      top: 30px;
+      margin-left: 20px;
     }
   }
 }
 
 .grafico2 {
   width: 10%;
-  height: 20%;
   position: absolute;
   left: 90%;
 
@@ -113,21 +205,67 @@
     position: absolute;
     left: 93%;
   }
-  @include responsive ("tablet"){
+  @media (max-width: 1100px) {
+    width: 7%;
+    height: 30%;
+    position: absolute;
+    left: 91.5%;
+  }
+  @media (max-width: 800px) {
     display: none;
   }
 }
+
 .grafico2 img {
   position: relative;
-  top: -20px;
+  top: -10px;
+  width: 80%;
+  left: 20px;
+  @media (max-width: 1100px) {
+    top: -20px;
+  }
+}
+
+.button-container2 {
+  width: 100%;
+  @media (max-width: 1030px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 780px) {
+    width: 80%;
+    margin-left: 30px;
+  }
+  @include responsive("tablet") {
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
+.container2 {
   width: 100%;
 }
 
-.button-container2{
-  width: 90%;
-  
-  @include responsive ("tablet"){
-    margin-left: 20px;
-
+.btn2 {
+  font-size: 16px;
+  width: 201px;
+  height: 64px;
+  padding: 20px 38px;
+  border-radius: 4px;
+  background-color: $button-purple;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  font-stretch: 100%;
+  @include responsive("carrousel") {
+    width: 90%;
+    max-height: 104px;
+    padding: 16px 30px;
+  }
+  @include responsive("phone") {
+    width: 90%;
+    max-width: 326px;
+    height: 54px;
+    padding: 15px 24px;
   }
 }
+

@@ -1,8 +1,10 @@
 import React from "react";
 import "./DesafiosDeTodoNivel.scss";
-import background from "./imgCierre.png";
-import Button from "../../../core/components/Button/Button";
+import background from "./Image.png";
+import { Link } from "react-router-dom";
 import grafico from "./imgFlotant.png";
+import estadistica from "./estadística float.svg";
+import graphicFloat from "./graphic float.svg";
 
 function DesafíosDeTodoNivel() {
   return (
@@ -18,14 +20,20 @@ function DesafíosDeTodoNivel() {
           tecnólogica, siendo un impulsor para optimizar las companías con
           visión global.
         </span>
-        <div className="button-container2"> <Button  /></div>
-        
+        <div className="button-container2">
+          {" "}
+          <Link to="/form" className="container2">
+            <button className="btn2">Agendar reunión</button>
+          </Link>
+        </div>
       </div>
 
-      <div className="div--row2 container2">
-        <img src={background} alt="" className="div--row--hero2" />
+      
+        <img src={background} alt="img" className="div--row--hero2" />
+        <img src={estadistica} alt="estadistica" className="div-row-hero3" />
+        <img src={graphicFloat} alt="graphic" className="div-row-hero4"/>
+    
       </div>
-    </div>
   );
 }
 

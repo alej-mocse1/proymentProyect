@@ -52,10 +52,11 @@
 
 
 .grafico{
-    width: 10%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
     position: absolute;
     right: 0;
+   
 }
 .grafico img{
     width: 100px;
@@ -106,24 +107,23 @@
     width: 201px;
     height: 64px;
     background: #6F4EF5;
-    border: 2px solid #6F4EF5 ;
+    border: none;
     border-radius: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     position: relative;
-
+    cursor: pointer;
 }
 
+.divText button:hover{
+    background: #A493FF;
+    transition: 1s;
+}
 
 @media (max-width: 1200px){
-    .grafico{
-        width: 7%;
-        height: 30%;
-        position: absolute;
-        left: 93%;
-    }
+
 
     .divIMG{
         margin-left: 30px;
@@ -205,6 +205,7 @@
         height: 723.5px;
         text-align: center;
         justify-content: center;
+        margin-top: -100px;
     }
  
 
@@ -241,16 +242,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 550px){
+@media (max-width: 800px){
     .div{
         display: flex;
         flex-direction: column-reverse;

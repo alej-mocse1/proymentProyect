@@ -26,13 +26,13 @@ function DesafíosDeTodoNivel() {
             <button className="btn2">Agendar reunión</button>
           </Link>
         </div>
-      </div>
+      </div>  
 
-      <div className="div--row2 container2">
+      
         <img src={background} alt="img" className="div--row--hero2" />
         <img src={estadistica} alt="estadistica" className="div-row-hero3" />
         <img src={graphicFloat} alt="graphic" className="div-row-hero4"/>
-      </div>
+      
     </div>
   );
 }

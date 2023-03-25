@@ -13,6 +13,7 @@ export default function Page2() {
 
     return (
       <>
+        <LandingPage/>
          <Logos></Logos>
          <PlanUnico></PlanUnico>
          <PlanesAccecibles></PlanesAccecibles>

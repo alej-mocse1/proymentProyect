@@ -19,6 +19,10 @@
   );
   -webkit-clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
   clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
+  @include responsive("tablet") {
+    -webkit-clip-path: polygon(59% 0, 100% 0, 100% 100%, 39% 100%);
+    clip-path: polygon(59% 0, 100% 0, 100% 100%, 39% 100%);
+  }
 }
 
 .container {
@@ -27,13 +31,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 72px 171px 86px 141px;
+  padding: 72px 5.2vw;
+  @include responsive("carrousel2") {
+    padding: 56px 0;
+  }
 }
 .title-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 71%;
+  /*   width: 71%;
+ */
+  @include responsive("carrousel2") {
+    padding: 0 5.2vw 40px 5.2vw;
+  }
   h4 {
     font-weight: 600;
     font-size: 32px;
@@ -43,12 +54,24 @@
     margin: 0px 0px 16px;
   }
   p {
+    width: 71%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     color: #eae6ff;
     margin: 0;
+  }
+  @include responsive("tabletM") {
+    align-items: flex-start;
+    h4 {
+      width: auto;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      width: auto;
+    }
   }
 }
 
@@ -61,57 +84,92 @@
   padding: 56px 17px 32px;
   gap: 32px;
 
+  @include responsive("laptop") {
+    padding: 46px 17px 32px;
+  }
+  @include responsive("carrousel2") {
+    display: none;
+  }
   .row1 {
     display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 4vw;
   }
   .row2 {
     display: flex;
     justify-content: center;
-    gap: 56px;
-    padding: 0px 10%;
+    gap: 4vw;
+    padding: 0px 9%;
   }
+}
 
-  .card {
-    border-radius: 8px;
-    background-color: #0f1344;
-    display: flex;
-    flex-direction: row;
-    /* max-width: 318px; */
-    width: 100%;
-    height: 152px;
-    align-items: center;
-    justify-content: center;
-    img {
-      fill: #a286fa;
-      width: 38px;
-      height: 38px;
-      margin: 0px 28px 0px 23px;
+.card {
+  border-radius: 8px;
+  background-color: #0f1344;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: 152px; */
+  align-items: center;
+  justify-content: center;
+  @include responsive("carrousel2") {
+    max-width: 345px;
+    min-height: 158px;
+  }
+  img {
+    fill: #a286fa;
+    width: 38px;
+    height: 38px;
+    margin: 0px 1.2vw 0px 1vw;
+    @include responsive("carrousel2") {
+      margin: 0px 24px 0px 17px;
     }
-    .card-text {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+  }
+  .card-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding-right: 16px;
+    h6 {
+      padding-top: 1.6vw;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: left;
+      color: $white;
       margin: 0;
-      margin-right: 16px;
-      h6 {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 22px;
-        text-align: left;
-        color: $white;
-        margin: 0;
-      }
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: left;
-        color: #eae6ff;
-        margin: 0;
-      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      color: #eae6ff;
+      margin: 0;
+      padding-bottom: 1.6vw;
+    }
+  }
+}
+
+.carrousel {
+  width: 100%;
+  display: none;
+  @include responsive("carrousel2") {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 48px;
+  }
+  .move {
+    /* Se ve mejor:) (? */
+
+  /*   padding: 0;
+    padding-left: 5.2vw; */
+    .data {
+      width: 100%;
     }
   }
 }
@@ -127,6 +185,11 @@
   width: 100%;
   max-height: 64px;
   height: 64px;
+  @include responsive("tabletM") {
+    max-width: 261px;
+    max-height: 54px;
+    height: 54px;
+  }
 }
 .button:hover {
   background: #a493ff;

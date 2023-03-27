@@ -152,7 +152,7 @@ const LideresEnLatinoamerica = () => {
                 clickable:true,
                 }}
                 loop={true}
-                autoplay={{ delay:2000, 
+                autoplay={{ delay:3000, 
                     pauseOnMouseEnter: false,
                     disableOnInteraction: false
                     /* waitForTransition:true,  */

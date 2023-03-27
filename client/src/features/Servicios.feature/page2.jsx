@@ -7,7 +7,6 @@ import Soluciones from "./solucionesEnVenta/Soluciones";
 import ProymentParaPotenciar from "./ProymentParaPotenciar/ProymentParaPotenciar";
 
 export default function Page2() {
-
   return (
     <>
       <LandingPage />

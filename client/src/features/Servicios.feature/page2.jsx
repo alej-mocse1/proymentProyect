@@ -12,8 +12,8 @@ export default function Page2() {
       <LandingPage />
       <Logos></Logos>
       <PlanUnico></PlanUnico>
-      <Soluciones></Soluciones>
       <PlanesAccecibles></PlanesAccecibles>
+      <Soluciones></Soluciones>
       <NuestrosPlanes></NuestrosPlanes>
       <ProymentParaPotenciar />
     </>

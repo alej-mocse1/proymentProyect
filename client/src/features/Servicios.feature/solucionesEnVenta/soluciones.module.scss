@@ -20,8 +20,8 @@
   -webkit-clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
   clip-path: polygon(79% 0, 100% 0, 100% 100%, 69% 100%);
   @include responsive("tablet") {
-    -webkit-clip-path: polygon(59% 0, 100% 0, 100% 100%, 39% 100%);
-    clip-path: polygon(59% 0, 100% 0, 100% 100%, 39% 100%);
+    -webkit-clip-path: polygon(40.5% 0, 100% 0, 100% 100%, 22% 100%);
+    clip-path: polygon(40.5% 0, 100% 0, 100% 100%, 22% 100%);
   }
 }
 
@@ -54,7 +54,7 @@
     margin: 0px 0px 16px;
   }
   p {
-    width: 71%;
+    width: 62%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -67,6 +67,7 @@
     h4 {
       width: auto;
       text-align: left;
+      max-width: 356px;
     }
     p {
       text-align: left;
@@ -78,7 +79,7 @@
 .cards {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.9317fr;
   justify-content: center;
   width: 100%;
   padding: 56px 17px 32px;
@@ -94,12 +95,25 @@
     display: flex;
     justify-content: center;
     gap: 4vw;
+    .card {
+      max-width: 320px;
+
+      p {
+        max-width: 226px;
+      }
+    }
   }
   .row2 {
     display: flex;
     justify-content: center;
     gap: 4vw;
     padding: 0px 9%;
+    .card {
+      max-width: 432px;
+      p {
+        max-width: 348px;padding-bottom: 1vw;
+      }
+    }
   }
 }
 
@@ -166,7 +180,7 @@
   .move {
     /* Se ve mejor:) (? */
 
-  /*   padding: 0;
+    /*   padding: 0;
     padding-left: 5.2vw; */
     .data {
       width: 100%;

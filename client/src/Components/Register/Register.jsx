@@ -1,11 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 //import { edadValidator } from "./validators";
 import style from "./Register.module.scss"
 import "./Prueba.scss"
 
 const Register = () => {
 
+    const navigate = useNavigate()
     const { register, formState: { errors }, handleSubmit, formState } = useForm();
 
     /* console.log(errors.empresa); */
@@ -13,8 +15,10 @@ const Register = () => {
 
     const onSubmit = (data, e, errors) => {
         console.log(data);
+
         /* console.log(errors); */
-        e.target.reset()
+        /* e.target.reset() */
+        /* data && navigate.push("/confirmation") */
     }
 
 
@@ -80,7 +84,7 @@ const Register = () => {
 
             <input type="submit" value="Enviar información"  
             /* className={`btn ${!errors.empresa && "btn2"}`}  */
-            className={`"btn" ${!Object.entries(errors).length === 0 ? "btn2" : "btn"}`}
+            /* className={`"btn" ${!Object.entries(errors).length === 0 ? "btn2" : "btn"}`} */
             />     
         </form>
     </div>

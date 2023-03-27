@@ -29,6 +29,99 @@ const Logos  = () => {
           <img src={img6} alt="abn8" />
     
         </div>
+
+        <div className={Styles.slider}>
+         <div className={Styles.slidetrack}>
+
+            <div  className={Styles.slide}>
+                <img src={img1} alt="adecor" />
+            </div>
+            <div  className={Styles.slide}>
+                  <img src={img2} alt="pgi" />
+            </div>
+            <div  className={Styles.slide}>
+                <img src={img3} alt="estacio" />
+            </div>
+            <div  className={Styles.slide}>
+                <img src={img4} alt="tredici" />
+            </div>
+            <div  className={Styles.slide}>
+                <img src={img5} alt="bakar" />
+            </div>
+            <div  className={Styles.slide}>
+                <img src={img6} alt="abn8" /> 
+            </div>
+
+
+
+
+            <div  className={Styles.slide}>
+                <img src={img1} alt="adecor" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img2} alt="pgi" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img3} alt="estacio" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img4} alt="tredici" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img5} alt="bakar" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img6} alt="abn8" /> 
+            </div>
+
+
+
+
+            <div  className={Styles.slide}>
+                <img src={img1} alt="adecor" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img2} alt="pgi" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img3} alt="estacio" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img4} alt="tredici" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img5} alt="bakar" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img6} alt="abn8" /> 
+            </div>
+
+
+
+
+            <div  className={Styles.slide}>
+                <img src={img1} alt="adecor" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img2} alt="pgi" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img3} alt="estacio" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img4} alt="tredici" />
+            </div>
+            <div  className={Styles.slide}>
+               <img src={img5} alt="bakar" />
+            </div>
+            <div  className={Styles.slide}>
+              <img src={img6} alt="abn8" /> 
+            </div>
+
+
+
+        </div>
+      </div>
            
         </div>
     )

@@ -22,9 +22,10 @@
 
     @include responsive("carrousel") {
        position: relative;
-       top: -4px;
-       width: 90%;
+       top: 56px;
+       width: 330px;
        text-align: center;
+       
       }
 
 }
@@ -53,10 +54,12 @@
     left: 10px;
     justify-content: space-evenly;
 
+
     @include responsive("carrousel") {
-        left: 0px;
-        top: -13px;
-        width: 100%; 
+        // left: 0px;
+        // top: -13px;
+        // width: 100%; 
+        display: none;
        }
 }
 
@@ -67,10 +70,91 @@
     top: -15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 122.108px;
+    cursor: pointer;
 
     @include responsive("carrousel") {
         width: 60.69px;
         height: 60.69px;
        }
 }
+
+
+.divLogos img:hover{
+    width: 80.48px;
+    height: 80.48px;
+    transition: 1s;
+}
+
+
+
+
+
+//////////////////////slider responsive///////////////////
+
+
+.slider{
+    display: none;
+    @media (max-width: 800px) {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            overflow: hidden;
+            display: flex;    
+            position: relative;
+            top: 100px;      
+ }
+}
+
+
+.slider .slidetrack {
+    display: flex;
+
+    height: 200px;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(60px * 12);
+}
+
+.slider .slide {
+    width: 60px;
+}
+
+.slider .slide img{
+    width: 60px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-60px * 6));
+        transform: translateX(calc(-60px * 6));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

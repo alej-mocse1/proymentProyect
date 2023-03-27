@@ -48,25 +48,124 @@ const Objetivos = () => {
                </div> 
 
 
+         
 
-               <div className={Styles.divImgResponsive}>
-                
-                <div className={Styles.divImg1}>
-                 <img src={img1} alt="RDStation" /> 
-                 <img src={img2} alt="Hootsuite" /> 
-                 <img src={img3} alt="Ortto" /> 
-                 <img src={img4} alt="Synerise" /> 
-                </div>
-                
-                <div className={Styles.divImg2}>
-                 <img src={img5} alt="Googleanalytics" /> 
-                 <img src={img6} alt="Semrush" /> 
-                 <img src={img7} alt="Hubspot" /> 
-                 <img src={img8} alt="Emaryss" /> 
-                </div>
-
-              </div> 
             </div>
+
+
+            <div className={Styles.slider}>
+                
+                <div className={Styles.slidetrack}>
+               
+               <div className={Styles.slide}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+ 
+              </div>
+                  
+            </div> 
+
+{/* 
+            <div className={Styles.slider2}>
+                
+                <div className={Styles.slidetrack2}>
+               
+               <div className={Styles.slide2}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img1} alt="RDStation" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img2} alt="Hootsuite" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img3} alt="Ortto" /> 
+               </div>
+
+               <div className={Styles.slide2}>
+                 <img src={img4} alt="Synerise" /> 
+               </div>
+ 
+              </div>
+                  
+            </div>  */}
+
 
         </div>
     )

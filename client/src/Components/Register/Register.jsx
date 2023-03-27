@@ -1,92 +1,87 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 //import { edadValidator } from "./validators";
 import style from "./Register.module.scss"
+import "./Prueba.scss"
 
 const Register = () => {
 
-    const { register, formState: { errors }, watch, handleSubmit } = useForm({
-        /* defaultValues: {
-            empresa: '',
-            direccion: ''
-        } */
-    });
+    const { register, formState: { errors }, handleSubmit, formState } = useForm();
 
-    const onSubmit = (data) => {
+    /* console.log(errors.empresa); */
+    /* console.log(errors, formState.isDirty) */
+
+    const onSubmit = (data, e, errors) => {
         console.log(data);
+        /* console.log(errors); */
+        e.target.reset()
     }
 
-    const incluirTelefono = watch('incluirTelefono');
 
+    console.log(errors, formState.isDirty)
     return <div className={style.register}>
         <h2>¡Agendar reunión ahora!</h2>
         {/* <p>Nombre: {watch('nombre')}</p> */}
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label>Nombre de empresa:</label>
-                <input 
-                    type="text" 
-                    placeholder="Ingrese su nombre de empresa aquí" 
+                <input
+                    type="text"
+                    placeholder="Ingrese su nombre de empresa aquí"
                     {...register('empresa', {
-                    required: true,
-                    pattern: /^[A-Za-z]+$/i,
-                    maxLength: 10
-                })} 
-                
-                
+                        required: true,
+                        pattern: /^[A-Za-z]+$/i,
+                        maxLength: 15
+                    })}
                 />
-                {errors.empresa?.type === 'required' && <p>El campo nombre es requerido</p>}
-                {errors.empresa?.type === 'pattern' && <p>El formato de nombre es incorrecto</p>}
-                {errors.empresa?.type === 'maxLength' && <p>El campo nombre debe tener menos de 10 caracteres</p>}
+                {errors.empresa?.type === 'required' && <p className={style.error}>El campo nombre es requerido</p>}
+                {errors.empresa?.type === 'pattern' && <p className={style.error}>El formato de nombre es incorrecto</p>}
+                {errors.empresa?.type === 'maxLength' && <p className={style.error}>El campo nombre debe tener menos de 15 caracteres</p>}
             </div>
 
             <div>
                 <label>Correo electrónico:</label>
-                <input type="text" 
-                placeholder="ejemplo@email.com"
-                {...register('email', {
-                    required: true,
-                    pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
-                })} />
-                {errors.email?.type === 'required' && <p>El campo email es requerido</p>}
-                {errors.email?.type === 'pattern' && <p>El formato del email es incorrecto</p>}
+                <input type="text"
+                    placeholder="ejemplo@email.com"
+                    {...register('email', {
+                        required: true,
+                        pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
+                    })} />
+                {errors.email?.type === 'required' && <p className={style.error}>El campo email es requerido</p>}
+                {errors.email?.type === 'pattern' && <p className={style.error}>El formato del email es incorrecto</p>}
             </div>
 
             <div>
                 <label>Número de contacto:</label>
-                <input type="text" 
-                placeholder="Ingrese su número de contacto aquí"
-                {...register('telefono')} />
+                <input type="number"
+                    placeholder="Ingrese su número de contacto aquí"
+                    {...register('telefono', {
+                        required: true
+                    })} />
+                    {errors.telefono?.type === "required" && <p className={style.error}>El campo contacto es requerido</p>}
             </div>
 
             <div>
                 <label>Indicar el servicio de interés:</label>
-                <select {...register('servicio')}>
-                    <option value="smd">Servicio de marketing digital</option>
-                    <option value="si">Servicios integrales</option>
-                    <option value="sp">Servicios de potenciamiento de ventas</option>
-                    <option value="sa">Servicios de análisis de datos</option>
-                    <option value="sd">Servicios de diseño UI/UX</option>
-                    <option value="st">Servicios en tendencia</option>
-                    <option value="sm">Servicios a medida</option>
+                <select {...register('servicio', {
+                    required: true
+                })} >
+                    <option value="" selected disabled>El nombre de su empresa aquí...</option>
+                    <option value="smd" className={style.optionColor}>Servicio de marketing digital</option>
+                    <option value="si" className={style.optionColor}>Servicios integrales</option>
+                    <option value="spv" className={style.optionColor} >Servicios de potenciamiento de ventas</option>
+                    <option value="sad" className={style.optionColor}>Servicios de análisis de datos</option>
+                    <option value="sdu"className={style.optionColor}>Servicios de diseño UI/UX</option>
+                    <option value="st" className={style.optionColor}>Servicios en tendencia</option>
+                    <option value="sm" className={style.optionColor}>Servicios a medida</option>
                 </select>
+                {errors.servicio?.type === "required" && <p className={style.error}>El campo servicio es requerido</p>}
             </div>
 
-            {/* <div>
-                <label>Edad</label>
-                <input type="text" {...register('edad', {
-                    validate: edadValidator
-                })} />
-                {errors.edad && <p>La edad debe estar entre 18 y 65</p>}
-            </div> */}
-
-            {/* <div>
-                <label>¿Incluir teléfono?</label>
-                <input type="checkbox" {...register('incluirTelefono')} />
-            </div>
-            {incluirTelefono && ( */}
-
-            {/* )} */}
-            <input type="submit" value="Enviar información" />
+            <input type="submit" value="Enviar información"  
+            /* className={`btn ${!errors.empresa && "btn2"}`}  */
+            className={`"btn" ${!Object.entries(errors).length === 0 ? "btn2" : "btn"}`}
+            />     
         </form>
     </div>
 }

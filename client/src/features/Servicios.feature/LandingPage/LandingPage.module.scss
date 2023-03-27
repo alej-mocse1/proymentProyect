@@ -8,6 +8,18 @@
     background: #000538;
     position: relative;
 
+    @include responsive("Tablet") {
+        flex-direction: column;
+        position: relative;
+        padding: 56px 40px;
+        gap: 57px;
+    }
+
+    @include responsive("phone-L"){
+        padding: 56px 24px;
+    }
+
+
     .degrade {
         /* border: 1px solid red; */
         height: 666px;
@@ -18,15 +30,37 @@
         border-radius: 0px;
 
         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 179, 255, 0.8) 0%, rgba(36, 14, 129, 0) 100%);
+
+        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+
+        @include responsive("Tablet") {
+            width: 100%;
+            position: absolute;
+            top: 0;
+
+        }
+
     }
 
     .containerInfo {
         display: flex;
         flex-direction: column;
-        width: 690px;
+        /* width: 690px; */
+        width: 48%;
         position: absolute;
         left: 71px;
         z-index: 2;
+
+        @include responsive("Laptop") {
+            left: 51px;
+        }
+
+        @include responsive("Tablet") {
+            position: static;
+            width: 100%;
+        }
+
         h4 {
             font-size: 24px;
             font-weight: 500;
@@ -40,6 +74,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+
+            @include responsive("Laptop") {
+                width: 100%;
+            }
+
+            @include responsive("Tablet") {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+            }
         }
 
         h2 {
@@ -50,6 +94,16 @@
             text-align: left;
             margin: 0 0 32px 0;
             color: #fff;
+
+            @include responsive("Tablet") {
+                font-size: 40px;
+                line-height: 44px;
+                margin: 0 0 40px 0;
+            }
+
+            @include responsive("phone-S"){
+                font-size: 36px;
+            }
         }
 
         button {
@@ -67,20 +121,23 @@
             border: none;
             cursor: pointer;
 
-
-
-            /* @include responsive("Tablet") {
+            @include responsive("Tablet") {
                 width: 60%;
 
             }
 
             @include responsive("phone-L") {
-                width: 328px;
+                /* width: 328px; */
+                width: 100%;
                 height: 54px;
                 margin: auto;
-                margin-bottom: 57px;
+                margin: 0 auto;
 
             }
+
+            /* 
+
+            
 
             @include responsive("phone-S") {
                 width: 100%;
@@ -93,9 +150,25 @@
         }
     }
 
-    .containerForm{
+    .containerForm {
+        width: 30%;
         position: absolute;
         z-index: 3;
         right: 130px;
+
+        @include responsive("Laptop") {
+            right: 71px;
+            width: 35%;
+        }
+
+        @include responsive("Tablet") {
+            width: 100%;
+            position: static;
+
+        }
+
+        @include responsive("phone-L"){
+            width: 100%;
+        }
     }
 }

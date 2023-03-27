@@ -1,0 +1,105 @@
+@import "../../styles/styles.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #000538;
+    height: 100vh;
+
+    .containerImg {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .containerInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 62px;
+
+        .infoText {
+            width: 50%;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                color: #fff;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: #fff;
+                margin: 0;
+            }
+        }
+
+        .containerBtn {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+            .btnInicio {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #FFFFFF;
+
+                width: 201px;
+                height: 64px;
+                background: #6F4EF5;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btnInicio:hover {
+                background: #A493FF;
+                transition: 1s;
+            }
+
+            .btnWhatsapp {
+                background: #000538;
+                border: 1px solid #6f4ef5;
+                border-radius: 4px;
+                color: #6f4ef5;
+                font-size: 16px;
+                cursor: pointer;
+            
+                width: 230px;
+                height: 64px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                
+                i{
+                    font-size: 28px;
+                    padding-right: 5px;
+                }
+            }
+            .btnWhatsapp:hover{
+                color: #4E37AC;
+                border: 1px solid #4E37AC;
+                transition: .8s ease-in-out;
+            }
+        }
+    }
+}

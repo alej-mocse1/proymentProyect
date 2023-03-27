@@ -13,7 +13,6 @@ export default function LandingPage() {
             </div>
             
             <div className={style.containerForm}> <Register/> </div>
-
         </div>
     )
 }

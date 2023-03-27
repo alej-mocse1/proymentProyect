@@ -13,6 +13,9 @@
   width: 778.4px;
   height: 88px;
   background: #f7f7fc;
+  @media (max-width: 780px) {
+    width: 96%;
+  }
   @include responsive("tablet") {
     font-weight: 600;
     font-size: 32px;

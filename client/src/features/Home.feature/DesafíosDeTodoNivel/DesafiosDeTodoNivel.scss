@@ -10,7 +10,7 @@
   @media (max-width: 1030px) {
     padding: 20px 0 130px 0;
   }
-  @media (max-width: 770px) {
+  @media (max-width: 910px) {
     padding: 20px 0 370px 0;
   }
   @media (max-width: 430px) {
@@ -29,21 +29,45 @@
   left: 700px;
   position: relative;
   top: -380px;
+
+  @media (max-width: 1250px) {
+    width: 450px;
+    height: 420px;
+    top: -270px;
+    left: 650px;
+  }
+  @media (max-width: 1100px) {
+    left: 600px;
+  }
   @media (max-width: 1030px) {
     width: 450px;
     height: 420px;
     top: -300px;
     left: 530px;
   }
+  @media (max-width: 980px) {
+    left: 450px;
+  }
+  @media (max-width: 910px) {
+    top: 85px;
+    left: 200px;
+  }
+  @media (max-width: 860px) {
+    top: 40px;
+  }
   @media (max-width: 770px) {
     left: 110px;
     top: 40px;
   }
   @include responsive("tablet") {
-    width: 330px;
-    height: 300px;
-    left: 20px;
-    top: -10px;
+    left: 80px;
+    top: 5px;
+  }
+  @media (max-width: 540px) {
+    width: 380px;
+    height: 350px;
+    top: 75px;
+    left: 30px;
   }
   @media (max-width: 430px) {
     width: 400px;
@@ -70,14 +94,39 @@
   position: relative;
   top: -740px;
   @include floating;
+  @media (max-width: 1250px)  {
+    top: -570px;
+    left: 200px;
+  }
+  @media (max-width: 1100px) {
+    left: 150px;
+  }
   @media (max-width: 1030px) {
     width: 80px;
     top: -600px;
     left: 100px;
   }
+  @media (max-width: 980px) {
+    left: 0px;
+  }
+  @media (max-width: 910px) {
+    top: -220px;
+    left: -240px;
+  }
+  @media (max-width: 860px) {
+    top: -240px;
+  }
   @media (max-width: 770px) {
     top: -240px;
     left: -320px;
+  }
+  @include responsive("tablet") {
+    left: -350px;
+    top: -280px;
+  }
+  @media (max-width: 540px)  {
+    width: 70px;
+    top: -180px;
   }
   @media (max-width: 430px) {
     width: 70px;
@@ -101,18 +150,52 @@
   position: relative;
   top: -780px;
   @include floating;
+  @media (max-width: 1250px) {
+    left: 430px;
+    top: -600px;
+  }
+  @media (max-width: 1100px) {
+    left: 380px;
+  }
   @media (max-width: 1030px) {
     width: 100px;
     top: -650px;
     left: 300px;
+  }
+  @media (max-width: 980px) {
+    left: 250px;
+  }
+  @media (max-width: 910px) {
+    top: -220px;
+    left: 0px;
+  }
+  @media (max-width: 860px) {
+    top: -260px;
   }
   @media (max-width: 770px) {
     width: 90px;
     top: -290px;
     left: -80px;
   }
-  @media (max-width: 430px) {
+  @include responsive("tablet") {
+    left: -150px;
+  }
+  @media (max-width: 620px) {
+    left: 400px;
+    top: -390px;
+  }
+  @media (max-width: 540px) {
     width: 80px;
+    left: -140px;
+    top: -230px;
+  }
+  @media (max-width: 530px) {
+    width: 70px;
+    left: 300px;
+    top: -270px;
+  }
+  @media (max-width: 430px) {
+    width: 70px;
     top: -335px;
     left: 120px;
   }
@@ -127,7 +210,6 @@
 }
 
 .div--row2 {
-  
   margin-top: 50px;
   margin-left: 100px;
   width: 550px;
@@ -135,10 +217,14 @@
   @media (max-width: 1350px) {
     margin-left: 80px;
   }
+  @media (max-width: 1250px) {
+    margin-left: 30px;
+  }
   @media (max-width: 1030px) {
     width: 450px;
+    margin-left: 4px;
   }
-  @media (max-width: 770px) {
+  @media (max-width: 910px) {
     width: 100%;
     margin: 0px;
   }
@@ -151,7 +237,7 @@
     font-weight: 700;
     font-size: 48px;
     @media (max-width: 1030px) {
-      margin-left: 30px;
+      margin-left: 20px;
       margin-bottom: 10px;
       width: 90%;
       font-size: 40px;
@@ -200,18 +286,12 @@
   left: 90%;
 
   @media (max-width: 1200px) {
-    width: 7%;
+    width: 4%;
     height: 30%;
     position: absolute;
     left: 93%;
   }
   @media (max-width: 1100px) {
-    width: 7%;
-    height: 30%;
-    position: absolute;
-    left: 91.5%;
-  }
-  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -231,9 +311,9 @@
   @media (max-width: 1030px) {
     margin-left: 20px;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 910px) {
     width: 80%;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   @include responsive("tablet") {
     width: 90%;
@@ -256,6 +336,10 @@
   border: none;
   cursor: pointer;
   font-stretch: 100%;
+  @media (max-width: 910px) {
+    width: 90%;
+    padding: 16px 30px;
+  }
   @include responsive("carrousel") {
     width: 90%;
     max-height: 104px;

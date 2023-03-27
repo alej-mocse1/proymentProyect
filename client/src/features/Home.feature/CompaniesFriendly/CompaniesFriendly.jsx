@@ -23,8 +23,7 @@ function CompaniesFriendly() {
           <strong>+100 companías </strong>se potenciaron con nuestros servicios
         </h2>
         <div className="logo-container">
-          <div className="logo-shadow">
-          </div>
+          <div className="logo-shadow"></div>
           <div className="slider">
             <div className="slide-track">
               <div className="slide">

@@ -115,7 +115,7 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 35px;
-
+color:#000538;
     @include responsive("tabletM") {
         width: 277px;
      
@@ -131,7 +131,8 @@
     line-height: 24px;
     position: relative;
     top: -10px;
-    
+    max-width: 370px;
+    color:#6E7191;
     @include responsive("tabletM") {
         width: 327px;
       

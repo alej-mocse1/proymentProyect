@@ -178,6 +178,7 @@
         position: absolute;
         right: 5%;
         top: 15%;
+        @include floating;
 
         @include responsive("Tablet") {
             /*  display: none; */

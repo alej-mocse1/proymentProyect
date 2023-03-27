@@ -15,7 +15,7 @@ function App() {
           <Route exact path={"/Marketing"} element={<Marketing></Marketing>}></Route>
           <Route exact path={"/confirmation"} element={<Confirmation/>} ></Route>
         </Routes>
-    </>
+    </> 
   );
 }
 

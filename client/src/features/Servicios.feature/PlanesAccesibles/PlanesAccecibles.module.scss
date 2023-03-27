@@ -148,6 +148,7 @@
 }
 
 .imgPrincipal{
+    position: relative;
     width: 486px;
     height: 517px;
     z-index: 100;
@@ -173,17 +174,19 @@
     left: -50px;
     top: 165px;
     z-index: 200;
+    filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06)) drop-shadow(0px 2.4px 3.9px rgba(0, 0, 0, 0.03));
     @include floating;
 
 @include responsive("laptop") {
         width: 110.5px;
         height: 196.82px;
+        top: 100px;
            
     }
 
 @include responsive("carrousel") {
-        width: 110.5px;
-        height: 196.82px;
+        width: 90.5px;
+        height: 176.82px;
         
       }
 }
@@ -192,9 +195,12 @@
     position: absolute;
     left: -20px;
     top: 70px;
+    z-index: 1;
     @include floating;
 
-    @include responsive("carrousel") {
-      display: none;
-      }
+    @media (max-width: 950px) {
+        display: none;
+  }
+    
+
 }

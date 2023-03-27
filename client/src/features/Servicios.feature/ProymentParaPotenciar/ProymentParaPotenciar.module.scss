@@ -128,7 +128,8 @@
             }
 
             @include responsive("phone-L") {
-                width: 328px;
+                /* width: 328px; */
+                width: 100%;
                 height: 54px;
                 margin: auto;
                 margin-bottom: 57px;
@@ -177,6 +178,7 @@
         position: absolute;
         right: 5%;
         top: 15%;
+        @include floating;
 
         @include responsive("Tablet") {
             /*  display: none; */

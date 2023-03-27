@@ -1,132 +1,226 @@
 @import "../../../styles/styles.scss";
 
-.div{ 
-    width: 100%;
-    height: 820px;
-    background: #F7F7FC;
-    align-items: center;
-    display: flex;
+.div {
+  width: 100%;
+  height: 820px;
+  background: #f7f7fc;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 950px) {
+    height: 1220px;
+    background: #eff0f6;
+  }
+}
+
+.div h2 {
+  color: #000538;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 35px;
+  /* position: relative;
+    top: 42px; */
+  margin: 72px 0px 56px;
+}
+
+.divConteiner {
+  height: 603.78px;
+  width: 100%;
+  /* position: relative;
+    top: 58px; */
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 46px;
+  margin-bottom: 72px;
+
+  @media (max-width: 950px) {
     flex-direction: column;
-
-}
-
-.div h2{
-    color: #000538;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 35px;
-    position: relative;
-    top: 42px;
-}
-
-.divConteiner{
-    border: 1px solid black;
-    height: 603.78px;
-    width: 83%;
-    position: relative;
-    top: 58px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.divTexto{
-    border: 1px solid #DCDDEB;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
-    border-radius: 8px;
-    background: #FFFFFF;
-    width: 518px; 
-    height: 574px;
-}
-
-.divTexto h4{
-    font-size: 16px;
-    line-height: 24px;
-    color: #6F4EF5;
-    font-weight: 400;
-    position: relative;
-    left: 10px;
-}
-
-.divTexto h3{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 26px;
-    color: #000538;
-    align-self: stretch;
-    position: relative;
-    left: 24px;
-}
-
-
-.divTexto p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000538;
-    position: relative;
-    left: 24px;
-}
-
-.pbuttom{
-    position: relative;
-    width: 400px;
-}
-
-
-
-
-.divTexto button{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 24px;
-    gap: 10px;
-    background: #6F4EF5;
-    border-radius: 4px;
-    width: 448px;
-    height: 54px;
-    color: #FFFFFF;
-    border: none;
+  }
+}
+
+.divTexto {
+  border: 1px solid #dcddeb;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+    0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  background: #ffffff;
+  width: 458px;
+height: 574px; 
+  position: relative;
+  /*  left: 123px; */
+
+  @media (max-width: 1350px) {
+    left: 30px;
+  }
+
+  @media (max-width: 990px) {
+    left: 0px;
+  }
+
+  @media (max-width: 950px) {
+    top: 169px;
+    min-height: 560px;
+  }
+
+  @media (max-width: 530px) {
+    width: 95%;
+    min-height: 643px;
+  }
+}
+
+.divTexto h4 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6f4ef5;
+  font-weight: 400;
+  position: relative;
+  left: 24px;
+  margin: 32px 0px 8px;
+  @media (max-width: 530px) {
+    top: 0px;
+  }
+}
+
+.divTexto h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000538;
+  align-self: stretch;
+  position: relative;
+  left: 24px;
+margin:0px;
+  @media (max-width: 530px) {
+    width: 90%;
+  }
+}
+
+.divTexto p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000538;
+  position: relative;
+  left: 24px;
+
+  @media (max-width: 530px) {
+    width: 90%;
+  }
+}
+
+.pbuttom {
+  position: relative;
+  width: 400px;
+
+  @media (max-width: 530px) {
+    position: absolute;
+    top: 26px;
+  }
+}
+
+.divTexto button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 24px;
+  gap: 10px;
+  background: #6f4ef5;
+  border-radius: 4px;
+  width: 408px;
+  height: 54px;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  top: 14px;
+  left: 24px;
+  cursor: pointer;
+
+  @media (max-width: 530px) {
     position: relative;
-    top: 14px;
-    left: 24px;
+    left: 0px;
+    width: 280px;
+    height: 54px;
+    top: 43px;
+    margin: 0 auto;
+  }
 }
 
-.divTexto button:hover{
-    background: #A493FF;
-    transition: 1s;
+.divTexto button:hover {
+  background: #a493ff;
+  transition: 1s;
 }
 
-
-.icono{
-    width: 26px;
-    height: 26px;
-    background: #6F4EF6;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 12px ;
-    display: flex;
-    text-align: center;
+.icono {
+  width: 26px;
+  height: 26px;
+  background: #6f4ef6;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 22px;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin-right: 4px;
 }
 
+.pLinks {
+  @media (max-width: 530px) {
+    font-size: 11px !important;
+  }
 
+  @media (max-width: 360px) {
+    font-size: 10px !important;
+  }
+}
 
+.divImg {
+  width: 637px;
+  position: relative;
+  
+  /* right: 123px; */
 
+  @media (max-width: 1350px) {
+    width: 439px;
+    height: 410px;
+    top: 50px;
+  }
 
+  @media (max-width: 1078px) {
+    right: 20px;
+  }
 
+  @media (max-width: 950px) {
+    right: 0px;
+    top: 185px;
+  }
 
+  @media (max-width: 445px) {
+    width: 95%;
+    height: 298px;
+  }
 
-
-
-
-.divImg{
-    width: 629px;
+  img {
+    width: 100%;
     height: 574px;
-   
-}
 
-.divImg img{
-    width: 629px;
-    height: 574px;
+    @media (max-width: 1350px) {
+      width: 439px;
+      height: 410px;
+    }
+
+    @media (max-width: 1078px) {
+      width: 439px;
+      height: 410px;
+      top: 50px;
+    }
+    @media (max-width: 530px) {
+      width: 100%;
+      height: 298px;
+    }
+  }
 }

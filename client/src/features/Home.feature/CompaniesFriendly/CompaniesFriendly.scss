@@ -34,13 +34,24 @@ strong {
 
 .logo-container {
   width: 100%;
+  position:relative;
+  z-index: 1;
+}
+
+
+.logo-shadow{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
   background: linear-gradient(
     359.31deg,
-    #ffffff 0.7%,
+    #f7f7fc 0.7%,
     rgba(255, 255, 255, 0.275035) 33.62%,
     rgba(255, 255, 255, 0.111513) 41.86%,
     rgba(255, 255, 255, 0) 130.33%
-  ) !important;
+  );
+
 }
 
 .slider {

@@ -25,7 +25,7 @@ const PlanUnico  = () => {
                     Personalizamos cada plan de potenciamiento de ventas para cada empresa a
                     través de múltiples canales de formación.
                   </p>
-                <button>agendar reunion</button>
+                <button>Agendar reunión</button>
             </div>
 
            </div>

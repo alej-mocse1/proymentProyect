@@ -86,6 +86,8 @@
     gap: 24px;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+  
     @media (max-width: 430px) {
       margin: 50px 0px;
       width: 100%;
@@ -95,8 +97,12 @@
     .met---content-firstBox {
       padding: 30px 32px 30px;
       width: 804px;
-      height: 344px;
-      @include flex-row-start;
+      height: 300px;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: center;
+      // align-items: center;
+       @include flex-row-center;
       border: 1px solid #eff0f7;
       background: #ffffff;
       box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
@@ -150,7 +156,7 @@
     .met---content-boxes {
       padding: 30px 32px 30px;
       width: 360px;
-      height: 344px;
+      height: 300px;
       @include flex-row-start;
       border: 1px solid #eff0f7;
       background: #ffffff;
@@ -211,15 +217,17 @@
     }
 
     button {
-      padding: 20px 56px;
-      gap: 10px;
-      width: 30%;
+      // padding: 20px 56px;
+      // gap: 10px;
+      align-items: center;
+      width: 16.5%;
       border: 1px solid #6f4ef5;
       height: 70px;
       background: #6f4ef5;
       border-radius: 4px;
       color: #ffff;
       position: relative;
+      font-size: 16px;
       top: 50px;
       @media (max-width: 1300px) {
         width: 50%;
@@ -262,7 +270,7 @@
     padding: 10px 32px 48px;
     width: 328px;
     height: 284px;
-    @include flex-row-start;
+    @include flex-row-center;
     border: 1px solid #eff0f7;
     background: #ffffff;
     box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);

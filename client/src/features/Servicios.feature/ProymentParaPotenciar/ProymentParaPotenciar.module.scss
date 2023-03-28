@@ -67,7 +67,7 @@
             line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
-
+     
             background: linear-gradient(91.15deg, #8156EE 9.33%, #487DED 43.76%, #26AFEF 85.96%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -79,6 +79,7 @@
             }
 
             @include responsive("phone-L") {
+                padding-right: 120px;
                 font-size: 16px;
                 line-height: 24px;
             }

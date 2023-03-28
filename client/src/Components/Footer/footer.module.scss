@@ -205,6 +205,8 @@
 .social {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
     /* @include responsive("phone-S") { */
     @media screen and (max-width: 374px){
         align-items: center;
@@ -236,7 +238,8 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 8px;
+    margin: 0px 0px 0px 8px;
+
     /* @include responsive("phone-S"){  */
     @media screen and (max-width: 374px){
         text-align: left;

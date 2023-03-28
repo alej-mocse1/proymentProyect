@@ -1,2 +1,106 @@
 @import "../../../styles/styles.scss";
 
+.containerPadre {
+    padding: 72px 70px;
+
+    .containerHijo {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 35px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            width: 600px;
+
+            .carousel-container {
+                width: 80%;
+
+                .swiperContainer {
+                    
+                    .swiper-slide{
+                        background-color: #6F4EF5;
+                    }
+                }
+
+
+
+
+            }
+
+        }
+    }
+}
+
+.cardContainer {
+    border: 1px solid red;
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+
+    img {
+        width: 55px;
+        margin: 24px 0 15px 24px;
+    }
+
+    /* div{
+        display: flex;
+        flex-direction: column; */
+        
+    
+        span {
+            width: 30px;
+            height: 4px;
+            background-color: #6F4EF6;
+            margin-bottom: 29px;
+        }
+    
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+    
+            margin: 0 0 16px 0;
+    
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+    
+           /*  width: 100%; */
+        }
+    /* } */
+}
+
+.carousel-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .swiper-pagination-bullet {
+        /* background-color: black; */
+        background-color: #DCDDEB;
+        height: 10px;
+        width: 10px;
+        margin-right: 6px;
+        opacity: 0.5;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #6F4EF5;
+        opacity: 1;
+    }
+}

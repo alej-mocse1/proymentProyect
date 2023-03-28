@@ -1,5 +1,6 @@
 import React from "react";
-import Styles from "./Objetivo.module.scss"
+import Styles from "./Objetivo.module.scss";
+import Styles2 from "./Obetivo2.module.scss"
 import img1 from "./assets/RDStation.svg";
 import img2 from "./assets/Hootsuite.svg";
 import img3 from "./assets/Ortto.svg";
@@ -109,62 +110,63 @@ const Objetivos = () => {
                   
             </div> 
 
-{/* 
-            <div className={Styles.slider2}>
+
+            <div className={Styles2.slider2}>
                 
-                <div className={Styles.slidetrack2}>
+                <div className={Styles2.slidetrack2}>
                
-               <div className={Styles.slide2}>
-                 <img src={img1} alt="RDStation" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img5} alt="Googleanalytics" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img2} alt="Hootsuite" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img6} alt="Semrush" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img3} alt="Ortto" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img7} alt="Hubspot" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img4} alt="Synerise" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img8} alt="Emaryss" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img1} alt="RDStation" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img5} alt="Googleanalytics" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img2} alt="Hootsuite" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img6} alt="Semrush" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img3} alt="Ortto" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img7} alt="Hubspot" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img4} alt="Synerise" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img8} alt="Emaryss" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img1} alt="RDStation" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img5} alt="Googleanalytics" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img2} alt="Hootsuite" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img6} alt="Semrush" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img3} alt="Ortto" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img7} alt="Hubspot" /> 
                </div>
 
-               <div className={Styles.slide2}>
-                 <img src={img4} alt="Synerise" /> 
+               <div className={Styles2.slide2}>
+                 <img src={img8} alt="Emaryss" /> 
                </div>
+               
  
               </div>
                   
-            </div>  */}
+            </div>  
 
 
         </div>

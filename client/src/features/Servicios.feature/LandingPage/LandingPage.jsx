@@ -13,8 +13,7 @@ export default function LandingPage() {
       </div>
 
       <div className={style.containerForm}>
-        {" "}
-        <Register />{" "}
+        <Register />
       </div>
     </div>
   );

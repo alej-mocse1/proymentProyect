@@ -8,15 +8,36 @@
   background: #000538;
   position: relative;
 
+  z-index: 1;
+
   @include responsive("Tablet") {
     flex-direction: column;
     position: relative;
     padding: 56px 40px;
-    gap: 57px;
+    /* gap: 57px; */
   }
 
   @include responsive("phone-L") {
     padding: 56px 24px;
+  }
+
+
+  .polygon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* opacity: .2; */
+
+    /* background: #000538; */
+
+    -webkit-clip-path: polygon(0% 0, 52.5% 0, 37.7% 100%, 0% 100%);
+    clip-path: polygon(0% 0, 52.5% 0, 37.7% 100%, 0% 100%);
+
+    background: linear-gradient(106deg,
+        rgba(0, 5, 56, 0.6) 30%,
+        rgb(0, 5, 56) 70%,
+        rgb(0, 5, 56) 90%);
   }
 
   .degrade {
@@ -29,28 +50,27 @@
         top: 129px; */
     border-radius: 0px;
 
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(0, 179, 255, 0.8) 0%,
-      rgba(36, 14, 129, 0) 100%
-    );
 
-    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
- 
+    background: radial-gradient(50% 50% at 50% 50%,
+        rgba(0, 179, 255, 0.8) 0%,
+        rgba(36, 14, 129, 0) 95%);
+
+    /*  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); */
+
     @include responsive("Tablet") {
       width: 100%;
       position: absolute;
       top: 0;
       height: 100%;
 
-      background: linear-gradient(
-        174.09deg,
-        #000538 6.03%,
-        #001344 20.32%,
-        #027ca3 47.88%,
-        #00144a 80.49%
-      );
+      background: linear-gradient(174.09deg,
+          #000538 6.03%,
+          #001344 20.32%,
+          #027ca3 47.88%,
+          #00144a 80.49%);
+      /*  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); */
     }
   }
 
@@ -61,7 +81,7 @@
     width: 48%;
     position: absolute;
     left: 71px;
-    z-index: 2;
+    z-index: 5;
 
     @include responsive("Laptop") {
       left: 51px;
@@ -81,12 +101,10 @@
       margin: 0;
       margin-bottom: 16px;
 
-      background: linear-gradient(
-        91.15deg,
-        #8156ee 9.33%,
-        #487ded 43.76%,
-        #26afef 85.96%
-      );
+      background: linear-gradient(91.15deg,
+          #8156ee 9.33%,
+          #487ded 43.76%,
+          #26afef 85.96%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -167,10 +185,11 @@
   .containerForm {
     width: 30%;
     position: absolute;
-    z-index: 3;
+    z-index: 6;
     right: 130px;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
       0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+
     @include responsive("Laptop") {
       right: 71px;
       width: 35%;
@@ -179,6 +198,7 @@
     @include responsive("Tablet") {
       width: 100%;
       position: static;
+      margin-top: 57px;
     }
 
     @include responsive("phone-L") {

@@ -1,0 +1,310 @@
+@import "../../../styles/styles.scss";
+
+.audit--container {
+  @include flex-row-center;
+  background: #ffffff;
+  width: 100%;
+  height: 610.73px;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+  }
+
+  .audit--container-img {
+    @include flex-column-center;
+    width: 678.22px;
+    @media (max-width: 900px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+    img {
+      @media (max-width: 540px) {
+        width: 85%;
+      }
+      @media (max-width: 480px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+
+    .audit--img {
+      width: 90%;
+    }
+  }
+
+  .audit--container-text {
+    @include flex-column-start2;
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+    @media (max-width: 480px) {
+      @include flex-column-start2;
+    }
+
+    .audit--container-line {
+      background: red !important;
+      width: 32px;
+      border: 3px solid #6f4ef6;
+      @media (max-width: 480px) {
+        position: relative;
+        left: 20px;
+      }
+      @media (max-width: 380px) {
+        left: 15px;
+      }
+    }
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 35px;
+      color: #000538;
+      @media (max-width: 480px) {
+        margin: 20px auto;
+        width: 90%;
+        font-weight: 500;
+        line-height: 34px;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+
+    .audit--container-span {
+      width: 445px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6e7191;
+      margin-bottom: 20px;
+      @media (max-width: 1000px) {
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        margin: 0 auto 20px auto;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+
+    .audit--container-span2 {
+      width: 445px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6e7191;
+      margin-bottom: 40px;
+      @media (max-width: 1000px) {
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        margin: 0 auto 40px auto;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .audit--container-button {
+    @include flex-row-center;
+    @media (max-width: 480px) {
+      margin: 0 auto;
+      width: 90%;
+    }
+    @media (max-width: 380px) {
+      width: 90%;
+    }
+
+    button {
+      gap: 10px;
+      border: 1px solid #6f4ef5;
+      width: 213px;
+      height: 64px;
+      background: #6f4ef5;
+      border-radius: 4px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #ffffff;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    button:hover {
+      background: #a493ff;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+}
+
+.audit--container2 {
+  @include flex-row-center;
+  background: #ffffff;
+  width: 100%;
+  height: 610.73px;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+  }
+
+  .audit--container-img2 {
+    @include flex-column-center;
+    width: 672.87px;
+    @media (max-width: 900px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    .audit--img {
+      width: 90%;
+      @media (max-width: 540px) {
+        width: 85%;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    .audit--img2 {
+      display: none;
+      @media (max-width: 480px) {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .audit--container-text2 {
+    @include flex-column-start2;
+    @media (max-width: 1125px) {
+      margin-left: 80px;
+    }
+    @media (max-width: 900px) {
+      margin-left: 0px;
+    }
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+    @media (max-width: 480px) {
+      @include flex-column-start2;
+    }
+
+    .audit--container-line2 {
+      background: red !important;
+      width: 32px;
+      border: 3px solid #6f4ef6;
+      @media (max-width: 480px) {
+        position: relative;
+        left: 20px;
+      }
+      @media (max-width: 380px) {
+        left: 15px;
+      }
+    }
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 35px;
+      color: #000538;
+      @media (max-width: 480px) {
+        margin: 20px auto;
+        width: 90%;
+        font-weight: 500;
+        line-height: 34px;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+
+    .audit--container-span2 {
+      width: 445px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6e7191;
+      margin-bottom: 40px;
+      @media (max-width: 1000px) {
+        width: 90%;
+      }
+      @media (max-width: 480px) {
+        margin: 0 auto 40px auto;
+      }
+      @media (max-width: 380px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .audit--container-button2 {
+    @include flex-row-center;
+    @media (max-width: 480px) {
+      margin: 0 auto;
+      width: 90%;
+    }
+    @media (max-width: 380px) {
+      width: 90%;
+    }
+
+    button {
+      gap: 10px;
+      border: 1px solid #6f4ef5;
+      width: 213px;
+      height: 64px;
+      background: #6f4ef5;
+      border-radius: 4px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #ffffff;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    button:hover {
+      background: #a493ff;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+}

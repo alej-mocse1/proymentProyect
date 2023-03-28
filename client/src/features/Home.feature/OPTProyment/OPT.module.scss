@@ -38,6 +38,12 @@
     @include flex-column-start-align;
   }
 }
+.btn{
+  width:201px;
+  @include responsive("carrousel") {
+    width: 100%;
+  }
+}
 
 .dashboard1 {
   width: 60%;

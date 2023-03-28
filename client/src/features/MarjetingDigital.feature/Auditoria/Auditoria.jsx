@@ -8,9 +8,10 @@ export default function Auditoria(){
         <div className={style.container}>
             <div className={style.containerInfo}>
                 <div className={style.containerImg}>
-                    <img src={image}  alt="not" className={style.img}/>
-                    <img src={icon}  alt="not" className={style.icon} />
+                    <img src={image}  alt="not-image" className={style.img}/>
+                    <img src={icon}  alt="not-image" className={style.icon} />
                 </div>
+
                 <div className={style.infoText}>
                     <span></span>
                     <h3>Auditoria performance</h3>

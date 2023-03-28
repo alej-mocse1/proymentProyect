@@ -42,7 +42,7 @@ export default function NuestroDiferencial() {
             <div className="containerHijo">
                 <h3>Nuestro diferencial es comprender cada objetivo a través de herramientas de gestión empresarial.</h3>
 
-                <div className="ND-navegation">
+                <div className="button-navegation">
                     <button
                         className={`${[!isFirst ? "active" : "none"]}`}
                         onClick={() => handlePrev()}
@@ -77,23 +77,51 @@ export default function NuestroDiferencial() {
 
                             breakpoints={{
                                 320: {
-                                    slidesPerView: 1.5,
-                                    spaceBetween: -15,
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
                                 },
                                 375: {
-                                    slidesPerView: 1.75,
-                                    spaceBetween: -15,
+                                    slidesPerView: 1.15,
+                                    spaceBetween: 15,
                                 },
                                 425: {
-                                    slidesPerView: 2.25,
-                                    spaceBetween: 5,
+                                    slidesPerView: 1.25,
+                                    spaceBetween: 10,
+                                },
+                                525: {
+                                    slidesPerView: 1.5,
+                                    spaceBetween: 10,
+                                },
+                                625: {
+                                    slidesPerView: 1.85,
+                                    spaceBetween: 10,
                                 },
                                 768: {
-                                    slidesPerView: 3.75,
+                                    slidesPerView: 2.25,
+                                    spaceBetween: 0,
+                                },
+                                868: {
+                                    slidesPerView: 2.5,
+                                    spaceBetween: 0,
+                                },
+                                968: {
+                                    slidesPerView: 2.75,
                                     spaceBetween: 0,
                                 },
                                 1024: {
-                                    slidesPerView: 4,
+                                    slidesPerView: 3,
+                                    spaceBetween: 15,
+                                },
+                                1124: {
+                                    slidesPerView: 3.25,
+                                    spaceBetween: 20,
+                                },
+                                1224: {
+                                    slidesPerView: 3.5,
+                                    spaceBetween: 20,
+                                },
+                                1324: {
+                                    slidesPerView: 3.75,
                                     spaceBetween: 20,
                                 },
                                 1440: {
@@ -104,50 +132,62 @@ export default function NuestroDiferencial() {
                         >
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon1} alt="not" />
-                                    <span></span>
-                                    <h4>Análisis de competencia</h4>
-                                    <p>Investigación de mercadoy análisis estratégico de la marca con su entorno.</p>
+                                    <div>
+                                        <img src={icon1} alt="not" />
+                                        <span></span>
+                                        <h4>Análisis de competencia</h4>
+                                        <p>Investigación de mercadoy análisis estratégico de la marca con su entorno.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon2} alt="not" />
-                                    <span></span>
-                                    <h4>Estrategia de Marketing</h4>
-                                    <p>Definición de acciones diseñadas para alcanzar objetivos.</p>
+                                    <div>
+                                        <img src={icon2} alt="not" />
+                                        <span></span>
+                                        <h4>Estrategia de Marketing</h4>
+                                        <p>Definición de acciones diseñadas para alcanzar objetivos.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon3} alt="not" />
-                                    <span></span>
-                                    <h4>Análisis interno</h4>
-                                    <p>Evaluación de recursos, habilidades y competencias para adopción de herramientas estratégicas.</p>
+                                    <div>
+                                        <img src={icon3} alt="not" />
+                                        <span></span>
+                                        <h4>Análisis interno</h4>
+                                        <p>Evaluación de recursos, habilidades y competencias para adopción de herramientas estratégicas.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon4} alt="not" />
-                                    <span></span>
-                                    <h4>Plan de ejecución</h4>
-                                    <p>Descripción del proyecto en su totalidad. Incluye objetivos, cómo se llevarán a cabo y las partes interesadas.</p>
+                                    <div>
+                                        <img src={icon4} alt="not" />
+                                        <span></span>
+                                        <h4>Plan de ejecución</h4>
+                                        <p>Descripción del proyecto en su totalidad. Incluye objetivos, cómo se llevarán a cabo y las partes interesadas.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon5} alt="not" />
-                                    <span></span>
-                                    <h4>Medición de resultados</h4>
-                                    <p>Medición de eficacia de estrategias digitales.</p>
+                                    <div>
+                                        <img src={icon5} alt="not" />
+                                        <span></span>
+                                        <h4>Medición de resultados</h4>
+                                        <p>Medición de eficacia de estrategias digitales.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="cardContainer">
-                                    <img src={icon6} alt="not" />
-                                    <span></span>
-                                    <h4>Objetivos de marca</h4>
-                                    <p>Creamos una imagen clara, comprensible y positiva para aumentar el reconocimiento y la fidelidad de la misma.</p>
+                                    <div>
+                                        <img src={icon6} alt="not" />
+                                        <span></span>
+                                        <h4>Objetivos de marca</h4>
+                                        <p>Creamos una imagen clara, comprensible y positiva para aumentar el reconocimiento y la fidelidad de la misma.</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
 
@@ -156,7 +196,7 @@ export default function NuestroDiferencial() {
                     <div className="carousel-pagination" />
                 </div>
 
-                <button>Agendar reunión</button>
+                <button className="btn-agendar">Agendar reunión</button>
 
             </div>
         </div>

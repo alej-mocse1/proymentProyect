@@ -5,20 +5,22 @@ import NuestroDiferencial from "./NuestroDiferencial/NuestroDiferencial";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import Objetivos from "./objetivo/Objetivo";
 import TransformarEmpresas from "./TransformarEmpresas/TransformarEmpresas";
+import LandingPageMarkentig from "./landingPageMarketing/LandingPageMarkentig";
 
 
 export default function Page3() {
     return (
       <>
-      {/* Falta Componente Formulario (lo tiene Franz) */}
+
+       <LandingPageMarkentig></LandingPageMarkentig>
         <Objetivos></Objetivos>
-        {/* Falta Componente  Social Media*/}
         <Marketing/>
-        <SeoYSem/>
+        <SeoYSem></SeoYSem>
         <Auditoria/>
         <NuestrosPlanes/>
         <NuestroDiferencial/>{/* Falta estilos? */}
         <TransformarEmpresas/>
+        
         {/*Componente Logos y Somos Diferentes */}
       </>
     );

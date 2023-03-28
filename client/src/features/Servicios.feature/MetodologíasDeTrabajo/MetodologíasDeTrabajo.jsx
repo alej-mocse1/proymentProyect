@@ -133,7 +133,7 @@ function MetodologíasDeTrabajo() {
             breakpoints={{
               320: {
                 slidesPerView: 1.25,
-                spaceBetween: 30,
+                spaceBetween: -5,
               },
               380: {
                 slidesPerView: 1.2,

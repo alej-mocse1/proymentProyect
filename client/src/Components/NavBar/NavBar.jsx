@@ -53,22 +53,26 @@ function Navbar() {
           justifyContent: 'center',
           textAlign: "left",
           width:"300px",
-          height: "386px",
+          height: "430px",
           padding: "16px 13px",
-          gap: "10px",
-          backgroundColor: "#F7F7FC" ,     
-          transition: "1s ease all"
+          gap: "0px",
+     
+          transition: "1s ease all",
+          
           
          } : {
          display: "none",
          transition: "1s ease all"
        }
+
+
+
        let responsiveServicios2 = isOpen2 ? {
-        height: "130vh",
+        height: "135vh",
        
 
        } : {
-        height: "42vh",
+        height: "48vh",
   
      }
      let  estilos = { ...responsive, ...responsiveServicios2 };
@@ -179,10 +183,6 @@ function Navbar() {
 
 
 
-
-
-
-
      <button  className={style.btn } >Agendar reunion</button>
 
 
@@ -215,7 +215,8 @@ function Navbar() {
     </div>
 
    
-
+    <button className={style.AgendarReunionBTN}>Agendar reunion</button>
+    <button className={style.btnWSP}></button>
     </div>
   );
 }

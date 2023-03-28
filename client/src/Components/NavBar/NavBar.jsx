@@ -90,34 +90,99 @@ function Navbar() {
            <img src={logo} alt="img-logo"  className={style.img}/> 
        </Link>
 
-     <div className={style.divLink }> 
-     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-     <h4  className={style.h4Nav} >Servicios</h4>
-        {/* <div className={style.h2SERVICEdesplegable}> 
+
+     <div className={style.divLink }>
+
+     <nav>
+       <ul className={style.menuhorizontal}>
+
+           <li>
+             <Link to="/"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+                <p>Servicios</p>
+             </Link>
+
+             <ul className={style.menuVerical} >
+             <Link to="/serviciosIntegrales"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Servicios integrales</li>
+             </Link>
+
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Potenciamiento de ventas</li>
+             </Link>
+
+             <Link to="/marketing"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Marketing digital</li>
+             </Link>
+
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Analisis de datos</li>
+             </Link>
+
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Servicios en tendencia</li>
+             </Link>
+
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Diseño web UX/UI</li>
+             </Link>
+
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+               <li>Servicios a tu medida</li>
+             </Link>
+         
+		     		 </ul>
+
+
+            </li>
+
        
-         <h4  className={style.h4Nav3} >Servicios</h4> 
-         <h4 className={style.prueba}>probando</h4>
-         <h4 className={style.prueba}>probando</h4>
-         <h4 className={style.prueba}>probando</h4>
-       </div>  */}
-     </Link>
 
-     <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.h4Nav}>Industrias</h4>    
-     </Link>
+        
+           <li>
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+                <p>Industrias</p>
+             </Link>
+           </li>
+        
 
-          <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}> 
-        <h4  className={style.h4Nav}>Clientes</h4>  
-        </Link>
 
-        <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.h4Nav}>Metodologia</h4>  
-        </Link>
+        
+           <li>
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+                 <p>Clientes</p>
+             </Link>
+           </li>
+      
 
-        <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-        <h4  className={style.h4Nav}>Blog</h4>  
-        </Link>
-     </div>
+
+        
+           <li>
+             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+                 <p>Metodologia</p>
+             </Link>
+           </li>
+
+        
+           <li>
+            <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+                 <p>Blog</p>
+             </Link>
+           </li>
+        
+ 
+   		</ul>
+ 
+      </nav>
+
+     </div> 
+
+
+
+
+
+
+
+
      <button  className={style.btn } >Agendar reunion</button>
 
 

@@ -5,45 +5,64 @@
     align-items: center;
     height: 79px;
     padding: 0 50px;
-    
   }
   .divLink{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%; 
-    font-size: 100%;
- 
-  }
-
-  /* .h2SERVICEdesplegable{
-    
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px;
-    gap: 10px;
-    
+    width: 45%; 
+    height: 50px;
+    font-size: 18px;    
     position: relative;
-    width: 281px;
-    height: 432px;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 48px 58px rgba(0, 0, 0, 0.18), 0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333), 0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667);    
+    right: 8.5%;
   }
 
-  .prueba{
-
-  } */
-
-  h4{
-    width: 80%;
-    font-weight:500;
-    margin:3%;
-    cursor: pointer;
-
+  .menuhorizontal{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
   }
+
+  .menuhorizontal li{
+    color: #000538;
+    padding: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+    margin: 10px;
+  }
+
+  .menuhorizontal li:hover .menuVerical{
+    display: block;
+  }
+
+  .menuVerical{
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -20px;
+    display: none;
+    list-style: none;
+    width: 261px;
+    background-color: #FFFFFF;
+    z-index: 100;
+    
+    box-shadow: 0px 48px 58px rgba(0, 0, 0, 0.18), 0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333), 0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667);
+    border-radius: 0px 0px 8px 8px; 
+    
+  }
+
+  .menuVerical li{
+    /* border: 1px solid black; */
+    margin: 0px;
+    position: relative;
+    right: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+ 
 
   .btn{
 
@@ -103,17 +122,21 @@
 
    }
 
+   @media screen and (max-width:1200px) {
+ 
+    .menuhorizontal li{
+      font-size: 15px;
+    }
+
+    .divLink{
+      right: 11%;
+    }
    
-@media screen and (max-width:1000px) {
- 
-  .h4Nav{
-    position: relative;
-    right: 140px;
-    margin: 0%;
-    font-size: 13px;
-   }
- 
-}  
+  } 
+
+
+
+    
 
 
   @media screen and (max-width:800px) {

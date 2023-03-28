@@ -1,7 +1,6 @@
 import React from "react";
-// import style from "./ladinPage1.module.css";
 import style from "./ladinPage1.module.scss";
-import FormButton from '../../.././core/components/Button/Button'
+
 
 import Heroimage from './assets/Heroimage2.png';
 import img02 from './assets/img02.png';
@@ -34,7 +33,6 @@ function LandinPage(props) {
 
            <div className={style.divbtn}>
             <button className={style.btn}>Agendar reunión</button>
-            {/* <FormButton></FormButton> */}
             <button className={style.btn2}>Conocer mas</button>
            </div>
 
@@ -51,7 +49,7 @@ function LandinPage(props) {
 
        </div>
 
-       <button className={style.AgendarReunionBTN}>Agendar reunion</button>
+       {/* <button className={style.AgendarReunionBTN}>Agendar reunion</button> */}
      </div>
 
 
@@ -67,7 +65,7 @@ function LandinPage(props) {
             </div>
 
          
-            <button className={style.btnWSP}></button>
+            {/* <button className={style.btnWSP}></button> */}
          </div>
 
 

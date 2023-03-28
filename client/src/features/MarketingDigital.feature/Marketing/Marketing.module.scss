@@ -145,6 +145,11 @@
                 position: absolute;
                 top: 15px;
                 left: -15px;
+                @include floating;
+
+                @include responsive("phone-L") {
+                    top: -15px;
+                }
             }
         }
     }

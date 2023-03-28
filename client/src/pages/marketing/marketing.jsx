@@ -1,6 +1,6 @@
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/NavBar/NavBar";
-import Page3 from "../../features/MarjetingDigital.feature/page3";
+import Page3 from "../../features/MarketingDigital.feature/page3";
 
 export default function Marketing() {
     return (

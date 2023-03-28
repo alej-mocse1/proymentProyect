@@ -1,10 +1,10 @@
 import React from "react";
-import "./AuditoriaPerformance.scss";
+import "./SeoYSem.scss";
 import img1 from "./Group 761939 (1).png";
 import img2 from "./Frame 762019.png";
 import img3 from "./young-brunette-in-white-casual-sweater-isolated-on-purple-wall 1.png";
 
-function AuditoriaPerformance() {
+function SeoYSem() {
   return (
     <>
       <div className="audit--container">
@@ -59,4 +59,4 @@ function AuditoriaPerformance() {
   );
 }
 
-export default AuditoriaPerformance;
+export default SeoYSem;

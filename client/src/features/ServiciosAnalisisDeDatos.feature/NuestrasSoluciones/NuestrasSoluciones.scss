@@ -3,25 +3,26 @@
 .ns-containerPadre {
     padding: 72px 70px;
     background-color: #EFF0F6;
-    @include responsive("Laptop"){
+
+    @include responsive("Laptop") {
         padding: 72px 35px;
     }
 
-    @include responsive("Tablet"){
+    @include responsive("Tablet") {
         padding: 56px 24px;
     }
 
-    @include responsive("phone-L"){
+    @include responsive("phone-L") {
         padding: 56px 0 56px 24px;
     }
 
     .ns-containerHijo {
         display: flex;
         flex-direction: column;
-        gap: 56px;
+        /* gap: 56px; */
         position: relative;
 
-        @include responsive("Tablet"){
+        @include responsive("Tablet") {
             gap: 0;
         }
 
@@ -31,12 +32,27 @@
             line-height: 35px;
             letter-spacing: 0em;
             text-align: left;
+
             width: 600px;
             margin: 0;
             color: #000538;
 
+            @include responsive("Tablet") {
+                width: 100%;
+            }
+        }
+
+        .ns-p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 373px;
+            margin: 16px 0 61px 0;
+
             @include responsive("Tablet"){
-                margin-bottom: 40px;
+                margin: 24px 0 45px 0;
                 width: 100%;
             }
         }
@@ -78,7 +94,9 @@
             border: 1px solid #6f4ef5;
             background-color: #6f4ef5;
 
-            i { color: #ffff; }
+            i {
+                color: #ffff;
+            }
         }
 
         .btn-agendar {
@@ -96,6 +114,7 @@
             border: none;
             cursor: pointer;
             margin: 0 auto;
+            margin-top: 56px;
 
             @include responsive("Laptop") {
                 margin-bottom: 0;
@@ -103,12 +122,13 @@
 
             @include responsive("Tablet") {
                 width: 35%;
+                margin-top: 0;
             }
 
             @include responsive("phone-L") {
-                width: 235px;
+                width: 224px;
                 height: 54px;
-                margin: 0 auto;   
+                margin: 0 auto;
             }
         }
 
@@ -126,42 +146,45 @@
 
 .ns-cardContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+   
     align-items: center;
     width: 308px;
     height: 362px;
     margin: 0;
     background: #FFFFFF;
     border: 1px solid #DCDDEB;
-    border-radius: 16px;
+
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+
+    img {
+        width: 100%;
+    }
 
     div {
         display: flex;
         flex-direction: column;
-        width: 259px;
-        margin: 24px;
+        width: 308px;
+        gap: 16px;
+        width: 260px;
+        margin-top: 16px;
 
-        img {
-            width: 55px;
-            margin-bottom: 15px;
-        }
+
 
         h4 {
             font-size: 20px;
             font-weight: 600;
-            line-height: 22px;
+            line-height: 24px;
             letter-spacing: 0em;
             text-align: left;
             margin: 0;
-            margin-bottom: 16px;
             color: #000538;
         }
 
         p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 27px;
             letter-spacing: 0em;
             text-align: left;
             margin: 0;
@@ -177,7 +200,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 32px 0 48px 0;
+        margin: 32px 0 40px 0;
     }
 
     .swiper-pagination-bullet {

@@ -20,17 +20,11 @@
     }
 
 
-    .degrade {
-        /* border: 1px solid red; */
+    .degrade {    
         height: 666px;
-        /* height: 100%; */
         width: 930px;
-        /* left: 510px;
-        top: 129px; */
         border-radius: 0px;
-
         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 179, 255, 0.8) 0%, rgba(36, 14, 129, 0) 100%);
-
         -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 
@@ -133,15 +127,7 @@
                 margin: auto;
                 margin: 0 auto;
 
-            }
-
-            /* 
-
-            
-
-            @include responsive("phone-S") {
-                width: 100%;
-            } */
+            }        
         }
 
         button:hover {

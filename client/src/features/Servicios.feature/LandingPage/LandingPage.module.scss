@@ -14,7 +14,6 @@
     flex-direction: column;
     position: relative;
     padding: 56px 40px;
-    /* gap: 57px; */
   }
 
   @include responsive("phone-L") {
@@ -22,17 +21,16 @@
   }
 
   .degrade {
-    
+
     margin-top: 60px;
     width: 950px;
     border-radius: 0px;
     z-index: 2;
-   
-    
    img{
     width: 100%;
    }
  
+
 
     @include responsive("Tablet") {
       width: 100%;
@@ -45,7 +43,6 @@
           #001344 20.32%,
           #027ca3 47.88%,
           #00144a 80.49%);
-
     }
   }
 
@@ -141,14 +138,6 @@
         margin: auto;
         margin: 0 auto;
       }
-
-      /* 
-
-            
-
-            @include responsive("phone-S") {
-                width: 100%;
-            } */
     }
 
     button:hover {

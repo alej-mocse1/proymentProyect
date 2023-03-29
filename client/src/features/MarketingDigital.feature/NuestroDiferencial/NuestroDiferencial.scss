@@ -33,6 +33,7 @@
             text-align: left;
             width: 600px;
             margin: 0;
+            color: #000538;
 
             @include responsive("Tablet"){
                 margin-bottom: 40px;
@@ -70,7 +71,7 @@
 
         .none {
             border: 1px solid #6f4ef5;
-            background-color: #ffff;
+            background-color: #EFF0F6;
         }
 
         .active {
@@ -161,6 +162,7 @@
             text-align: left;
             margin: 0;
             margin-bottom: 16px;
+            color: #000538;
         }
 
         p {
@@ -170,6 +172,7 @@
             letter-spacing: 0em;
             text-align: left;
             margin: 0;
+            color: #000538;
         }
     }
 }

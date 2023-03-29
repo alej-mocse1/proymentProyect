@@ -19,7 +19,7 @@
 .divh2{
     width: 37%;
     height: 53px;
-
+    margin-top: 30px;
     @include responsive("carrousel") {
        position: relative;
        top: 56px;
@@ -83,11 +83,11 @@
     }
 
 
-.divLogos img:hover{
-    width: 60.48px;
-    height: 60.48px;
+/* .divLogos img:hover{
+    width: 81px;
+    height: 81px;
     transition: 1s;
-}
+} */
 
 
 

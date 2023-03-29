@@ -55,7 +55,7 @@ const LideresEnLatinoamerica = () => {
 
     return(
         <div className={styles.div}>
-
+          <section id="seccion2"></section>
             <div>
                <h2 className={styles.H2}>Líderes  en Latinoamerica nos recomiendan</h2>
             </div>

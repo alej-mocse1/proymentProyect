@@ -12,7 +12,7 @@ export default function Page3() {
     return (
       <>
 
-       <LandingPageMarkentig></LandingPageMarkentig>
+        <LandingPageMarkentig></LandingPageMarkentig>
         <Objetivos></Objetivos>
         <Marketing/>
         <SeoYSem></SeoYSem>

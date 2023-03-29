@@ -9,14 +9,14 @@
     align-items: center;
     background: #000538;
     position: relative;
-  
+    height: 706px;
     z-index: 1;
   
     @include responsive("Tablet") {
       flex-direction: column;
       position: relative;
       padding: 56px 40px;
-      /* gap: 57px; */
+      height: 940px;
     }
   
     @include responsive("phone-L") {
@@ -24,39 +24,16 @@
     }
   
   
-    .polygon {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      /* opacity: .2; */
-  
-      /* background: #000538; */
-  
-      -webkit-clip-path: polygon(0% 0, 52.5% 0, 37.7% 100%, 0% 100%);
-      clip-path: polygon(0% 0, 52.5% 0, 37.7% 100%, 0% 100%);
-  
-      background: linear-gradient(106deg,
-          rgba(0, 5, 56, 0.6) 30%,
-          rgb(0, 5, 56) 70%,
-          rgb(0, 5, 56) 90%);
-    }
   
     .degrade {
-      /* border: 1px solid red; */
-      height: 715px;
-      /*         height: 100%;
-   */
-      width: 930px;
-      /* left: 510px;
-          top: 129px; */
+      margin-top: 0px;
+      width: 800px;
       border-radius: 0px;
-  
-  
-      background: radial-gradient(50% 50% at 50% 50%, #A286FA 0%, rgba(36, 14, 129, 0) 100%);
-  
-      /*  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); */
+      z-index: 2;
+
+      img{
+        width: 100%;
+       }
   
       @include responsive("Tablet") {
         width: 100%;
@@ -69,15 +46,13 @@
             #001344 20.32%,
             #027ca3 47.88%,
             #00144a 80.49%);
-        /*  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); */
+
       }
     }
   
     .containerInfo {
       display: flex;
       flex-direction: column;
-      /* width: 690px; */
       width: 48%;
       position: absolute;
       left: 71px;
@@ -159,9 +134,8 @@
           width: 60%;
         }
   
-        @include responsive("phone-L") {
-          /* width: 328px; */
-          width: 100%;
+        @media (max-width: 530px) {
+          width: 149px;
           height: 54px;
           margin: auto;
           margin: 0 auto;
@@ -191,28 +165,41 @@
   
         @include responsive("Tablet") {
           width: 60%;
+          margin-left: 10px;
         }
   
-        @include responsive("phone-L") {
-          width: 100%;
+        @media (max-width: 530px) {
+          margin-left: 0px;
+          width: 149px;
           height: 54px;
           margin: auto;
           margin: 0 auto;
         }
      
     }
+
+
+    .BTNAgendarReunion:hover {
+      color: #4E37AC;
+      border: 1px solid #4E37AC;
+      transition: .8s ease-in-out;
+     }
     .divBtn{
       width: 440px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media (max-width: 530px) {
+        width: 335px;
+        position: relative;
+        right: 10px;        
+     }
+
     }
     
 
-    // .BTNAgendarReunion:hover {
-    //     background: #a493ff;
-    //     transition: 1s;
-    //   }
+
 
 
 

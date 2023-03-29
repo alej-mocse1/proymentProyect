@@ -20,26 +20,25 @@
 
   .menuhorizontal{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
-    
+  
   }
 
   .menuhorizontal li {
     color: #000538;
-    width: 100%;
+    width: 110px;
     font-weight: 400;
     font-size: 18px;
     list-style: none;
-    margin: 10px;
-
+    margin: 0px;
+    cursor:pointer;
+    
   }
 
   
   .menuhorizontal li p:hover{
     background-color: #EAE5FF;
-    width: 100%;
-  
   }
 
   .menuhorizontal li:hover .menuVerical{
@@ -55,25 +54,24 @@
     width: 261px;
     background-color: #FFFFFF;
     z-index: 100;
-    
     box-shadow: 0px 48px 58px rgba(0, 0, 0, 0.18), 0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333), 0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667);
     border-radius: 0px 0px 8px 8px; 
     
   }
 
   .menuVerical li{
-    /* border: 1px solid black; */
     margin: 0px;
     position: relative;
     right: 10px;
     font-size: 16px;
     text-align: left;
+    width: 90%;
   }
 
 
   .menuVerical li:hover{
     background-color: #EAE5FF;
-    width: 80%;
+    
     
   }
  
@@ -191,7 +189,7 @@
     
 
 
-  @media screen and (max-width:800px) {
+  @media screen and (max-width:950px) {
   .div{
       display: flex;
       flex-direction: row;

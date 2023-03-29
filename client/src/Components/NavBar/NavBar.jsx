@@ -101,16 +101,14 @@ function Navbar() {
        <ul className={style.menuhorizontal}>
 
            <li>
-             <Link to="/"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                 <p>Servicios</p>
-             </Link>
 
              <ul className={style.menuVerical} >
              <Link to="/serviciosIntegrales"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Servicios integrales</li>
              </Link>
 
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <Link to="/PotenciamientoDeVentas"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Potenciamiento de ventas</li>
              </Link>
 
@@ -143,34 +141,34 @@ function Navbar() {
 
         
            <li>
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-                <p>Industrias</p>
-             </Link>
+              <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}>
+                 <p>Industrias</p>
+              </a>
            </li>
         
 
 
         
            <li>
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <a href="#seccion2" style={{ textDecoration: 'none', color: '#000538' }}>
                  <p>Clientes</p>
-             </Link>
+             </a>
            </li>
       
 
 
         
            <li>
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
-                 <p>Metodologia</p>
-             </Link>
+               <a href="#seccion3" style={{ textDecoration: 'none', color: '#000538' }}>
+                  <p>Metodologia</p>
+                </a>  
            </li>
 
         
            <li>
-            <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             
                  <p>Blog</p>
-             </Link>
+                      
            </li>
         
  
@@ -208,10 +206,17 @@ function Navbar() {
             <h4  className={style.h4servicer}>Diseño web UX/UI</h4> 
             <h4  className={style.h4servicer}>Servicios a tu medida</h4> 
         </div>
+        <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}>
+          <h4>Industrias</h4>  
+        </a>  
 
-        <h4>Industrias</h4>     
+        <a href="#seccion2" style={{ textDecoration: 'none', color: '#000538' }}>
         <h4>Clientes</h4>  
-        <h4>Metodologia</h4>  
+        </a>
+
+        <a href="#seccion3" style={{ textDecoration: 'none', color: '#000538' }}>
+        <h4>Metodologia</h4>
+        </a>  
     </div>
 
    

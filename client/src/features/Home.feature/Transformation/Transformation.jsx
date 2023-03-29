@@ -12,7 +12,10 @@ import pattern2 from "./assets/Pattern graphic -.svg"
 function Transformation() {
 
     return (
-        <div className="slice">
+        <div className="slice" >
+            {/* <a href="#seccion1"></a> */}
+            <section id="seccion1"></section>
+            
             <div className={style.containerInfo}>
                 <div className={style.tittle}>
                     <h3>Nuestras principales industrias con las que trabajamos en la actualidad</h3>

@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-//import { edadValidator } from "./validators";
 import style from "./Register.module.scss"
 import "./Prueba.scss"
 
@@ -10,22 +9,25 @@ const Register = () => {
     const navigate = useNavigate()
     const { register, formState: { errors }, handleSubmit, formState } = useForm();
 
-    /* console.log(errors.empresa); */
-    /* console.log(errors, formState.isDirty) */
+    let isEmpty = Object.entries(errors).length === 0;
+    
+    let boton = isEmpty === true && formState.isDirty === true && formState.isValid ?
+        {
+            backgroundColor: '#1e0891'
+        } : {
+            backgroundColor: '#f0f0f0'
+        }
 
-    const onSubmit = (data, e, errors) => {
+    const onSubmit = (data, e) => {
         console.log(data);
+        navigate("/confirmation")
 
-        /* console.log(errors); */
-        /* e.target.reset() */
-        /* data && navigate.push("/confirmation") */
     }
 
 
-    console.log(errors, formState.isDirty)
     return <div className={style.register}>
         <h2>¡Agendar reunión ahora!</h2>
-        {/* <p>Nombre: {watch('nombre')}</p> */}
+
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label>Nombre de empresa:</label>
@@ -62,7 +64,7 @@ const Register = () => {
                     {...register('telefono', {
                         required: true
                     })} />
-                    {errors.telefono?.type === "required" && <p className={style.error}>El campo contacto es requerido</p>}
+                {errors.telefono?.type === "required" && <p className={style.error}>El campo contacto es requerido</p>}
             </div>
 
             <div>
@@ -75,17 +77,14 @@ const Register = () => {
                     <option value="si" className={style.optionColor}>Servicios integrales</option>
                     <option value="spv" className={style.optionColor} >Servicios de potenciamiento de ventas</option>
                     <option value="sad" className={style.optionColor}>Servicios de análisis de datos</option>
-                    <option value="sdu"className={style.optionColor}>Servicios de diseño UI/UX</option>
+                    <option value="sdu" className={style.optionColor}>Servicios de diseño UI/UX</option>
                     <option value="st" className={style.optionColor}>Servicios en tendencia</option>
                     <option value="sm" className={style.optionColor}>Servicios a medida</option>
                 </select>
                 {errors.servicio?.type === "required" && <p className={style.error}>El campo servicio es requerido</p>}
             </div>
 
-            <input type="submit" value="Enviar información"  
-            /* className={`btn ${!errors.empresa && "btn2"}`}  */
-            /* className={`"btn" ${!Object.entries(errors).length === 0 ? "btn2" : "btn"}`} */
-            />     
+            <input type="submit" value="Enviar información" style={boton} />
         </form>
     </div>
 }

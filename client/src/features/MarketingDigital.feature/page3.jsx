@@ -11,17 +11,14 @@ import LandingPageMarkentig from "./landingPageMarketing/LandingPageMarkentig";
 export default function Page3() {
     return (
       <>
-
        <LandingPageMarkentig></LandingPageMarkentig>
         <Objetivos></Objetivos>
         <Marketing/>
         <SeoYSem></SeoYSem>
         <Auditoria/>
         <NuestrosPlanes/>
-        <NuestroDiferencial/>{/* Falta estilos? */}
+        <NuestroDiferencial/>
         <TransformarEmpresas/>
-        
-        {/*Componente Logos y Somos Diferentes */}
       </>
     );
   }

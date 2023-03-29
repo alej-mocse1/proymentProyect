@@ -48,8 +48,9 @@ function Logos() {
               </div>
             </div>
           </div>
+
           <div className="slider-for-logos">
-            <div className="slide-track-for-logos">
+            <div className="slide-track-for-logos2">
               <div className="slide-for-logos">
                 <img src={img5} alt="logo" className="imgCompanies" />
               </div>

@@ -27,12 +27,13 @@
   }
 
   .met--title {
-    padding: 72px 0px 40px 0;
+    padding: 56px 0px 40px 0;
     @include flex-column-center;
     width: 100%;
     background: #eff0f6;
     @media (max-width: 430px) {
       background: #eae6ff;
+      width: 90%;
     }
     .met-firstTitle {
       width: 900px;
@@ -41,12 +42,13 @@
       font-size: 32px;
       line-height: 35px;
       text-align: center;
+      margin: 0;
       margin-bottom: 16px;
       @media (max-width: 1100px) {
         width: 100%;
       }
       @media (max-width: 430px) {
-        width: 95%;
+        
         text-align: left;
         font-family: "Inter";
         font-style: normal;
@@ -63,14 +65,14 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      color: #6e7191 !important;
+      color: #000538 !important;
       text-align: center;
       
       @media (max-width: 1100px) {
         width: 100%;
       }
       @media (max-width: 430px) {
-        width: 95%;
+        
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
@@ -174,6 +176,7 @@
         width: 80%;
         padding: 15px 32px 15px;
       }
+      
 
       .met--content-text {
         @include flex-column-start2;
@@ -207,7 +210,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     height: 240px;
     position: relative;
@@ -270,8 +273,8 @@
     align-items: center; */
   }
   .met---content-boxes {
-    padding: 10px 32px 48px;
-    width: 328px;
+    padding: 32px 17px;
+    /* width: 298px; */
     height: 284px;
     @include flex-row-center;
     border: 1px solid #eff0f7;
@@ -279,17 +282,7 @@
     box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
     border-radius: 16px;
     margin: 10px;
-    @media (max-width: 1024px) {
-      width: 80%;
-    }
-    @media (max-width: 520px) {
-      height: 284px;
-      width: 70%;
-      padding: 15px 35px 15px;
-    }
-    @media (max-width: 380px) {
-      padding: 30px;
-    }
+    
 
     .met--content-text {
       @include flex-column-start2;

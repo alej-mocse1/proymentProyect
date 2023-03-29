@@ -70,7 +70,7 @@ height: 590px;
 
   @media (max-width: 530px) {
     width: 95%;
-    min-height: 643px;
+    min-height: 670px;
    
   }
 }
@@ -97,7 +97,7 @@ height: 590px;
   align-self: stretch;
   position: relative;
   left: 24px;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
   @media (max-width: 530px) {
     width: 90%;
   }
@@ -124,7 +124,6 @@ height: 590px;
 
   @media (max-width: 530px) {
     position: absolute;
-    top: 26px;
    
   }
 }

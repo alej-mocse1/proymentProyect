@@ -6,6 +6,7 @@
   width: 100%;
   padding-top: 20px;
   height: 610px;
+
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column-reverse;
@@ -116,6 +117,7 @@
       background: red !important;
       width: 32px;
       border: 3px solid #6f4ef6;
+      margin-bottom: 16px;
       @media (max-width: 480px) {
         position: relative;
         left: 20px;
@@ -131,6 +133,7 @@
       font-size: 32px;
       line-height: 35px;
       color: #000538;
+      margin-bottom: 16px;
       @media (max-width: 480px) {
         margin: 20px auto;
         width: 90%;
@@ -288,6 +291,7 @@
       background: red !important;
       width: 32px;
       border: 3px solid #6f4ef6;
+      margin-bottom: 16px;
       @media (max-width: 480px) {
         position: relative;
         left: 20px;
@@ -303,6 +307,7 @@
       font-size: 32px;
       line-height: 35px;
       color: #000538;
+      margin-bottom: 16px;
       @media (max-width: 480px) {
         margin: 20px auto;
         width: 90%;

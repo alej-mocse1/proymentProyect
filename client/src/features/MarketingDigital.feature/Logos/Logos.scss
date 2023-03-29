@@ -14,7 +14,7 @@
   }
 
   .logos--container-text {
-    width: 584px;
+    width: 630px;
     @include flex-column-center;
     @media (max-width: 1030px) {
       width: 100%;
@@ -48,6 +48,10 @@
   .logos--container-imgs {
     width: 45%;
     position: relative;
+    left: 60px;
+    @media (max-width: 1300px){
+      left: 0;
+    }
     @media (max-width: 770px) {
       width: 100%;
     }

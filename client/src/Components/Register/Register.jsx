@@ -15,7 +15,7 @@ const Register = () => {
         {
             backgroundColor: '#1e0891'
         } : {
-            backgroundColor: '#f0f0f0'
+            backgroundColor: '#BAADFB'
         }
 
     const onSubmit = (data, e) => {

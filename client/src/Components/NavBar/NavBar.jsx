@@ -116,7 +116,7 @@ function Navbar() {
                <li>Marketing digital</li>
              </Link>
 
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <Link to="/serviciosAnalisisDeDatos"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Analisis de datos</li>
              </Link>
 

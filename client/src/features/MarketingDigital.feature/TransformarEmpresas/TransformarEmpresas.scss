@@ -7,6 +7,7 @@
 
   .transform--title {
     width: 1000px;
+    padding: 72px 0 56px 0;
     @media (max-width: 1030px) {
       width: 90%;
     }
@@ -19,7 +20,7 @@
       line-height: 35px;
       text-align: center;
       color: #000538;
-      padding: 40px 0;
+
       @media (max-width: 480px) {
         text-align: left;
         font-weight: 500;
@@ -103,6 +104,7 @@
       width: 32px;
       height: 0px;
       border: 3px solid #6f4ef6;
+      margin-bottom: 16px;
     }
 
     .transform-subtitle {
@@ -112,6 +114,7 @@
       font-size: 24px;
       line-height: 26px;
       color: #000538;
+      margin-bottom: 16px;
     }
 
     .transform-span {

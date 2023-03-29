@@ -1,10 +1,5 @@
 @import "../../../styles/styles.scss";
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 .difentes--container {
   @include flex-row-center;
   background: #000538;
@@ -115,7 +110,7 @@
     }
 
     .group-img {
-      width: 60px;
+      width: 90px;
       position: absolute;
       @include floating;
       right: 180px;
@@ -124,6 +119,10 @@
       }
       @media (max-width: 848px) {
         right: 200px;
+      }
+      @media (max-width: 770px) {
+        width: 70px;
+        right: 150px;
       }
       @media (max-width: 670px) {
         right: 150px;

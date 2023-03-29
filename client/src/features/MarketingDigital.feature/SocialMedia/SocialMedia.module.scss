@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0px 146px 72px;
+  padding: 0px 146px 56px;
   @include responsive("carrousel") {
     /* padding: 0px 44px 56px; */
     padding: 0px 5.53vw 7vw;
@@ -25,6 +25,7 @@
     color: #6f4ef5;
     margin:0;
     margin-bottom: 16px;
+    margin-top: 0;
   }
   h4 {
     font-weight: 600;
@@ -35,6 +36,7 @@
     max-width: 825px;
     margin:0;
     margin-bottom: 56px;
+    margin-top: 0;
     min-width: 303px;
     @include responsive("tabletM") {
       text-align: left;
@@ -90,7 +92,7 @@
         line-height: 35px;
         color: #000538;
         text-align: left;
-        margin:0;
+        margin: 0;
         margin-bottom: 16px;
       }
     }
@@ -99,7 +101,7 @@
       font-size: 16px;
       line-height: 24px;
       color: #6e7191;
-      margin:0;
+      margin: 0;
       margin-bottom: 32px;
       max-width: 445px;
       /* width: 445px; */

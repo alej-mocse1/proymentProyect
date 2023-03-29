@@ -15,7 +15,10 @@
     padding-top: 90px;
   }
   @media (max-width: 540px) {
-    padding-top: 72px;
+    padding-top: 150px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 90px;
   }
 
   .audit--container-img {

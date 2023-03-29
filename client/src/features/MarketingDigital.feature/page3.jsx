@@ -6,6 +6,8 @@ import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import Objetivos from "./objetivo/Objetivo";
 import TransformarEmpresas from "./TransformarEmpresas/TransformarEmpresas";
 import LandingPageMarkentig from "./landingPageMarketing/LandingPageMarkentig";
+import SomosDiferentes from "./SomosDiferentes/SomosDiferentes"
+import Logos from "./Logos/Logos"
 
 
 export default function Page3() {
@@ -19,6 +21,8 @@ export default function Page3() {
         <NuestrosPlanes/>
         <NuestroDiferencial/>
         <TransformarEmpresas/>
+        <Logos></Logos>
+        <SomosDiferentes></SomosDiferentes>
       </>
     );
   }

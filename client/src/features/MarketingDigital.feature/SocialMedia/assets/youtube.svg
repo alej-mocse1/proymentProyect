@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178" height="226" fill="none" viewBox="0 0 178 226">
+  <rect width="177.309" height="225.092" x=".389" y=".4" fill="#fff" fill-opacity=".15" rx="10.153"/>
+  <rect width="161.269" height="200.168" x="8.41" y="12.862" fill="#fff" rx="14.62"/>
+  <circle cx="25.833" cy="33.527" r="4.862" fill="#FF2B2A"/>
+  <rect width="6.483" height="113.455" x="149.823" y="30.286" fill="#ECF0FC" rx="3.242" transform="rotate(90 149.823 30.286)"/>
+  <rect width="6.483" height="102.11" x="123.08" y="44.873" fill="#CAD4EC" rx="3.242" transform="rotate(90 123.08 44.873)"/>
+  <rect width="6.483" height="128.853" x="149.823" y="57.84" fill="#ECF0FC" rx="3.242" transform="rotate(90 149.823 57.84)"/>
+  <rect width="102.92" height="62.4" x="20.971" y="78.91" fill="#FF2B2A" rx="4.862"/>
+  <path fill="#fff" d="m73.203 122.638-7.15-.136c-2.314-.048-4.635.047-6.904-.445-3.452-.735-3.697-4.339-3.953-7.362a53.785 53.785 0 0 1 .45-12.791c.375-2.365 1.854-3.776 4.14-3.93 7.718-.557 15.487-.491 23.188-.231.813.024 1.632.154 2.434.302 3.959.723 4.055 4.808 4.312 8.246a48.693 48.693 0 0 1-.341 10.414c-.393 2.857-1.143 5.252-4.312 5.483-3.97.303-7.849.546-11.83.469 0-.019-.023-.019-.034-.019ZM69 115.407c2.992-1.791 5.926-3.551 8.9-5.329-2.997-1.791-5.926-3.551-8.9-5.329v10.658Z"/>
+  <rect width="26.743" height="28.364" x="129.564" y="78.91" fill="#FF2B2A" rx="3.242"/>
+  <rect width="26.743" height="28.364" x="129.564" y="112.946" fill="#FF2B2A" rx="3.242"/>
+  <path fill="#FF2B2A" d="M29.885 173.726a8.914 8.914 0 0 0 8.914-8.914 8.914 8.914 0 1 0-17.828 0 8.914 8.914 0 0 0 8.914 8.914Z"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.621" d="m25.851 165.388 2.305 2.305 5.764-5.763"/>
+  <rect width="6.483" height="110.214" x="155.496" y="161.57" fill="#ECF0FC" rx="3.242" transform="rotate(90 155.496 161.57)"/>
+  <path fill="#FF2B2A" d="M29.885 197.227a8.914 8.914 0 0 0 8.914-8.914 8.914 8.914 0 1 0-17.828 0 8.914 8.914 0 0 0 8.914 8.914Z"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.621" d="m25.851 188.89 2.306 2.305 5.763-5.763"/>
+  <rect width="6.483" height="65.642" x="113.356" y="185.071" fill="#CAD4EC" rx="3.242" transform="rotate(90 113.356 185.071)"/>
+  <rect width="161.269" height="200.168" x="8.41" y="12.862" stroke="#EFF0F7" stroke-width=".81" rx="14.62"/>
+  <rect width="177.062" height="224.845" x=".513" y=".524" stroke="#fff" stroke-opacity=".05" stroke-width=".247" rx="10.03"/>
+</svg>

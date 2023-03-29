@@ -40,7 +40,7 @@ export default function NuestrasSoluciones() {
         <div className="ns-containerPadre">
             <div className="ns-containerHijo">
                 <h3>Nuestras soluciones en datos</h3>
-                <p>Hacemos simple, lo complejo. Y lo mejor de todo, de forma ágil.</p>
+                <p className="ns-p">Hacemos simple, lo complejo. Y lo mejor de todo, de forma ágil.</p>
 
                 <div className="ns-button-navegation">
                     <button
@@ -60,13 +60,13 @@ export default function NuestrasSoluciones() {
                 <div className="ns-carousel-container">
                     <div className="swiperContainer">
                         <Swiper
-                            modules={[Pagination, /* Autoplay */]}
-                            /* loop={true} */
-                            /* autoplay={{
+                            modules={[Pagination, Autoplay]}
+                            loop={true}
+                            autoplay={{
                                 delay: 2000,
                                 pauseOnMouseEnter: false,
                                 disableOnInteraction: false
-                            }} */
+                            }}
                             pagination={{
                                 el: ".ns-carousel-pagination",
                                 clickable: true,
@@ -82,11 +82,11 @@ export default function NuestrasSoluciones() {
                                 },
                                 375: {
                                     slidesPerView: 1.15,
-                                    spaceBetween: 15,
+                                    spaceBetween: 25,
                                 },
                                 425: {
                                     slidesPerView: 1.25,
-                                    spaceBetween: 10,
+                                    spaceBetween: 20,
                                 },
                                 525: {
                                     slidesPerView: 1.5,
@@ -132,9 +132,8 @@ export default function NuestrasSoluciones() {
                         >
                             <SwiperSlide>
                                 <div className="ns-cardContainer">
+                                    <img src={img1} alt="not" />
                                     <div>
-                                        <img src={img1} alt="not" />
-                                        
                                         <h4>Data management</h4>
                                         <p>CONSOLIDAR. Reúne todas tus fuentes de datos en un solo lugar.</p>
                                     </div>
@@ -142,9 +141,8 @@ export default function NuestrasSoluciones() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="ns-cardContainer">
+                                    <img src={img2} alt="not" />
                                     <div>
-                                        <img src={img2} alt="not" />
-                                        
                                         <h4>Analítica descriptiva</h4>
                                         <p>MEDIR. Gestiona el desempeño de tu organización.</p>
                                     </div>
@@ -152,9 +150,8 @@ export default function NuestrasSoluciones() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="ns-cardContainer">
+                                    <img src={img3} alt="not" />
                                     <div>
-                                        <img src={img3} alt="not" />
-                                        
                                         <h4>Analítica Avanzada</h4>
                                         <p>PREDECIR. Anticipa lo que pasará en tu organización.</p>
                                     </div>
@@ -162,9 +159,8 @@ export default function NuestrasSoluciones() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="ns-cardContainer">
+                                    <img src={img4} alt="not" />
                                     <div>
-                                        <img src={img4} alt="not" />
-                                        
                                         <h4>Consultoría Analítica</h4>
                                         <p>CAPITALIZAR. Haz crecer tu organización a través de los datos.</p>
                                     </div>
@@ -172,9 +168,8 @@ export default function NuestrasSoluciones() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="ns-cardContainer">
+                                    <img src={img5} alt="not" />
                                     <div>
-                                        <img src={img5} alt="not" />
-                                        
                                         <h4>Servicios en la nube</h4>
                                         <p>TRANSFORMAR. Aproveche el potencial de la nube.</p>
                                     </div>

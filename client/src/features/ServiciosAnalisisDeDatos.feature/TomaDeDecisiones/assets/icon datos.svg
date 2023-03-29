@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="65" fill="none" viewBox="0 0 66 65">
+  <g filter="url(#a)">
+    <rect width="65.978" height="64.479" fill="url(#b)" fill-opacity=".6" rx="11.996"/>
+    <g clip-path="url(#c)">
+      <path fill="#8ADBFD" d="M48.912 40.645a.436.436 0 0 0-.235-.369.436.436 0 0 0-.452 0c-3.252 2.649-9.37 4.04-15.237 4.04-5.867 0-12.002-1.391-15.237-4.04a.436.436 0 0 0-.452 0 .436.436 0 0 0-.235.369v2.883c0 3.705 7.124 6.705 15.924 6.705s15.924-3 15.924-6.705v-2.883Z"/>
+      <path fill="#8ADBFD" d="M17.064 36.036c0 3.704 7.124 6.705 15.924 6.705s15.924-3 15.924-6.705v-2.883a.436.436 0 0 0-.235-.369.435.435 0 0 0-.452 0c-3.252 2.648-9.37 4.04-15.237 4.04-5.867 0-12.002-1.392-15.237-4.04a.435.435 0 0 0-.452 0 .435.435 0 0 0-.235.369v2.883Z"/>
+      <path fill="#8ADBFD" d="M32.988 29.331c-5.867 0-12.002-1.39-15.237-4.04a.435.435 0 0 0-.452 0 .435.435 0 0 0-.235.269v2.933c0 3.705 7.124 6.705 15.924 6.705s15.924-3 15.924-6.705V25.56a.436.436 0 0 0-.235-.369.435.435 0 0 0-.452 0c-3.252 2.75-9.37 4.14-15.237 4.14Z"/>
+      <path fill="#8ADBFD" d="M32.988 27.655c8.794 0 15.924-3.002 15.924-6.705 0-3.703-7.13-6.705-15.924-6.705-8.795 0-15.924 3.002-15.924 6.705 0 3.703 7.13 6.705 15.924 6.705Z"/>
+    </g>
+    <rect width="63.729" height="62.23" x="1.125" y="1.125" stroke="url(#d)" stroke-opacity=".7" stroke-width="2.249" rx="10.871"/>
+  </g>
+  <defs>
+    <linearGradient id="b" x1="1.104" x2="79.231" y1="0" y2="30.237" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#C4C4C4" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="d" x1="1.656" x2="78.507" y1="2.267" y2="31.211" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3EEEFA"/>
+      <stop offset=".573" stop-color="#DCCBFF" stop-opacity=".764"/>
+      <stop offset=".719" stop-color="#39F3FF" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#A87EFF" stop-opacity=".85"/>
+    </linearGradient>
+    <clipPath id="c">
+      <path fill="#fff" d="M0 0h35.988v35.988H0z" transform="translate(14.995 14.245)"/>
+    </clipPath>
+    <filter id="a" width="110.963" height="109.464" x="-22.493" y="-22.493" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="11.246"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_433_13517"/>
+      <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_433_13517" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -8,6 +8,7 @@ import TransformarEmpresas from "./TransformarEmpresas/TransformarEmpresas";
 import LandingPageMarkentig from "./landingPageMarketing/LandingPageMarkentig";
 import SomosDiferentes from "./SomosDiferentes/SomosDiferentes"
 import Logos from "./Logos/Logos"
+import SocialMedia from "./SocialMedia/SocialMedia";
 
 
 export default function Page3() {
@@ -15,6 +16,7 @@ export default function Page3() {
       <>
         <LandingPageMarkentig></LandingPageMarkentig>
         <Objetivos></Objetivos>
+        <SocialMedia></SocialMedia>
         <Marketing/>
         <SeoYSem></SeoYSem>
         <Auditoria/>

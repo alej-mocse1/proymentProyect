@@ -1,10 +1,5 @@
 @import "../../../styles/styles.scss";
 
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-
 .difentes--container {
   @include flex-row-center;
   background: #000538;
@@ -115,20 +110,15 @@
     }
 
     .group-img {
-      width: 60px;
+      width: 90px;
       position: absolute;
       @include floating;
-      right: 120px;
-      bottom: 150px;
+      right: 180px;
       @media (max-width: 1120px) {
         right: 70px;
       }
       @media (max-width: 848px) {
-        bottom: -150px;
         right: 200px;
-      }
-      @media (max-width: 770px) {
-        bottom: -250px;
       }
       @media (max-width: 670px) {
         right: 150px;
@@ -136,20 +126,8 @@
       @media (max-width: 550px){
         right: 100px;
       }
-      @media (max-width: 530px) {
-        bottom: -250px;
-      }
-      @media (max-width: 510px) {
-        bottom: -320px;
-      }
       @media (max-width: 450px) {
         right: 50px;
-      }
-      @media (max-width: 430px) {
-        bottom: -350px;
-      }
-      @media (max-width: 380px) {
-        bottom: -400px;
       }
     }
   }

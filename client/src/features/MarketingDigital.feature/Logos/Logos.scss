@@ -9,6 +9,9 @@
     height: 100%;
     @include flex-column-center;
   }
+   @media (max-width: 480px){
+    padding-top: 30px;
+  }
 
   .logos--container-text {
     width: 584px;
@@ -37,6 +40,7 @@
         font-weight: 500;
         font-size: 30px;
         line-height: 34px;
+        padding-bottom: 20px;
       }
     }
   }

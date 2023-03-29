@@ -17,7 +17,10 @@ export default function Confirmation() {
                 </div>
                 <div className={style.containerBtn}>
                     <Link to={"/"}><button className={style.btnInicio}>Ir al inicio</button></Link>
-                    <button className={style.btnWhatsapp}><i class="ri-whatsapp-line"></i><p>Contactar ahora</p></button>
+                    <a href='https://api.whatsapp.com/send?phone=541138771146&text=Hola, bienvenidos a ProyMent'
+                        className={style.btnWhatsapp} >
+                        <i class="ri-whatsapp-line"></i><p>Contactar ahora</p>
+                    </a>
                 </div>
             </div>
         </div>

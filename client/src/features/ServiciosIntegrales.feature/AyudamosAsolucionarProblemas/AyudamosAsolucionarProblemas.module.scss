@@ -1,0 +1,267 @@
+@import "../../../styles/styles.scss";
+
+
+.div{
+    width: 100%;
+    height: 800px;
+    background-color: #EAE6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1100px) {
+        height: 1736px;
+     }
+}
+
+.div h2{
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 35px;
+   text-align: center;
+   width:550px;
+   margin: 0;
+   position: relative;
+   /* bottom: 85px; */
+   top: -58px;
+   margin-top: 102px;
+
+   @media (max-width: 1000px) {
+    width: 336px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    bottom: 64px;
+    margin-bottom: 50px;
+
+}
+}
+
+
+.btn{
+    background: #6F4EF5;
+    border-radius: 4px;
+    width: 174px;
+    height: 64px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    top: -54px;
+    margin-top: 56px;
+
+    @media (max-width: 1000px) {
+        height: 54px;
+        width: 326px;
+        top: 31px;
+        margin-bottom: 56px;
+        margin-top: 0;
+        position: static;
+    }
+}
+
+.btn:hover{
+    background: #A493FF;
+    transition: 1s;
+}
+
+.divContenido{
+    height: 435px;
+    width: 1056.84px;
+    position: relative;
+    top: -55px;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+
+@media (max-width: 1100px) {
+     width: 90%;
+     }
+
+@media (max-width: 1000px) {
+       flex-direction: column-reverse;
+       margin: 0 auto;
+       width: 328px;
+       height: 1356px;
+       align-items: center;
+ }
+}
+
+
+
+.divCard{
+    width: 536.32px;
+    height: 435px;
+
+    @media (max-width: 1000px) {
+     height: 1424px;
+     width: 321.38px;
+     align-items: center;
+   }
+}
+
+
+.divCard1{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 148px;
+   border-radius: 8px;
+   background-color: #FFFFFF;
+
+   @media (max-width: 1000px) {
+     flex-direction: column;
+     width: 321.38px;
+     height: 319px;
+     margin-top: 48px;
+}
+}
+
+.divCard2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 127px;
+    border-radius: 8px;
+    background-color: #6F4EF6;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        width: 321.38px;
+        height: 289px;
+        margin-top: 48px;
+   }
+
+ }
+
+
+
+ .h4White{
+    color: #FFFFFF !important;
+    bottom: 15px !important;
+}
+
+.pWhite{
+    color: #FFFFFF !important;
+    bottom: 32px !important;
+
+
+    @media (max-width: 1000px) {
+        font-size: 16px;
+        width: 230px;
+        margin: 0 auto;
+        bottom:15px !important;
+    }
+
+}
+
+ .divCard3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 148px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        width: 321.38px;
+        height: 319px;
+        margin-top: 48px;
+   }
+ }
+
+ .imgIcon{
+   width: 56px;
+   height: 50px;
+
+   @media (max-width: 1000px) {
+    
+    position: relative;
+    top: -10px;
+}
+ }
+
+ .divTexto{
+    width: 404px;
+    height: 116px;
+    text-align: left;  
+    margin-left: 35px;
+
+    @media (max-width: 1000px) {
+    
+       width: 316px;
+       height: 170px;
+       margin-left: 0px;
+       text-align: center;
+   }
+
+ }
+
+ .divTexto h4{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000538;
+    position: relative;
+    bottom: 10px;
+
+    @media (max-width: 1000px) {
+    font-size: 18px;
+    margin: 24px 0 16px 0;
+    }
+ }
+
+ .divTexto p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000538;
+    position: relative;
+    bottom: 27px;
+
+    @media (max-width: 1000px) {
+        font-size: 16px;
+         width: 230px;
+         margin: 0 auto;
+         bottom: 15px;
+        }
+ }
+ 
+ 
+
+
+
+
+
+
+
+.divImg{
+    width: 464.53px;
+    height: 417.73px;
+    margin-top: 15px;
+
+    @media (max-width: 1100px) {
+        width: 364.53px;
+        height: 317.73px;
+     }
+     @media (max-width: 1000px) {
+        width: 321.38px;
+        height: 289px;
+        margin-top: 25px;
+    }
+}
+
+.divImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 11.011px;
+}

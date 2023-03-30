@@ -74,8 +74,8 @@
   width: 100%;
   @media (max-width: 770px) {
     width: calc(180px * 8);
-    animation: scroll-for-logos 9s linear infinite;
-    -webkit-animation: scroll-for-logos 9s linear infinite;
+    animation: scroll-for-logos 30s linear infinite;
+    -webkit-animation: scroll-for-logos 30s linear infinite;
   }
 }
 
@@ -84,8 +84,8 @@
   width: 100%;
   @media (max-width: 770px) {
     width: calc(180px * 8);
-    animation: scroll-for-logos2 9s linear infinite;
-    -webkit-animation: scroll-for-logos2 9s linear infinite;
+    animation: scroll-for-logos2 30s linear infinite;
+    -webkit-animation: scroll-for-logos2 30s linear infinite;
   }
 }
 

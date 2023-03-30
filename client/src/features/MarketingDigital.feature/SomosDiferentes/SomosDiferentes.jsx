@@ -21,8 +21,9 @@ function SomosDiferentes() {
 
       <div className="diferentes--container-imgs">
         <img src={img1} alt="proyment-guy" className="img-guy"/>
-        <img src={img2} alt="group" className="group-img"/>
+        
       </div>
+      <img src={img2} alt="group" className="group-img"/>
     </div>
   );
 }

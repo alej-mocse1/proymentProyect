@@ -9,9 +9,9 @@ export default function TomaDeDecisiones(){
         <div className={style.container}>
             <div className={style.containerInfo}>
                 <div className={style.containerImg}>
-                    <img src={image}  alt="not-image" className={style.img}/>
-                    <img src={icon1}  alt="not-image" className={style.icon1} />
-                    <img src={icon2}  alt="not-image" className={style.icon2} />
+                    <image src={image}  alt="not-image" className={style.img}/>
+                    <image src={icon1}  alt="not-image" className={style.icon1} />
+                    <image src={icon2}  alt="not-image" className={style.icon2} />
                 </div>
 
                 <div className={style.infoText}>

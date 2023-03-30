@@ -5,7 +5,7 @@ import img from "./assets/degradado.svg";
 export default function LandingPageMarkentig() {
   return (
     <div className={style.container}>
-      {/* <div className={style.polygon}></div> */}
+
       <div className={style.degrade}>
         <img src={img} alt="Marqueting-digital" />
       </div>

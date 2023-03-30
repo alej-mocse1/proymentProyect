@@ -1,0 +1,204 @@
+@import "../../../styles/styles.scss";
+
+.containerPadre {
+    padding: 72px 70px;
+    background-color: #EFF0F6;
+    @include responsive("Laptop"){
+        padding: 72px 35px;
+    }
+
+    @include responsive("Tablet"){
+        padding: 56px 24px;
+    }
+
+    @include responsive("phone-L"){
+        padding: 56px 0 56px 24px;
+    }
+
+    .containerHijo {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        position: relative;
+
+        @include responsive("Tablet"){
+            gap: 0;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 35px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 600px;
+            margin: 0;
+            color: #000538;
+
+            @include responsive("Tablet"){
+                margin-bottom: 40px;
+                width: 100%;
+            }
+        }
+
+        .button-navegation {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            position: absolute;
+            top: 55px;
+            right: 16px;
+
+            @include responsive("Tablet") {
+                display: none;
+            }
+        }
+
+        .button-navegation i {
+            @include flex-column-center;
+            color: #6f4ef5;
+            font-size: 24px;
+        }
+
+        .button-navegation button {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 16px;
+            transition-duration: 0.4s;
+        }
+
+        .none {
+            border: 1px solid #6f4ef5;
+            background-color: #EFF0F6;
+        }
+
+        .active {
+            border: 1px solid #6f4ef5;
+            background-color: #6f4ef5;
+
+            i { color: #ffff; }
+        }
+
+        .btn-agendar {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #FFFFFF;
+
+            width: 237px;
+            height: 64px;
+            background: #6F4EF5;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin: 0 auto;
+
+            @include responsive("Laptop") {
+                margin-bottom: 0;
+            }
+
+            @include responsive("Tablet") {
+                width: 35%;
+            }
+
+            @include responsive("phone-L") {
+                width: 235px;
+                height: 54px;
+                margin: 0 auto;   
+            }
+        }
+
+        .btn-agendar:hover {
+            background: #A493FF;
+            transition: 1s;
+        }
+    }
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296px;
+    height: 286px;
+    margin: 0;
+    background: #FFFFFF;
+    border: 1px solid #DCDDEB;
+    border-radius: 16px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 259px;
+        margin: 24px;
+
+        img {
+            width: 55px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            width: 30px;
+            height: 4px;
+            background-color: #6F4EF6;
+            margin-bottom: 29px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 16px;
+            color: #000538;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            color: #000538;
+        }
+    }
+}
+
+.carousel-pagination {
+    display: none;
+
+    @include responsive("Tablet") {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px 0 48px 0;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #DCDDEB;
+        height: 10px;
+        width: 10px;
+        margin-right: 6px;
+        opacity: 0.5;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #6F4EF5;
+        opacity: 1;
+    }
+}

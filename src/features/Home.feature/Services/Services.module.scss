@@ -1,0 +1,111 @@
+@import "../../../styles/styles.scss";
+
+.container {
+  margin: 72px 65px 72px;
+  display: flex;
+  flex-direction: column;
+  @include responsive("carrousel") {
+    margin: 66px 0px 66px 21.5px;
+  }
+  @include responsive("phone") {
+    margin: 56px 0px 56px 21.5px;
+  }
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 36px;
+  @include responsive("phone") {
+    gap: 16px;
+  }
+}
+.h4 {
+  color: #000538;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 10px 0px;
+  @include responsive("phone") {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+.p {
+  font-size: 1rem;
+  color: #6e7191;
+  text-align: left;
+  margin-bottom: 0;
+  width: 54%;
+  @include responsive("carrousel") {
+    margin: 0;
+    width: 100%;
+  }
+  @include responsive("phone") {
+    margin: 0;
+    width: auto;
+  }
+}
+
+.textButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  @include responsive("carrousel") {
+    display: none;
+  }
+}
+
+.buttons i {
+  @include flex-column-center;
+  color: #6f4ef5;
+  font-size: 24px;
+}
+
+.buttons button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 16px;
+  transition-duration: 0.4s;
+}
+.none{
+  border: 1px solid #6f4ef5;
+  background-color: #ffff;
+}
+.active {border: 1px solid #6f4ef5;
+  background-color: #6f4ef5;
+  i {
+    color: #ffff;
+  }
+}
+/* .buttons button:hover {
+  background-color: #6f4ef5;
+  i {
+    color: #ffff;
+  }
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.carrousel {
+  width: 100%;
+}
+
+.containerCarrousel {
+  width: 100%;
+  @include responsive("phone") {
+    /* width: 330px; */
+    height: 470px;
+  }
+}

@@ -1,0 +1,310 @@
+@import "../../../styles/styles.scss";
+
+.div{
+    width: 100%;
+    height: 306px;
+    background-color: #000538;
+    display: flex;
+    margin-top: 72px;
+    position: relative;
+    top: 142px;
+}
+
+.divIMG{
+    width: 424px;
+    height: 440px;
+    margin-left: 90px;
+    position: relative;
+    bottom: 104px;
+    
+}
+
+
+.divIMG .imgPrincipal{
+    height: 380px;
+    width:444px;
+    
+    position: relative;
+    top: 27px;
+}
+ 
+
+.imgFlotante1{
+    position: absolute;
+    width: 230.61px;
+    height: 159.86px;
+    left: -60px;
+    top: 200px;
+    @include floating;
+}
+
+.imgFlotante2{
+    position: absolute;
+    width: 75px;
+    height: 83.41px;
+    left: 340px;
+    top: 140px;
+    @include floating;
+}
+
+
+
+
+
+.grafico{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+   
+}
+.grafico img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.divText{
+    width: 445px;
+    height: 205px;
+    margin-top: 29px;
+    margin-left: 172px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 10px;
+    
+   
+}
+
+.divText h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+    position: relative;
+    margin: 16px 0 32px 0;
+}
+
+.divText button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 38px;
+    gap: 10px;
+    width: 201px;
+    height: 64px;
+    background: #6F4EF5;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+}
+
+.divText button:hover{
+    background: #A493FF;
+    transition: 1s;
+}
+
+@media (max-width: 1200px){
+
+
+    .divIMG{
+        margin-left: 30px;
+        bottom: 103px;
+    }
+
+    .divText{
+            margin-left: 83px;
+        }
+    .divText {
+            margin-right: 130px;
+        }
+        
+    .divText h2{
+            font-size: 28px;
+       }
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px){
+    .divIMG{
+        margin-left: 30px;  
+    }
+
+    .divText{
+            margin-left: 83px;
+        }
+        
+.divText h2{
+    font-size: 28px;
+}
+
+.divText p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDDEB;
+    width: 363px;
+  }
+
+ .divText{
+    margin-left: 30px;
+}
+}
+
+
+
+
+@media (max-width: 950px){
+
+
+    .div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 723.5px;
+        text-align: center;
+        justify-content: center;
+        margin-top: -100px;
+    }
+ 
+
+    .grafico{
+        display: none;
+    }
+
+    .divText{
+        width: 445px;
+        height: 205px;
+        margin-top: 53px;
+        margin-left: 50px;
+        margin: 0 auto;
+    }
+    .divText button{
+        width: 100%;
+        height: 54px;
+    }
+    .divText h2{
+        font-size: 32px;
+    }
+
+    .divIMG{
+        position: relative;
+        top: 65px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    .div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 627px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: -10px;
+    }
+
+    .divIMG{
+        width: 298.96px;
+        height: 261px;
+        top: 50px;
+    }
+
+    .divIMG .imgPrincipal{
+        width: 298.96px;
+        height: 261px;
+    }
+    .divText{
+        width: 90%;
+        position: relative;
+        top: -24px;
+    }    
+
+    .divText h2{
+        width: 68%;
+        position: relative;
+        top: 10px;
+
+    }   
+
+
+
+    .divText p{
+        width: 100%;
+        position: relative;
+        top: 4px;
+      }
+
+      .divText button{
+        width: 100%;
+        position: relative;
+        top: 3px;
+      }
+
+
+
+      .imgFlotante1{
+        width: 125.74px;
+        height: 87.15px;
+        top: 130px;
+        left: -15px;
+      }
+      .imgFlotante2{
+        width: 44.49px;
+        height: 50.02px;
+        left: 200px;
+        top: 100px;
+      }
+}
+

@@ -1,0 +1,138 @@
+@import "../../../styles/styles.scss";
+
+.difentes--container {
+  @include flex-row-center;
+  background: #000538;
+  height: 552px;
+  @media (max-width: 848px) {
+    @include flex-column-center;
+    padding-top: 60px;
+    height: 800px;
+  }
+
+  .diferentes--container--text {
+    width: 530px;
+    @include flex-column-start2;
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+    @media (max-width: 848px) {
+      width: 80%;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      width: 95%;
+      text-align: left;
+    }
+
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 53px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #dcddeb;
+      padding-bottom: 40px;
+    }
+
+    .diferentes-button {
+      width: 100%;
+
+      button {
+        width: 237px;
+        height: 64px;
+        background: #6f4ef5;
+        border-radius: 4px;
+        border: 1px solid #6f4ef5;
+        color: white;
+        @media (max-width: 770px) {
+          width: 80%;
+        }
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+      }
+
+      button:hover {
+        background: #a493ff;
+        transition: 1s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .diferentes--container-imgs {
+    width: 48%;
+    @include flex-column-center;
+    .img-guy {
+      width: 480px;
+      height: 480px;
+      padding-left: 50px;
+      position: relative;
+      top: 35px;
+      @media (max-width: 1080px) {
+        width: 430px;
+        height: 430px;
+        top: 61px;
+      }
+      @media (max-width: 1000px) {
+        right: 30px;
+      }
+      @media (max-width: 848px) {
+        width: 450px;
+        height: 450px;
+        top: 0px;
+      }
+      @media (max-width: 770px) {
+        top: 0px;
+        right: 50px;
+      }
+      @media (max-width: 510px) {
+        width: 350.15px;
+        height: 355.2px;
+        right: 40px;
+      }
+      @media (max-width: 380px) {
+        right: 30px;
+        width: 320.15px;
+        height: 325.2px;
+      }
+    }
+
+    .group-img {
+      width: 90px;
+      position: absolute;
+      @include floating;
+      right: 180px;
+      @media (max-width: 1120px) {
+        right: 70px;
+      }
+      @media (max-width: 848px) {
+        right: 200px;
+      }
+      @media (max-width: 770px) {
+        width: 70px;
+        right: 150px;
+      }
+      @media (max-width: 670px) {
+        right: 150px;
+      }
+      @media (max-width: 550px){
+        right: 100px;
+      }
+      @media (max-width: 450px) {
+        right: 50px;
+      }
+    }
+  }
+}

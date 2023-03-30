@@ -1,0 +1,185 @@
+@import "../../../styles/styles.scss";
+
+
+.DIV{
+    background: #FFFFFF;
+    height: 261.72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 850px) {
+        height: 408px;
+        flex-direction: column;
+        width: 100%;
+       
+   }
+}
+
+
+.divHijo{
+    height: 149.72px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 850px) {
+        flex-direction: column;
+        width: 100%;
+       
+   }
+}
+
+.divHijo p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000538;
+    width: 40%;
+    @media (max-width: 850px) {
+        width: 326px;
+        position: relative;
+        top:28px;
+        text-align: center;
+   }
+}
+
+
+.divHijo .divFRANJA{
+    width: 0px;
+    height: 79px;
+    border: 1PX solid #EAE5FF;
+
+    @media (max-width: 850px) {
+        display: none;
+   }
+
+}
+
+.divHijo .divImg{
+    width: 44%;
+    height: 91.72px;
+    
+
+    @media (max-width: 850px) {
+       display: none;
+  }
+
+}
+
+
+ .divImg1{
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.divImg1 img{
+    width: 20%;
+    height:100%;
+
+
+}
+
+ .divImg2{
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.divImg2 img{
+    width: 20%;
+    height:100%;
+
+
+}
+
+
+
+//////////////////// imagenes responsive///////////////////
+
+
+.slider{
+    display: none;
+    @media (max-width: 850px) {
+            width: 100%;
+            height: 30px;
+            margin: auto;
+            overflow: hidden;
+            display: flex;    
+            position: relative;
+            top: 42px;
+            
+ }
+}
+
+
+.slider .slidetrack {
+    display: flex;
+    height: 200px;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: 100%;  
+}
+
+.slider .slide {
+    width: 115.6px;
+    height: 29.12px;
+}
+
+.slider .slide img{
+    width: 115.6px;  
+   height: 29.12px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-60px * 6));
+        transform: translateX(calc(-60px * 6));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

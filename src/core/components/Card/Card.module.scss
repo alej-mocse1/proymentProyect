@@ -1,0 +1,107 @@
+@import "../../../styles/styles.scss";
+
+.card {
+  width: 310px;
+  min-width: 270px;
+  height: 457px;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+  background-color: #ffff;
+  @include responsive("carrousel") {
+    margin: 0px;
+    width: 270px;
+    height: 431px;
+  }
+}
+.card img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  min-width: 270px;
+  max-width: 310px;
+}
+.card .text h6 {
+  margin: auto;
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 20px;
+  color: #000538;
+}
+.card .text {
+  font-size: 16px;
+  color: #6e7191;
+  line-height: 24px;
+  text-align: left;
+  margin: 40px 23px 0px;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  border-radius: 4px 4px 4px 4px;
+  position: relative;
+  @include responsive("carrousel") {
+    margin: 0px;
+    width: 260px;
+    height: 371px;
+  }
+}
+.card1 img {
+  margin-bottom: 140px;
+  width: 100%;
+  min-width: 230px;
+  height: 200px;
+  min-height: 164px;
+}
+.card1 .text {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0%;
+  width: 83.23%;
+  border-radius: 16px;
+  text-align: center;
+  margin: 24px;
+  background-color: #ffff;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+  height: 50.298%;
+  @include responsive('carrousel'){
+    justify-content: space-between;
+    width: 90%;
+    height: 42%;
+    margin: 24px 10px;
+    top: 130px;
+    gap: 16px;
+  }
+}
+.card1 .text h6 {
+  font-size: 1.25rem;
+  color: #000538;
+  font-weight: 500;
+  margin: 24px 24px 0px;
+  padding: 0 28px;
+  @include responsive('carrousel'){
+    padding: 0 15px;
+    margin-top: 24px;
+    
+  }
+}
+.card1 .text p {
+  font-size: 16px;
+  color: #6e7191;
+  width: 100%;
+  /* margin-top: 16px 0px; */
+  @include responsive('carrousel'){
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+.card1 .text a {
+  color: #6f4ef5;
+  font-size: 1rem;
+  @include responsive('carrousel'){
+    margin-bottom: 24px;
+  }
+}

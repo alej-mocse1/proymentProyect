@@ -1,0 +1,208 @@
+@import "../../../styles/styles.scss";
+
+
+.div{
+    height: 610.92px;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    @include responsive("carrousel") {
+        height: 772.2px;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+}
+
+.div1{
+ width: 50%;
+ height: 610.92px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ @include responsive("carrousel") {
+    
+    width: 80%;
+    position: relative;
+    top: 0px;
+    height: 365.92px;
+  }
+
+@include responsive("tabletM") {
+    width: 100%;
+}
+}
+
+.divTexto{
+    width: 470px;
+    height: 250px; 
+    position: relative;
+    top: -60px;
+
+    @include responsive("carrousel") {
+        width: 327px;
+        top:-29px
+   }
+}
+
+.divTexto h2{
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #000538;
+    margin-bottom: 20px;
+
+
+}
+
+.divTexto p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6E7191;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.divTexto button{
+    background: #6F4EF5;
+    border-radius: 4px;
+    border: none;
+    width: 201px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 38px;
+    color: #FFFFFF;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+
+    @include responsive("carrousel") {
+        width: 327px;
+        height: 54px;
+   }
+}
+
+.divTexto button:hover{
+    background: #A493FF;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+.div2{
+    width: 50%;
+    height: 610.92px;
+
+    @include responsive("carrousel") {
+        width: 80%;
+        position: relative;
+        top: 0px;
+        height: 365.92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      }
+    
+    @include responsive("tabletM") {
+        width: 100%;
+    }
+    
+   }
+
+
+.divImg{
+    height: 517px;
+    width: 486px;
+    position: relative;
+    left: 80px;
+    
+    
+@include responsive("laptop") {
+    width: 254.45px;
+    height: 270.68px;
+    position: relative;
+    top: 100px;
+    left: 90px;
+       
+}
+
+
+@include responsive("carrousel") {
+        width: 254.45px;
+        height: 270.68px;
+        top: 0px;
+        left: 0px;
+      }
+}
+
+.imgPrincipal{
+    position: relative;
+    width: 486px;
+    height: 517px;
+    z-index: 100;
+
+@include responsive("laptop") {
+        width: 254.45px;
+        height: 270.68px;
+
+           
+    }
+
+    @include responsive("carrousel") {
+        width: 254.45px;
+        height: 270.68px;
+        
+      }
+}
+
+.imgSlice{
+    position: absolute;
+    width: 211.05px;
+    height: 375.92px;
+    left: -50px;
+    top: 165px;
+    z-index: 200;
+    filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06)) drop-shadow(0px 2.4px 3.9px rgba(0, 0, 0, 0.03));
+    @include floating;
+
+@include responsive("laptop") {
+        width: 110.5px;
+        height: 196.82px;
+        top: 100px;
+           
+    }
+
+@include responsive("carrousel") {
+        width: 90.5px;
+        height: 176.82px;
+        left: -20px;
+        
+      }
+}
+
+.imgSlice2{
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    z-index: 1;
+    @include floating;
+
+    @media (max-width: 950px) {
+        display: none;
+  }
+    
+
+}

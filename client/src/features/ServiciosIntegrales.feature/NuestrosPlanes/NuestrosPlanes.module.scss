@@ -38,7 +38,7 @@
   }
   .pricingcard {
     /*  max-height: 742px; */
-    max-width: 335px;
+    max-width: 383px;
     border-radius: 8px;
     padding: 32px 24px 32px 24px;
     border: 1px solid #dcddeb;
@@ -119,7 +119,7 @@
   img {
     /* max-width: 629px; */
     height: 100%;
-    /* max-width: 44vw; */
+    max-width: 44vw;
     border-radius: 8px;
     @include responsive("carrouselADN") {
       height: 100%;

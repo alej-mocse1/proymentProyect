@@ -1,15 +1,19 @@
 import React from "react";
 import "./SeoYSem.scss";
-import img1 from "./Group 761939 (1).png";
+import img1 from "./Group 762199.png";
 import img2 from "./Frame 762019.png";
 import img3 from "./young-brunette-in-white-casual-sweater-isolated-on-purple-wall 1.png";
+import imgFloat1 from "./float icon arrow.svg";
+import imgFloat2 from "./float icon estadistica.svg";
 
 function SeoYSem() {
   return (
     <>
       <div className="audit--container">
         <div className="audit--container-img">
-          <img src={img1} alt="" />
+          <img src={imgFloat1} alt="" className="audit--float" />
+          <img src={img1} alt="" className="audit--img"/>
+          <img src={imgFloat2} alt="" className="audit--float2" />
         </div>
         <div className="audit--container-text">
           <div className="audit--container-line"></div>
@@ -32,7 +36,6 @@ function SeoYSem() {
           </div>
         </div>
       </div>
-
       <div className="audit--container2">
         <div className="audit--container-text2">
           <div className="audit--container-line2"></div>

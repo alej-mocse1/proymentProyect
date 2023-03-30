@@ -163,7 +163,7 @@
         border: 1px solid #6F4EF5;
         width: 201px;
         height: 64px;
-        background: #000538;;
+        background: transparent;
         border-radius: 4px;
         cursor: pointer;
   
@@ -178,6 +178,8 @@
           height: 54px;
           margin: auto;
           margin: 0 auto;
+          border: 1px solid #EAE5FF;
+          color: #EAE5FF;
         }
      
     }

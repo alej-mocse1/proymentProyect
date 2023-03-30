@@ -21,7 +21,7 @@
       text-align: center;
     }
     @media (max-width: 480px) {
-      width: 95%;
+      width: 90%;
       text-align: left;
     }
 
@@ -32,7 +32,11 @@
       font-size: 48px;
       line-height: 53px;
       color: #ffffff;
-      margin-bottom: 15px;
+      margin: 0 0 15px 0;
+
+      @media (max-width: 480px){
+        margin: 0 0 24px  0;
+      }
     }
 
     span {
@@ -55,11 +59,13 @@
         border-radius: 4px;
         border: 1px solid #6f4ef5;
         color: white;
+        font-size: 16px;
         @media (max-width: 770px) {
           width: 80%;
         }
         @media (max-width: 480px) {
           width: 100%;
+          height: 54px;
         }
       }
 
@@ -74,6 +80,7 @@
   .diferentes--container-imgs {
     width: 48%;
     @include flex-column-center;
+    position: relative;
     .img-guy {
       width: 480px;
       height: 480px;
@@ -108,31 +115,32 @@
         height: 325.2px;
       }
     }
-
-    .group-img {
-      width: 90px;
-      position: absolute;
-      @include floating;
-      right: 180px;
-      @media (max-width: 1120px) {
-        right: 70px;
-      }
-      @media (max-width: 848px) {
-        right: 200px;
-      }
-      @media (max-width: 770px) {
-        width: 70px;
-        right: 150px;
-      }
-      @media (max-width: 670px) {
-        right: 150px;
-      }
-      @media (max-width: 550px){
-        right: 100px;
-      }
-      @media (max-width: 450px) {
-        right: 50px;
-      }
+  }
+  .group-img {
+    width: 90px;
+    position: relative;
+    top: -100px;
+    
+    @include floating;
+    right: 140px;
+    @media (max-width: 1120px) {
+      right: 70px;
+    }
+    @media (max-width: 848px) {
+      right: 200px;
+    }
+    @media (max-width: 770px) {
+      width: 70px;
+      right: 150px;
+    }
+    @media (max-width: 670px) {
+      right: 150px;
+    }
+    @media (max-width: 550px){
+      right: 100px;
+    }
+    @media (max-width: 450px) {
+      right: 50px;
     }
   }
 }

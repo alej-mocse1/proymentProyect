@@ -60,13 +60,14 @@ export default function NuestroDiferencial() {
                 <div className="carousel-container">
                     <div className="swiperContainer">
                         <Swiper
-                            modules={[Pagination, /* Autoplay */]}
+                            modules={[Pagination, Autoplay]}
                             /* loop={true} */
-                            /* autoplay={{
+                            autoplay={{
                                 delay: 2000,
                                 pauseOnMouseEnter: false,
-                                disableOnInteraction: false
-                            }} */
+                                disableOnInteraction: false,
+                                /* reverseDirection:true */
+                            }}
                             pagination={{
                                 el: ".carousel-pagination",
                                 clickable: true,

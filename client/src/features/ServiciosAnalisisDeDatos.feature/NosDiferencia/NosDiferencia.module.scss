@@ -82,6 +82,7 @@
                 .text {
                     /* width: 100%; */
                     margin: 24px 24px 24px 0;
+                    color: #000538;
 
                     @include responsive("phone-L"){
                         margin: 0 24px 24px 24px;

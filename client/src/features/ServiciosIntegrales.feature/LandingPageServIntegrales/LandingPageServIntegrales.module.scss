@@ -20,6 +20,7 @@
 
   @include responsive("phone-L") {
     padding: 56px 24px;
+    background: linear-gradient(174.09deg, #000538 6.03%, #001344 20.32%, #027CA3 47.88%, #00144A 80.49%);
   }
 
 
@@ -55,6 +56,10 @@
       /*  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); */
     }
+    @include responsive("phone-L"){
+      display: none;
+    }
+    
   }
 
   .containerInfo {

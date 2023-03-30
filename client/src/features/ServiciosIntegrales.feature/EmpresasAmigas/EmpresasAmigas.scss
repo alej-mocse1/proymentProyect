@@ -5,7 +5,7 @@
   width: 100%;
   height: 604.5px;
   background: #000538;
-  @media (max-width: 770px) {
+  @media (max-width: 1150px) {
     width: 100%;
     height: 100%;
     @include flex-column-center;
@@ -21,7 +21,7 @@
     @media (max-width: 1350px) {
       left: 0;
     }
-    @media (max-width: 770px) {
+    @media (max-width: 1150px) {
       width: 90%;
     }
     @media (max-width: 430px) {
@@ -37,7 +37,7 @@
       color: #ffffff;
       padding-bottom: 20px;
       margin: 0;
-      @media (max-width: 770px) {
+      @media (max-width: 1150px) {
         text-align: center;
         font-family: "Inter";
         font-style: normal;
@@ -86,7 +86,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        @media (max-width: 770px) {
+        @media (max-width: 1150px) {
           width: 100%;
         }
         @media (max-width: 430px) {
@@ -109,7 +109,7 @@
     }
     .empr--img {
       width: 100%;
-      @media (max-width: 770px) {
+      @media (max-width: 1150px) {
         margin: 56px 0;
         border-radius: 8px;
       }

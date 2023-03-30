@@ -1,16 +1,20 @@
 @import "../../../styles/styles.scss";
 
 .container {
-    padding: 72px 146px;
-    background-color: #000538;
-    color: #FFFFFF;
+    display: flex;
+    padding: 72px 212px;
+
+    background: #F7F7FC;
+    border-radius: 0px 0px 153px 153px;
+
 
     @include responsive("Laptop") {
-        padding: 72px 52px;
+        padding: 72px 72px;
     }
 
     @include responsive("Tablet") {
-        padding: 56px 44px;
+        padding: 56px 48px;
+        border-radius: 0;
     }
 
     @include responsive("phone-L") {
@@ -18,21 +22,94 @@
     }
 
     .containerInfo {
+        width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         @include responsive("Tablet") {
+            flex-direction: column-reverse;
+            gap: 57px;
+        }
+
+
+        .containerCards {
+            /* width: 522px; */
+            width: 51.4%;
+            display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            gap: 16px;
+
+            @include responsive("Tablet") {
+                width: 100%;
+            }
+
+            @include responsive("phone-S") {
+                /* width: 228px; */
+            }
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                background: #FFFFFF;
+                border: 1px solid #EFF0F6;
+                box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+                border-radius: 16px;
+
+                @include responsive("phone-L"){
+                    flex-direction: column;
+                }
+
+                .containerImg {
+                    display: flex;
+                    width: 54px;
+                    margin: 24px 16px 0 24px;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    @include responsive("phone-L"){
+                        margin: 24px 0 16px 24px;
+                    }
+
+                    img {
+                        width: 26px;
+                    }
+                }
+
+                .text {
+                    /* width: 100%; */
+                    margin: 24px 24px 24px 0;
+                    color: #000538;
+
+                    @include responsive("phone-L"){
+                        margin: 0 24px 24px 24px;
+                        /* width: 250px; */
+                    }
+
+                    .icon2 {
+                        width: 54px;
+                    }
+
+                    h4 {
+                        margin: 0 0 8px 0;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0 0 0 20px;
+                    }
+                }
+            }
         }
 
         .infoText {
+            /* width: 374px; */
+            width: 36.9%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            /* width: 526px; */
-            width: 45%;
 
             @include responsive("Tablet") {
                 width: 100%;
@@ -53,11 +130,12 @@
                 text-align: left;
                 margin: 0;
                 margin-bottom: 16px;
+                color: #000538;
 
                 @include responsive("Tablet") {
-                    font-size: 28px;
+                    font-size: 20px;
                     font-weight: 500;
-                    line-height: 34px;
+                    line-height: 24px;
                     margin-bottom: 24px;
                 }
             }
@@ -70,10 +148,10 @@
                 text-align: left;
                 margin: 0;
                 margin-bottom: 32px;
-                color: #DCDDEB;
+                color: #000538;
 
                 @include responsive("Tablet") {
-                    margin-bottom: 48px;
+                    margin-bottom: 32px;
                 }
             }
 
@@ -91,7 +169,6 @@
                 border-radius: 4px;
                 border: none;
                 cursor: pointer;
-                margin-bottom: 38px;
 
                 @include responsive("Laptop") {
                     margin-bottom: 0;
@@ -113,44 +190,6 @@
             button:hover {
                 background: #A493FF;
                 transition: 1s;
-            }
-        }
-
-        .containerImg {
-            /* width: 342px; */
-            /* width: 397px; */
-            width: 34.5%;
-            margin: 35px 30px 0 0;
-            position: relative;
-
-            @include responsive("Laptop") {
-                margin-right: 0;
-            }
-
-            @include responsive("Tablet") {
-                width: 256px;
-                margin: 100px auto 12px;
-            }
-
-            @include responsive("phone-L") {
-                margin: 100px 0 12px auto;
-            }
-
-            .img {
-                width: 100%;
-            }
-
-            .icon {
-                /* width: 99px; */
-                width: 20%;
-                position: absolute;
-                top: 0px;
-                left: -15px;
-                @include floating;
-
-                @include responsive("phone-L") {
-                    top: -15px;
-                }
             }
         }
     }

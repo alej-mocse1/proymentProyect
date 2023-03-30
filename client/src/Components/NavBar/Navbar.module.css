@@ -50,8 +50,9 @@
     margin-left: -60px;
     margin-top: 0px;
     display: none;
+    line-height: 20px;
     list-style: none;
-    width: 261px;
+    width: 230px;
     background-color: #FFFFFF;
     z-index: 100;
     box-shadow: 0px 48px 58px rgba(0, 0, 0, 0.18), 0px 18.4889px 18.4741px rgba(0, 0, 0, 0.109333), 0px 3.91111px 4.72593px rgba(0, 0, 0, 0.0706667);
@@ -62,15 +63,17 @@
   .menuVerical li{
     margin: 0px;
     position: relative;
-    left: 15px;
+    left: -15px;
     font-size: 16px;
     text-align: left;
     width: 90%;
+    padding: 8px;
   }
 
 
   .menuVerical li:hover{
     background-color: #EAE5FF;
+    padding: 8px;
     
     
   }

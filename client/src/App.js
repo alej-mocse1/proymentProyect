@@ -6,6 +6,7 @@ import Marketing from "./pages/marketing/marketing";
 import Confirmation from "./Components/Register/Confirmation";
 import ServiciosIntegrales from "./pages/ServiciosIntegrales/ServiciosIntegrales";
 import ServiciosAnalisisDeDatos from "./pages/ServiciosAnalisisDeDatos/ServiciosAnalisisDeDatos";
+import ServiciosEnTendencia from "./pages/ServiciosEnTendencia/ServiciosEnTendencia";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Route exact path={"/marketing"} element={<Marketing></Marketing>}></Route>
           <Route exact path={"/serviciosIntegrales"} element={<ServiciosIntegrales></ServiciosIntegrales>}></Route>
           <Route exact path={"/serviciosAnalisisDeDatos"} element={<ServiciosAnalisisDeDatos/>} ></Route>
+          <Route exact path={"/serviciosEnTendencia"} element={<ServiciosEnTendencia/>} ></Route>
           <Route exact path={"/confirmation"} element={<Confirmation/>} ></Route>
-
         </Routes>
     </> 
   );

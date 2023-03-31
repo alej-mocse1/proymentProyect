@@ -3,7 +3,7 @@ import styles from "./PlanesAccecibles.module.scss";
 import img from "./assets/img.png";
 import imgSlice from "./assets/Mobile.svg";
 import imgSlice2 from "./assets/grafico.svg";
-
+import { Link} from "react-router-dom"
 
 
 const PlanesAccecibles = () => {
@@ -16,7 +16,7 @@ const PlanesAccecibles = () => {
               <div className={styles.divTexto}>
                <h2> Planes accesibles para soluciones en ventas</h2>
                <p>Y lo mejor de todo, es que nos adaptamos a tus necesidades. Proyment se enfoca en desarrollar las habilidades comerciales en el área comercial.</p>
-                <button>Agendar reunión</button>
+               <Link to={"/form"} style={{textDecoration:"none", color:"inherit"}}><button>Agendar reunión</button></Link>
               </div>
 
             </div>

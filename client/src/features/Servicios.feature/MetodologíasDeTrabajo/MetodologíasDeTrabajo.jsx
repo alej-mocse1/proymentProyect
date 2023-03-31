@@ -16,6 +16,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Button from "../../../core/components/Button/Button";
+import {Link} from "react-router-dom"
 
 function MetodologíasDeTrabajo() {
   return (
@@ -283,7 +284,7 @@ function MetodologíasDeTrabajo() {
           <div className="ADN-pagination" />
         </div>
         <div className="met--content-button">
-          <button>Agendar Reunión</button>
+          <Link><button>Agendar Reunión</button></Link>
         </div>
       </div>
     </>

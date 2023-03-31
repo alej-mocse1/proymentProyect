@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import style from "./Register.module.scss"
 import "./Prueba.scss"
 
-const Register = () => {
+const Register = ({info}) => {
 
     const navigate = useNavigate()
     const { register, formState: { errors }, handleSubmit, formState } = useForm();
@@ -13,7 +13,7 @@ const Register = () => {
     
     let boton = isEmpty === true && formState.isDirty === true && formState.isValid ?
         {
-            backgroundColor: '#1e0891'
+            backgroundColor: '#6F4EF5'
         } : {
             backgroundColor: '#BAADFB'
         }
@@ -26,7 +26,7 @@ const Register = () => {
 
 
     return <div className={style.register}>
-        <h2>¡Agendar reunión ahora!</h2>
+        {info? (<h2>{info.tittle}</h2>) : (<h2>¡Agendar reunión ahora!</h2>)}
 
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
@@ -69,7 +69,9 @@ const Register = () => {
 
             <div>
                 <label>Indicar el servicio de interés:</label>
-                <select {...register('servicio', {
+                <select
+                className={style.select} 
+                {...register('servicio', {
                     required: true
                 })} >
                     <option value="" selected disabled>El nombre de su empresa aquí...</option>

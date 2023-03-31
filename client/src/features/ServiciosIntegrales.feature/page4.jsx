@@ -1,4 +1,5 @@
 import AyudamosAsolucionarProblemas from "./AyudamosAsolucionarProblemas/AyudamosAsolucionarProblemas";
+import CadaAreaTieneUnIndicador from "./cadaAreaTieneUnIndicador/CadaAreaTieneUnIndicador";
 import LandingPageServIntegrales from "./LandingPageServIntegrales/LandingPageServIntegrales";
 import NuestrosPlanes from './NuestrosPlanes/NuestrosPlanes'
 import ServIntPerf from "./ServicioIntegralPerfecto/ServIntPerf";
@@ -11,7 +12,9 @@ export default function Page4() {
       <SistemasConLosQueAyudamos></SistemasConLosQueAyudamos>  
       <AyudamosAsolucionarProblemas></AyudamosAsolucionarProblemas>  
       <NuestrosPlanes></NuestrosPlanes>{/* 4 */}
+      <CadaAreaTieneUnIndicador></CadaAreaTieneUnIndicador>
       <ServIntPerf></ServIntPerf>{/* 6 */}
+    
     </>
   );
 }

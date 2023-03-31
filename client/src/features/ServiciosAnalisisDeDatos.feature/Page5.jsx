@@ -12,13 +12,13 @@ export default function Page5(){
     return(
         <div>
             <LandingPage/>
-            {/* <Logos></Logos> */}
+            <Logos></Logos>
             <TomaDeDecisiones/>
             <NosDiferencia/>
             <NuestrosPlanes/>
             <NuestrasSoluciones/>
             <NuestrasSolucionesAreas></NuestrasSolucionesAreas>
-            {/* <CadaVezMas/> */}
+            <CadaVezMas/>
 
         </div>
     )

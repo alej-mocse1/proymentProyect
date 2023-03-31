@@ -155,6 +155,7 @@ color:#000538;
     cursor: pointer;
     position: relative;
     top: 5px;
+    list-style: none;
     
     @include responsive("carrousel") {
         width: 327px;

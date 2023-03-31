@@ -1,6 +1,7 @@
 import React from "react";
 import "./TransformarEmpresas.scss";
 import img1 from "./Testimonial Photo.png";
+import { Link } from "react-router-dom";
 
 function TransformarEmpresas() {
   return (
@@ -29,7 +30,7 @@ function TransformarEmpresas() {
           </span>
 
           <div className="transform--content-button">
-            <button>Agendar Reunión</button>
+            <Link><button>Agendar Reunión</button></Link>
           </div>
         </div>
       </div>

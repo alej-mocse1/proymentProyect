@@ -1,9 +1,47 @@
 @import "../../styles/styles.scss";
 
-.container button {
-  width: 87px;
-  @include flex-row-center
-}
-.container img {
-  width: 30%;
+.container {
+  display: flex;
+
+  .contentform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 24px 0 0 24px;
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      cursor: pointer;
+      align-items: center;
+    }
+
+    .form {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .containerImg {
+    width: 50%;
+    position: relative;
+
+    img {
+      width: 100%;
+      position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    }
+  }
 }

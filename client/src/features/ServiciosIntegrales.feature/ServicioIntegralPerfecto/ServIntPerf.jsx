@@ -43,7 +43,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu1" ? styles.pshow : ""}>
+              <p className={selected === "menu1" ? styles.pshow : styles.phide}>
                 Qué puedo hacer y cómo debo de hacerlo, establecemos el marco de
                 referencia para operar, es decir, delimitar las reglas del juego
                 para todos.
@@ -64,7 +64,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu2" ? styles.pshow : ""}>
+              <p className={selected === "menu2" ? styles.pshow : styles.phide}>
                 ¿Sabes hacia dónde va tu negocio? Es importante que lo definas y
                 lo comuniques a tu equipo. Ayudará a que todos remen hacia un
                 mismo lado.
@@ -85,7 +85,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu3" ? styles.pshow : ""}>
+              <p className={selected === "menu3" ? styles.pshow : styles.phide}>
                 Diseñamos con evidencias sencillas la forma en que medirás si
                 vas bien o si algo se necesita corregir. Si no se mide, no se
                 puede mejorar.
@@ -106,7 +106,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu4" ? styles.pshow : ""}>
+              <p className={selected === "menu4" ? styles.pshow : styles.phide}>
                 Tener uno o ambos implementados en tu empresa maximizará tu
                 crecimiento empresarial y tener un mejor control organizacional.
               </p>
@@ -126,7 +126,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu5" ? styles.pshow : ""}>
+              <p className={selected === "menu5" ? styles.pshow : styles.phide}>
                 No somos coaches, no somos asesores, somos parte de tu equipo y
                 te acompañamos en el proceso de cambio implementando los
                 procesos en la organización.
@@ -147,7 +147,7 @@ export default function ServIntPerf() {
                   )}
                 </span>
               </h6>
-              <p className={selected === "menu6" ? styles.pshow : ""}>
+              <p className={selected === "menu6" ? styles.pshow : styles.phide}>
                 Conecta tu planeamiento estratégico con objetivos y resultados
                 claves (OKRs) para todos tus equipos y activa un ritmo de
                 ejecución ágil.

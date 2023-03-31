@@ -4,6 +4,7 @@ import LandingPageServIntegrales from "./LandingPageServIntegrales/LandingPageSe
 import NuestrosPlanes from './NuestrosPlanes/NuestrosPlanes'
 import ServIntPerf from "./ServicioIntegralPerfecto/ServIntPerf";
 import SistemasConLosQueAyudamos from "./Sistemas/SistemasConLosQueAyudamos";
+import EmpresasAmigas from "./EmpresasAmigas/EmpresasAmigas"
 
 export default function Page4() {
   return (
@@ -14,7 +15,7 @@ export default function Page4() {
       <NuestrosPlanes></NuestrosPlanes>{/* 4 */}
       <CadaAreaTieneUnIndicador></CadaAreaTieneUnIndicador>
       <ServIntPerf></ServIntPerf>{/* 6 */}
-    
+      <EmpresasAmigas></EmpresasAmigas>
     </>
   );
 }

@@ -25,7 +25,7 @@ export default function ServIntPerf() {
         </div>
         <div className={styles.content}>
           <h4>
-            El servicio integral es<br></br> perfecto para ...
+            El servicio integral es perfecto para <span>...</span>
           </h4>
           <div className={styles.accordion}>
             <section

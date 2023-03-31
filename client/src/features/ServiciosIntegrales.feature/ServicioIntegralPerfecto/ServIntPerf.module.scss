@@ -4,11 +4,25 @@
   padding: 5vw 4.9306vw;
   display: flex;
   flex-direction: row;
-  gap: 108px;
+  gap: 7.5vw;
+  @include responsive("carrousel2") {
+    flex-direction: column-reverse;
+    gap: 57px;
+    align-items: center;
+    padding: 56px 23.5px;
+  }
   .divImg {
     max-height: 676px;
+    min-height: 576px;
     max-width: 483px;
+    @include responsive("carrousel2") {
+      max-height: 600px;
+      min-height: auto;
+      max-width: 100%;
+    }
+    /*     width:33.542vw; */
     border-radius: 8px;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -24,11 +38,22 @@
       line-height: 35px;
       color: #000538;
       margin: 0 0 56px;
+      max-width: 330px;
+      @include responsive("carrousel2") {
+        max-width: 292px;
+        min-width: 292px;
+      }
+      span {
+        color: #6f4ef5;
+      }
     }
     /* Accordion */
     .accordion {
       width: 100%;
       margin-bottom: 56px;
+      @include responsive("carrousel2") {
+        margin-bottom: 40px;
+      }
       section {
         background-color: #eae6ff;
         margin-bottom: 16px;
@@ -47,8 +72,10 @@
         }
         span {
           margin: 0;
+          margin-left: 20px;
           height: 24px;
         }
+
         p {
           margin: 0;
           font-weight: 400;
@@ -65,13 +92,15 @@
           max-height: 9999px;
           transition: all 0.5s cubic-bezier(1, 1, 1, 0);
           transition: padding-top 0.5s;
-          
         }
       }
     }
     .btn {
       font-size: 16px;
       width: 237px;
+      @include responsive("carrousel2") {
+        width: 100%;
+      }
     }
   }
 }

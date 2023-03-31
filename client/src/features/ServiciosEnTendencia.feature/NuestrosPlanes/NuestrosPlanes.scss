@@ -1,0 +1,241 @@
+@import "../../../styles/styles.scss";
+
+.nuestrosPlanes--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 72px 0;
+  @media (max-width: 430px) {
+    @include flex-column-center;
+    width: 100%;
+    background-color: #eae5ff;
+  }
+
+  .nuestrosPlanes--firstTitle {
+    width: 100%;
+    @include flex-column-center;
+    @media (max-width: 430px) {
+      width: 90%;
+    }
+
+    .nuestrosPlanes--title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 35px;
+      color: #0b0a33;
+      margin: 0;
+      margin-bottom: 56px;
+      @media (max-width: 430px)  {
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  .nuestrosPlanes--container__box {
+    @include flex-row-center;
+    margin: 0 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    @media (max-width: 830px) {
+      margin: 0 20px;
+      @include flex-row-center;
+    }
+    @media (max-width: 430px) {
+      display: none;
+    }
+
+    .nuestrosPlanes__boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 33px 49px;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid #eff0f6;
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+        0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+      border-radius: 16px;
+      height: 290px;
+      margin: 10px 20px;
+      text-align: center;
+      width: 20%;
+      @media (max-width: 830px) {
+        height: 100%;
+        width: 50%;
+        margin: 10px 10px;
+      }
+      @media (max-width: 430px) {
+        display: none;
+      }
+
+      .nuestrosPlanes--subtitle {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000538;
+        margin: 0;
+      }
+
+      .nuestrosPlanes--dependencia {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+        color: #6f4ef5;
+        margin: 15px 0;
+      }
+
+      .nuestrosPlanes--description {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000538;
+      }
+
+      .nuestrosPlanes--text-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #6446dd;
+      }
+    }
+  }
+
+  .nuestrosPlanes--container--text {
+    width: 100%;
+
+    @include flex-column-center;
+    .nuestrosPlanes--finalTxt {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000538;
+      text-align: center;
+      margin: 46px 0;
+      width: 40%;
+      @media (max-width: 830px) {
+        width: 80%;
+      }
+      @media (max-width: 430px) {
+        width: 78%;
+        margin: 20px 0px 46px 0;
+      }
+    }
+
+    .nuestrosPlanes--button {
+      width: 100%;
+      @include flex-column-center;
+      button {
+        width: 237px;
+        height: 64px;
+        border: 1px solid #6f4ef5;
+        background: #6f4ef5;
+        border-radius: 4px;
+        color: #ffffff;
+        @media (max-width: 430px) {
+          width: 60%;
+          height: 54px;
+        }
+      }
+    }
+  }
+}
+
+.data {
+  width: 100%;
+  height: 470px;
+}
+
+.anotherMore--carrousell {
+  display: none;
+  width: 100%;
+  margin: 30px 10px;
+  height: 400px;
+  gap: 30px;
+  @media (max-width: 430px) {
+    @include flex-column-center;
+    gap: 10px;
+  }
+  .nuestrosPlanes__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid #eff0f6;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+      0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+    margin: 10px 20px;
+    text-align: center;
+    padding: 0px 20px;
+    width: 280px;
+    height: 300px;
+    margin: 10px 10px;
+
+    .nuestrosPlanes--subtitle {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000538;
+      margin: 0;
+    }
+
+    .nuestrosPlanes--dependencia {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 26px;
+      color: #6f4ef5;
+      margin: 15px 0;
+    }
+
+    .nuestrosPlanes--description {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000538;
+    }
+
+    .nuestrosPlanes--text-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #6446dd;
+    }
+  }
+}

@@ -26,7 +26,7 @@ function SeoYSem() {
             posiciones en los buscadores mediante una serie de acciones que
             desarrollamos de manera planificada y continua.{" "}
           </span>
-          <span className="audit--container-span2">
+          <span className="audit--container-span">
             Por medio de campañas de SEM nos permite generar tráfico en un
             período corto de tiempo y conseguir conversiones en tu página web a
             través de Google Ads.

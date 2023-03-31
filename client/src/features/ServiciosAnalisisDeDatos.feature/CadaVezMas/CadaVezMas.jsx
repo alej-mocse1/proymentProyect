@@ -1,4 +1,3 @@
-import icon1 from "./assets/Alik.svg"
 import logos from "./assets/logos.png"
 import style  from "./CadaVezMas.module.scss"
 export default function CadaVezMas(){

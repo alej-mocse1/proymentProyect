@@ -13,7 +13,7 @@ justify-content: center;
 }
 
 .divContenido{
-    width: 1243.65px;
+    width: 1200.65px;
     height: 447px;
     margin-top: 72px;
     display: flex;
@@ -23,6 +23,7 @@ justify-content: center;
 
     @media (max-width:1250px) {
      width: 95%;
+     
     }
 
     @media (max-width: 910px) {
@@ -80,7 +81,7 @@ justify-content: center;
     width: 100%; 
     display: flex;
 
-@media (max-width: 950px) {
+@media (max-width: 910px) {
         width: 490px; 
         position: relative;
         right: 60px;

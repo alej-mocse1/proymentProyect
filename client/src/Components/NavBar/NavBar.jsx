@@ -120,7 +120,7 @@ function Navbar() {
                <li>Analisis de datos</li>
              </Link>
 
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <Link to="/serviciosEnTendencia"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Servicios en tendencia</li>
              </Link>
 

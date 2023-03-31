@@ -1,4 +1,5 @@
 import icon1 from "./assets/Alik.svg"
+import logos from "./assets/logos.png"
 import style  from "./CadaVezMas.module.scss"
 export default function CadaVezMas(){
     return(
@@ -10,7 +11,7 @@ export default function CadaVezMas(){
                     <button>Agendar reunión</button>
                 </div>
                 <div className={style.containerLogos}>
-                    <img src={icon1} alt="not" />
+                    <img src={logos} alt="not" />
                 </div>
             </div>
         </div>

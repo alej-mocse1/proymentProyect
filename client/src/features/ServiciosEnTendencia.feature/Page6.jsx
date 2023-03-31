@@ -3,10 +3,12 @@ import ProducciónAudiovisual from "./ProducciónAudiovisual/ProducciónAudiovis
 import ReclamosYPostVentas from "./ReclamosYPostVenta/ReclamosYPostVentas";
 import CoCreaciónMVP from "./CoCreaciónMVP/CoCreaciónMVP"
 import SumaDeEmpresas from "./SumaDeEmpresas/SumaDeEmpresas";
+import LandingPage from "./LandingPage/LandingPage";
 
 function Page6() {
   return (
     <>
+    <LandingPage/>
       <ProducciónAudiovisual></ProducciónAudiovisual>
       <ReclamosYPostVentas></ReclamosYPostVentas>
       <CoCreaciónMVP></CoCreaciónMVP>

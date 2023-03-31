@@ -4,7 +4,9 @@ import ReclamosYPostVentas from "./ReclamosYPostVenta/ReclamosYPostVentas";
 import CoCreaciónMVP from "./CoCreaciónMVP/CoCreaciónMVP"
 import SumaDeEmpresas from "./SumaDeEmpresas/SumaDeEmpresas";
 import LandingPage from "./LandingPage/LandingPage";
+import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import ProducAtencion from "./ProducAtencion/ProducAtencion";
+
 
 function Page6() {
   return (
@@ -15,6 +17,7 @@ function Page6() {
       <ReclamosYPostVentas></ReclamosYPostVentas>
       <CoCreaciónMVP></CoCreaciónMVP>
       <SumaDeEmpresas></SumaDeEmpresas>
+      <NuestrosPlanes></NuestrosPlanes>
     </>
   );
 }

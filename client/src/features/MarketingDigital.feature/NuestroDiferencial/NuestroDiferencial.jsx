@@ -1,6 +1,7 @@
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useRef } from "react";
+import {Link} from "react-router-dom"
 
 import icon1 from "./assets/icon análisis.svg";
 import icon2 from "./assets/icon estratégia.svg";
@@ -60,14 +61,14 @@ export default function NuestroDiferencial() {
                 <div className="carousel-container">
                     <div className="swiperContainer">
                         <Swiper
-                            modules={[Pagination, Autoplay]}
+                            modules={[Pagination, /* Autoplay */]}
                             /* loop={true} */
-                            autoplay={{
+                            /* autoplay={{
                                 delay: 2000,
                                 pauseOnMouseEnter: false,
                                 disableOnInteraction: false,
-                                /* reverseDirection:true */
-                            }}
+                                
+                            }} */
                             pagination={{
                                 el: ".carousel-pagination",
                                 clickable: true,
@@ -197,7 +198,7 @@ export default function NuestroDiferencial() {
                     <div className="carousel-pagination" />
                 </div>
 
-                <button className="btn-agendar">Agendar reunión</button>
+                <Link className="btn-agendar"><button >Agendar reunión</button></Link>
 
             </div>
         </div>

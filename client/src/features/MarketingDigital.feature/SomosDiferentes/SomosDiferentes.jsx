@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "./cdcd 1.png";
 import img2 from "./Group 761915.png";
 import "./SomosDiferentes.scss";
+import {Link} from "react-router-dom"
 
 function SomosDiferentes() {
   return (
@@ -15,7 +16,7 @@ function SomosDiferentes() {
         </span>
 
         <div className="diferentes-button">
-          <button>Agendar reunión</button>
+          <Link><button>Agendar reunión</button></Link>
         </div>
       </div>
 

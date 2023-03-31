@@ -101,7 +101,7 @@
 
             }
 
-            select {
+            .select {
                 margin: 16px auto 0;
                 height: 50px;
                 width: 100%;
@@ -140,6 +140,17 @@
                     color: #201F54;
                 }
             }
+            .select:hover{
+                border-color: #6F4EF5;
+            }
+            .select:focus {
+                border-color: #6F4EF5;
+                box-shadow: 0 0 1px 3px rgba(111, 78, 245, .7);
+                box-shadow: 0 0 0 3px -moz-mac-focusring;
+                color: #222; 
+                outline: none;
+              }
+              
 
             select::after {
                 padding: 0 20px;

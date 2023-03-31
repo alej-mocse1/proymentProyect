@@ -11,7 +11,7 @@ export default function Page5(){
     return(
         <div>
             <LandingPage/>
-            {/* <Logos></Logos> */}
+            <Logos></Logos>
             <TomaDeDecisiones/>
             <NosDiferencia/>
             <NuestrosPlanes/>

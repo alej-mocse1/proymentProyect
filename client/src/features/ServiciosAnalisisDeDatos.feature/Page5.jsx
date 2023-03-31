@@ -18,7 +18,7 @@ export default function Page5(){
             <NuestrosPlanes/>
             <NuestrasSoluciones/>
             <NuestrasSolucionesAreas></NuestrasSolucionesAreas>
-            {/* <CadaVezMas/> */}
+            <CadaVezMas/>
 
         </div>
     )

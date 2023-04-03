@@ -220,7 +220,7 @@ function Navbar() {
     </div>
 
    
-    <button className={style.AgendarReunionBTN}>Agendar reunion</button>
+    <Link to={"/form"} ><button className={style.AgendarReunionBTN}>Agendar reunion</button></Link>
     
     <a href='https://api.whatsapp.com/send?phone=51914386456&text=Hola, bienvenidos a ProyMent' ><button className={style.btnWSP}></button></a>
     </div>

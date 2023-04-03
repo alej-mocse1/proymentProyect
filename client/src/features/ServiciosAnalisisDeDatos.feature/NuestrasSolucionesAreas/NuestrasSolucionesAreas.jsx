@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 import "swiper/scss";
 import "swiper/scss/pagination";
-import "../../Servicios.feature/solucionesEnVenta/Carrousel.scss";
+import "../../Home.feature/ADNProyment/Carrousel.scss";
 
 export default function NuestrasSolucionesAreas() {
   return (
@@ -83,7 +83,7 @@ export default function NuestrasSolucionesAreas() {
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 loop={true}
                 /* centeredSlides={true} */
-                pagination={{ el: ".Solution-pagination", clickable: true }}
+                pagination={{ el: ".ADN-pagination", clickable: true }}
                 className={styles.data}
                 breakpoints={{
                   320: {
@@ -197,7 +197,7 @@ export default function NuestrasSolucionesAreas() {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="Solution-pagination" />
+            <div className="ADN-pagination" />
           </div>
         </div>
       </div>

@@ -1,0 +1,206 @@
+@import "../../../styles/styles.scss";
+
+.diseños--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 72px 0;
+  @media (max-width: 430px) {
+    height: 100%;
+    padding: 56px 0;
+  }
+
+  .test-container {
+    width: 100%;
+    @include flex-column-center;
+    @media (max-width: 430px) {
+      width: 90%;
+      @include flex-column-start2;
+    }
+    .diseños--container__title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 35px;
+      text-align: center;
+      color: #000538;
+      width: 35%;
+      padding: 0 0 20px 0;
+      @media (max-width: 1024px) {
+        width: 70%;
+      }
+      @media (max-width: 430px) {
+        width: 320px;
+        height: 106px;
+        text-align: left;
+        padding: 0;
+      }
+    }
+  }
+
+  .diseños--container__boxes {
+    width: 100%;
+    @include flex-row-center;
+    flex-wrap: wrap;
+    @media (max-width: 580px) {
+      display: none;
+    }
+
+    .diseños--container--box {
+      width: 394px;
+      height: 380px;
+      background: #ffffff;
+      border: 1px solid #eff0f6;
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+        0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+      border-radius: 16px;
+      padding: 28px 15px;
+      gap: 28px;
+      margin: 20px;
+      @media (max-width: 1025px) {
+        width: 25%;
+      }
+      @media (max-width: 830px) {
+        width: 38%;
+      }
+
+      .diseños--imgCont {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .diseños--container--text {
+        padding: 0px;
+        gap: 11px;
+
+        h3 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000538;
+        }
+
+        span {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000538;
+        }
+      }
+    }
+  }
+
+  .carrousell {
+    display: none;
+    width: 100%;
+    margin: 30px 0px;
+    height: 100%;
+    gap: 30px;
+    background: #ffffff;
+    @media (max-width: 580px) {
+      @include flex-column-center;
+      gap: 10px;
+      /* justify-content: center;
+        align-items: center; */
+    }
+
+    .diseños--container--box {
+      width: 280px;
+      height: 400px;
+      background: #ffffff;
+      border: 1px solid #eff0f6;
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+        0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+      border-radius: 16px;
+      padding: 30px 15px 28px;
+      gap: 28px;
+      margin: 0px 0 20px 20px;
+      @media (max-width: 380px) {
+        width: 250px;
+      }
+
+      .diseños--imgCont {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .diseños--container--text {
+        padding: 0px;
+        gap: 11px;
+
+        h3 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000538;
+        }
+
+        span {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000538;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+}
+
+.ADN-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-pagination-bullet {
+    background-color: #0808085e;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #6f4ef5;
+    opacity: 1;
+  }
+}
+
+.services-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-pagination-bullet {
+    background-color: #0808085e;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #6f4ef5;
+    opacity: 1;
+  }
+}

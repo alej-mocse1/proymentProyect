@@ -15,7 +15,7 @@ import img10 from "./assets/Python.svg"; */
 // import img11 from "./assets/"
 
 
-import imgPrueba from "./assets/prueba.svg";
+import imgPrueba from "./assets/snowflake.svg";
 
 
 

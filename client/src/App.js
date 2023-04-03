@@ -7,7 +7,9 @@ import Confirmation from "./Components/Register/Confirmation";
 import ServiciosIntegrales from "./pages/ServiciosIntegrales/ServiciosIntegrales";
 import ServiciosAnalisisDeDatos from "./pages/ServiciosAnalisisDeDatos/ServiciosAnalisisDeDatos";
 import ServiciosEnTendencia from "./pages/ServiciosEnTendencia/ServiciosEnTendencia";
-import ServiciosUXUI from './pages/ServiciosUXUI/ServiciosUXUI'
+import ServiciosUXUI from './pages/ServiciosUXUI/ServiciosUXUI';
+import ServiciosAtuMedida from "./pages/serviciosAtuMedida/ServiciosAtuMedida";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route exact path={"/serviciosAnalisisDeDatos"} element={<ServiciosAnalisisDeDatos/>} ></Route>
           <Route exact path={"/serviciosEnTendencia"} element={<ServiciosEnTendencia/>} ></Route>
           <Route exact path={"/serviciosUXUI"} element={<ServiciosUXUI></ServiciosUXUI>}></Route>
+          <Route exact path={"/serviciosAtuMedida"} element={ <ServiciosAtuMedida></ServiciosAtuMedida>}></Route>
           <Route exact path={"/confirmation"} element={<Confirmation/>} ></Route>
         </Routes>
     </> 

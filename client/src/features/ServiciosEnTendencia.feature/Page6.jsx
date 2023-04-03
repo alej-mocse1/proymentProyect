@@ -20,6 +20,7 @@ function Page6() {
       <NuestrosPlanes></NuestrosPlanes>
       <LasEmpresasConfianEnNosotros></LasEmpresasConfianEnNosotros>
       <SumaDeEmpresas></SumaDeEmpresas>
+
     </>
   );
 }

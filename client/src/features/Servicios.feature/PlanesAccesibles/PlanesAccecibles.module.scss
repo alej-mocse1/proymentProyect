@@ -80,6 +80,7 @@
     position: relative;
     top: -3px;
     cursor: pointer;
+    font-size: 16px;
 
     @include responsive("carrousel") {
         width: 327px;

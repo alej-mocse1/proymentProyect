@@ -124,7 +124,7 @@ function Navbar() {
                <li>Servicios en tendencia</li>
              </Link>
 
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <Link to="/serviciosUXUI"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Diseño web UX/UI</li>
              </Link>
 
@@ -220,7 +220,7 @@ function Navbar() {
     </div>
 
    
-    <button className={style.AgendarReunionBTN}>Agendar reunion</button>
+    <Link to={"/form"} ><button className={style.AgendarReunionBTN}>Agendar reunion</button></Link>
     
     <a href='https://api.whatsapp.com/send?phone=51914386456&text=Hola, bienvenidos a ProyMent' ><button className={style.btnWSP}></button></a>
     </div>

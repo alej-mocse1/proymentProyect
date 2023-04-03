@@ -12,7 +12,7 @@ import styles from "./logos.module.scss";
 // import img8 from "./assets/Elastic.svg";
 // import img9 from "./assets/Tibc.svg";
 // import img10 from "./assets/Python.svg";
-// import img11 from "./assets/"
+
 
 
 import imgPrueba from "./assets/prueba.svg";

@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./logos.module.scss";
 
-// import img1 from "./assets/tableau.svg";
-// import img2 from "./assets/PowerBi.svg";
-// import img3 from "./assets/Snowflake.svg";
-// import img4 from "./assets/Pentaho.svg";
-// import img5 from "./assets/handoop.svg";
-// import img6 from "./assets/Datarobot.svg";
+/* import img1 from "./assets/tableau.svg";
+import img2 from "./assets/PowerBi.svg";
+import img3 from "./assets/Snowflake.svg";
+import img4 from "./assets/Pentaho.svg";
+import img5 from "./assets/handoop.svg";
+import img6 from "./assets/Datarobot.svg";
 
-// import img7 from "./assets/Kibana.svg";
-// import img8 from "./assets/Elastic.svg";
-// import img9 from "./assets/Tibc.svg";
-// import img10 from "./assets/Python.svg";
+import img7 from "./assets/Kibana.svg";
+import img8 from "./assets/Elastic.svg";
+import img9 from "./assets/Tibc.svg";
+import img10 from "./assets/Python.svg"; */
 // import img11 from "./assets/"
 
 

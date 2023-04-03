@@ -69,6 +69,24 @@ const Register = ({info}) => {
 
             <div>
                 <label>Indicar el servicio de interés:</label>
+                {/* <div className="select" tabIndex="1">
+                    <input type="radio" className="option-select" name="test" id="opt1" checked />
+                    <label for="opt1" className="option" >option1</label> 
+
+                    <input type="radio" className="option-select" name="test" id="opt2" checked />
+                    <label for="opt2" className="option" >option2</label>
+
+                    <input type="radio" className="option-select" name="test" id="opt3" checked />
+                    <label for="opt3" className="option" >option3</label>
+
+                    <input type="radio" className="option-select" name="test" id="opt4" checked />
+                    <label for="opt4" className="option" >option4</label>
+
+                    <input type="radio" className="option-select" name="test" id="opt5" checked />
+                    <label for="opt5" className="option" >option5</label>
+                    
+                </div> */}
+
                 <select
                 className={style.select} 
                 {...register('servicio', {

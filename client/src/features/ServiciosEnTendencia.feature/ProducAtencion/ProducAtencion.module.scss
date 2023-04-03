@@ -32,6 +32,7 @@
             width: 32.4%;
             border-radius: 8px 8px 0px 0px;
             box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+            background-color: #FFFFFF;;
 
             @include responsive("Tablet") {
                 width: 70%;

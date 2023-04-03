@@ -155,10 +155,15 @@
         border-radius: 4px;
         color: #ffffff;
         font-size: 16px;
+        cursor: pointer;
         @media (max-width: 430px) {
           width: 60%;
           height: 54px;
         }
+      }
+      button:hover {
+        background: #A493FF;
+        transition: 1s;
       }
     }
   }

@@ -124,7 +124,7 @@ function Navbar() {
                <li>Servicios en tendencia</li>
              </Link>
 
-             <Link to="/servicios"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
+             <Link to="/serviciosUXUI"  style={{ textDecoration: 'none',margin: 15, color: 'inherit'}}>
                <li>Diseño web UX/UI</li>
              </Link>
 

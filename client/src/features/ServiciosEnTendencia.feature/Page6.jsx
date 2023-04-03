@@ -16,8 +16,9 @@ function Page6() {
       <ProducciónAudiovisual></ProducciónAudiovisual>
       <ReclamosYPostVentas></ReclamosYPostVentas>
       <CoCreaciónMVP></CoCreaciónMVP>
-      <SumaDeEmpresas></SumaDeEmpresas>
       <NuestrosPlanes></NuestrosPlanes>
+      <SumaDeEmpresas></SumaDeEmpresas>
+      
     </>
   );
 }

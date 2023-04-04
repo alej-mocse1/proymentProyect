@@ -4,7 +4,7 @@ import LandingServAtuMedida from "./LadinSerAMedida/LandingServAtuMedida";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import Icons from "./Icons/Icons";
 import NuestrosServicios from "./NuestrosServicios/NuestrosServicios";
-
+import PorqueProyment from "./PorqueProyment/PorqueProyment"
 
 const Page8 = () => {
 
@@ -16,6 +16,7 @@ const Page8 = () => {
             <NuestrosPlanes></NuestrosPlanes>
             <NuestrosServicios/>
             <Contribuimos/>
+            <PorqueProyment/>
         </div>
     )
 

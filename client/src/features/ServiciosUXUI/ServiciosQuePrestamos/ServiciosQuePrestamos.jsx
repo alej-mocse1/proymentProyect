@@ -10,7 +10,7 @@ export default function ServiciosQuePrestamos() {
                 <h4>Servicios de UI/UX que prestamos</h4>
                 <div className={style.infoText}>
                     <div className={style.containerImg}>
-                        <img src={image} alt="not-image" />
+                        <img src={image} alt="not" />
                     </div>
                     <div className={style.containerCards}>
                         <div className={style.subCards}>

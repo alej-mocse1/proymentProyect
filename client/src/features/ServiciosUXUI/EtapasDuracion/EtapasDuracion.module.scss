@@ -549,6 +549,7 @@
             }
 
             .divFlecha{
+                display: none;
                 @include responsive("Tablet"){
                     display: flex;
                     margin: 40px 0;

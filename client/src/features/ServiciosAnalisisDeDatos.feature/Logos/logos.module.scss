@@ -101,3 +101,13 @@
     align-items: center;
     justify-content: center;
    }
+
+   .divLogosResponsiveHijo img{
+    width: 20% !important;
+    margin: 25px;
+
+    @media (max-width: 500px) {
+      width: 25% !important;
+      margin: 15px;
+    }
+   }

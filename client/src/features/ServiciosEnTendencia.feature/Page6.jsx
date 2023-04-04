@@ -6,19 +6,20 @@ import SumaDeEmpresas from "./SumaDeEmpresas/SumaDeEmpresas";
 import LandingPage from "./LandingPage/LandingPage";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import ProducAtencion from "./ProducAtencion/ProducAtencion";
+import LasEmpresasConfianEnNosotros from "./LasEmpresasConfianEnNosotros/LasEmpresasConfianEnNosotros";
 
 
 function Page6() {
   return (
     <>
-    <LandingPage/>
-    <ProducAtencion/>
+      <LandingPage/>
+      <ProducAtencion/>
       <ProducciónAudiovisual></ProducciónAudiovisual>
       <ReclamosYPostVentas></ReclamosYPostVentas>
       <CoCreaciónMVP></CoCreaciónMVP>
       <NuestrosPlanes></NuestrosPlanes>
+      <LasEmpresasConfianEnNosotros></LasEmpresasConfianEnNosotros>
       <SumaDeEmpresas></SumaDeEmpresas>
-      
     </>
   );
 }

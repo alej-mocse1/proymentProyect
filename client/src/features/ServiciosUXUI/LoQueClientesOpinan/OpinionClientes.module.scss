@@ -3,7 +3,7 @@
 .container {
   /* margin: 96px 110px; */
   margin: 6.666666vw 7.6389vw;
-  /* position: relative; */
+  position: relative;
   display: flex;
   justify-content: space-between;
   @include responsive("carrousel2") {
@@ -121,9 +121,13 @@
     @include responsive("carrousel2") {
       margin: 32px 24px;
       align-items: center;
-      height: 490px;
+      height: 300px;
       gap: 0px;
       justify-content:space-between;
+    }
+    @include responsive("tablet") {
+      height: 490px;
+      
     }
     img {
       width: 178px;
@@ -168,9 +172,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* gap: 24px;  */
+        //gap: 24px;  
         gap: 30px;
-    }
+    } 
   }
 
   .carrousel {

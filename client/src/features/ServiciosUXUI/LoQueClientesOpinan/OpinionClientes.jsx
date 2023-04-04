@@ -86,54 +86,29 @@ export default function OpinionClientes() {
           <Swiper
             modules={[Pagination, Autoplay]}
             slidesPerView={1}
-            /*             autoplay={{ delay: 2000, disableOnInteraction: false }}
-             */ loop={true}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            loop={true}
             /* centeredSlides={true} */
             pagination={{ el: ".OPpagination", clickable: true }}
             className={styles.data}
-            breakpoints={{
+            /* breakpoints={{
               320: {
                 slidesPerView: 1,
-
-                spaceBetween: 15,
+                spaceBetween: 10,
               },
               380: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
               440: {
-                slidesPerView: 1.3,
+                slidesPerView: 1.1,
                 spaceBetween: 10,
               },
               500: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.2,
                 spaceBetween: 10,
               },
-              560: {
-                slidesPerView: 1.6,
-                spaceBetween: 10,
-              },
-              620: {
-                slidesPerView: 1.7,
-                spaceBetween: 10,
-              },
-              680: {
-                slidesPerView: 1.9,
-                spaceBetween: 10,
-              },
-              740: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              800: {
-                slidesPerView: 2.1,
-                spaceBetween: 10,
-              },
-              860: {
-                slidesPerView: 2.2,
-                spaceBetween: 10,
-              },
-            }}
+            }} */
           >
             <SwiperSlide>
               <div className={styles.cardBackground1}>

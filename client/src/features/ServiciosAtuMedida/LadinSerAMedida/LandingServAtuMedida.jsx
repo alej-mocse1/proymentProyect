@@ -11,7 +11,7 @@ export default function LandingServAtuMedida() {
         </div>
         <div className={style.containerInfo}>
           {/* <h4>Servicios de diseño web</h4> */}
-          <h2>Servicios A Medida</h2>
+          <h2>Servicios a Medida</h2>
           <p>
           El servicio ideal para adquirir más de un servicio profesional. Lo mejor de todo, tú eliges cuál.
           </p>

@@ -5,6 +5,7 @@ import LandingPageServiciosUXUI from "./LandingPageServiciosUXUI/LandingPageServ
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import ServiciosQuePrestamos from "./ServiciosQuePrestamos/ServiciosQuePrestamos";
 import EtapasDuracion from "./EtapasDuracion/EtapasDuracion"
+import OpinionClientes from "./LoQueClientesOpinan/OpinionClientes";
 
 export default function Page7() {
   return (
@@ -15,9 +16,8 @@ export default function Page7() {
       <NuestrosPlanes />
       <EtapasDuracion/>
       <Icons />
-      {/* Componente ante-ultimo */}
-       <MásEmpresas />
-
+      <OpinionClientes></OpinionClientes>
+      <MásEmpresas />
     </>
   );
 }

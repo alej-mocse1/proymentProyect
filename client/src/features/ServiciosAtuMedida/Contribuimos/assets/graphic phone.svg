@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323" height="389" fill="none" viewBox="0 0 323 389">
+  <mask id="a" width="323" height="389" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+    <path fill="#6E7191" d="M0 0h323v389H0z"/>
+  </mask>
+  <g mask="url(#a)">
+    <rect width="282.406" height="504.137" x="10.719" y="13.719" stroke="#6F4EF6" stroke-width="1.439" rx="32.373"/>
+    <rect width="283.845" height="505.576" x="20.145" y="8.452" fill="#240E81" rx="33.092"/>
+    <rect width="247.331" height="493.295" x="38.404" y="23.41" fill="#DBF9EF" rx="25.898"/>
+    <g filter="url(#b)">
+      <rect width="178.333" height="259.243" x="75.65" y="74.044" fill="red" fill-opacity=".01" rx="4.353" shape-rendering="crispEdges"/>
+    </g>
+    <rect width="194.997" height="371.1" x="67.268" y="64.207" fill="#fff" rx="17.309"/>
+    <rect width="132.475" height="130.112" x="101" y="157" fill="url(#c)" fill-opacity=".6" rx="65.056"/>
+    <g filter="url(#d)">
+      <path fill="#6F4EF6" fill-rule="evenodd" d="M167.238 179.451c-23.53 0-42.605 19.075-42.605 42.605 0 23.53 19.075 42.605 42.605 42.605 23.53 0 42.605-19.075 42.605-42.605 0-23.53-19.075-42.605-42.605-42.605Zm-6.526 37.395c0-1.83 1.989-2.968 3.567-2.04l8.857 5.211c1.555.915 1.555 3.165-.001 4.08l-8.856 5.209c-1.578.929-3.567-.209-3.567-2.04v-10.42Z" clip-rule="evenodd"/>
+    </g>
+    <rect width="128.931" height="126.567" x="102.772" y="158.772" stroke="url(#e)" stroke-opacity=".7" stroke-width="3.545" rx="63.284"/>
+    <rect width="32.616" height="9.593" x="57.557" y="37.754" fill="#6F4EF6" rx="4.796"/>
+    <path fill="#6F4EF6" d="M231 43a5 5 0 0 1 5-5h1a5 5 0 0 1 0 10h-1a5 5 0 0 1-5-5Z"/>
+    <path fill="#A286FA" d="M245 43a4 4 0 0 1 4-4h1a4 4 0 0 1 0 8h-1a4 4 0 0 1-4-4Z"/>
+    <path fill="#6F4EF6" d="M106.277 23.42h111.58c0 10.906-8.841 19.746-19.746 19.746h-72.088c-10.905 0-19.746-8.84-19.746-19.745Z"/>
+  </g>
+  <defs>
+    <linearGradient id="c" x1="103.217" x2="260.288" y1="157" y2="217.487" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#C4C4C4" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="e" x1="104.326" x2="258.823" y1="161.575" y2="219.472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3EEEFA"/>
+      <stop offset=".573" stop-color="#DCCBFF" stop-opacity=".764"/>
+      <stop offset=".719" stop-color="#39F3FF" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#A87EFF" stop-opacity=".85"/>
+    </linearGradient>
+    <filter id="b" width="219.913" height="300.824" x="54.86" y="57.606" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4.353"/>
+      <feGaussianBlur stdDeviation="10.395"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.269657 0 0 0 0 0.253993 0 0 0 0 0.641667 0 0 0 0.13 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1153_17229"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_1153_17229" result="shape"/>
+    </filter>
+    <filter id="d" width="146.752" height="146.751" x="93.862" y="160.042" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="11.361"/>
+      <feGaussianBlur stdDeviation="15.385"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.078875 0 0 0 0 0.0770833 0 0 0 0 0.166667 0 0 0 0.16 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1153_17229"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_1153_17229" result="shape"/>
+    </filter>
+  </defs>
+</svg>

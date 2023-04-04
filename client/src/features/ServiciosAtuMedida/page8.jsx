@@ -1,4 +1,5 @@
 import React from "react";
+import Contribuimos from "./Contribuimos/Contribuimos";
 import LandingServAtuMedida from "./LadinSerAMedida/LandingServAtuMedida";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import Icons from "./Icons/Icons";
@@ -14,6 +15,7 @@ const Page8 = () => {
             <Icons/>
             <NuestrosPlanes></NuestrosPlanes>
             <NuestrosServicios/>
+            <Contribuimos/>
         </div>
     )
 

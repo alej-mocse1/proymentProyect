@@ -1,0 +1,40 @@
+@import "../../../styles/styles.scss";
+
+.OPpagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  .swiper-pagination-bullet {
+    background-color: #0808085e;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #6f4ef5;
+    opacity: 1;
+  }
+}
+
+.services-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-pagination-bullet {
+    background-color: #0808085e;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #6f4ef5;
+    opacity: 1;
+  }
+}

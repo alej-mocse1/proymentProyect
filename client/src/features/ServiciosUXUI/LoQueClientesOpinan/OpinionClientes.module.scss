@@ -1,0 +1,194 @@
+@import "../../../styles/styles.scss";
+
+.container {
+  /* margin: 96px 110px; */
+  margin: 6.666666vw 7.6389vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @include responsive("carrousel2") {
+    justify-content: center;
+    flex-direction: column;
+    margin: 56px 22px;
+    gap: 20px;
+  }
+
+  .contentTitle {
+    max-width: 387px;
+    max-height: 159px;
+    display: flex;
+    flex-direction: column;
+    @include responsive("Tablet") {
+      max-width: 345px;
+    }
+    @include responsive("phone") {
+      max-height: 9999px;
+    }
+
+    h4 {
+      min-width: 328px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 35px;
+      color: #000538;
+      margin: 0;
+      margin-bottom: 16px;
+      @include responsive("Tablet") {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+      @include responsive("phone") {
+        font-size: 7.46666vw;
+        min-width: 290px;
+      }
+    }
+    h6 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000538;
+      margin: 0;
+      @include responsive("phone") {
+        font-size: 4.26666vw;
+      }
+    }
+  }
+  .cardsContainer {
+    width: 100%;
+    height: 844px;
+    @include responsive("carrousel2") {
+      display: none;
+    }
+  }
+  .cardBackground1 {
+    position: absolute;
+    left: 0;
+    top: 215px;
+    /* width: 596px; */
+    width: 41.25vw;
+    background: #ffffff;
+    border: 1px solid #dcddeb;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+      0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+    @include responsive("carrousel2") {
+      position: initial;
+      width: 100%;
+      
+    }
+  }
+  .cardBackground2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width: 596px; */
+    width: 41.25vw;
+    background: #ffffff;
+    border: 1px solid #dcddeb;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+      0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+    @include responsive("carrousel2") {
+      position: initial;
+      width: 100%;
+      
+    }
+  }
+  .cardBackground3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* width: 596px; */
+    width: 41.25vw;
+    background: #ffffff;
+    border: 1px solid #dcddeb;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+      0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+    @include responsive("carrousel2") {
+      position: initial;
+      width: 100%;
+    
+    }
+  }
+  .card {
+    /* margin: 64px 55px 72px; */
+    margin: 4.444444vw 3.819444vw 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include responsive("carrousel2") {
+      margin: 32px 24px;
+      align-items: center;
+      height: 300px;
+      gap: 0px;
+      justify-content:space-between;
+    }
+    @include responsive("tablet") {
+      height: 490px;
+      
+    }
+    img {
+      width: 178px;
+    }
+    p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000538;
+    }
+    .infoClient {
+      display: flex;
+      flex-direction: row;
+      gap: 13.75px;
+      img {
+        width: 80px;
+      }
+      .userText {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        h5 {
+          margin: 0;
+          /*font-weight: 600;*/
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 20px;
+          color: #000538;
+        }
+        h6 {
+          margin: 0;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #6446dd;
+        }
+      }
+    }
+    .startstext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //gap: 24px;  
+        gap: 30px;
+    } 
+  }
+
+  .carrousel {
+    width: 100%;
+    display: none;
+    @include responsive("carrousel2") {
+      display: flex;
+      flex-direction: column;
+      gap: 24px; 
+      /* padding-bottom: 48px; */
+    }
+
+    .data {
+      width: 100%;
+    }
+  }
+}

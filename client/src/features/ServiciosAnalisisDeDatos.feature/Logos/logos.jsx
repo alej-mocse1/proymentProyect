@@ -10,12 +10,14 @@ import img4 from "./assets/pentaho.svg";
 import img5 from "./assets/hadoop.svg";
 import img6 from "./assets/datarobot.svg";
 
+
 import img7 from "./assets/kibana.svg";
 import img8 from "./assets/elastic.svg";
 import img9 from "./assets/tibco.svg";
 import img10 from "./assets/Python.svg";
 import img11 from "./assets/qliko.svg";
 import img12 from "./assets/oracle.svg";
+
 
 
 

@@ -4,8 +4,8 @@ import MásEmpresas from "./MásEmrpesas/MásEmpresas";
 import LandingPageServiciosUXUI from "./LandingPageServiciosUXUI/LandingPageServiciosUXUI";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import ServiciosQuePrestamos from "./ServiciosQuePrestamos/ServiciosQuePrestamos";
+import EtapasDuracion from "./EtapasDuracion/EtapasDuracion"
 import OpinionClientes from "./LoQueClientesOpinan/OpinionClientes";
-import EtapasDuracion from "./EtapasDuracion/EtapasDuracion";
 
 export default function Page7() {
   return (

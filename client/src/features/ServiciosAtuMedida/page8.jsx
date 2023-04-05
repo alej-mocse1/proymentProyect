@@ -4,6 +4,7 @@ import LandingServAtuMedida from "./LadinSerAMedida/LandingServAtuMedida";
 import NuestrosPlanes from "./NuestrosPlanes/NuestrosPlanes";
 import Icons from "./Icons/Icons";
 import NuestrosServicios from "./NuestrosServicios/NuestrosServicios";
+import CadaVezMasEmpresasConfian from "./CadaVezMasEmpresasConfian/CadaVezMasEmpresasConfian";
 import PorqueProyment from "./PorqueProyment/PorqueProyment"
 
 const Page8 = () => {
@@ -17,6 +18,7 @@ const Page8 = () => {
             <NuestrosServicios/>
             <Contribuimos/>
             <PorqueProyment/>
+            <CadaVezMasEmpresasConfian></CadaVezMasEmpresasConfian>
         </div>
     )
 

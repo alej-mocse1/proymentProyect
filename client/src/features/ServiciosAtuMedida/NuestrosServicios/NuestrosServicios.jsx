@@ -98,10 +98,11 @@ function NuestrosServicios() {
         <Swiper
           modules={[Pagination]}
           //si no gusta slides = 1
-          /*  loop={true} */
+           loop={true}
           /* slidesPerView={1.25} */
           spaceBetween={30}
           pagination={{ el: ".ADN-pagination", clickable: true }}
+          autoplay={true}
           className="data"
           breakpoints={{
             320: {

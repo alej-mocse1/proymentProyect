@@ -20,13 +20,7 @@
 
   @include responsive("Tablet") {
     padding: 56px 24px;
-    background: linear-gradient(
-      174.09deg,
-      #000538 6.03%,
-      #001344 20.32%,
-      #027ca3 47.88%,
-      #00144a 80.49%
-    );
+    background: linear-gradient(174.09deg, #000538 6.03%, #001344 34.71%, #7460C6 65.9%, #00144A 80.49%);
   }
   .degrade {
     margin-top: 60px;

@@ -13,7 +13,8 @@
       }
 
       @media (max-width: 600px) {
-        height: 1236px;
+        height: 1121px;
+        padding: 56px 0;
       }
 }
 
@@ -28,6 +29,10 @@
 
     @media (max-width: 1100px) {
         top: 0px;
+      }
+
+      @media (max-width: 600px){
+        margin-top: 0;
       }
 }
 
@@ -226,7 +231,8 @@
 
   @media (max-width: 605px) {
     width: 328px;
-    height: 379.08px;
+    height: 320px;
+    /* height: 379.08px; */
   }
 }
 

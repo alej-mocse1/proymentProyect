@@ -45,6 +45,9 @@
                     line-height: 27px;
                     font-weight: 400;
                 }
+                @include responsive("phone-L"){
+                    text-align: left;
+                }
             }
 
             h3 {

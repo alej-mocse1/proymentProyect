@@ -67,6 +67,7 @@
                     letter-spacing: 0em;
                     text-align: left;
                     margin: 0;
+                    width: 90%;
 
                     @include responsive("Tablet") {
                         font-size: 20px;
@@ -159,14 +160,26 @@
                 }
             }
 
-            img {
-                /* width: 90px; */
-                width: 17.5%;
-
+            .containerImg2{
+                width: 90px;
+                height: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                border-radius: 16px;
+                text-align: center;
                 @include responsive("Tablet") {
                     display: none;
                 }
+                img {
+                    /* width: 90px; */
+                    width: 58px;
+    
+                    
+                }
             }
+            
         }
     }
 }

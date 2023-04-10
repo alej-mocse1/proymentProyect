@@ -154,7 +154,9 @@
   }
 
   .containerForm {
-    width: 30%;
+    /* width: 30%; */
+    display: flex;
+    width: 438px;
     position: absolute;
     z-index: 6;
     right: 130px;

@@ -3,7 +3,7 @@ import Servicios from "./pages/servicios/servicios";
 import {Routes, Route } from "react-router-dom";
 import Form from "./Components/Form/Form";
 import Marketing from "./pages/marketing/marketing";
-import Confirmation from "./Components/Register/Confirmation";
+import Confirmation from "./Components/Confirmation/Confirmation";
 import ServiciosIntegrales from "./pages/ServiciosIntegrales/ServiciosIntegrales";
 import ServiciosAnalisisDeDatos from "./pages/ServiciosAnalisisDeDatos/ServiciosAnalisisDeDatos";
 import ServiciosEnTendencia from "./pages/ServiciosEnTendencia/ServiciosEnTendencia";

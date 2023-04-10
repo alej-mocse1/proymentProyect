@@ -114,6 +114,7 @@ function SeguimientoDeDiseño() {
           spaceBetween={30}
           pagination={{ el: ".ADN-pagination", clickable: true }}
           className="data"
+          autoplay={true}
           breakpoints={{
             320: {
               slidesPerView: 1.25,
@@ -143,7 +144,7 @@ function SeguimientoDeDiseño() {
               slidesPerView: 2.5,
               spaceBetween: 5,
             },
-            800: {
+            /* 800: {
               slidesPerView: 2.15,
               spaceBetween: 20,
             },
@@ -152,17 +153,17 @@ function SeguimientoDeDiseño() {
               spaceBetween: 10,
             },
             1024: {
-              slidesPerView: 2.65,
+              slidesPerView: 3,
               spaceBetween: 30,
             },
             1100: {
-              slidesPerView: 2.9,
+              slidesPerView: 3,
               spaceBetween: 10,
             },
             1200: {
               slidesPerView: 3.2,
               spaceBetween: 20,
-            },
+            }, */
           }}
         >
           <SwiperSlide>

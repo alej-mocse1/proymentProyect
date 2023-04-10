@@ -12,9 +12,9 @@
        /*  width: 55%; */
         /* margin: 0 auto; */
     }
-    /* @include responsive("phone-L") {
+    @include responsive("phone-L") {
         width: 85%;
-    } */
+    }
 
     .subContainer{
         width: 100%;

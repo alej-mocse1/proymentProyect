@@ -8,6 +8,7 @@
   background: #000538;
   position: relative;
   z-index: 1;
+  height: 666px;
 
   @include responsive("Tablet") {
     flex-direction: column;
@@ -15,12 +16,15 @@
     padding: 56px 40px;
     /* gap: 57px; */
 /*     height: 317vw;
- */    min-height: 700px;
+ */    min-height: 850px;
   }
 
   @include responsive("Tablet") {
     padding: 56px 24px;
     background: linear-gradient(174.09deg, #000538 6.03%, #001344 20.32%, #7460C6 47.88%, #00144A 80.49%);
+  }
+  @include responsive("phone-L"){
+    height: 920px;
   }
   .degrade {
     margin-top: 60px;
@@ -69,10 +73,16 @@
     @include responsive("Laptop") {
       left: 51px;
     }
+    @media screen and (max-width: 1200px){
+      width: 38%;
+    }
 
     @include responsive("Tablet") {
       position: static;
-      width: 62%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
     @include responsive("tabletM") {
       position: static;
@@ -138,6 +148,12 @@
       line-height: 24px;
       color: #a0a3bd;
       margin-bottom: 32px;
+      @include responsive("Tablet"){
+        text-align: center;
+      }
+      @include responsive("phone-L"){
+        text-align: left;
+      }
     }
     button {
       font-size: 16px;
@@ -155,7 +171,7 @@
       cursor: pointer;
 
       @include responsive("Tablet") {
-        width: 60%;
+        width: 30%;
       }
 
       @include responsive("phone-L") {
@@ -183,6 +199,7 @@
 
   .containerForm {
     width: 30%;
+    margin: 0;
     position: absolute;
     z-index: 6;
     right: 130px;
@@ -193,11 +210,17 @@
       right: 71px;
       width: 35%;
     }
+    @media screen and (max-width: 1250px) {
+      right: 150px;
+    }
 
     @include responsive("Tablet") {
       width: 100%;
       position: static;
+      right: 0px;
       margin-top: 57px;
+      display: flex;
+      justify-content: center;
     }
 
     @include responsive("phone-L") {

@@ -23,7 +23,9 @@ export default function Contribuimos() {
                     </span>
                     <h3>Contribuímos con empresas con visión global</h3>
                     <p>Hemos contribuido en la solución de proyectos complejos a nivel latam de forma simple, ayudando a más de 100 empresas a mejorar. </p>
+                    <div className={style.containerImg2}>
                     <img src={icon3} alt="not" />
+                    </div>
                 </div>
             </div>
         </div>

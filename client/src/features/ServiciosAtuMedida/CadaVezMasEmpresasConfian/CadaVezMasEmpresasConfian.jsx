@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CadaVezMasEmpresasConfian.module.scss";
 import img from "./assets/dashboard.svg";
+import icon from "./assets/graphic.svg"
 
 
 const CadaVezMasEmpresasConfian = () => {
@@ -21,6 +22,7 @@ const CadaVezMasEmpresasConfian = () => {
                         <button> Agendar Reunion</button>
 
                      </div>
+                     <img src={icon} alt="not" />
 
                 </div>
 

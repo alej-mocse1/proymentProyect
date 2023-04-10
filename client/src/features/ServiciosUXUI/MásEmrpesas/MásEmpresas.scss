@@ -32,6 +32,9 @@
       @media (max-width: 1280px) {
         width: 100%;
       }
+      @media (max-width: 580px){
+        margin: 0 0 24px 0;
+      }
     }
 
     span {

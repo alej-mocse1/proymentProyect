@@ -14,8 +14,8 @@ const Page8 = () => {
         <div>
             <LandingServAtuMedida></LandingServAtuMedida>
             <Icons/>
-            <NuestrosPlanes></NuestrosPlanes>
             <NuestrosServicios/>
+            <NuestrosPlanes></NuestrosPlanes>    
             <Contribuimos/>
             <PorqueProyment/>
             <CadaVezMasEmpresasConfian></CadaVezMasEmpresasConfian>

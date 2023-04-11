@@ -28,6 +28,11 @@
 
         img {
             width: 100%;
+                 
+        @include responsive("Tablet") {
+          display: none;
+        }
+
         }
         
         @include responsive("Tablet") {
@@ -36,11 +41,7 @@
             top: 0;
             height: 100%;
 
-            background: linear-gradient(174.09deg,
-                    #000538 6.03%,
-                    #001344 20.32%,
-                    #027ca3 47.88%,
-                    #00144a 80.49%);
+            background: linear-gradient();
         }
 
         @include responsive("phone-L"){
@@ -61,9 +62,16 @@
             left: 51px;
         }
 
+        @media screen and (max-width: 1200px){
+            width: 38%;
+          }
+
         @include responsive("Tablet") {
             position: static;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         h4 {
@@ -71,7 +79,7 @@
             font-weight: 500;
             line-height: 26px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
             margin: 0;
             margin-bottom: 16px;
 
@@ -99,7 +107,7 @@
             font-weight: 700;
             line-height: 67px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
             margin: 0 0 32px 0;
             color: #fff;
 
@@ -130,7 +138,7 @@
             cursor: pointer;
 
             @include responsive("Tablet") {
-                width: 60%;
+                 width: 30%;
             }
 
             @include responsive("phone-L") {
@@ -156,16 +164,29 @@
         box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
             0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
 
-        @include responsive("Laptop") {
-            right: 71px;
-            width: 35%;
-        }
+        // @include responsive("Laptop") {
+        //     right: 71px;
+        //     width: 35%;
+        // }
 
-        @include responsive("Tablet") {
+        // @include responsive("Tablet") {
+        //     width: 100%;
+        //     position: static;
+        //     margin-top: 57px;
+        // }
+        @media screen and (max-width: 1250px) {
+            right: 190px;
+          }
+      
+          @include responsive("Tablet") {
             width: 100%;
             position: static;
+            right: 0px;
             margin-top: 57px;
-        }
+            display: flex;
+            justify-content: center;
+          }
+      
 
         @include responsive("phone-L") {
             width: 100%;

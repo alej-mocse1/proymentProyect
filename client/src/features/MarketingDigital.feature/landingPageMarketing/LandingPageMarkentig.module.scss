@@ -19,7 +19,7 @@
       height: 940px;
     }
   
-    @include responsive("phone-L") {
+    @include responsive("Tablet") {
       padding: 56px 24px;
       background: linear-gradient(174.09deg, #000538 6.03%, #001344 20.32%, #027CA3 47.88%, #00144A 80.49%);
     }
@@ -49,7 +49,7 @@
             #00144a 80.49%);
 
       }
-      @include responsive("phone-L"){
+      @include responsive("Tablet"){
         display: none;
       }
     }
@@ -68,6 +68,9 @@
   
       @include responsive("Tablet") {
         position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
       }
   
@@ -76,7 +79,7 @@
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: center;
         margin: 0;
         margin-bottom: 16px;
   
@@ -104,7 +107,7 @@
         font-weight: 700;
         line-height: 67px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: center;
         margin: 0 0 32px 0;
         color: #fff;
   
@@ -136,6 +139,7 @@
   
         @include responsive("Tablet") {
           width: 60%;
+          text-align: center;
         }
   
         @media (max-width: 530px) {
@@ -166,7 +170,10 @@
         background: transparent;
         border-radius: 4px;
         cursor: pointer;
-  
+
+        @include responsive("Tablet"){
+          display: none;
+        }
         @include responsive("Tablet") {
           width: 60%;
           margin-left: 10px;
@@ -189,6 +196,8 @@
       color: #4E37AC;
       border: 1px solid #4E37AC;
       transition: .8s ease-in-out;
+
+
      }
     .divBtn{
       width: 440px;
@@ -196,10 +205,15 @@
       align-items: center;
       justify-content: space-between;
 
+      @include responsive("Tablet") {
+        position: static;
+        justify-content: center;
+        align-items: center;
+        width: 335px;
+      }  
+
       @media (max-width: 530px) {
         width: 335px;
-        position: relative;
-        right: 10px;        
      }
 
     }
@@ -223,10 +237,17 @@
         width: 35%;
       }
   
+      @media screen and (max-width: 1250px) {
+        right: 150px;
+      }
+  
       @include responsive("Tablet") {
         width: 100%;
         position: static;
         margin-top: 57px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
       }
   
       @include responsive("phone-L") {

@@ -79,7 +79,7 @@
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0em;
-        text-align: center;
+        text-align: left;
         margin: 0;
         margin-bottom: 16px;
   
@@ -99,6 +99,10 @@
           font-size: 16px;
           font-weight: 600;
           line-height: 24px;
+          text-align: center;
+        }
+        @include responsive("phone-M"){
+          text-align: left;
         }
       }
   
@@ -107,7 +111,7 @@
         font-weight: 700;
         line-height: 67px;
         letter-spacing: 0em;
-        text-align: center;
+        text-align: left;
         margin: 0 0 32px 0;
         color: #fff;
   
@@ -115,10 +119,13 @@
           font-size: 40px;
           line-height: 44px;
           margin: 0 0 40px 0;
+          text-align: center;
         }
   
-        @include responsive("phone-S") {
+        @include responsive("phone-M") {
           font-size: 36px;
+        text-align: left;
+          
         }
       }
   
@@ -145,8 +152,7 @@
         @media (max-width: 530px) {
           width: 149px;
           height: 54px;
-          margin: auto;
-          margin: 0 auto;
+          
         }
   
       }
@@ -171,11 +177,11 @@
         border-radius: 4px;
         cursor: pointer;
 
-        @include responsive("Tablet"){
+       /*  @include responsive("Tablet"){
           display: none;
-        }
+        } */
         @include responsive("Tablet") {
-          width: 60%;
+          width: 100%;
           margin-left: 10px;
         }
   
@@ -183,8 +189,6 @@
           margin-left: 0px;
           width: 149px;
           height: 54px;
-          margin: auto;
-          margin: 0 auto;
           border: 1px solid #EAE5FF;
           color: #EAE5FF;
         }
@@ -207,13 +211,13 @@
 
       @include responsive("Tablet") {
         position: static;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         width: 335px;
       }  
 
       @media (max-width: 530px) {
-        width: 335px;
+        width: 325px;
      }
 
     }

@@ -22,7 +22,7 @@ function SeguimientoDeDiseño() {
       </div>
 
       <div className="diseños--container__boxes">
-        <div className="diseños--container--box">
+        <div className="diseños--container--box2">
           <div className="diseños--imgCont">
             <img src={img1} alt="internet" />
           </div>
@@ -35,7 +35,7 @@ function SeguimientoDeDiseño() {
             </span>
           </div>
         </div>
-        <div className="diseños--container--box">
+        <div className="diseños--container--box2">
           <div className="diseños--imgCont">
             <img src={img2} alt="criptomoneda" />
           </div>
@@ -48,7 +48,7 @@ function SeguimientoDeDiseño() {
             </span>
           </div>
         </div>
-        <div className="diseños--container--box">
+        <div className="diseños--container--box2">
           <div className="diseños--imgCont">
             <img src={img3} alt="fintech" />
           </div>

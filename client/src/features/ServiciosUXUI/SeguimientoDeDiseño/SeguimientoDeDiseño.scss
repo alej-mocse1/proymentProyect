@@ -103,6 +103,57 @@
         }
       }
     }
+    .diseños--container--box2 {
+      width: 394px;
+      height: 340px;
+      background: #ffffff;
+      border: 1px solid #eff0f6;
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+        0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+      border-radius: 16px;
+      padding: 28px 15px;
+      gap: 28px;
+      margin: 20px;
+      @media (max-width: 1440px){
+        width: 25%;
+      }
+      @media (max-width: 1025px) {
+        width: 25%;
+      }
+      @media (max-width: 830px) {
+        width: 38%;
+      }
+
+      .diseños--imgCont {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .diseños--container--text {
+        padding: 0px;
+        gap: 11px;
+
+        h3 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000538;
+        }
+
+        span {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000538;
+        }
+      }
+    }
   }
 
   .carrousell {

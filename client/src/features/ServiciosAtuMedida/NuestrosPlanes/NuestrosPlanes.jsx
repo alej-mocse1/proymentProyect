@@ -20,12 +20,12 @@ const NuestrosPlanes = () => {
                    <h3>Depende de los requerimientos</h3>
                    <p >Facturado por proyecto.</p>
 
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicio de potenciamiento de ventas.</p>
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicios integrales.</p>
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicio de marketing.</p>
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicio de diseño UI/UX.</p>
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicio de análisis de datos.</p>
-                   <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>Servicios en tendencia.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicio de potenciamiento de ventas.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicios integrales.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicio de marketing.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicio de diseño UI/UX.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicio de análisis de datos.</p>
+                   <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>Servicios en tendencia.</p>
                    
 
                    <p  className={styles.pbuttom}>Proyment cuenta con diversos planes donde nos adaptamos a los requerimientos de las empresas</p>

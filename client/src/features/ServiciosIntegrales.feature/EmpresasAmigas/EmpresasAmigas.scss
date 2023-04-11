@@ -105,6 +105,8 @@
 
   .emp--container__img {
     @include flex-column-center;
+    overflow: hidden;
+    height: 100%;
     @media (max-width: 770px) {
       width: 90%;
     }

@@ -79,7 +79,7 @@
             font-weight: 500;
             line-height: 26px;
             letter-spacing: 0em;
-            text-align: center;
+            text-align: left;
             margin: 0;
             margin-bottom: 16px;
 
@@ -96,6 +96,7 @@
             }
 
             @include responsive("Tablet") {
+                text-align: center;
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 24px;
@@ -107,11 +108,12 @@
             font-weight: 700;
             line-height: 67px;
             letter-spacing: 0em;
-            text-align: center;
+            text-align: left;
             margin: 0 0 32px 0;
             color: #fff;
 
             @include responsive("Tablet") {
+                text-align: center;
                 font-size: 40px;
                 line-height: 44px;
                 margin: 0 0 40px 0;

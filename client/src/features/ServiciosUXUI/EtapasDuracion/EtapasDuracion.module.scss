@@ -9,6 +9,10 @@
     }
 
     @include responsive("Tablet") {
+        padding: 56px 44px;
+    }
+
+    @include responsive("phone-L") {
         padding: 56px 24px;
     }
 
@@ -27,6 +31,7 @@
 
             @include responsive("Tablet") {
                 width: 100%;
+                margin: 0;
             }
 
             h3 {
@@ -58,57 +63,71 @@
             }
         }
 
+        .divFlecha {
+            display: none;
+            @include responsive("Tablet") {
+                display: flex;
+                justify-content: center;
+                margin: 40px 0;
+
+                img {
+                    width: 38px;
+                }
+            }
+        }
+
+        .graficOneDivVacio {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            @include responsive("Tablet") {
+                display: none;
+            }
+
+            .div1 {
+                border-bottom: 2px solid #A286FA;
+                border-bottom-right-radius: 80px;
+                margin-left: 80px;
+                width: 50%;
+                height: 60px;
+                position: relative;
+
+                @include responsive("Tablet") {
+                    border-radius: 0;
+                    border-right: 2px solid #A286FA;
+                    border-bottom: 0;
+                }
+
+                img {
+                    position: absolute;
+                    width: 44px;
+                    color: #A286FA;
+                    bottom: -22px;
+                    right: 270px;
+
+                    @include responsive("Tablet") {
+                        bottom: -32px;
+                        right: -18px;
+                    }
+                }
+            }
+
+            .div2 {
+                width: 50%;
+                height: 60px;
+                margin-right: 80px;
+            }
+        }
+
         .graficOne {
             display: flex;
             flex-direction: column;
             width: 100%;
 
-            .divVacio {
+            .graficOneCardOne {
                 display: flex;
-                flex-direction: row;
-                width: 100%;
-
-                @include responsive("Tablet") {
-                    margin-bottom: 78px;
-                }
-
-                .div1 {
-                    border-bottom: 2px solid #A286FA;
-                    border-bottom-right-radius: 80px;
-                    margin-left: 80px;
-                    width: 50%;
-                    height: 60px;
-                    position: relative;
-
-                    @include responsive("Tablet") {
-                        border-radius: 0;
-                        border-right: 2px solid #A286FA;
-                        border-bottom: 0;
-                    }
-
-                    i {
-                        position: absolute;
-                        font-size: 35px;
-                        color: #A286FA;
-                        bottom: -18px;
-                        right: 270px;
-
-                        @include responsive("Tablet") {
-                            bottom: -32px;
-                            right: -18px;
-                        }
-                    }
-                }
-
-                .div2 {
-                    width: 50%;
-                    height: 40px;
-                    margin-right: 80px;
-                }
-            }
-
-            .cardOne {
-                display: flex;
+                justify-content: space-between;
                 border-left: 2px solid #A286FA;
                 border-bottom: 2px solid #A286FA;
                 border-top-left-radius: 80px;
@@ -124,19 +143,18 @@
                     gap: 32px;
                 }
 
-                i {
-                    font-size: 35px;
-                    color: #A286FA;
+                .graficOneCardOneIcon1 {
+                    width: 44px;
                     position: absolute;
-                    bottom: -17px;
-                    right: 320px;
+                    bottom: -22px;
+                    right: 300px;
 
                     @include responsive("Tablet") {
                         display: none;
                     }
                 }
 
-                .cardOneText {
+                .graficOneCardOneText {
                     width: 352px;
                     margin: 60px 34px 60px 113px;
 
@@ -152,7 +170,8 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0 0 16px 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -164,15 +183,16 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
                 }
 
-                .cardOneImgOne {
+                .graficOneCardOneImg {
                     width: 328px;
-
+                    margin-right: 170px;
                     @include responsive("Tablet") {
                         width: 100%;
                     }
@@ -183,31 +203,7 @@
                 }
             }
 
-            .divFlecha {
-                display: none;
-
-                @include responsive("Tablet") {
-                    display: flex;
-                    margin: 40px 0;
-
-                    .flecha1 {
-                        width: 50%;
-                        height: 50px;
-                        border-right: 2px solid #A286FA;
-                        position: relative;
-
-                        i {
-                            position: absolute;
-                            right: -18px;
-                            bottom: -32px;
-                            font-size: 35px;
-                            color: #A286FA;
-                        }
-                    }
-                }
-            }
-
-            .cardTwo {
+            .graficOneCardTwo {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -220,9 +216,10 @@
                     border-bottom-right-radius: 0;
                     border-top-right-radius: 0;
                     border-right: 0;
+                    gap: 32px;
                 }
 
-                .cardTwoImgOne {
+                .graficOneCardTwoImg {
                     width: 419px;
 
                     @include responsive("Tablet") {
@@ -234,7 +231,7 @@
                     }
                 }
 
-                .cardTwoText {
+                .graficOneCardTwoText {
                     width: 322px;
                     margin: 60px 111px 60px 78px;
 
@@ -250,7 +247,8 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0 0 16px 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -262,23 +260,25 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
                 }
             }
 
-            .divVacioTwo {
+            .graficOneDivVacioTwo {
                 display: flex;
+                margin-bottom: 76px;
 
                 @include responsive("Tablet") {
-                    margin-top: 40px;
+                    display: none;
                 }
 
                 .div3 {
                     width: 50%;
-                    height: 40px;
+                    height: 80px;
                     margin-left: 80px;
                 }
 
@@ -290,18 +290,11 @@
                     margin-right: 80px;
                     position: relative;
 
-                    @include responsive("Tablet") {
-                        height: 50px;
-                        border-top: 0;
-                        border-top-left-radius: 0;
-                        border-left: 2px solid #A286FA;
-                    }
-
-                    i {
-                        font-size: 35px;
+                    img {
+                        width: 44px;
                         color: #A286FA;
                         position: absolute;
-                        bottom: -32px;
+                        bottom: -45px;
                         left: -18px;
                     }
                 }
@@ -315,17 +308,18 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            padding: 58px 0;
+            margin-bottom: 38px;
+            padding:0;
 
-            @include responsive("Tablet"){
+            @include responsive("Tablet") {
+                margin-bottom: 24px;
                 padding: 0;
-                margin-top: 40px;
-                margin-bottom: 40px;
             }
 
             h4 {
                 margin: 0;
-                @include responsive("Tablet"){
+
+                @include responsive("Tablet") {
                     text-align: center;
                 }
             }
@@ -333,9 +327,8 @@
             .graficTwoInfo {
                 display: flex;
                 justify-content: center;
-                /* width: 100%; */
                 gap: 166px;
-                margin: 40px 0 0 0;
+                margin: 38px 0 0 0;
 
                 @include responsive("Tablet") {
                     margin-top: 16px;
@@ -350,21 +343,23 @@
                     flex-direction: column;
                     width: 225px;
                     gap: 16px;
+                    margin-left: 115px;
 
                     @include responsive("Tablet") {
                         width: 100%;
+                        margin: 0;
                     }
 
                     h4 {
                         margin: 0;
-                        @include responsive("Tablet"){
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
 
                     p {
                         margin: 0;
-                        @include responsive("Tablet"){
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -372,16 +367,21 @@
 
                 .graficTwoParrafo {
                     display: flex;
-                    align-items: flex-start;
+                    align-items: flex-end;
                     width: 345px;
                     gap: 15px;
 
                     @include responsive("Tablet") {
                         width: 100%;
+                        align-items: flex-start;
                     }
 
                     img {
                         width: 21px;
+                        margin-bottom: 25px;
+                        @include responsive("Tablet"){
+                            margin: 0;
+                        }
                     }
 
                     p {
@@ -391,90 +391,49 @@
 
             }
 
-            .divVacioThree {
+            .graficTwoFlecha {
                 display: flex;
-                margin-bottom: 75px;
-
+                justify-content: center;
+                width: 100%;
+                margin: 17px 0 53px 0;
                 @include responsive("Tablet") {
-                    margin-top: 40px;
+                    margin: 40px 0;
                 }
 
-                .div5 {
-                    width: 50%;
-                    height: 137px;
-                    border-right: 2px solid #A286FA;
-                    position: relative;
-
+                img {
+                    width: 44px;
                     @include responsive("Tablet") {
-                        height: 50px;
-                    }
-
-                    i {
-                        font-size: 35px;
-                        color: #A286FA;
-                        position: absolute;
-                        bottom: -18px;
-                        right: -18px;
-
-                        @include responsive("Tablet") {
-                            bottom: -32px;
-                        }
+                        width: 38px;
                     }
                 }
             }
         }
 
+        .span{
+            display: none;
+            @include responsive("Tablet"){
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                span{
+                    width: 2px;
+                    height: 36px;
+                    background-color: #A286FA;
+                }
+            }
+        }
         .graficThree {
             display: flex;
             flex-direction: column;
             width: 100%;
 
-            .divVacioFour {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-
-                .div7 {
-                    border-bottom: 2px solid #A286FA;
-                    border-bottom-right-radius: 80px;
-                    margin-left: 80px;
-                    width: 50%;
-                    height: 60px;
-                    position: relative;
-
-                    @include responsive("Tablet") {
-                        border-bottom: 0;
-                        border-bottom-right-radius: 0;
-                        border-right: 2px solid #A286FA;
-                    }
-
-                    i {
-                        position: absolute;
-                        font-size: 35px;
-                        color: #A286FA;
-                        bottom: -18px;
-                        right: 280px;
-
-                        @include responsive("Tablet") {
-                            display: none;
-                        }
-                    }
-                }
-
-                .div8 {
-                    width: 50%;
-                    height: 40px;
-                    margin-right: 80px;
-                }
-            }
-
             .threeCardOne {
                 display: flex;
+                justify-content: space-between;
                 border-left: 2px solid #A286FA;
                 border-bottom: 2px solid #A286FA;
                 border-top-left-radius: 80px;
                 border-bottom-left-radius: 80px;
-                /* padding: 60px 113px; */
                 margin-right: 80px;
                 position: relative;
 
@@ -489,12 +448,11 @@
                     margin-top: 24px;
                 }
 
-                i {
-                    font-size: 35px;
-                    color: #A286FA;
+                .threeCardOneIcon1 {
+                    width: 44px;
                     position: absolute;
-                    bottom: -17px;
-                    right: 400px;
+                    bottom: -22px;
+                    right: 440px;
 
                     @include responsive("Tablet") {
                         display: none;
@@ -502,8 +460,8 @@
                 }
 
                 .threeCardOneText {
-                    width: 352px;
-                    margin: 60px 34px 60px 153px;
+                    width: 319px;
+                    margin: 60px 0px 60px 164px;
 
                     @include responsive("Tablet") {
                         width: 100%;
@@ -517,7 +475,8 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0 0 16px 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -529,14 +488,15 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
                 }
 
                 .threeCardOneImgOne {
-                    width: 328px;
+                    width: 391px;
 
                     @include responsive("Tablet") {
                         width: 100%;
@@ -548,44 +508,46 @@
                 }
             }
 
-            .divFlecha{
+            .graficThreeFlecha {
                 display: none;
-                @include responsive("Tablet"){
+                @include responsive("Tablet") {
                     display: flex;
+                    justify-content: center;
+                    width: 100%;
                     margin: 40px 0;
 
-                    .flecha1 {
-                        width: 50%;
-                        height: 50px;
-                        border-right: 2px solid #A286FA;
-                        position: relative;
-
-                        i {
-                            position: absolute;
-                            right: -18px;
-                            bottom: -32px;
-                            font-size: 35px;
-                            color: #A286FA;
+                        img {
+                            width: 38px;
                         }
-                    }
-                } 
+                }
             }
 
             #border {
                 border-right: 2px solid #A286FA;
                 border-top-right-radius: 80px;
                 border-bottom-right-radius: 80px;
+                margin: 0;
+                padding: 68px 0 92px;
 
                 @include responsive("Tablet") {
                     border-right: 0;
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
+                    padding: 0;
+                }
+
+                .graficTwoInfo {
+                    .graficTwoParrafo {
+                        img {
+                            margin-bottom: 10px;
+                        }
+                    }
                 }
             }
 
             .threeCardTwo {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 align-items: center;
                 border-top: 2px solid #A286FA;
                 border-top-left-radius: 80px;
@@ -601,26 +563,26 @@
                     border-bottom-left-radius: 0;
                     margin: 0;
                     flex-direction: column;
-                    gap: 16px;
-                    margin-top: 40px;
+                    gap: 32px;
+                    /* margin-top: 40px; */
                 }
 
-                i {
+                .threeCardTwoIcon1 {
                     position: absolute;
                     font-size: 35px;
                     color: #A286FA;
-                    top: -17px;
-                    left: 170px;
+                    top: -22px;
+                    left: 200px;
 
-                    @include responsive("Tablet"){
+                    @include responsive("Tablet") {
                         display: none;
                     }
                 }
 
                 .threeCardTwoImgOne {
-                    width: 419px;
+                    width: 428px;
 
-                    @include responsive("Tablet"){
+                    @include responsive("Tablet") {
                         width: 100%;
                     }
 
@@ -630,10 +592,10 @@
                 }
 
                 .threeCardTwoText {
-                    width: 322px;
-                    margin: 60px 0px 60px 170px;
+                    width: 292px;
+                    margin: 60px 0px 60px 195px;
 
-                    @include responsive("Tablet"){
+                    @include responsive("Tablet") {
                         width: 100%;
                         margin: 0;
                     }
@@ -645,7 +607,8 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -657,7 +620,8 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0 0 16px 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
@@ -669,52 +633,56 @@
                         letter-spacing: 0em;
                         text-align: left;
                         margin: 0;
-                        @include responsive("Tablet"){
+
+                        @include responsive("Tablet") {
                             text-align: center;
                         }
                     }
                 }
             }
 
-            .divVacioFive {
+            .graficOneDivVacio2 {
                 display: flex;
 
-                @include responsive("Tablet"){
-                    margin: 40px 0 40px 0;
+                @include responsive("Tablet") {
+                    display: none;
                 }
 
-                .div9 {
+                .divVacio2Div1 {
                     width: 50%;
-                    height: 40px;
+                    height: 50px;
                     margin-left: 80px;
                     border-top: 2px solid #A286FA;
                     position: relative;
-                    @include responsive("Tablet"){
+
+                   /*  @include responsive("Tablet") {
                         height: 50px;
                         border-top: 0;
                         border-right: 2px solid #A286FA;
                         margin: 0;
-                    }
-                    i {
-                        font-size: 35px;
-                        color: #A286FA;
-                        position: absolute;
-                        top: -18px;
-                        right: -18px;
+                    } */
 
-                        @include responsive("Tablet"){
+                    img {
+                        width: 44px;
+                        position: absolute;
+                        top: -22px;
+                        right: -22px;
+
+                       /*  @include responsive("Tablet") {
                             margin: 0;
                             top: inherit;
                             bottom: -32px;
-                        }
+                        } */
                     }
 
                 }
 
-                .div10 {
+                .divVacio2Div2 {
                     width: 50%;
-                    height: 80px;
-                    @include responsive("Tablet"){
+                    height: 50px;
+                    margin-left: 80px;
+
+                    @include responsive("Tablet") {
                         height: 50px;
                     }
 
@@ -728,6 +696,7 @@
 
         #border2 {
             padding: 0;
+            margin: 0;
         }
 
         button {

@@ -4,7 +4,8 @@ import image2 from "./assets/graphic inspiration.svg"
 import image3 from "./assets/graphic slash.svg";
 import image4 from "./assets/graphic prototipos.svg"
 import image5 from "./assets/graphic design visual.svg";
-
+import icon1 from "./assets/rounder.svg"
+import icon2 from "./assets/linear.svg"
 
 export default function EtapasDuracion() {
     return (
@@ -17,37 +18,40 @@ export default function EtapasDuracion() {
                 </div>
 
                 {/*------------GRAFIC ONE-------------------------------------------------- */}
-                <div className={style.graficOne}>
-                    <div className={style.divVacio}>
-                        <div className={style.div1}>
-                            <i class="ri-radio-button-line"></i>
-                        </div>
-                        <div className={style.div2}></div>
-                    </div>
+                <div className={style.divFlecha}>
+                    <img src={icon2} alt="not"/>
+                </div>
 
-                    <div className={style.cardOne}>
-                        <i class="ri-radio-button-line"></i>
-                        <div className={style.cardOneText}>
+                <div className={style.graficOneDivVacio}>
+                    <div className={style.div1}>
+                        <img src={icon1} alt="not" />
+                    </div>
+                    <div className={style.div2}></div>
+                </div>
+
+                <div className={style.graficOne}>
+                    <div className={style.graficOneCardOne}>
+                        <img src={icon1} alt="not" className={style.graficOneCardOneIcon1} />
+                        <div className={style.graficOneCardOneText}>
                             <h4>Investigación de la competencia</h4>
                             <p>Para comprobar la forma en que se diseñan productos similares.
                                 La investigación es crucial para comprender mejor lo que los usuarios pueden esperar.
                             </p>
                         </div>
-                        <div className={style.cardOneImgOne}>
+                        <div className={style.graficOneCardOneImg}>
                             <img src={image1} alt="not" />
                         </div>
                     </div>
+
                     <div className={style.divFlecha}>
-                        <div className={style.flecha1}>
-                            <i class="ri-radio-button-line"></i>
-                        </div>
-                        <div className={style.flecha2}></div>
+                        <img src={icon2} alt="not" />
                     </div>
-                    <div className={style.cardTwo}>
-                        <div className={style.cardTwoImgOne}>
+
+                    <div className={style.graficOneCardTwo}>
+                        <div className={style.graficOneCardTwoImg}>
                             <img src={image2} alt="not" />
                         </div>
-                        <div className={style.cardTwoText}>
+                        <div className={style.graficOneCardTwoText}>
                             <h4>Inspiración</h4>
                             <p>Los servicios de diseño de interfaz de usuario no se tratan solo de creatividad.
                                 Se trata del proceso. Los esquemas de color, las fuentes, los contras deben estar
@@ -55,12 +59,15 @@ export default function EtapasDuracion() {
                             </p>
                         </div>
                     </div>
-                    <div className={style.divVacioTwo}>
+                    <div className={style.graficOneDivVacioTwo}>
                         <div className={style.div3}></div>
                         <div className={style.div4}>
-                            <i class="ri-radio-button-line"></i>
+                            <img src={icon1} alt="not" />
                         </div>
+                    </div>
 
+                    <div className={style.divFlecha}>
+                        <img src={icon2} alt="not" />
                     </div>
                 </div>
 
@@ -79,25 +86,26 @@ export default function EtapasDuracion() {
                             </p>
                         </div>
                     </div>
-                    <div className={style.divVacioThree}>
-                        <div className={style.div5}>
-                            <i class="ri-radio-button-line"></i>
-                        </div>
-                        <div className={style.div6}></div>
+                    <div className={style.graficTwoFlecha}>
+                        <img src={icon2} alt="not" />
                     </div>
                     <h4>Realización</h4>
                 </div>
 
                 {/*------------GRAFIC THREE-------------------------------------------------- */}
-                <div className={style.graficThree}>
-                    <div className={style.divVacioFour}>
-                        <div className={style.div7}>
-                            <i class="ri-radio-button-line"></i>
-                        </div>
-                        <div className={style.div8}></div>
+                <div className={style.graficOneDivVacio}>
+                    <div className={style.div1}>
+                        <img src={icon1} alt="not" />
                     </div>
+                    <div className={style.div2}></div>
+                </div>
+                <div className={style.span}>
+                    <span></span>
+                </div>
+
+                <div className={style.graficThree}>
                     <div className={style.threeCardOne}>
-                        <i class="ri-radio-button-line"></i>
+                        <img src={icon1} alt="not" className={style.threeCardOneIcon1} />
                         <div className={style.threeCardOneText}>
                             <h4>Prototipos</h4>
                             <p>Dirigido a probar cómo funciona la interfaz sin distracciones en colores y bonitos cismos. Solo esqueleto desnudo para asegurarse de que UX esté en el nivel superior.
@@ -107,12 +115,18 @@ export default function EtapasDuracion() {
                             <img src={image4} alt="not" />
                         </div>
                     </div>
-                    <div className={style.divFlecha}>
+
+                    <div className={style.graficThreeFlecha}>
+                        <img src={icon2} alt="not" />
+                    </div>
+
+                    {/* <div className={style.divFlecha}>
                         <div className={style.flecha1}>
                             <i class="ri-radio-button-line"></i>
                         </div>
                         <div className={style.flecha2}></div>
-                    </div>
+                    </div> */}
+
                     <div className={style.graficTwo} id={style.border}>
                         <h4>Resultado</h4>
                         <div className={style.graficTwoInfo}>
@@ -127,14 +141,20 @@ export default function EtapasDuracion() {
                             </div>
                         </div>
                     </div>
-                    <div className={style.divFlecha}>
+
+                    <div className={style.graficThreeFlecha}>
+                        <img src={icon2} alt="not" />
+                    </div>
+
+                    {/* <div className={style.divFlecha}>
                         <div className={style.flecha1}>
                             <i class="ri-radio-button-line"></i>
                         </div>
                         <div className={style.flecha2}></div>
-                    </div>
+                    </div> */}
+
                     <div className={style.threeCardTwo}>
-                        <i class="ri-radio-button-line"></i>
+                        <img src={icon1} alt="not" className={style.threeCardTwoIcon1} />
                         <div className={style.threeCardTwoText}>
                             <h4>Diseño visual</h4>
                             <h6>2 semanas</h6>
@@ -145,13 +165,19 @@ export default function EtapasDuracion() {
                             <img src={image5} alt="not" />
                         </div>
                     </div>
-                    <div className={style.divVacioFive}>
-                        <div className={style.div9}>
-                            <i class="ri-radio-button-line"></i>
+
+                    <div className={style.graficOneDivVacio2}>
+                        <div className={style.divVacio2Div1}>
+                            <img src={icon1} alt="not" />
                         </div>
-                        <div className={style.div10}></div>
+                        <div className={style.divVacio2Div2}></div>
+                    </div>
+
+                    <div className={style.graficThreeFlecha}>
+                        <img src={icon2} alt="not" />
                     </div>
                 </div>
+
                 <div className={style.graficTwo} id={style.border2}>
                     <h4>Resultado</h4>
                     <div className={style.graficTwoInfo}>

@@ -93,7 +93,7 @@ const Register = ({ info }) => {
                         {errors.servicio?.type === "required" && <p className={style.error}>El campo servicio es requerido</p>}
                     </div>
 
-                    <input type="submit" value="Enviar información" style={boton} className={style.inputEnviar}/>
+                    <input type="submit" value="Enviar información" style={boton} className={style[info? "inputEnviar2": "inputEnviar"]}/>
                 </form>
             </div>
         </div>

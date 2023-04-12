@@ -10,6 +10,7 @@ import OpinionClientes from "./LoQueClientesOpinan/OpinionClientes";
 export default function Page7() {
   return (
     <>
+
       <LandingPageServiciosUXUI /> 
       <ServiciosQuePrestamos />
       <SeguimientoDeDiseño />

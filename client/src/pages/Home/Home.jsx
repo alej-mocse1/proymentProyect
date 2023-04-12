@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom"; */
 export default function Home() {
   return (
     <>
-    {console.log(process.env.REACT_APP_LOL)}
       <Navbar></Navbar>
       <Page />
       <Footer></Footer>

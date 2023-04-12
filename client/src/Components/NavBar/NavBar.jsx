@@ -9,7 +9,6 @@ function Navbar() {
 
     const [isOpen, SetOpen] = useState(true);
     const [isOpen2, SetOpen2] = useState(false);
-   
     let responsive = isOpen ? {
          transform: "translateX(-120%)",
          transition: "1s ease all",

@@ -15,7 +15,7 @@ import { Pagination } from "swiper";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Button from "../../../core/components/Button/Button";
+/* import Button from "../../../core/components/Button/Button"; */
 import {Link} from "react-router-dom"
 
 function MetodologíasDeTrabajo() {

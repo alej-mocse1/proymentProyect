@@ -11,7 +11,7 @@ export default function NosDiferencia() {
                 <div className={style.containerCards}>
                     <div className={style.card}>
                         <div className={style.containerImg}>
-                            <img src={icon1} alt="not-image" />
+                            <img src={icon1} alt="not-image1" />
                         </div>
                         <div className={style.text}>
                             <h4>Analítica</h4>
@@ -24,7 +24,7 @@ export default function NosDiferencia() {
                     </div>
                     <div className={style.card}>
                         <div className={style.containerImg}>
-                            <img src={icon2} alt="not-image" />
+                            <img src={icon2} alt="not-image2" />
                         </div>
                         <div className={style.text}>
                             <h4>Tecnología</h4>
@@ -38,7 +38,7 @@ export default function NosDiferencia() {
                     </div>
                     <div className={style.card}>
                         <div className={style.containerImg}>
-                            <img src={icon3} alt="not-image" />
+                            <img src={icon3} alt="not-image3" />
                         </div>
                         <div className={style.text}>
                             <h4>Negocio</h4>

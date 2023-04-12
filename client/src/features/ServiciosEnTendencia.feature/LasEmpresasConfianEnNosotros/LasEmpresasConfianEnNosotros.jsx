@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./LasEmpresasConfianEnNosotros.module.scss";
 import "./lasEmpresas.scss";
 import LasEmpresasHijo from "./LasEmpresasHijo";
@@ -19,7 +18,7 @@ import "swiper/scss/pagination";
 const LasEmpresasConfianEnNosotros = () => {
 
 
-  const [state, SetState] = useState([
+  const state=[
     {
         id:1,
         img:img1,
@@ -39,7 +38,7 @@ const LasEmpresasConfianEnNosotros = () => {
         texto:"Si estás de acuerdo con nuestra propuesta, comenzaremos a trabajar de forma ágil."
     },
 
-  ])
+  ]
 
     return(
         <div className={styles.div}>

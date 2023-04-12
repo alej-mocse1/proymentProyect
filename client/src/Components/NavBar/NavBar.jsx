@@ -140,9 +140,11 @@ function Navbar() {
 
         
            <li>
-              <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}>
+        
+               <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}> 
                  <p>Industrias</p>
-              </a>
+               </a>
+          
            </li>
         
 

@@ -32,7 +32,7 @@ function Transformation() {
                             <div id={style.color}><p>Rubro Salud</p></div>
                             <div><p>Rubro Textil</p></div>
                             <div id={style.color}><p>Rubro Inmobiliaria</p></div>
-                            <div><p>Rubro Educacion</p></div>
+                            <div><p>Rubro Educación</p></div>
                         </div>
                     </div>
 

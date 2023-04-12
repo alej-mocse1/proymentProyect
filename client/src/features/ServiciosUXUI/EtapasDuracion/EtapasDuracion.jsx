@@ -122,7 +122,7 @@ export default function EtapasDuracion() {
 
                     {/* <div className={style.divFlecha}>
                         <div className={style.flecha1}>
-                            <i class="ri-radio-button-line"></i>
+                            <i className="ri-radio-button-line"></i>
                         </div>
                         <div className={style.flecha2}></div>
                     </div> */}
@@ -148,7 +148,7 @@ export default function EtapasDuracion() {
 
                     {/* <div className={style.divFlecha}>
                         <div className={style.flecha1}>
-                            <i class="ri-radio-button-line"></i>
+                            <i className="ri-radio-button-line"></i>
                         </div>
                         <div className={style.flecha2}></div>
                     </div> */}

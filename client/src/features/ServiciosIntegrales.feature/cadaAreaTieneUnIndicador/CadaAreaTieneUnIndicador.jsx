@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./CadaAreaTieneUnIndicador.module.scss";
 import "./CadaArea.scss";
 
-import { useState } from "react";
+/* import { useState } from "react";*/
 import 'remixicon/fonts/remixicon.css';
 import img from "./assets/img.png";
 
@@ -17,8 +17,7 @@ import CardC from "./Card";
 
 const CadaAreaTieneUnIndicador = () => {
 
-
-   const [Info , setInfo] = useState([
+   /* const [Info , setInfo] = useState([
       {
          id:1,
          Title : "Áreas optimizadas",
@@ -37,7 +36,27 @@ const CadaAreaTieneUnIndicador = () => {
          punto3 :"Finanzas",
          punto4 :"Recursos humanos",
       }
-   ])
+   ]) */
+   const Info =[
+      {
+         id:1,
+         Title : "Áreas optimizadas",
+         descipcion : "Superar las expectativas del cliente en toda su experiencia con la marca y asegura un gran retorno de la inversión.",
+         punto1 :"Operaciones",
+         punto2 :"Contabilidad",
+         punto3 :"Logística",
+         punto4 :" Ventas / Comercial",
+      },
+      {
+         id:2,
+         Title : "Retorno de la inversión",
+         descipcion : "Superar las expectativas del cliente en toda su experiencia con la marca y asegura un gran retorno de la inversión.",
+         punto1 :"Marketing",
+         punto2 :"Planeamiento",
+         punto3 :"Finanzas",
+         punto4 :"Recursos humanos",
+      }
+   ]
 
     return(
         <div className={styles.div}>
@@ -56,10 +75,10 @@ const CadaAreaTieneUnIndicador = () => {
                     <p>Superar las expectativas del cliente en toda su experiencia con la marca y asegura un gran retorno de la inversión.</p>
                 
 
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Operaciones</p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Contabilidad </p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Logística </p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Ventas / Comercial</p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Operaciones</p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Contabilidad </p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Logística </p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Ventas / Comercial</p>
                  </div>
                  
 
@@ -67,10 +86,10 @@ const CadaAreaTieneUnIndicador = () => {
                     <h4>Retorno de la inversión</h4>
                     <p>Superar las expectativas del cliente en toda su experiencia con la marca y asegura un gran retorno de la inversión.</p>
 
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Marketing </p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Planeamiento  </p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Finanzas  </p>
-                    <p className={styles.pLinks}> <div className={styles.icono}><i class="ri-check-line" ></i> </div>  Recursos humanos</p>             
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Marketing </p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Planeamiento  </p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Finanzas  </p>
+                    <p className={styles.pLinks}> <div className={styles.icono}><i className="ri-check-line" ></i> </div>  Recursos humanos</p>             
                  </div>
                 </div>
 

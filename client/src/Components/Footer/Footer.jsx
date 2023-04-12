@@ -22,7 +22,7 @@ export default function Footer() {
                         <Link to="/PotenciamientoDeVentas">Servicio de potenciamiento de ventas</Link>
                         <Link to="/serviciosIntegrales">Servicios integrales</Link>
                         <Link to="/serviciosAnalisisDeDatos">Servicios de análisis de datos</Link>
-                        <Link to="/">Servicios de diseño web UI/UX</Link>
+                        <Link to="/serviciosUXUI">Servicios de diseño web UI/UX</Link>
                         <Link to="/serviciosEnTendencia">Servicios en tendencia</Link>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Footer() {
                         </div>
                         <div className={style.social}>
                             <span><i className="ri-linkedin-line"></i></span>
-                            <a href=""><h4>LinkedIn</h4></a>             
+                            <a href="https://www.linkedin.com/company/proyment/"><h4>LinkedIn</h4></a>             
                         </div>
                     </div>
                 </div>

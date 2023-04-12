@@ -28,7 +28,7 @@
 
         @include responsive("Laptop") {
             width: 50%;
-            margin: 0 0 0 30px;
+            margin: 0 0 0 40px;
         }
 
         @include responsive("Tablet") {

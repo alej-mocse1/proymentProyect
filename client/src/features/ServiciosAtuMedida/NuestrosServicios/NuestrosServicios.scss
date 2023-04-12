@@ -25,7 +25,7 @@
   .service--container__boxes {
     @include flex-row-center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     @media (max-width: 690px) {
       display: none;
     }
@@ -41,8 +41,9 @@
       box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
         0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
       border-radius: 15.9498px;
-      @media (max-width: 1025px) {
-        width: 35%;
+      @media (max-width: 1285px) {
+        width: 30%;
+        margin: 0px 15px 30px;
       }
       @media (max-width: 830px) {
         width: 40%;

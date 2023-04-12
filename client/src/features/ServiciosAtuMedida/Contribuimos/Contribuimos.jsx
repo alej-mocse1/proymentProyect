@@ -18,7 +18,7 @@ export default function Contribuimos() {
                 </div>
                 <div className={style.containerTwo}>
                     <span>
-                        <i class="ri-flashlight-fill"></i>
+                        <i className="ri-flashlight-fill"></i>
                         <h5>Proyment en línea</h5>
                     </span>
                     <h3>Contribuímos con empresas con visión global</h3>

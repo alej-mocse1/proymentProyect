@@ -14,26 +14,26 @@ export default function NuestrosPlanes() {
                         <h5>Facturado por proyecto o solución de la problemática.</h5>
                         <div className={style.card}>
                             <span>
-                                <i class="ri-checkbox-circle-fill"></i>
+                                <i className="ri-checkbox-circle-fill"></i>
                                 <p>Conocimiento de la demanda en tiempo
                                     real y segmentada de sus clientes.</p>
                             </span>
                             <span>
-                                <i class="ri-checkbox-circle-fill"></i>
+                                <i className="ri-checkbox-circle-fill"></i>
                                 <p>Mejora en la eficiencia y optimización de costes.</p>
                             </span>
                             <span>
-                                <i class="ri-checkbox-circle-fill"></i>
+                                <i className="ri-checkbox-circle-fill"></i>
                                 <p>Mejora de la toma de decisiones para adelantarse
                                     a los acontecimientos.</p>
                             </span>
                             <span>
-                                <i class="ri-checkbox-circle-fill"></i>
+                                <i className="ri-checkbox-circle-fill"></i>
                                 <p>Mejora de la accesibilidad de la información
                                     dentro de la empresa.</p>
                             </span>
                             <span>
-                                <i class="ri-checkbox-circle-fill"></i>
+                                <i className="ri-checkbox-circle-fill"></i>
                                 <p>Seguridad en los datos en todas las
                                     fases del proyecto.</p>
                             </span>

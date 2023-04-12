@@ -75,7 +75,6 @@
     @include responsive("carrousel2") {
       position: initial;
       width: 98%;
-      
     }
   }
   .cardBackground2 {
@@ -92,7 +91,6 @@
     @include responsive("carrousel2") {
       position: initial;
       width: 98%;
-      
     }
   }
   .cardBackground3 {
@@ -109,7 +107,6 @@
     @include responsive("carrousel2") {
       position: initial;
       width: 98%;
-    
     }
   }
   .card {
@@ -123,11 +120,10 @@
       align-items: center;
       height: 300px;
       gap: 0px;
-      justify-content:space-between;
+      justify-content: space-between;
     }
     @include responsive("tablet") {
       height: 490px;
-      
     }
     img {
       width: 178px;
@@ -138,7 +134,10 @@
       font-size: 16px;
       line-height: 24px;
       color: #000538;
-      text-align: center;
+      text-align: left;
+      @include responsive("phone") {
+        text-align: center;
+      }
     }
     .infoClient {
       display: flex;
@@ -169,14 +168,14 @@
         }
       }
     }
-    .startstext{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        //gap: 24px;  
-        gap: 30px;
-    } 
+    .startstext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //gap: 24px;
+      gap: 30px;
+    }
   }
 
   .carrousel {
@@ -185,7 +184,7 @@
     @include responsive("carrousel2") {
       display: flex;
       flex-direction: column;
-      gap: 24px; 
+      gap: 24px;
       /* padding-bottom: 48px; */
     }
 

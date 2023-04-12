@@ -3,19 +3,19 @@ import imgAccordion from "./assets/img accordion.png";
 import FormButton from "../../../core/components/Button/Button";
 import ArrowUp from "./assets/arrow-up-s-line.svg";
 import ArrowDown from "./assets/arrow-down-s-line.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ServIntPerf() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState("not Selected");
   const toggle = (i) => {
     if (selected === i) {
-      return setSelected(null);
+      return setSelected("not Selected");
     }
     setSelected(i);
   };
-  /* useEffect(() => {
+  useEffect(() => {
     console.log(selected);
-  }, [selected]); */
+  }, [selected]);
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function ServIntPerf() {
                   {selected === "menu1" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu1" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>
@@ -60,7 +60,7 @@ export default function ServIntPerf() {
                   {selected === "menu2" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu2" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>
@@ -81,7 +81,7 @@ export default function ServIntPerf() {
                   {selected === "menu3" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu3" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>
@@ -102,7 +102,7 @@ export default function ServIntPerf() {
                   {selected === "menu4" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu4" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>
@@ -122,7 +122,7 @@ export default function ServIntPerf() {
                   {selected === "menu5" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu5" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>
@@ -143,7 +143,7 @@ export default function ServIntPerf() {
                   {selected === "menu6" ? (
                     <img src={ArrowUp} alt="Arrow-Up" />
                   ) : (
-                    <img src={ArrowDown} alt="Arrow-Down" />
+                    <img id="menu6" src={ArrowDown} alt="Arrow-Down" />
                   )}
                 </span>
               </h6>

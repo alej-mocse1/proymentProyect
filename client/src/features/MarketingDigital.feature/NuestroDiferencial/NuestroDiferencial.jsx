@@ -1,4 +1,4 @@
-import { Autoplay, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useRef } from "react";
 import {Link} from "react-router-dom"

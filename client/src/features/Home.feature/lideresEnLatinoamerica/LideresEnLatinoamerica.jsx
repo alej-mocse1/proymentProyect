@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styles from './LideresEnLatinoamerica.module.scss';
 import "./Lideres.scss"
 
@@ -24,7 +23,7 @@ import LideresHIJO from "./lideresHijo";
 const LideresEnLatinoamerica = () => {
 
 
-    const [state, setState] = useState([
+    const state=[
         { 
              id: 1,
            img:img1,
@@ -48,7 +47,7 @@ const LideresEnLatinoamerica = () => {
             frase:" Tivemos que realizar un importante lançamento de marca no Brasil e a Proyment contribuiu em grande parte para os ótimos que tivemos "
 
         }
-    ])
+    ]
 
 
 

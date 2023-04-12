@@ -18,7 +18,7 @@ export default function ProymentParaPotenciar () {
                 <Link to={"/form"} style={{textDecoration:"none", color:"inherit"}}><button>Agendar reunión</button></Link>
             </div>
             <div className={style.containerImg}>
-                <img src={img} al="not" width="200px"/>
+                <img src={img} alt="not" width="200px"/>
             </div>
             <div className={style.containerGraphic}>
                 <img src={Pattern} alt="not" />

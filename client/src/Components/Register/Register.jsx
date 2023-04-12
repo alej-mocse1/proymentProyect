@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import style from "./Register.module.scss"
 import "./Prueba.scss"
+import handleSubmitFireBase from "../../FireBase/Handles/HandleSubmit";
 
 const Register = ({ info }) => {
 
@@ -19,9 +20,8 @@ const Register = ({ info }) => {
         }
 
     const onSubmit = (data, e) => {
-        console.log(data);
+        handleSubmitFireBase(data)
         navigate("/confirmation")
-
     }
 
 
@@ -82,13 +82,13 @@ const Register = ({ info }) => {
                                 required: true
                             })} >
                             <option value="" selected disabled>El nombre de su empresa aquí...</option>
-                            <option value="smd" className={style.optionColor}>Servicio de marketing digital</option>
-                            <option value="si" className={style.optionColor}>Servicios integrales</option>
-                            <option value="spv" className={style.optionColor} >Servicios de potenciamiento de ventas</option>
-                            <option value="sad" className={style.optionColor}>Servicios de análisis de datos</option>
-                            <option value="sdu" className={style.optionColor}>Servicios de diseño UI/UX</option>
-                            <option value="st" className={style.optionColor}>Servicios en tendencia</option>
-                            <option value="sm" className={style.optionColor}>Servicios a medida</option>
+                            <option value="Servicio de marketing digital" className={style.optionColor}>Servicio de marketing digital</option>
+                            <option value="Servicios integrales" className={style.optionColor}>Servicios integrales</option>
+                            <option value="Servicios de potenciamiento de ventas" className={style.optionColor} >Servicios de potenciamiento de ventas</option>
+                            <option value="Servicios de análisis de datos" className={style.optionColor}>Servicios de análisis de datos</option>
+                            <option value="Servicios de diseño UI/UX" className={style.optionColor}>Servicios de diseño UI/UX</option>
+                            <option value="Servicios en tendencia" className={style.optionColor}>Servicios en tendencia</option>
+                            <option value="Servicios a medida" className={style.optionColor}>Servicios a medida</option>
                         </select>
                         {errors.servicio?.type === "required" && <p className={style.error}>El campo servicio es requerido</p>}
                     </div>

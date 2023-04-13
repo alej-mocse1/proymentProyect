@@ -21,7 +21,11 @@
     @media (max-width: 1350px) {
       left: 30px;
     }
+    // @media (max-width: 1270px) {
+      
+    // }
     @media (max-width: 1150px) {
+      left: 0px;
       width: 90%;
       left: 20px;
     }
@@ -109,6 +113,7 @@
     @include flex-column-center;
     overflow: hidden;
     height: 100%;
+
     width: 49vw;
     @media (max-width: 1220px) {
       width: 46vw;
@@ -120,6 +125,13 @@
       width: 90%;
     }
     .empr--img {
+
+      width: 100%;
+
+      // @media (max-width: 1270px) {
+      //   width: 100%;
+      // }
+
       @media (max-width: 1150px) {
         width: 100%; 
         margin: 56px 0;

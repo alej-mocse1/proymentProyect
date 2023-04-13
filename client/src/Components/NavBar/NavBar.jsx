@@ -3,10 +3,11 @@ import style from './Navbar.module.css';
 import logo from './logoPrueba.svg';
 import { useState } from 'react';
 import 'remixicon/fonts/remixicon.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
-
+  
+    const navigate = useNavigate()
     const [isOpen, SetOpen] = useState(true);
     const [isOpen2, SetOpen2] = useState(false);
     let responsive = isOpen ? {
@@ -139,7 +140,7 @@ function Navbar() {
        
 
         
-           <li>
+           <li onClick={() =>navigate('/')}>
               <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}>
                  <p>Industrias</p>
               </a>
@@ -148,7 +149,7 @@ function Navbar() {
 
 
         
-           <li>
+           <li onClick={() =>navigate('/')}>
              <a href="#seccion2" style={{ textDecoration: 'none', color: '#000538' }}>
                  <p>Clientes</p>
              </a>

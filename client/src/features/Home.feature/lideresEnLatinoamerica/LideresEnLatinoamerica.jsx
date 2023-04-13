@@ -54,7 +54,7 @@ const LideresEnLatinoamerica = () => {
 
     return(
         <div className={styles.div}>
-          <section id="seccion2"></section>
+          <section ></section>
             <div>
                <h2 className={styles.H2}>Líderes  en Latinoamerica nos recomiendan</h2>
             </div>
@@ -142,6 +142,8 @@ const LideresEnLatinoamerica = () => {
             </div>
 
        
+<div className={styles.showCarrousel}>
+
 
             <Swiper
               modules={[Pagination, Autoplay]}
@@ -170,6 +172,7 @@ const LideresEnLatinoamerica = () => {
         
 
 
+        </div>
         </div>
     )
 

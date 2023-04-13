@@ -13,7 +13,7 @@ export default function Form() {
     <>
       <div className={styles.container}>
         <div className={styles.contentform}>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit'}}>
             <button>
               <i className="ri-arrow-left-line"></i> Volver
             </button>

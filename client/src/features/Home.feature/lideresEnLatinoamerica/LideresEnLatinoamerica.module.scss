@@ -161,7 +161,10 @@
     }
 }
 
-
+.showCarrousel{
+    display: none;
+    
+}
 @media (max-width: 900px){
     .div{
         height: 724px;
@@ -177,6 +180,11 @@
        text-align: left;
        position: relative;
        top: 60px;
+    }
+
+    .showCarrousel{
+        display: flex;
+        flex-direction: column;
     }
     .data {
         width: 95%;

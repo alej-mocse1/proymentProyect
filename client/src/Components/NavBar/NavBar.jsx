@@ -199,13 +199,33 @@ function Navbar() {
 
 
         <div  className={style.DIVservices} style={responsiveServicios}>
-            <h4  className={style.h4servicer}>Servicios integrales</h4>  
+             <Link to="/serviciosIntegrales"  style={{ textDecoration: 'none', color: 'inherit'}}>
+            <h4  className={style.h4servicer}>Servicios integrales</h4>    
+             </Link>
+
+             <Link to="/PotenciamientoDeVentas"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Potenciamiento de ventas</h4>    
+             </Link>
+
+            <Link to="/marketing"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Marketing digital</h4>   
+            </Link>
+
+            <Link to="/serviciosAnalisisDeDatos"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Analisis de datos</h4> 
+            </Link>
+
+            <Link to="/serviciosEnTendencia"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Servicios en tendencia</h4> 
+            </Link>
+
+            <Link to="/serviciosUXUI"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Diseño web UX/UI</h4> 
+            </Link>
+            
+            <Link to="/serviciosAtuMedida"  style={{ textDecoration: 'none', color: 'inherit'}}>
             <h4  className={style.h4servicer}>Servicios a tu medida</h4> 
+            </Link>
         </div>
         <a href="#seccion1" style={{ textDecoration: 'none', color: '#000538' }}>
           <h4>Industrias</h4>  

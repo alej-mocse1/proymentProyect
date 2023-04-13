@@ -18,7 +18,7 @@ import img015 from "./assets/Component 24.png";
 function CompaniesFriendly() {
   return (
     <>
-      <div className="companiesFriendly__container">
+      <div id="seccion2" className="companiesFriendly__container">
         <h2 className="companiesFriendly__container--title">
           <strong>+100 companías </strong>se potenciaron con nuestros servicios
         </h2>

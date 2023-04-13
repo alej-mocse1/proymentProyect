@@ -1,6 +1,6 @@
 import style from "./NuestrosPlanes.module.scss"
 import image from "./assets/img 02.png"
-
+import {Link} from 'react-router-dom'
 
 export default function NuestrosPlanes() {
     return (
@@ -41,7 +41,9 @@ export default function NuestrosPlanes() {
                         <p>
                             Proyment cuenta con diversos planes donde nos adaptamos a los requerimientos de las empresas.
                         </p>
-                        <button>Agendar reunión</button>
+                        <Link to ={'/form'}>
+                        <button className={style.button}>Agendar reunión</button>
+                        </Link>
                     </div>
                     <div className={style.containerImg}>
                         <img src={image} alt="not" />

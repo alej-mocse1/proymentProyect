@@ -1,7 +1,7 @@
 import styles from "./Button.module.scss";
 import { Link } from "react-router-dom";
 
-export default function FormButton(planes) {
+export default function FormButton({planes = false}) {
   return (
     <>
       <Link to="/form" className={styles.container}>

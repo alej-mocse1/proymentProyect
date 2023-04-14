@@ -1,7 +1,6 @@
 import styles from "./NuestrosPlanes.module.scss";
 import statisticImg from "./assets/img nuestros planes.png";
-import { Link } from "react-router-dom";
-//import FormButton from "../../../core/components/Button/Button";
+import FormButton from "../../../core/components/Button/Button";
 import "remixicon/fonts/remixicon.css";
 
 export default function NuestrosPlanes() {
@@ -52,10 +51,7 @@ export default function NuestrosPlanes() {
                 </p>
 
                 <div className={styles.button}>
-                  {/* <FormButton></FormButton> */}
-                  <Link to="/form" /* className={styles.container} */>
-                    <button className={styles.btn}>Agendar reunión</button>
-                  </Link>
+                  <FormButton planes={true}></FormButton>
                 </div>
               </div>
             </div>

@@ -2,12 +2,25 @@
 
 .container {
   display: flex;
+  min-height: 100vh;
+  background-color: #F7F7FC;
+  @include responsive("laptop") {
+    flex-direction: column;
+    padding: 55px 0px;
+   gap: 10px;
+   min-height: none;
+  }
 
   .contentform {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     margin: 24px 0 0 24px;
+    @include responsive("laptop") {
+      margin: 0;
+      width: 100%;
+      gap:10px;
+    }
 
     button {
       border: none;
@@ -19,7 +32,7 @@
       text-align: left;
       display: flex;
       align-items: center;
-      gap:10px;
+      gap: 10px;
 
       color:#000538;
       cursor: pointer;
@@ -33,19 +46,14 @@
   }
 
   .containerImg {
-    width: 50%;
-    position: relative;
-
-    img {
+    width: 55%;
+    overflow: hidden;
+    max-height: 100vh;
+    @include responsive("laptop") {
       width: 100%;
-      position:absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
+    }
+    img {
+      width: 155%;
     }
   }
 }

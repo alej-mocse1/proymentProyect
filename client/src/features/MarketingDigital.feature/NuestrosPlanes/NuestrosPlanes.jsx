@@ -29,7 +29,7 @@ export default function NuestrosPlanes() {
                     <p  className={styles.pbuttom}>Proyment cuenta con diversos planes donde nos adaptamos a los requerimientos de las empresas.</p>
 
                     <div className={styles.button}>
-                    <FormButton></FormButton>
+                    <FormButton planes ={true}></FormButton>
                     </div>
 
                 </div>

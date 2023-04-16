@@ -1,0 +1,300 @@
+@import "../../../styles/styles.scss";
+
+.div{
+    height: 913px;
+    width: 100%;
+    position: relative;
+
+    @media (max-width: 1000px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 990px;
+     }
+}
+
+.divblanco{
+    background: #F7F7FC;
+    height: 420px;
+    width: 100%;
+    
+    @media (max-width: 1000px) {
+        display: none;
+     }
+}
+
+.divNegro{
+    background: #DBF9EF;
+    height: 493.6px;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+        display: none;
+     }
+}
+
+.divConteiner{
+    text-align: center;
+    width: 1130px;
+    height: 747.5px;
+    z-index: 10;
+    background: #FFFFFF;
+    position: absolute;
+    margin-top: -348px;
+    box-shadow: 0px 32px 72px rgba(20, 20, 43, 0.24);
+    border-radius: 16px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto; 
+
+    @media (max-width: 1150px) {
+        width: 100%;
+     }
+
+     @media (max-width: 1000px) {
+       display: none;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.divConteiner1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divConteiner1 h2{
+    font-weight: 600;
+    height: 100px;
+    font-size: 32px;
+    line-height: 35px;
+    color: #000538;   
+    width: 396px;
+    text-align: left;
+    position: relative;
+    top: 42px;
+}
+
+.divConteiner1 p{
+    width: 432px;
+    text-align: left;
+    position: relative;
+    top: 57px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000538;
+}
+
+
+
+
+
+
+
+
+.divConteiner2{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.divConteiner2 div{
+    width: 290px;
+    height: 179px;  
+    text-align: left;
+}
+
+
+.divConteiner2 div img{
+    width: 35px;
+    height: 35px;
+}
+
+.divConteiner2 div h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000538;
+    position: relative;
+    top: -20px;
+}
+
+.divConteiner2 div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000538;
+    position: relative;
+    top: -26px;
+}
+
+
+
+
+
+
+.divConteiner3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divConteiner3 p{
+    width: 446px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #240E81;
+    position: relative;
+    top: -40px;
+}
+
+
+.divConteiner3 button{
+    background: #6F4EF5;
+    border-radius: 4px;
+    width: 237px; 
+    height: 64px;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+}
+
+.divConteiner3 button:hover{
+    background: #A493FF;
+    transition: 1s;
+}
+
+
+
+
+
+////////////////////////////////responsive//////////////////////////
+
+
+.divResponsive{
+    display: none;
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 927.5px; 
+     }
+}
+
+.divResponsive h3{
+    color: #000538;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 24px;
+    width: 90%;
+}
+
+.divResponsive h4{
+    color: #000538;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    width: 148px;
+    margin-left: 24px;
+}
+
+.divResponsive p{
+    color: #000538;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 248px;
+    margin-left: 24px;
+}
+
+
+
+.carrousel{
+    width: 330px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.carrousel img{
+   height: 35px;
+   width: 35px;
+   margin-left: 24px;
+}
+
+
+.carrousel h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000538;
+ }
+
+
+
+
+
+.pInferior{
+    color: #000538;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+    width: 320px !important; 
+}
+
+
+.btnResponsive{
+    background: #6F4EF5;
+    border-radius: 4px;
+    width: 262px;
+    height: 54px;
+    border: none;
+    color: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+}
+
+
+
+ .data {
+    width: 100%;
+    margin-right: 10%;
+    height: 322px;
+    margin-top: 20px;
+  }

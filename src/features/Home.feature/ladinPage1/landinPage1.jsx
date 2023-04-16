@@ -10,6 +10,7 @@ import img05 from './assets/img05.png';
 import imgFloat from './assets/imgFloat.svg';
 import imgFloat2 from './assets/imgFloat2.svg';
 import imgFloat3 from './assets/imgFloat3.svg';
+import { Link } from "react-router-dom";
 
 
 
@@ -32,7 +33,7 @@ function LandinPage(props) {
            </div>
 
            <div className={style.divbtn}>
-            <button className={style.btn}>Agendar reunión</button>
+            <Link to={"/form"} ><button className={style.btn}>Agendar reunión</button></Link>
             <button className={style.btn2}>Conocer mas</button>
            </div>
 

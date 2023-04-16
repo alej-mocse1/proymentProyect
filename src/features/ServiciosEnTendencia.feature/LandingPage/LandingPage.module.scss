@@ -1,0 +1,188 @@
+@import "../../../styles/styles.scss";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: #000538;
+    position: relative;
+    z-index: 1;
+
+    @include responsive("Tablet") {
+        flex-direction: column;
+        position: relative;
+        padding: 56px 40px;
+    }
+
+    @include responsive("phone-L") {
+        padding: 56px 24px;
+        background: linear-gradient(174.24deg, #000538 6.01%, #001344 27.47%, #0FA2A8 69.21%, #00144A 84.92%);
+    }
+
+    .degrade {
+        width: 930px;
+        border-radius: 0px;
+        z-index: 2;
+
+        img {
+            width: 100%;
+        }
+
+        @include responsive("Tablet") {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 100%;
+
+            background: linear-gradient(174.09deg,
+                    #000538 6.03%,
+                    #001344 20.32%,
+                    #027ca3 47.88%,
+                    #00144a 80.49%);
+        }
+
+        @include responsive("phone-L") {
+            display: none;
+        }
+    }
+
+    .containerInfo {
+        display: flex;
+        flex-direction: column;
+        /* width: 690px; */
+        width: 54%;
+        position: absolute;
+        left: 71px;
+        z-index: 5;
+
+        @include responsive("Laptop") {
+            left: 51px;
+        }
+
+        @include responsive("Tablet") {
+            position: static;
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 16px;
+
+            background: linear-gradient(90deg, #8A51EE 0%, #487DED 22.23%, #26AFEF 56.9%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            @include responsive("Laptop") {
+                width: 100%;
+            }
+
+            @include responsive("Tablet") {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+
+        h2 {
+            font-size: 61px;
+            font-weight: 700;
+            line-height: 67px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0 0 32px 0;
+            color: #fff;
+
+            @include responsive("Tablet"){
+                font-size: 51px;
+            }
+
+            @include responsive("Tablet") {
+                font-size: 40px;
+                line-height: 44px;
+                margin: 0 0 40px 0;
+            }
+
+            @include responsive("phone-S") {
+                font-size: 36px;
+            }
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #ffffff;
+
+            width: 201px;
+            height: 64px;
+            background: #6f4ef5;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+
+            @include responsive("Tablet") {
+                width: 60%;
+            }
+
+            @include responsive("phone-L") {
+                /* width: 328px; */
+                width: 100%;
+                height: 54px;
+                margin: auto;
+                margin: 0 auto;
+            }
+        }
+
+        button:hover {
+            background: #a493ff;
+            transition: 1s;
+        }
+    }
+
+    .containerForm {
+        width: 30%;
+        position: absolute;
+        z-index: 6;
+        right: 130px;
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+            0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+
+        // @include responsive("Laptop") {
+        //     right: 71px;
+        //     width: 35%;
+        // }
+
+        // @include responsive("Tablet") {
+        //     width: 100%;
+        //     position: static;
+        //     margin-top: 57px;
+        // }
+        
+        @media screen and (max-width: 1250px) {
+            right: 150px;
+          }
+      
+          @include responsive("Tablet") {
+            width: 100%;
+            position: static;
+            right: 0px;
+            margin-top: 57px;
+            display: flex;
+            justify-content: center;
+          }
+      
+
+        @include responsive("phone-L") {
+            width: 100%;
+        }
+    }
+}

@@ -98,9 +98,12 @@
             flex-direction: column;
             margin-top: 76px;
 
-            @include responsive("Laptop"){
-                margin-top: 33px;
+            @media screen and (max-width:1150px) {
+                margin-top: 1vw;
             }
+            /* @include responsive("Laptop"){
+                margin-top: 33px;
+            } */
 
             @include responsive("Tablet") {
                 width: 100%;
@@ -116,9 +119,9 @@
                 margin: 0;
                 margin-bottom: 16px;
                 
-                @include responsive("Laptop"){
+                /* @include responsive("Laptop"){
                     font-size: 32px;
-                }
+                } */
 
                 @include responsive("Tablet") {
                     font-size: 32px;
@@ -137,9 +140,9 @@
                 margin: 0;
                 margin-bottom: 32px;
 
-                @include responsive("Laptop"){
+                /* @include responsive("Laptop"){
                     font-size: 14px;
-                }
+                } */
 
                 @include responsive("Tablet"){
                     font-size: 16px;

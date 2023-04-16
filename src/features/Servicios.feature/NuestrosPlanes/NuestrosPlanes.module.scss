@@ -45,13 +45,13 @@
 }
 
 .divTexto {
-  border: 1px solid #dcddeb;
+ 
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
     0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
   border-radius: 8px;
   background: #ffffff;
   width: 458px;
-height: 590px; 
+  height: 590px; 
   position: relative;
   /*  left: 123px; */
 
@@ -147,6 +147,7 @@ height: 590px;
   cursor: pointer;
   padding-bottom: 15px;
   /* margin-bottom: 33px; */
+  font-size: 16px;
 
   @media (max-width: 530px) {
     position: relative;

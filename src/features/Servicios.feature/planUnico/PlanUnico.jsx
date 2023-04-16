@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./planUnico.module.scss";
 import img from './assets/img.png';
+import {Link} from "react-router-dom"
 
 
 const PlanUnico  = () => {
@@ -25,7 +26,7 @@ const PlanUnico  = () => {
                     Personalizamos cada plan de potenciamiento de ventas para cada empresa a
                     través de múltiples canales de formación.
                   </p>
-                <button>Agendar reunión</button>
+                  <Link to={"/form"} style={{textDecoration:"none", color:"inherit"}}><button>Agendar reunión</button></Link>
             </div>
 
            </div>

@@ -61,12 +61,12 @@ export default function NuestrasSoluciones() {
                     <div className="swiperContainer">
                         <Swiper
                             modules={[Pagination, Autoplay]}
-                            loop={true}
-                            autoplay={{
+                            /* loop={true} */
+                            /* autoplay={{
                                 delay: 2000,
                                 pauseOnMouseEnter: false,
                                 disableOnInteraction: false
-                            }}
+                            }} */
                             pagination={{
                                 el: ".ns-carousel-pagination",
                                 clickable: true,

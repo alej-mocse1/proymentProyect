@@ -3,6 +3,7 @@ import assests1 from './assets/IMG.png';
 import grafico from '././assets/imgFlotant.png';
 import flotante1 from '././assets/assests1.svg';
 import flotante2 from '././assets/assests2.svg';
+import { Link } from 'react-router-dom';
 
 
 const ServiciosAtuMedida = () => {
@@ -24,7 +25,7 @@ const ServiciosAtuMedida = () => {
           <div className={style.divText}>
             <h2>Servicios a tu medida</h2>
             <p>¿Lo mejor? Puedes elegir nuestros servicios profesionales o los que mas se adapten a tu empresa</p>
-            <button>Agendar reunion</button>
+            <Link  to={"/form"} style={{textDecoration:"none", color:"inherit"}}><button>Agendar reunion</button></Link>
           </div>
  
         </div>

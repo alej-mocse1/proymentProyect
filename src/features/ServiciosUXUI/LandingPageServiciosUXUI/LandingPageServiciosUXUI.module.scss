@@ -1,0 +1,201 @@
+@import "../../../styles/styles.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: #000538;
+  position: relative;
+  z-index: 1;
+
+  @include responsive("Tablet") {
+    flex-direction: column;
+    position: relative;
+    padding: 56px 40px;
+    /* gap: 57px; */
+/*     height: 317vw;
+ */    min-height: 1180px;
+  }
+
+  @include responsive("Tablet") {
+    padding: 56px 24px;
+    background: linear-gradient(174.09deg, #000538 6.03%, #001344 34.71%, #7460C6 65.9%, #00144A 80.49%);
+  }
+  .degrade {
+    margin-top: 60px;
+    width: 950px;
+    border-radius: 0px;
+    z-index: 2;
+
+    img {
+      width: 100%;
+    }
+    // background: radial-gradient(50% 50% at 50% 50%,
+    //     rgba(0, 179, 255, 0.8) 0%,
+    //     rgba(36, 14, 129, 0) 95%);
+
+    @include responsive("Tablet") {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 100%;
+
+      background: linear-gradient(
+        174.09deg,
+        #000538 6.03%,
+        #001344 20.32%,
+        #027ca3 47.88%,
+        #00144a 80.49%
+      );
+      /*  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); */
+    }
+    @include responsive("Tablet") {
+      display: none;
+    }
+  }
+
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    /* width: 690px; */
+    width: 48%;
+  /*   align-items: center; */
+    position: absolute;
+    left: 71px;
+    z-index: 5;
+
+    @include responsive("Laptop") {
+      left: 51px;
+    }
+
+    @include responsive("Tablet") {
+      position: static;
+      width: 62%;
+    }
+    @include responsive("tabletM") {
+      position: static;
+      width: 100%;
+    }
+
+
+    h4 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 16px;
+
+      background: linear-gradient(
+        91.15deg,
+        #8156ee 9.33%,
+        #487ded 43.76%,
+        #26afef 85.96%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      @include responsive("Laptop") {
+        width: 100%;
+      }
+
+      @include responsive("Tablet") {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+
+    h2 {
+      max-width: 601px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 53px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0 0 16px 0;
+      color: #fff;
+
+      @include responsive("Tablet") {
+        font-size: 40px;
+        line-height: 44px;
+        margin: 0 0 40px 0;
+      }
+
+      @include responsive("phone-S") {
+        font-size: 36px;
+      }
+    }
+    p {
+      margin: 0;
+      max-width: 494px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #a0a3bd;
+      margin-bottom: 32px;
+    }
+    button {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #ffffff;
+
+      width: 201px;
+      height: 64px;
+      background: #6f4ef5;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+
+      @include responsive("Tablet") {
+        width: 60%;
+      }
+
+      @include responsive("phone-L") {
+        /* width: 328px; */
+        width: 100%;
+        height: 54px;
+        margin: auto;
+        margin: 0 auto;
+      }
+
+
+    }
+
+    button:hover {
+      background: #a493ff;
+      transition: 1s;
+    }
+  }
+
+  .containerForm {
+    width: 30%;
+    position: absolute;
+    z-index: 6;
+    right: 130px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06),
+      0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+
+    @include responsive("Laptop") {
+      right: 71px;
+      width: 35%;
+    }
+
+    @include responsive("Tablet") {
+      width: 100%;
+      position: static;
+      margin-top: 57px;
+    }
+
+    @include responsive("phone-L") {
+      width: 100%;
+    }
+  }
+}

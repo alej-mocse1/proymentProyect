@@ -80,6 +80,7 @@
     position: relative;
     top: -3px;
     cursor: pointer;
+    font-size: 16px;
 
     @include responsive("carrousel") {
         width: 327px;
@@ -104,6 +105,8 @@
 .div2{
     width: 50%;
     height: 610.92px;
+    position: relative;
+    right: 50px;
 
     @include responsive("carrousel") {
         width: 80%;
@@ -113,11 +116,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        right: 0;
        
       }
     
     @include responsive("tabletM") {
         width: 100%;
+        right: 0;
     }
     
    }
@@ -125,9 +130,10 @@
 
 .divImg{
     height: 517px;
-    width: 486px;
+    width: 50%;
     position: relative;
     left: 80px;
+    margin: 0;
     
     
 @include responsive("laptop") {
@@ -136,6 +142,7 @@
     position: relative;
     top: 100px;
     left: 90px;
+    margin: 0;
        
 }
 
@@ -160,10 +167,13 @@
 
            
     }
-
+    @include responsive("Tablet"){
+        width: 415px;
+        height: auto;
+    }
     @include responsive("carrousel") {
-        width: 254.45px;
-        height: 270.68px;
+        width: 100%;
+        height: auto;
         
       }
 }

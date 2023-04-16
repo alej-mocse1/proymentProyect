@@ -19,7 +19,7 @@
       height: 940px;
     }
   
-    @include responsive("phone-L") {
+    @include responsive("Tablet") {
       padding: 56px 24px;
       background: linear-gradient(174.09deg, #000538 6.03%, #001344 20.32%, #027CA3 47.88%, #00144A 80.49%);
     }
@@ -49,7 +49,7 @@
             #00144a 80.49%);
 
       }
-      @include responsive("phone-L"){
+      @include responsive("Tablet"){
         display: none;
       }
     }
@@ -68,6 +68,9 @@
   
       @include responsive("Tablet") {
         position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
       }
   
@@ -96,6 +99,10 @@
           font-size: 16px;
           font-weight: 600;
           line-height: 24px;
+          text-align: center;
+        }
+        @include responsive("phone-M"){
+          text-align: left;
         }
       }
   
@@ -112,10 +119,13 @@
           font-size: 40px;
           line-height: 44px;
           margin: 0 0 40px 0;
+          text-align: center;
         }
   
-        @include responsive("phone-S") {
+        @include responsive("phone-M") {
           font-size: 36px;
+        text-align: left;
+          
         }
       }
   
@@ -136,13 +146,13 @@
   
         @include responsive("Tablet") {
           width: 60%;
+          text-align: center;
         }
   
         @media (max-width: 530px) {
           width: 149px;
           height: 54px;
-          margin: auto;
-          margin: 0 auto;
+          
         }
   
       }
@@ -163,12 +173,15 @@
         border: 1px solid #6F4EF5;
         width: 201px;
         height: 64px;
-        background: #000538;;
+        background: transparent;
         border-radius: 4px;
         cursor: pointer;
-  
+
+       /*  @include responsive("Tablet"){
+          display: none;
+        } */
         @include responsive("Tablet") {
-          width: 60%;
+          width: 100%;
           margin-left: 10px;
         }
   
@@ -176,8 +189,8 @@
           margin-left: 0px;
           width: 149px;
           height: 54px;
-          margin: auto;
-          margin: 0 auto;
+          border: 1px solid #EAE5FF;
+          color: #EAE5FF;
         }
      
     }
@@ -187,6 +200,8 @@
       color: #4E37AC;
       border: 1px solid #4E37AC;
       transition: .8s ease-in-out;
+
+
      }
     .divBtn{
       width: 440px;
@@ -194,10 +209,15 @@
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: 530px) {
+      @include responsive("Tablet") {
+        position: static;
+        /* justify-content: center; */
+        align-items: center;
         width: 335px;
-        position: relative;
-        right: 10px;        
+      }  
+
+      @media (max-width: 530px) {
+        width: 325px;
      }
 
     }
@@ -221,10 +241,17 @@
         width: 35%;
       }
   
+      @media screen and (max-width: 1250px) {
+        right: 150px;
+      }
+  
       @include responsive("Tablet") {
         width: 100%;
         position: static;
         margin-top: 57px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
       }
   
       @include responsive("phone-L") {

@@ -1,6 +1,7 @@
 import Register from "../../../Components/Register/Register";
 import style from "./LandingPageMarkentig.module.scss";
 import img from "./assets/degradado.svg";
+import { Link } from "react-router-dom";
 
 export default function LandingPageMarkentig() {
   return (
@@ -15,7 +16,7 @@ export default function LandingPageMarkentig() {
 
         <div className={style.divBtn}>
          <button className={style.BTNConocerMas}>Conocer más</button>
-         <button className={style.BTNAgendarReunion}>Agendar reunión</button>
+         <Link><button className={style.BTNAgendarReunion}>Agendar reunión</button></Link>
         </div>
       </div>
 

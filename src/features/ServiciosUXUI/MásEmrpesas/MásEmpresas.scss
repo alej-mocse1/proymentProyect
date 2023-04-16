@@ -1,0 +1,106 @@
+@import "../../../styles/styles.scss";
+
+.masEmpresas--container {
+  @include flex-row-center;
+  padding: 56px 0;
+  background-color: #000538;
+  border-top: 1px solid #000538;
+  @media (max-width: 780px) {
+    @include flex-column-center;
+  }
+
+  .masEmpresas--container__text {
+    gap: 32px;
+    width: 40%;
+    @media (max-width: 780px) {
+      width: 90%;
+      text-align: center;
+    }
+    @media (max-width: 430px) {
+      text-align: left;
+    }
+
+    h2 {
+      width: 604px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 44px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
+      @media (max-width: 580px){
+        margin: 0 0 24px 0;
+      }
+    }
+
+    span {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #eff0f7;
+      width: 523px;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
+      @media (max-width: 430px) {
+        color: #a0a3bd;
+      }
+    }
+
+    .button-container {
+      width: 100%;
+      margin-top: 32px;
+      button {
+        width: 237px;
+        height: 64px;
+        background: #6f4ef5;
+        border: 1px solid #6f4ef5;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 16px;
+        @media (max-width: 780px) {
+          width: 80%;
+          height: 54px;
+        }
+        @media (max-width: 430px) {
+          width: 100%;
+        }
+      }
+      button:hover {
+        background: #a493ff;
+        transition: 1s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .masEmpresas--container__img {
+    width: 40%;
+    @include flex-column-center;
+    @media (max-width: 780px) {
+      width: 70%;
+      margin-top: 20px;
+    }
+    @media (max-width: 430px) {
+      margin-top: 40px;
+      width: 90%;
+      @include flex-column-start2;
+    }
+
+    img {
+      width: 90%;
+      @media (max-width: 780px) {
+        width: 70%;
+      }
+      @media (max-width: 430px) {
+        width: 80%;
+      }
+    }
+  }
+}
